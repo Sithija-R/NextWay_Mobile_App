@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 
 const MainLayout = () => {
-  const { isAuthenticated, role } = useAuth();
+  const { isAuthenticated, userRole } = useAuth();
   const segments = useSegments();
   const router = useRouter();
 
@@ -20,7 +20,7 @@ const MainLayout = () => {
 
     if (isAuthenticated && !inApp) {
       
-      if (role === 'admin') {
+      if (userRole === 'admin') {
         router.replace('dashboard');
       } else {
         router.replace('home');
@@ -29,7 +29,7 @@ const MainLayout = () => {
      
       router.replace('signIn');
     }
-  }, [isAuthenticated, role]);
+  }, [isAuthenticated, userRole]);
 
   return <Slot />;
 };
