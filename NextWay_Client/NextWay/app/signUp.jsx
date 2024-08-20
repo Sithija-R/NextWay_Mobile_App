@@ -29,7 +29,7 @@ const handleRegister= async()=>{
   Alert.alert("Sign Up", 'passwords not match!')
 }
   setLoading(true);
-  let response = await registerUser(emailRef.current,passwordRef.current,nameRef.current);
+  let response = await registerUser(emailRef.current.trim(),passwordRef.current,nameRef.current);
   setLoading(false);
 
   if (!response.success) {

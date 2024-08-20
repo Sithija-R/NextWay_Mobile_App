@@ -27,7 +27,7 @@ const registerUser = async (email, password,username) => {
 
 const loginUser = async (email, password) => {
  try {
-console.log(" login ",email)
+
   const response = await signInWithEmailAndPassword(auth,email,password);
   return {success:true}
     
