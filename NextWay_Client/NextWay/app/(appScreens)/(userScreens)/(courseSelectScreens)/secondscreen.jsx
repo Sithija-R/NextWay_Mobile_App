@@ -40,7 +40,9 @@ export default function SecondScreen() {
     physical: [
       { label: "Physics", value: "Physics" },
       { label: "Chemistry", value: "Chemistry" },
-      { label: "Mathematics", value: "Mathematics" },
+      { label: "Combined Maths", value: "Combined Mathematics" },
+      { label: "Higher Maths", value: "Higher Mathematics" },
+      { label: "IT", value: "Information & Communication Technology"}
     ],
     biology: [
       { label: "Biology", value: "Biology" },
@@ -93,7 +95,7 @@ export default function SecondScreen() {
   const handleNext = () => {
     
     if (year && stream && subjects.every(Boolean) && results.every(Boolean)) {
-     
+     console.log(subjects, results)
       const uniqueSubjects = new Set(subjects);
       if (uniqueSubjects.size !== subjects.length) {
         Alert.alert("Warning!", "Please select different subjects.");

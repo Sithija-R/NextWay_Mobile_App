@@ -11,6 +11,7 @@ import { Dropdown } from "react-native-element-dropdown";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { useRouter } from "expo-router";
 import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboardView";
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 
 
@@ -120,6 +121,7 @@ const handleNext=()=>{
               setIsYearFocus(false);
             }}
             renderLeftIcon={() => (
+              
               <AntDesign
                 style={styles.icon}
                 color={isYearFocus ? "#149BC6" : "gray"}
@@ -168,12 +170,10 @@ const handleNext=()=>{
               setIsStreamFocus(false);
             }}
             renderLeftIcon={() => (
-              <AntDesign
-                style={styles.icon}
-                color={isStreamFocus ? "#149BC6" : "gray"}
-                name="book"
-                size={25}
-              />
+              <FontAwesome5 name="stream"style={styles.icon}
+              color={isStreamFocus ? "#149BC6" : "gray"}
+             
+              size={25} />
             )}
           />
         </View>

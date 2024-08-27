@@ -17,7 +17,7 @@ import {
   
   export default function FirstScreen() {
     const router = useRouter();
-    const { response } = useLocalSearchParams();
+    const { response, district} = useLocalSearchParams();
   
    
     let courses = [];
@@ -86,7 +86,7 @@ import {
               router.push({
                 pathname: "coursedisplayer",
                 params: {
-                  course: JSON.stringify(course), 
+                  course: JSON.stringify(course), district
                 },
               });
             }}
@@ -94,7 +94,7 @@ import {
             <View style={styles.tableRow}>
               <Text style={styles.tableCell}>{course.COURSE}</Text>
               <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
-              <Text style={styles.tableCell}>{course.Z_SCORE}</Text>
+              <Text style={styles.tableCell}>{course.Z_SCORE[district]}</Text>
             </View>
           </Pressable>
             ))
@@ -143,6 +143,7 @@ import {
     tableCell: {
       flex: 1,
       textAlign: "center",
+      paddingLeft:wp(2)
     },
   });
   

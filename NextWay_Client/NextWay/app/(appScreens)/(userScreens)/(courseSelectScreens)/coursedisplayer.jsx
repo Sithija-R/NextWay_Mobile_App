@@ -10,7 +10,7 @@ import {
   import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function CourseDetailsScreen() {
-  const { course } = useLocalSearchParams();
+  const { course,district } = useLocalSearchParams();
 
   const router = useRouter();
 
@@ -55,22 +55,42 @@ export default function CourseDetailsScreen() {
         />
   
        
-          <View style={{ alignItems: "center", marginBottom: hp(2), marginTop:hp(10) }}>
+          <View style={{ alignItems: "center",  marginTop:hp(7) }}>
             <Image
               style={{ height: hp(17) }}
               resizeMode="contain"
               source={require("../../../../assets/images/Logo.png")}
             />
           </View>
-          <ScrollView contentContainerStyle={{ flexGrow: 1, paddingHorizontal: wp(2) }}>
+          {/* <ScrollView contentContainerStyle={{ flexGrow: 1, paddingHorizontal: wp(2) }}> */}
   
           <View style={styles.container}>
       {parsedCourse ? (
         <>
           <Text style={styles.title}>{parsedCourse.COURSE}    <Text style={{color:'#149BC6'}}>{parsedCourse.UNICODE}</Text></Text>
-          <Text style={styles.detail}>University: {parsedCourse.UNIVERSITY}</Text>
-          <Text style={styles.detail}>Z-Score: {parsedCourse.Z_SCORE}</Text>
-          <Text style={styles.detail}>Description: {parsedCourse.DESCRIPTION}</Text>
+
+          <View style={{ width: wp(90),maxHeight:hp(67), backgroundColor: 'rgba(128, 128, 128, 0.2)', padding:hp(2.2), borderRadius:15 }}>
+        <ScrollView contentContainerStyle={{ flexGrow: 1, paddingHorizontal: wp(2) }}>
+
+
+          <Text  style={styles.text}><Text style={styles.detailHeader}>Z-Score: </Text><Text style={styles.details}> {parsedCourse.Z_SCORE[district]}</Text> </Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>University: </Text><Text style={styles.details} > {parsedCourse.UNIVERSITY}</Text> </Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>Description: </Text><Text style={[styles.details,{fontWeight:'light'}]} > {parsedCourse.DESCRIPTION}</Text> </Text>
+          <Text style={styles.text}><Text style={styles.detailHeader}>Qualifications:{"\n"}</Text>
+ 
+  {Object.entries(parsedCourse.MINIMUM_QUALIFICATIONS.RequiredGrades).map(
+    ([subject, grade], index) => (
+      <Text  style={styles.details} key={index}>  {"\t"}
+           {subject}: {grade}{"\n"}
+      </Text>
+    )
+  )}
+</Text>
+
+
+        </ScrollView>
+          </View>
+         
          
         </>
       ) : (
@@ -78,7 +98,7 @@ export default function CourseDetailsScreen() {
       )}
     </View>
          
-        </ScrollView>
+        {/* </ScrollView> */}
   
         <Image
           style={{
@@ -109,6 +129,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
+    alignItems:'center'
   },
   title: {
     fontSize: 24,
@@ -116,8 +137,19 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     textAlign:'center'
   },
-  detail: {
+  detailHeader: {
     fontSize: 18,
     marginBottom: 8,
+    fontWeight:'bold'
+    
   },
+  details:{
+    fontSize: 18,
+    marginBottom: 8,
+    fontWeight:'normal'
+  },
+  text:{
+    marginBottom:hp(2)
+  }
+  
 });
