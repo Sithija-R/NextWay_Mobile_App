@@ -18,10 +18,14 @@ import { Dropdown } from "react-native-element-dropdown";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboardView";
+import { useTranslation } from "react-i18next";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function SecondScreen() {
   const router = useRouter();
   const { year, stream } = useLocalSearchParams();
+
+  const {t} = useTranslation();
 
   const [subjects, setSubjects] = useState(Array(3).fill(null));
   const [results, setResults] = useState(Array(3).fill(null));
@@ -36,33 +40,10 @@ export default function SecondScreen() {
     { label: "F", value: "F" },
   ];
 
-  const subjectData = {
-    physical: [
-      { label: "Physics", value: "Physics" },
-      { label: "Chemistry", value: "Chemistry" },
-      { label: "Mathematics", value: "Mathematics" },
-    ],
-    biology: [
-      { label: "Biology", value: "Biology" },
-      { label: "Chemistry", value: "Chemistry" },
-      { label: "Physics", value: "Physics" },
-    ],
-    commerce: [
-      { label: "Accounting", value: "Accounting" },
-      { label: "Business Studies", value: "Business Studies" },
-      { label: "Economics", value: "Economics" },
-    ],
-    art: [
-      { label: "History", value: "History" },
-      { label: "Literature", value: "Literature" },
-      { label: "Political Science", value: "Political Science" },
-    ],
-    technology: [
-      { label: "Information Technology", value: "Information Technology" },
-      { label: "Engineering Graphics", value: "Engineering Graphics" },
-      { label: "Mechanics", value: "Mechanics" },
-    ],
-  };
+  const subjectData= t('subjectData', { returnObjects: true });
+  const streams= t('streams', { returnObjects: true });
+
+
 
   
   useEffect(() => {
@@ -70,6 +51,21 @@ export default function SecondScreen() {
       setSubjectOptions(subjectData[stream.toLowerCase()]);
     }
   }, [stream]);
+
+console.log(subjectOptions)
+  useEffect(() => {
+    // If subjectOptions contains at least 3 elements
+    if (subjectOptions.length >= 3) {
+      const firstThreeSubjects = subjectOptions.slice(0, 3).map(option => option.value);
+      setSubjects(firstThreeSubjects);
+    }
+  }, [subjectOptions]);
+
+
+  const getStreamLabel = (value) => {
+    const stream = streams.find(stream => stream.value === value);
+    return stream ? stream.label : 'Unknown'; // Default to 'Unknown' if no match
+  };
 
   const handleDropdownChange = (index, type, value) => {
     if (type === "subject") {
@@ -93,14 +89,14 @@ export default function SecondScreen() {
   const handleNext = () => {
     
     if (year && stream && subjects.every(Boolean) && results.every(Boolean)) {
-     
+    //  console.log(subjects, results)
       const uniqueSubjects = new Set(subjects);
       if (uniqueSubjects.size !== subjects.length) {
-        Alert.alert("Warning!", "Please select different subjects.");
+        Alert.alert(t('warning'), t('subject-warning'));
         return;
       }
       if (results.includes("F")) {
-        Alert.alert("Warning!", "You should pass all 3 subjects");
+        Alert.alert(t('warning'), t('pass-warning'));
         return;
       }
   
@@ -115,7 +111,7 @@ export default function SecondScreen() {
         },
       });
     } else {
-      Alert.alert("Warning!", "Please select all fields.");
+      Alert.alert(t('warning'), t('all-fields-required'));
     }
   };
   
@@ -125,11 +121,24 @@ export default function SecondScreen() {
       <StatusBar style="dark" />
       <CustomKeyboardView>
         <View style={{ flex: 1, alignItems: "flex-start" }}>
-          <Pressable
-            style={{ position: "absolute", top: hp(5), left: wp(2), zIndex: 5 }}
-          >
-            <CustomHeader />
-          </Pressable>
+        <Pressable
+          onPress={() => router.back()}
+          style={{
+            position: "absolute",
+            top: hp(5),
+            left: wp(2),
+            zIndex: 5,
+            flexDirection: "row",
+            marginTop: hp(1),
+            alignItems: "center",
+            width: "85%",
+          }}
+        >
+          <Ionicons name="arrow-back" size={hp(3.5)} color="black" />
+          <Text style={{ fontSize: wp(5), paddingLeft: wp(5) }}>
+            {t("back")}
+          </Text>
+        </Pressable>
 
           <Image
             style={{ width: hp(27), height: hp(20) }}
@@ -162,7 +171,7 @@ export default function SecondScreen() {
                 paddingTop: hp(1.5),
               }}
             >
-              {stream}
+              {getStreamLabel(stream)}
             </Text>
             <View
               style={{
@@ -174,9 +183,9 @@ export default function SecondScreen() {
               }}
             >
               <Text style={{ color: "white", paddingLeft: wp(2) }}>
-                Subjects
+                {t('subject')}
               </Text>
-              <Text style={{ color: "white", paddingRight: wp(7) }}>Grades</Text>
+              <Text style={{ color: "white", paddingRight: wp(7) }}> {t('grade')}</Text>
             </View>
 
             {subjects.map((subject, index) => (
@@ -234,7 +243,7 @@ export default function SecondScreen() {
                   maxHeight={300}
                   labelField="label"
                   valueField="value"
-                  placeholder={!focus[index + 3] ? "Grade" : "..."}
+                  placeholder={!focus[index + 3] ? t('grade') : "..."}
                   value={results[index]}
                   onFocus={() => handleFocusChange(index, "result", true)}
                   onBlur={() => handleFocusChange(index, "result", false)}
@@ -264,7 +273,7 @@ export default function SecondScreen() {
                 color: "white",
               }}
             >
-              Next
+              {t('next')}
             </Text>
           </TouchableOpacity>
         </View>

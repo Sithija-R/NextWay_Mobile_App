@@ -14,11 +14,16 @@ import {
   } from "react-native-responsive-screen";
   import CustomHeader from "../../../../components/CustomHeader/customheader";
   import { useLocalSearchParams, useRouter } from "expo-router";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import Ionicons from "@expo/vector-icons/Ionicons";
   
   export default function FirstScreen() {
     const router = useRouter();
-    const { response } = useLocalSearchParams();
+    const { response, district} = useLocalSearchParams();
   
+    const {t}= useTranslation();
+    const currentLanguage = i18next.language;
    
     let courses = [];
   
@@ -39,14 +44,22 @@ import {
         <StatusBar style="dark" />
   
         <Pressable
+          onPress={() => router.back()}
           style={{
             position: "absolute",
             top: hp(5),
             left: wp(2),
             zIndex: 5,
+            flexDirection: "row",
+            marginTop: hp(1),
+            alignItems: "center",
+            width: "85%",
           }}
         >
-          <CustomHeader />
+          <Ionicons name="arrow-back" size={hp(3.5)} color="black" />
+          <Text style={{ fontSize: wp(5), paddingLeft: wp(2) }}>
+            {t("back")}
+          </Text>
         </Pressable>
   
         <Image
@@ -72,9 +85,9 @@ import {
           <ScrollView contentContainerStyle={{ flexGrow: 1, paddingHorizontal: wp(2) }}>
   
           <View style={styles.tableHeader}>
-            <Text style={styles.tableHeaderCell}>Course</Text>
-            <Text style={styles.tableHeaderCell}>University</Text>
-            <Text style={styles.tableHeaderCell}>Z-Score</Text>
+            <Text style={[styles.tableHeaderCell, { fontSize: currentLanguage == 'en' ? hp(2.5) : hp(2) }]}>{t('course')}</Text>
+            <Text style={[styles.tableHeaderCell, { fontSize: currentLanguage == 'en' ? hp(2.5) : hp(2) }]}>{t('university')}</Text>
+            <Text style={[styles.tableHeaderCell, { fontSize: currentLanguage == 'en' ? hp(2.5) : hp(2) }]}>{t('z-score')}</Text>
           </View>
   
           {courses.length > 0 ? (
@@ -86,7 +99,7 @@ import {
               router.push({
                 pathname: "coursedisplayer",
                 params: {
-                  course: JSON.stringify(course), 
+                  course: JSON.stringify(course), district
                 },
               });
             }}
@@ -94,7 +107,7 @@ import {
             <View style={styles.tableRow}>
               <Text style={styles.tableCell}>{course.COURSE}</Text>
               <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
-              <Text style={styles.tableCell}>{course.Z_SCORE}</Text>
+              <Text style={styles.tableCell}>{course.Z_SCORE[district]}</Text>
             </View>
           </Pressable>
             ))
@@ -132,7 +145,8 @@ import {
       flex: 1,
       fontWeight: "bold",
       textAlign: "center",
-      fontSize:hp(2.5)
+    
+     
     },
     tableRow: {
       flexDirection: "row",
@@ -143,6 +157,7 @@ import {
     tableCell: {
       flex: 1,
       textAlign: "center",
+      paddingLeft:wp(2)
     },
   });
   
