@@ -1,25 +1,40 @@
 import { onAuthStateChanged } from "firebase/auth";
-import React, { createContext, useContext, useEffect, useState, useCallback } from "react";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { auth, db } from "../firebaseConfig/firebaseConfiguration";
 import { doc, getDoc } from "firebase/firestore";
-import { ScrollView, RefreshControl, View, Text } from 'react-native';
+import { ScrollView, RefreshControl, View, Text } from "react-native";
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(undefined);
-  const [userRole, setUserRole] = useState('');
+  const [userRole, setUserRole] = useState("");
   const [isVerified, setIsVerified] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
 
-  const updateUserData = async (userId) => {
-    const userDocRef = doc(db, 'users', userId);
-    const docSnap = await getDoc(userDocRef);
+  console.log("auth ", user);
 
+  const updateUserData = async (userId) => {
+    const userDocRef = doc(db, "users", userId);
+    const docSnap = await getDoc(userDocRef);
     if (docSnap.exists()) {
       const data = docSnap.data();
-      setUser({ ...user, username: data.username, userId: data.userId, role: data.role });
+      setUser({
+        ...user,
+        email: auth.currentUser?.email,
+        phoneNumber: data.phoneNumber,
+        username: data.username,
+        userId: data.userId,
+        role: data.role,
+        age: data.age,
+        profileImage: data.profileImage,
+      });
       setUserRole(data.role);
     }
   };
@@ -61,38 +76,32 @@ export const AuthProvider = ({ children }) => {
     if (auth.currentUser && !auth.currentUser.emailVerified) {
       const interval = setInterval(() => {
         checkEmailVerification(auth.currentUser);
-      }, 30000); // 30 seconds
+      }, 30000);
       return () => clearInterval(interval);
     }
   }, [auth.currentUser]);
 
   return (
-    <AuthContext.Provider value={{ user, isAuthenticated, userRole, isVerified }}>
+    <AuthContext.Provider
+      value={{ user, isAuthenticated, userRole, isVerified, setUser }}
+    >
       <ScrollView
         contentContainerStyle={{ flex: 1 }}
         refreshControl={
-          <RefreshControl refreshing={refreshing} onRefresh={refreshAuthState} />
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={refreshAuthState}
+          />
         }
       >
-        
-          {children}
-       
+        {children}
       </ScrollView>
     </AuthContext.Provider>
 
-
-
-
-// <AuthContext.Provider value={{ user,isAuthenticated, userRole ,isVerified}}>
-// {children}
-// </AuthContext.Provider>
-// );
-
-
-
-
-
-
+    // <AuthContext.Provider value={{ user,isAuthenticated, userRole ,isVerified}}>
+    // {children}
+    // </AuthContext.Provider>
+    // );
   );
 };
 
@@ -100,7 +109,7 @@ export const useAuth = () => {
   const value = useContext(AuthContext);
 
   if (!value) {
-    throw new Error('useAuth not wrapped inside AuthProvider');
+    throw new Error("useAuth not wrapped inside AuthProvider");
   }
   return value;
 };

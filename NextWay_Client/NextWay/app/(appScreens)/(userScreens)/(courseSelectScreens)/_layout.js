@@ -5,19 +5,23 @@ import customdrawercontent from '../../../../components/DrawerContent/customdraw
 
 export default function _layout() {
   return (
-    <Drawer 
-    screenOptions={{headerShown:false}}
-    drawerContent={customdrawercontent}>
+    // <Drawer 
+    // screenOptions={{headerShown:false}}
+    // drawerContent={customdrawercontent}>
 
 
-    </Drawer>
+    // </Drawer>
     // <Drawer>
 
-    // <Stack screenOptions={{headerShown:false}}>
+<Stack screenOptions={{headerShown:false}}>
+    
+    
+    
+    </Stack>
       
 
-    // </Stack>
-    // </Drawer>
+    
+  
 
 
   );

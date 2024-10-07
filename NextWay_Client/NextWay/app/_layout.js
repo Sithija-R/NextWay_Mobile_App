@@ -27,7 +27,7 @@ const MainLayout = () => {
         if (userRole === 'admin' ) {
           router.replace('dashboard');
         } else {
-          router.replace('pages');
+          router.replace('profile');
         }
       }
       else{

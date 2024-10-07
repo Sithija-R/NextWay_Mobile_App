@@ -12,12 +12,15 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import { useRouter } from "expo-router";
 import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboardView";
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import { useTranslation } from "react-i18next";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 
 
 export default function firstScreen() {
 
     const router = useRouter();
+    const {t} = useTranslation();
 
   const [year,setYear] = useState(null);
   const [stream,setStream] = useState(null);
@@ -31,26 +34,20 @@ export default function firstScreen() {
     { label: "2021", value: "2021" },
     
   ];
-  const streams = [
-    { label: "Physical", value: "Physical" },
-    { label: "Biology", value: "Biology" },
-    { label: "Commerce", value: "Commerce" },
-    { label: "Art", value: "Art" },
-    { label: "Technology", value: "Technology" },
-    { label: "Common", value: "Common" },
-   
-  ];
+
+  const streams = t('streams', { returnObjects: true });
 
 const handleNext=()=>{
 
    
     if(year&&stream){
+     
         router.push({
             pathname: 'secondscreen',
             params: { year:year,stream:stream},
           });
     }
-    else Alert.alert('Warning!','please select all fields')
+    else Alert.alert(t('warning'),t('all-fields-required'))
 }
 
 
@@ -62,10 +59,23 @@ const handleNext=()=>{
 
         
       <View style={{ flex: 1, alignItems: "flex-start" }}>
-        <Pressable
-          style={{ position: "absolute", top: hp(5), left: wp(2), zIndex: 5 }}
+      <Pressable
+          onPress={() => router.back()}
+          style={{
+            position: "absolute",
+            top: hp(5),
+            left: wp(2),
+            zIndex: 5,
+            flexDirection: "row",
+            marginTop: hp(1),
+            alignItems: "center",
+            width: "85%",
+          }}
         >
-          <CustomHeader />
+          <Ionicons name="arrow-back" size={hp(3.5)} color="black" />
+          <Text style={{ fontSize: wp(5), paddingLeft: wp(5) }}>
+            {t("back")}
+          </Text>
         </Pressable>
 
         <Image
@@ -97,7 +107,7 @@ const handleNext=()=>{
               marginBottom:hp(1)
             }}
           >
-            Choose the Year
+           {t('choose-year')}
           </Text>
 
           <Dropdown
@@ -111,7 +121,7 @@ const handleNext=()=>{
             maxHeight={300}
             labelField="label"
             valueField="value"
-            placeholder={!isYearFocus ? "Year" : "..."}
+            placeholder={!isYearFocus ? t('year') : "..."}
             searchPlaceholder="Search..."
             value={year}
             onFocus={() => setIsYearFocus(true)}
@@ -145,7 +155,7 @@ const handleNext=()=>{
               marginBottom:hp(1)
             }}
           >
-            Choose the Stream
+            {t('choose-stream')}
           </Text>
           
 
@@ -160,7 +170,7 @@ const handleNext=()=>{
             maxHeight={300}
             labelField="label"
             valueField="value"
-            placeholder={!isStreamFocus ? "Stream" : "..."}
+            placeholder={!isStreamFocus ? t('stream'): "..."}
             searchPlaceholder="Search..."
             value={stream}
             onFocus={() => setIsStreamFocus(true)}
@@ -192,7 +202,7 @@ const handleNext=()=>{
                 fontWeight: "600",
                 textAlign: "center",
                 color: "white",
-              }}>Next</Text>
+              }}>{t('next')}</Text>
         </TouchableOpacity>
       </View>
 

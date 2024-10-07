@@ -6,14 +6,14 @@ import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
   } from "react-native-responsive-screen";
-  import CustomHeader from "../../../../components/CustomHeader/customheader";
   import Ionicons from '@expo/vector-icons/Ionicons';
+import { useTranslation } from "react-i18next";
 
 export default function CourseDetailsScreen() {
   const { course,district } = useLocalSearchParams();
 
   const router = useRouter();
-
+const{t}= useTranslation();
 
   const parsedCourse = course ? JSON.parse(course) : null;
 
@@ -39,7 +39,7 @@ export default function CourseDetailsScreen() {
           }}
         >
          <Ionicons name="arrow-back-outline" size={wp(8)} color="black" />
-         <Text style={{fontSize:hp(2.5)}}>back</Text>
+         <Text style={{fontSize:hp(2.5)}}>{t('back')}</Text>
         </Pressable>
   
         <Image

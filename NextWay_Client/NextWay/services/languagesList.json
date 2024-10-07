@@ -1,0 +1,15 @@
+{
+    "en": {
+        "name": "English",
+        "nativeName": "English"
+      },
+      "sin":{
+        "name": "Sinhala",
+        "nativeName": "Sinhala"
+      },
+      "tam":{
+        "name": "Tamil",
+        "nativeName": "Tamil"
+      }
+      
+}

@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { auth, db } from "../firebaseConfig/firebaseConfiguration";
-import { doc, setDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 
 const registerUser = async (email, password,username) => {
   try {
@@ -69,6 +69,39 @@ const logoutUser = async (email, password) => {
     }
    };
 
-export { registerUser, loginUser, getUserRole, logoutUser, sendPwResetEmail };
+
+   const updateUserProfile = async (uid, updatedData) => {
+    try {
+      const userDocRef = doc(db, "users", uid);
+  
+     
+      const docSnap = await getDoc(userDocRef);
+  
+      if (docSnap.exists()) {
+      
+        const currentData = docSnap.data();
+  
+        const newFields = {
+          username: updatedData.username || currentData.username || "", // Use existing if not provided
+          age: updatedData.age !== undefined ? updatedData.age : (currentData.age || null), // Use existing if not provided
+          phoneNumber: updatedData.phoneNumber || currentData.phoneNumber || "", // Use existing if not provided
+          profileImage: updatedData.profileImage || currentData.profileImage || "" // Use existing if not provided
+        };
+  
+        
+        await updateDoc(userDocRef, newFields);
+        return { success: true, msg: 'Profile updated successfully' };
+  
+      } else {
+       
+        return { success: false, msg: 'User document does not exist' };
+      }
+  
+    } catch (error) {
+      return { success: false, msg: error.message };
+    }
+  };
+
+export { registerUser, loginUser, getUserRole, logoutUser, sendPwResetEmail, updateUserProfile };
 
 

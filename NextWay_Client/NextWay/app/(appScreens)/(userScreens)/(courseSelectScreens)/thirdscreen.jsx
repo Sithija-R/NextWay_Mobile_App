@@ -20,14 +20,20 @@ import { CheckBox, Icon } from "react-native-elements";
 import { fetchCoursesByCriteria } from "../../../../services/fetchingService";
 import Loading from "../../../../components/Loading/Loading";
 import { Dropdown } from "react-native-element-dropdown";
-import AntDesign from "@expo/vector-icons/AntDesign";
 import { StyleSheet } from "react-native";
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+
 
 export default function firstScreen() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const { year, stream, subjects, results } = useLocalSearchParams();
+
+  const {t}= useTranslation();
+  const currentLanguage = i18next.language;
+  console.log(currentLanguage)
 
   const zscoreRef = useRef("");
   const interestRef = useRef("");
@@ -40,62 +46,36 @@ export default function firstScreen() {
   const [district, setDistrict] = useState(null);
   const [isDistrictFocus, setDistrictFocus] = useState(false);
 
-  const districts = [
-    { label: "Ampara", value: "Ampara" },
-    { label: "Anuradhapura", value: "Anuradhapura" },
-    { label: "Badulla", value: "Badulla" },
-    { label: "Batticaloa", value: "Batticaloa" },
-    { label: "Colombo", value: "Colombo" },
-    { label: "Galle", value: "Galle" },
-    { label: "Gampaha", value: "Gampaha" },
-    { label: "Hambantota", value: "Hambantota" },
-    { label: "Jaffna", value: "Jaffna" },
-    { label: "Kalutara", value: "Kalutara" },
-    { label: "Kandy", value: "Kandy" },
-    { label: "Kegalle", value: "Kegalle" },
-    { label: "Kilinochchi", value: "Kilinochchi" },
-    { label: "Kurunegala", value: "Kurunegala" },
-    { label: "Mannar", value: "Mannar" },
-    { label: "Matale", value: "Matale" },
-    { label: "Matara", value: "Matara" },
-    { label: "Monaragala", value: "Monaragala" },
-    { label: "Mullaitivu", value: "Mullaitivu" },
-    { label: "Nuwara Eliya", value: "Nuwara Eliya" },
-    { label: "Polonnaruwa", value: "Polonnaruwa" },
-    { label: "Puttalam", value: "Puttalam" },
-    { label: "Ratnapura", value: "Ratnapura" },
-    { label: "Trincomalee", value: "Trincomalee" },
-    { label: "Vavuniya", value: "Vavuniya" }
-  ];
+  const districts =  t('districts', { returnObjects: true });
 
   const handleNext = async () => {
     const zScore = selectedOptions.zscore ? zscoreRef.current : null;
     const interest = selectedOptions.interest ? interestRef.current : null;
   
     if (district === null) {
-      Alert.alert("Warning!", "Please select a district.");
+      Alert.alert(t('warning'), t('district-warning'));
       return;
     }
     if (!selectedOptions.zscore && !selectedOptions.interest) {
-      Alert.alert("Warning!", "Please select at least one option.");
+      Alert.alert(t('warning'), t('select-warning'));
       return;
     }
   
     if (selectedOptions.zscore && !zScore) {
-      Alert.alert("Warning!", "Please enter your Z score.");
+      Alert.alert(t('warning'), t('z-score-enter-warning'));
       return;
     }
     if (selectedOptions.zscore && isNaN(zScore)) {
-      Alert.alert("Warning!", "Z score must be a numerical value.");
+      Alert.alert(t('warning'), t('z-score-number-warning'));
       return;
     }
   
     if (selectedOptions.interest && !interest) {
-      Alert.alert("Warning!", "Please enter your interest.");
+      Alert.alert(t('warning'), t('interest-warning'));
       return;
     }
     if (selectedOptions.interest && typeof interest !== 'string') {
-      Alert.alert("Warning!", "Interest must be a valid string.");
+      Alert.alert(t('warning'), "Interest must be a valid string.");
       return;
     }
   
@@ -132,11 +112,24 @@ export default function firstScreen() {
       <StatusBar style="dark" />
       <CustomKeyboardView>
         <View style={{ flex: 1, alignItems: "flex-start" }}>
-          <Pressable
-            style={{ position: "absolute", top: hp(5), left: wp(2), zIndex: 5 }}
-          >
-            <CustomHeader />
-          </Pressable>
+        <Pressable
+          onPress={() => router.back()}
+          style={{
+            position: "absolute",
+            top: hp(5),
+            left: wp(2),
+            zIndex: 5,
+            flexDirection: "row",
+            marginTop: hp(1),
+            alignItems: "center",
+            width: "85%",
+          }}
+        >
+          <Ionicons name="arrow-back" size={hp(3.5)} color="black" />
+          <Text style={{ fontSize: wp(5), paddingLeft: wp(5) }}>
+            {t("back")}
+          </Text>
+        </Pressable>
 
           <Image
             style={{
@@ -165,21 +158,22 @@ export default function firstScreen() {
             }}>
             <View style={{
               flexDirection: "row",
-              height: hp(5),
+              height: hp(6),
               alignItems: "center",
               justifyContent: 'space-between'
             }}>
               <Ionicons name="location-sharp" size={28} color="#149BC6" />
               <Text
                 style={{
-                  fontSize: hp(3),
+                  fontSize: currentLanguage=='en'?hp(3):hp(2.2),
                   fontWeight: "600",
                   textAlign: "center",
                   marginBottom: hp(1.5),
                   marginLeft: wp(5)
                 }}
               >
-                District
+                {t('district')}
+                
               </Text>
             </View>
 
@@ -194,7 +188,7 @@ export default function firstScreen() {
             maxHeight={300}
             labelField="label"
             valueField="value"
-            placeholder={!isDistrictFocus ? "Select" : "..."}
+            placeholder={!isDistrictFocus ? t('select') : "..."}
             searchPlaceholder="Search..."
             value={district}
             onFocus={() => setDistrictFocus(true)}
@@ -218,7 +212,7 @@ export default function firstScreen() {
             <View
               style={{
                 flexDirection: "row",
-                height: hp(5),
+                height: hp(6),
                 alignItems: "center",
               }}
             >
@@ -238,13 +232,13 @@ export default function firstScreen() {
               />
               <Text
                 style={{
-                  fontSize: hp(3),
+                  fontSize: currentLanguage=='en'?hp(3):hp(2.2),
                   fontWeight: "600",
                   textAlign: "center",
                   marginBottom: hp(1),
                 }}
               >
-                Z score
+               {t('z-score')}
               </Text>
             </View>
 
@@ -260,7 +254,7 @@ export default function firstScreen() {
                 maxWidth: wp(40),
                 marginBottom: hp(3),
               }}
-              placeholder="Enter Z-score"
+              placeholder= {t('enter-z')}
               editable={selectedOptions.zscore}
             />
           </View>
@@ -276,7 +270,7 @@ export default function firstScreen() {
             <View
               style={{
                 flexDirection: "row",
-                height: hp(5),
+                height: hp(6),
                 alignItems: "center",
               }}
             >
@@ -296,13 +290,13 @@ export default function firstScreen() {
               />
               <Text
                 style={{
-                  fontSize: hp(3),
+                  fontSize: currentLanguage=='en'?hp(3):hp(2.2),
                   fontWeight: "600",
                   textAlign: "center",
                   marginBottom: hp(1),
                 }}
               >
-                Interest
+                {t('interest')}
               </Text>
             </View>
 
@@ -319,12 +313,12 @@ export default function firstScreen() {
                   maxWidth: wp(40),
                   marginBottom: hp(1.5),
                 }}
-                placeholder="Enter Interest"
+                placeholder= {t('enter-interest')}
                 editable={selectedOptions.interest}
               />
               <Pressable
                 onPress={() => router.push('interest')}>
-                <Text style={{ marginLeft: wp(5), fontSize: hp(1.8), color: '#149BC6' }}>find your interest</Text>
+                <Text style={{ marginLeft: wp(5),  fontSize: currentLanguage=='en'?hp(1.8):hp(1.4), color: '#149BC6' }}> {t('find-interest')}</Text>
               </Pressable>
             </View>
           </View>
@@ -353,7 +347,7 @@ export default function firstScreen() {
                     color: "white",
                   }}
                 >
-                  Next
+                  {t('next')}
                 </Text>
               </TouchableOpacity>
               )}
