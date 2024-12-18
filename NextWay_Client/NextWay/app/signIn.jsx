@@ -1,13 +1,11 @@
 import { View, Text, Image, TextInput, TouchableOpacity, Pressable, Alert } from "react-native";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { useRouter } from "expo-router";
-import { useRef } from "react";
-import { useState } from "react";
 import Loading from "../components/Loading/Loading";
 import CustomKeyboardView from "../components/keyboardView/CustomKeyboardView";
-import { loginUser, sendPasswordResetEmail, sendPwResetEmail } from "../services/authService";
+import { loginUser, sendPwResetEmail } from "../services/authService";
 
 export default function SignIn() {
   const router = useRouter();
@@ -17,12 +15,15 @@ export default function SignIn() {
   const passwordRef = useRef("");
 
   const handleLogin = async () => {
-    if (!emailRef.current || !passwordRef.current) {
+    const email = emailRef.current.trim();
+    const password = passwordRef.current;
+
+    if (!email || !password) {
       Alert.alert('Sign In', "All fields are required!");
       return;
     }
     setLoading(true);
-    const response = await loginUser(emailRef.current, passwordRef.current);
+    const response = await loginUser(email, password);
     setLoading(false);
     if (!response.success) {
       Alert.alert('Sign In', response.msg);
@@ -30,13 +31,14 @@ export default function SignIn() {
   };
 
   const changePassword = async () => {
-    if (!emailRef.current) {
+    const email = emailRef.current.trim();
+
+    if (!email) {
       Alert.alert('Change Password', "Email is required!");
       return;
     }
     setLoading(true);
-  
-    const response = await sendPwResetEmail(emailRef.current);
+    const response = await sendPwResetEmail(email);
     setLoading(false);
     
     if (!response.success) {
@@ -89,6 +91,8 @@ export default function SignIn() {
                   borderRadius: 20,
                 }}
                 placeholder="Email"
+                autoCapitalize="none"
+                keyboardType="email-address"
               />
               <TextInput
                 onChangeText={value => passwordRef.current = value}

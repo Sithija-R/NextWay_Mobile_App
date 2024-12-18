@@ -1,11 +1,10 @@
 
 import React from 'react'
 import { Drawer } from 'expo-router/drawer';
-import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
-import customdrawercontent from '../../../components/DrawerContent/customdrawercontent';
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import { Ionicons } from '@expo/vector-icons';
+import customdrawercontent from '../../../../components/DrawerContent/customdrawercontent';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 
 export default function _layout() {
   return (
@@ -18,53 +17,50 @@ export default function _layout() {
     drawerContent={customdrawercontent}
     >
 
-<Drawer.Screen
-      name="dashboard" 
+      <Drawer.Screen
+      name="home" 
       options={{
-        drawerLabel: 'Dashboard',
-        title: 'Dashboard',
+        drawerLabel: 'Home',
+        title: 'home',
         headerShown:false,
-        drawerIcon:({size,color})=>(    
-          <MaterialIcons name="dashboard" size={size} color={color}/>
+        drawerIcon:({size,color})=>(
+          <Ionicons name='home' size={size} color={color}/>
         ),
         drawerLabelStyle: {
           fontSize: 18, 
-           marginLeft:3
         },
       }}
     />
         <Drawer.Screen
-      name="(usermanagement)" 
+      name="(profile)" 
       options={{
-        drawerLabel: 'User Management',
-        title: 'User Management',
+        drawerLabel: 'Profile',
+        title: 'Profile',
         headerShown:false,
         drawerIcon:({size,color})=>(
-          <FontAwesome5 name="users-cog" size={size} color={color}/>
+          <Ionicons name='home' size={size} color={color}/>
         ),
         drawerLabelStyle: {
           fontSize: 18, 
-         
         },
       }}
     />
        <Drawer.Screen
-      name="(coursemanagement)" 
+      name="about" 
       options={{
-        drawerLabel: 'Course Management',
-        title: 'Course Management',
+        drawerLabel: 'About',
+        title: 'About',
         headerShown:false,
         drawerIcon:({size,color})=>(
-          <FontAwesome6 name="clipboard-list" size={size} color={color} />
+          <Ionicons name="information-circle" size={size} color={color}/>
         ),
         drawerLabelStyle: {
           fontSize: 18, 
-           marginLeft:8
         },
       }}
     />
     <Drawer.Screen
-      name='(setting)'
+      name='(settings)'
       options={{
         drawerLabel: 'Settings',
         title: 'Settings',
@@ -74,11 +70,23 @@ export default function _layout() {
         ),
         drawerLabelStyle: {
           fontSize: 18, 
-           marginLeft:2
         },
       }}
     />
-
+     <Drawer.Screen
+      name='languageChange'
+      options={{
+        drawerLabel: 'Language',
+        title: 'Language',
+        headerShown:false,
+        drawerIcon:({size,color})=>(
+          <MaterialIcons name="language" size={size} color={color} />
+        ),
+        drawerLabelStyle: {
+          fontSize: 18, 
+        },
+      }}
+    />
     </Drawer>
     
 

@@ -7,9 +7,11 @@ import { useEffect } from 'react'
 
 
 const MainLayout = () => {
-  const { isAuthenticated, userRole } = useAuth();
+  const { isAuthenticated, userRole, isVerified } = useAuth();
   const segments = useSegments();
   const router = useRouter();
+
+ 
 
   useEffect(() => {
     if (typeof isAuthenticated == 'undefined'){
@@ -19,17 +21,24 @@ const MainLayout = () => {
     const inApp = segments[0] == 'appScreens';
 
     if (isAuthenticated && !inApp) {
-      
-      if (userRole === 'admin') {
-        router.replace('dashboard');
-      } else {
-        router.replace('home');
+
+
+      if(isVerified){
+        if (userRole === 'admin' ) {
+          router.replace('dashboard');
+        } else {
+          router.replace('home');
+        }
       }
+      else{
+        router.replace('IsVerified')
+      }
+      
     } else if (isAuthenticated === false) {
      
       router.replace('signIn');
     }
-  }, [isAuthenticated, userRole]);
+  }, [isAuthenticated, userRole, isVerified]);
 
   return <Slot />;
 };

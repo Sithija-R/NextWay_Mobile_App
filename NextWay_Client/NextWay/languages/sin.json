@@ -1,0 +1,265 @@
+{
+  "change-language": "භාෂාව වෙනස් කරන්න",
+  "welcome": "සාදරයෙන් පිළිගනිමු",
+  "signin": "පුරන්න",
+  "signup": "ලියාපදිංචි වන්න",
+  "change-password": "මුරපදය වෙනස් කරන්න",
+  "dont-have-account": "ගිණුමක් නැද්ද?",
+  "email": "විද්‍යුත් තැපෑල",
+  "password": "මුරපදය",
+  "login-to-account": "ඔබගේ ගිණුමට පිවිසෙන්න",
+  "all-fields-required": "සියලු ක්ෂේත්‍ර අවශ්‍ය වේ!",
+  "email-required": "විද්‍යුත් තැපෑල අවශ්‍යයි!",
+  "password-reset-success": "මුරපදය යළි පිහිටුවීමේ ඊමේල් එක සාර්ථකව යවා ඇත!",
+  "choose-year": "වර්ෂය",
+  "choose-stream": "විෂය ධාරාව",
+  "find-course": "පාඨමාලාව සොයන්න",
+  "advertisement": "වෙළඳ දැන්වීම",
+  "year": "වර්ෂය",
+  "stream": "විෂය ධාරාව",
+  "subject": "විෂයන්",
+  "grade": "සාමා‍ර්ථ",
+  "next": "ඉදිරියට",
+  "warning": "දැන්වීමයි!",
+  "subject-warning": "කරුණාකර විවිධ විෂයයන් 3ක් තෝරන්න.",
+  "pass-warning": "ඔබ විෂයයන් 3 ම සමත් විය යුතුය",
+  "district": "දිස්ත්‍රික්කය",
+  "z-score": "Z ලකුණ",
+  "interest": "අභිරුචිය",
+  "find-interest": "අභිරුචිය සොයාගන්න",
+  "select": "තෝරන්න",
+  "enter-z": "Z ලකුණ",
+  "enter-interest": "අභිරුචිය",
+  "course": "පාඨමාලාව",
+  "university": "විශ්වවිද්‍යාලය",
+  "district-warning": "කරුණාකර දිස්ත්‍රික්කයක් තෝරන්න.",
+  "z-score-enter-warning": "කරුණාකර ඔබගේ Z ලකුණ ඇතුළත් කරන්න.",
+  "z-score-number-warning": "Z ලකුණ සංඛ්‍යාත අගයක් විය යුතුය.",
+  "interest-warning": "කරුණාකර ඔබගේ අභිරුචිය ඇතුළත් කරන්න.",
+  "select-warning": "කරුණාකර අවම වශයෙන් එක් විකල්පයක් තෝරන්න.",
+  "save": "සුරකින්න",
+  "back": "ආපසු",
+  "username": "පරිශීලක නාමය",
+  "phone": "දුරකථන අංකය",
+  "edit-profile": " පැතිකඩ සකසන්න",
+  "enter_username": "පරිශීලක නාමය",
+  "enter_age": "වයස ",
+  "enter_mobile": "දුරකථන අංකය ",
+  "age": "වයස",
+  "edit_profile": " පැතිකඩ සකසන්න",
+  "save_changes": "සුරකින්න",
+
+
+
+
+
+
+  "streams": [
+    {
+      "label": "භෞතික",
+      "value": "Physical"
+    },
+    {
+      "label": "ජීව විද්‍යාව",
+      "value": "Biology"
+    },
+    {
+      "label": "වාණිජ",
+      "value": "Commerce"
+    },
+    {
+      "label": "කලා",
+      "value": "Art"
+    },
+    {
+      "label": "තාක්ෂණය",
+      "value": "Technology"
+    },
+    {
+      "label": "සාමාන්‍ය",
+      "value": "Common"
+    }
+  ],
+  "subjectData": {
+    "physical": [
+      {
+        "label": "භෞතික විද්‍යාව",
+        "value": "Physics"
+      },
+      {
+        "label": "රසායන විද්‍යාව",
+        "value": "Chemistry"
+      },
+      {
+        "label": "සංයුක්ත ගණිතය",
+        "value": "Combined Mathematics"
+      },
+      {
+        "label": "උසස් ගණිතය",
+        "value": "Higher Mathematics"
+      },
+      {
+        "label": "තොරතුරු හා සන්නිවේදන තාක්ෂණය",
+        "value": "Information & Communication Technology"
+      }
+    ],
+    "biology": [
+      {
+        "label": "ජීව විද්‍යාව",
+        "value": "Biology"
+      },
+      {
+        "label": "රසායන විද්‍යාව",
+        "value": "Chemistry"
+      },
+      {
+        "label": "භෞතික විද්‍යාව",
+        "value": "Physics"
+      }
+    ],
+    "commerce": [
+      {
+        "label": "ගිණුම්කරණය",
+        "value": "Accounting"
+      },
+      {
+        "label": "ව්‍යාපාර අධ්‍යයනය",
+        "value": "Business Studies"
+      },
+      {
+        "label": "ආර්ථික විද්‍යාව",
+        "value": "Economics"
+      }
+    ],
+    "art": [
+      {
+        "label": "ඉතිහාසය",
+        "value": "History"
+      },
+      {
+        "label": "සාහිත්‍ය",
+        "value": "Literature"
+      },
+      {
+        "label": "දේශපාලන විද්‍යාව",
+        "value": "Political Science"
+      }
+    ],
+    "technology": [
+      {
+        "label": "තොරතුරු තාක්ෂණය",
+        "value": "Information Technology"
+      },
+      {
+        "label": " ඉංජිනේරු රූපණය",
+        "value": "Engineering Graphics"
+      },
+      {
+        "label": "යාන්ත්‍ර විද්‍යාව",
+        "value": "Mechanics"
+      }
+    ]
+  },
+  "districts": [
+    {
+      "label": "අම්පාර",
+      "value": "Ampara"
+    },
+    {
+      "label": "අනුරාධපුර",
+      "value": "Anuradhapura"
+    },
+    {
+      "label": "බදුල්ල",
+      "value": "Badulla"
+    },
+    {
+      "label": "මඩකළපුව",
+      "value": "Batticaloa"
+    },
+    {
+      "label": "කොළඹ",
+      "value": "Colombo"
+    },
+    {
+      "label": "ගාල්ල",
+      "value": "Galle"
+    },
+    {
+      "label": "ගමපහ",
+      "value": "Gampaha"
+    },
+    {
+      "label": "හම්බන්තොට",
+      "value": "Hambantota"
+    },
+    {
+      "label": "යාපනය",
+      "value": "Jaffna"
+    },
+    {
+      "label": "කළුතර",
+      "value": "Kalutara"
+    },
+    {
+      "label": "මහනුවර",
+      "value": "Kandy"
+    },
+    {
+      "label": "කෑගල්ල",
+      "value": "Kegalle"
+    },
+    {
+      "label": "කිලිනොච්චි",
+      "value": "Kilinochchi"
+    },
+    {
+      "label": "කුරුණෑගල",
+      "value": "Kurunegala"
+    },
+    {
+      "label": "මන්නාරම",
+      "value": "Mannar"
+    },
+    {
+      "label": "මාතලේ",
+      "value": "Matale"
+    },
+    {
+      "label": "මාතර",
+      "value": "Matara"
+    },
+    {
+      "label": "මොණරාගල",
+      "value": "Monaragala"
+    },
+    {
+      "label": "මුලතිව්",
+      "value": "Mullaitivu"
+    },
+    {
+      "label": "නුවරඑළිය",
+      "value": "Nuwara Eliya"
+    },
+    {
+      "label": "පොලොන්නරුව",
+      "value": "Polonnaruwa"
+    },
+    {
+      "label": "පුත්තලම",
+      "value": "Puttalam"
+    },
+    {
+      "label": "රත්නපුර",
+      "value": "Ratnapura"
+    },
+    {
+      "label": "ත්‍රිකුණාමලය",
+      "value": "Trincomalee"
+    },
+    {
+      "label": "වවුනියාව",
+      "value": "Vavuniya"
+    }
+  ]
+}

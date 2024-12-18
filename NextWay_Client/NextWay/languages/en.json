@@ -1,0 +1,264 @@
+{
+  "change-language": "Change language",
+  "welcome": "Welcome to",
+  "signin": "Sign in",
+  "signup": "Sign up",
+  "change-password": "Change Password",
+  "dont-have-account": "Don't have an account?",
+  "email": "Email",
+  "password": "Password",
+  "login-to-account": "Log in to your account",
+  "all-fields-required": "All fields are required!",
+  "email-required": "Email is required!",
+  "password-reset-success": "Password reset email sent successfully!",
+  "choose-year": "Choose the Year",
+  "choose-stream": "Choose the Stream",
+  "find-course": "Find the Course",
+  "advertisement": "Advertisement",
+  "year": "Year",
+  "stream": "Stream",
+  "subject": "Subjects",
+  "grade": "Grades",
+  "next": "Next",
+  "warning": "Warning!",
+  "subject-warning": "Please select 3 different subjects.",
+  "pass-warning": "You should pass all 3 subjects",
+  "district": "District",
+  "z-score": "Z score",
+  "interest": "Interest",
+  "find-interest": "find your interest",
+  "select": "Select",
+  "enter-z": "enter Z-score",
+  "enter-interest": "Enter Interest",
+  "course": "Course",
+  "university": "University",
+  "district-warning": "Please select a district.",
+  "z-score-enter-warning": "Please enter your Z score.",
+  "z-score-number-warning": "Z score must be a numerical value.",
+  "interest-warning": "Please enter your interest.",
+  "select-warning": "Please select at least one option.",
+  "save": "Save",
+  "back": "Back",
+
+  "username": "Username",
+  "phone": "Phone",
+  "edit-profile": "Edit Profile",
+  "enter_username": "enter username",
+  "enter_age": "enter age",
+  "enter_mobile": "enter mobile",
+  "age": "Age",
+  "edit_profile": "edit profile",
+  "save_changes": "Save Changes",
+  "search":"Search", 
+  "search_course":"Search Course",
+  "delete_course":"Delete Course",
+  
+  "streams": [
+    {
+      "label": "Physical",
+      "value": "Physical"
+    },
+    {
+      "label": "Biology",
+      "value": "Biology"
+    },
+    {
+      "label": "Commerce",
+      "value": "Commerce"
+    },
+    {
+      "label": "Art",
+      "value": "Art"
+    },
+    {
+      "label": "Technology",
+      "value": "Technology"
+    },
+    {
+      "label": "Common",
+      "value": "Common"
+    }
+  ],
+  "subjectData": {
+    "physical": [
+      {
+        "label": "Physics",
+        "value": "Physics"
+      },
+      {
+        "label": "Chemistry",
+        "value": "Chemistry"
+      },
+      {
+        "label": "Combined Maths",
+        "value": "Combined Mathematics"
+      },
+      {
+        "label": "Higher Maths",
+        "value": "Higher Mathematics"
+      },
+      {
+        "label": "IT",
+        "value": "Information & Communication Technology"
+      }
+    ],
+    "biology": [
+      {
+        "label": "Biology",
+        "value": "Biology"
+      },
+      {
+        "label": "Chemistry",
+        "value": "Chemistry"
+      },
+      {
+        "label": "Physics",
+        "value": "Physics"
+      }
+    ],
+    "commerce": [
+      {
+        "label": "Accounting",
+        "value": "Accounting"
+      },
+      {
+        "label": "Business Studies",
+        "value": "Business Studies"
+      },
+      {
+        "label": "Economics",
+        "value": "Economics"
+      }
+    ],
+    "art": [
+      {
+        "label": "History",
+        "value": "History"
+      },
+      {
+        "label": "Literature",
+        "value": "Literature"
+      },
+      {
+        "label": "Political Science",
+        "value": "Political Science"
+      }
+    ],
+    "technology": [
+      {
+        "label": "Information Technology",
+        "value": "Information Technology"
+      },
+      {
+        "label": "Engineering Graphics",
+        "value": "Engineering Graphics"
+      },
+      {
+        "label": "Mechanics",
+        "value": "Mechanics"
+      }
+    ]
+  },
+  "districts": [
+    {
+      "label": "Ampara",
+      "value": "Ampara"
+    },
+    {
+      "label": "Anuradhapura",
+      "value": "Anuradhapura"
+    },
+    {
+      "label": "Badulla",
+      "value": "Badulla"
+    },
+    {
+      "label": "Batticaloa",
+      "value": "Batticaloa"
+    },
+    {
+      "label": "Colombo",
+      "value": "Colombo"
+    },
+    {
+      "label": "Galle",
+      "value": "Galle"
+    },
+    {
+      "label": "Gampaha",
+      "value": "Gampaha"
+    },
+    {
+      "label": "Hambantota",
+      "value": "Hambantota"
+    },
+    {
+      "label": "Jaffna",
+      "value": "Jaffna"
+    },
+    {
+      "label": "Kalutara",
+      "value": "Kalutara"
+    },
+    {
+      "label": "Kandy",
+      "value": "Kandy"
+    },
+    {
+      "label": "Kegalle",
+      "value": "Kegalle"
+    },
+    {
+      "label": "Kilinochchi",
+      "value": "Kilinochchi"
+    },
+    {
+      "label": "Kurunegala",
+      "value": "Kurunegala"
+    },
+    {
+      "label": "Mannar",
+      "value": "Mannar"
+    },
+    {
+      "label": "Matale",
+      "value": "Matale"
+    },
+    {
+      "label": "Matara",
+      "value": "Matara"
+    },
+    {
+      "label": "Monaragala",
+      "value": "Monaragala"
+    },
+    {
+      "label": "Mullaitivu",
+      "value": "Mullaitivu"
+    },
+    {
+      "label": "Nuwara Eliya",
+      "value": "Nuwara Eliya"
+    },
+    {
+      "label": "Polonnaruwa",
+      "value": "Polonnaruwa"
+    },
+    {
+      "label": "Puttalam",
+      "value": "Puttalam"
+    },
+    {
+      "label": "Ratnapura",
+      "value": "Ratnapura"
+    },
+    {
+      "label": "Trincomalee",
+      "value": "Trincomalee"
+    },
+    {
+      "label": "Vavuniya",
+      "value": "Vavuniya"
+    }
+  ]
+}

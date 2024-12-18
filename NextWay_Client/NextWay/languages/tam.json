@@ -1,0 +1,127 @@
+{
+    "change-language": "மொழியை மாற்றவும்",
+    "welcome": "வரவேற்கிறேன்",
+    "signin": "உள்நுழையவும்",
+    "signup": "பதிவு செய்யவும்",
+    "change-password": "கடவுச்சொல்லை மாற்றவும்",
+    "dont-have-account": "கணக்கு இல்லை என்றால்?",
+    "email": "மின்னஞ்சல்",
+    "password": "கடவுச்சொல்",
+    "login-to-account": "உங்கள் கணக்கில் உள்நுழைக",
+    "all-fields-required": "எல்லா துறைகளும் தேவை!",
+    "email-required": "மின்னஞ்சல் தேவை!",
+    "password-reset-success": "கடவுச்சொல் மீட்டமைப்பு மின்னஞ்சல் வெற்றிகரமாக அனுப்பப்பட்டது!",
+    "choose-year": "ஆண்டு",
+    "choose-stream": "பிரிவு",
+    "find-course": "பாடத்தினை கண்டுபிடிக்கவும்",
+    "advertisement": "விளம்பரம்",
+    "year": "ஆண்டு",
+    "stream": "பிரிவு",
+    "subject": "பாடங்கள்",
+    "grade": "தரங்கள்",
+    "next": "அடுத்தது",
+    "warning": "எச்சரிக்கை!",
+    "subject-warning": "3 மாறுபட்ட பாடங்களை தேர்ந்தெடுக்கவும்.",
+    "pass-warning": "நீங்கள் 3 பாடங்களிலும் சித்தி அடைய வேண்டும்.",
+    "district": "மாவட்டம்",
+    "z-score": "Z புள்ளி",
+    "interest": "விருப்பம்",
+    "find-interest": "உங்கள் விருப்பத்தெரிவை கண்டுபிடிக்கவும்",
+    "select": "தேர்ந்தெடுக்கவும்",
+    "enter-z": "Z புள்ளி உள்ளிடவும்",
+    "enter-interest": "விருப்பத்தெரிவை உள்ளிடவும்",
+    "course": "பாடம்",
+    "university": "பல்கலைக்கழகம்",
+    "district-warning": "ஒரு மாவட்டத்தை தேர்ந்தெடுக்கவும்.",
+    "z-score-enter-warning":  "உங்கள் Z புள்ளி உள்ளிடவும்.",
+    "z-score-number-warning":  "Z மதிப்பு எண்குறியீடு ஆக இருக்க வேண்டும்.",
+    "interest-warning":  "உங்கள் விருப்பத்தெரிவை உள்ளிடவும்.",
+    "select-warning":  "குறைந்தது ஒரு விருப்பத்தெரிவை தேர்ந்தெடுக்கவும்.",
+    "save":  "சேமிக்கவும்.",
+    "back":  "மீண்டும்.",
+    
+    
+   "streams": [
+        { 
+            "label": "உயிரியல்", 
+            "value": "Physical" 
+        },
+        { 
+            "label": "பௌதீகவியல்", 
+            "value": "Biology" 
+        },
+        { 
+            "label": "வணிகம்", 
+            "value": "Commerce" 
+        },
+        { 
+            "label": "கலை", 
+            "value": "Art" 
+        },
+        { 
+            "label": "தொழில்நுட்பம்", 
+            "value": "Technology" 
+        },
+        { 
+            "label": "பொதுவான", 
+            "value": "Common"
+        }
+   ],
+    
+   "subjectData": {
+    "physical": [
+      { "label": "பௌதீகவியல்", "value": "Physics" },
+      { "label": "இரசாயனவியல்", "value": "Chemistry" },
+      { "label": "இணைந்த கணிதம்", "value": "Combined Mathematics" },
+      { "label": "உயர் கணிதம்", "value": "Higher Mathematics" },
+      { "label": "தகவல் தொடர்பாடல் தொழிலநுட்பவியல் ", "value": "Information & Communication Technology" }
+    ],
+    "biology": [
+      { "label": "உயிரியல்", "value": "Biology" },
+      { "label": "இரசாயனவியல்", "value": "Chemistry" },
+      { "label": "பௌதீகவியல்", "value": "Physics" }
+    ],
+    "commerce": [
+      { "label": "கணக்கீடு", "value": "Accounting" },
+      { "label": "வணிகக்கல்வி", "value": "Business Studies" },
+      { "label": "பொருளியல்", "value": "Economics" }
+    ],
+    "art": [
+      { "label": "வரலாறு", "value": "History" },
+      { "label": "இலக்கியம்", "value": "Literature" },
+      { "label": "அரசியல் விஞ்ஞானம் ", "value": "Political Science" }
+    ],
+    "technology": [
+      { "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "value": "Information Technology" },
+      { "label": "பொறியியல் வரைபுகள்", "value": "Engineering Graphics" },
+      { "label": "இயக்கவியல்", "value": "Mechanics" }
+    ]
+  },
+  "districts": [
+    { "label": "அம்பாறை", "value": "Ampara" },
+    { "label": "அனுராதபுரம்", "value": "Anuradhapura" },
+    { "label": "பதுளை", "value": "Badulla" },
+    { "label": "மட்டக்களப்பு", "value": "Batticaloa" },
+    { "label": "கொழும்பு", "value": "Colombo" },
+    { "label": "காலி ", "value": "Galle" },
+    { "label": "கம்பஹா", "value": "Gampaha" },
+    { "label": "அம்பாந்தோட்டை", "value": "Hambantota" },
+    { "label": "யாழ்ப்பாணம்", "value": "Jaffna" },
+    { "label": "கழுத்துறை", "value": "Kalutara" },
+    { "label": "கண்டி", "value": "Kandy" },
+    { "label": "கேகாலை", "value": "Kegalle" },
+    { "label": "கிளிநொச்சி", "value": "Kilinochchi" },
+    { "label": "குருநாகல்", "value": "Kurunegala" },
+    { "label": "மன்னார்", "value": "Mannar" },
+    { "label": "மாத்தளை", "value": "Matale" },
+    { "label": "மாத்தறை", "value": "Matara" },
+    { "label": "மொனராகலை", "value": "Monaragala" },
+    { "label": "முல்லைத்தீவு", "value": "Mullaitivu" },
+    { "label": "நுவரெலியா", "value": "Nuwara Eliya" },
+    { "label": "பொலன்னறுவை", "value": "Polonnaruwa" },
+    { "label": "புத்தளம்", "value": "Puttalam" },
+    { "label": "இரத்தினபுரி", "value": "Ratnapura" },
+    { "label": "திருகோணமலை", "value": "Trincomalee" },
+    { "label": "வவுனியா", "value": "Vavuniya" }
+  ]
+}
