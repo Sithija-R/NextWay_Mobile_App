@@ -20,7 +20,7 @@ import {
 import { useRouter } from "expo-router";
 import { deleteCourseById, fetchCourseByUNICODE } from "../../../../services/fetchingService";
 
-export default function deletecourses() {
+export default function DeleteCourses() {
   const router = useRouter();
   const { t } = useTranslation();
   const [unicode, setUnicode] = useState(null);
