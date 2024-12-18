@@ -49,6 +49,9 @@
   "age": "Age",
   "edit_profile": "edit profile",
   "save_changes": "Save Changes",
+  "search":"Search", 
+  "search_course":"Search Course",
+  "delete_course":"Delete Course",
   
   "streams": [
     {

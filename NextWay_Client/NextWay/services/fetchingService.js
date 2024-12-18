@@ -6,6 +6,7 @@ import {
   where,
   getDocs,
   collection,
+  deleteDoc,
 } from "firebase/firestore";
 import { db } from "../firebaseConfig/firebaseConfiguration";
 
@@ -20,6 +21,49 @@ const fetchCourses = async () => {
     return { success: false, msg: error.message };
   }
 };
+
+//Fetch Cousre by UNICODE
+const fetchCourseByUNICODE = async (unicode) => {
+  try {
+    const q = query(collection(db, "courses"), where("UNICODE", "==", unicode));
+    const snapshot = await getDocs(q);
+
+    // Use map to extract data and handle the case where no courses are found
+    const coursesList = snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+console.log(coursesList)
+    // If coursesList is empty, return not found
+    if (coursesList.length > 0) {
+      return { success: true, data: coursesList }; // Return only the first course
+    }
+
+    return { success: false, msg: "Course not found with the given UNICODE" };
+  } catch (error) {
+    return { success: false, msg: error.message };
+  }
+};
+
+
+
+
+// Fetch a single course by ID
+const fetchCourseById = async (courseId) => {
+  try {
+    const courseDoc = doc(db, "courses", courseId);
+    const courseSnapshot = await getDoc(courseDoc);
+    if (courseSnapshot.exists()) {
+      return { success: true, data: courseSnapshot.data() };
+    } else {
+      return { success: false, msg: "Course not found" };
+    }
+  } catch (error) {
+    return { success: false, msg: error.message };
+  }
+};
+
+
 
 // Fetch courses by stream
 const fetchCoursesByStream = async (stream) => {
@@ -63,20 +107,6 @@ const fetchCoursesByUniversity = async (university) => {
   }
 };
 
-// Fetch a single course by ID
-const fetchCourseById = async (courseId) => {
-  try {
-    const courseDoc = doc(db, "courses", courseId);
-    const courseSnapshot = await getDoc(courseDoc);
-    if (courseSnapshot.exists()) {
-      return { success: true, data: courseSnapshot.data() };
-    } else {
-      return { success: false, msg: "Course not found" };
-    }
-  } catch (error) {
-    return { success: false, msg: error.message };
-  }
-};
 
 
 // const fetchCoursesByCriteria = async (
@@ -268,6 +298,17 @@ const normalizeText = (text) => {
 };
 
 
+//Delete Course
+const deleteCourseById = async (courseId) => {
+  try {
+    const courseDoc = doc(db, "courses", courseId);
+    await deleteDoc(courseDoc); // Attempt to delete the document
+    return { success: true, msg: "Course deleted successfully" };
+  } catch (error) {
+    return { success: false, msg: error.message }; // Return error message if deletion fails
+  }
+};
+
 
 export {
   fetchCourses,
@@ -276,4 +317,6 @@ export {
   fetchCoursesByUniversity,
   fetchCourseById,
   fetchCoursesByCriteria,
+  fetchCourseByUNICODE,
+  deleteCourseById
 };
