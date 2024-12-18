@@ -1,0 +1,1519 @@
+[
+    {
+        "COURSE_eng": "ENGINEERING",
+        "COURSE_tam" :"பொறியியல்",
+
+
+        "UNIVERSITY_eng": "UNIVERSITY OF PERADENIYA",
+        "UNIVERSITY_tam" : "பேராதனை பல்கலைக்கழகம்",
+
+        "UNICODE": "008B",
+        
+
+        "SUBJECTS_eng": ["Physics" ,"Combined Mathematics","Chemistry"],
+        "SUBJECTS_tam":["பௌதீகவியல்", "இணைந்த கணிதம்", "இரசயானவியல்" ],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications":{
+                        
+            }
+        },
+        
+
+        "INTEREST":[
+             "Engineering",
+             "பொறியியல்",
+
+             "Civil",
+             "குடிசார் பொறியியல்",
+
+             "Mechanical",
+             "இயந்திர பொறியியல்",
+
+             "Electrical",
+             "மின் பொறியியல்"
+
+            ],
+
+
+
+        "JOB_ROLES_eng": ["Civil Engineer", "Mechanical Engineer", "Electrical Engineer", "Software Engineer"],
+        "JOB_ROLES_tam":["குடிசார் பொறியியலாளர்","இயந்திர பொறியியலாளர்","மின் பொறியியலாளர்","மென்பொருள் பொறியியலாளர்"], 
+
+        "DESCRIPTION_eng": "The program provides a comprehensive education in engineering principles and practices, preparing students for various engineering roles.",
+        "DESCRIPTION_tam":"இந்த திட்டம் பொறியியல் கொள்கைகள் மற்றும் நடைமுறைகள் பற்றிய விரிவான கல்வியை வழங்குகிறது, பல்வேறு பொறியியல் பாத்திரங்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+
+        "DEGREE_TYPE": "BScEng (Hons)",
+        
+
+        "DURATION": "4 YEARS",
+    
+        "STREAM" : "Physical",
+        
+
+        "Z_SCORE": {
+            "Colombo" : "1.9034",
+            "Gampaha" :"1.9033",
+            "Kalutara":"1.9109",
+            "Matale" :"1.9649",
+            "Kandy" :"1.9075",
+            "Nuwara Eliya" :"1.9770",
+            "Galle" :"1.9115",
+            "Matara" :"1.9095",
+            "Hambanthota" :"1.9035",
+            "Jaffna" :"1.9054",
+            "Kilinochchi" :"NotQualified",
+            "Mannar" :"otQualified",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :".9561",
+            "Trincomalee" :".9674",
+            "Batticaloa" :"1.9032",
+            "Ampara" :".9111",
+            "Puttalam" :".9303",
+            "Kurunagala" :"1.9069",
+            "Anuradhapura" :".9101",
+            "Polonnaruwa" :"1,9099",
+            "Badulla" :"1.9119",
+            "Monaragala":"1.9073",
+            "Kegalle" :"1.9081",
+            "Ratnapura" :"1.9074"
+         
+        }
+        
+    },
+    {
+        "COURSE_eng": "ENGINEERING",
+        "COURSE_tam" :"பொறியியல்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENAPURA",
+        "UNIVERSITY_tam" :"ஸ்ரீ ஜெயவர்தனபுர பல்கலைக்கழகம்",
+
+        "UNICODE": "008C",
+        
+
+        "SUBJECTS_eng":[ "Physics" ,"Combined Mathematics","Chemistry"],
+        "SUBJECTS_tam":["பௌதீகவியல்", "இணைந்த கணிதம்", "இரசயானவியல்"],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications":{
+                        
+            }
+
+        },
+        
+        
+         
+        "INTEREST":[
+            "Engineering",
+            "பொறியியல்",
+
+            "Civil",
+            "குடிசார் பொறியியல்",
+
+            "Mechanical",
+            "இயந்திர பொறியியல்",
+
+            "Electrical",
+            "மின் பொறியியல்"
+
+           ],
+
+        "JOB_ROLES_eng": ["Civil Engineer", "Mechanical Engineer", "Electrical Engineer", "Software Engineer"],
+        "JOB_ROLES_tam" :["குடிசார் பொறியியலாளர்","இயந்திர பொறியியலாளர்","மின் பொறியியலாளர்","மென்பொருள் பொறியியலாளர்"],
+
+        "DESCRIPTION_eng": "This course emphasizes the application of engineering concepts to real-world problems, preparing students for successful careers in engineering.",
+        "DESCRIPTION_tam" :"இந்த திட்டம் பொறியியல் கொள்கைகள் மற்றும் நடைமுறைகள் பற்றிய விரிவான கல்வியை வழங்குகிறது, பல்வேறு பொறியியல் பாத்திரங்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+
+        "DEGREE_TYPE": "BScEng (Hons)",
+        
+
+        "DURATION": "4 YEARS",
+        
+
+        "STREAM" : "Physical",
+        
+
+        "Z_SCORE":  {
+            "Colombo" : "1.7762",
+            "Gampaha" :"1.7618",
+            "Kalutara":"1.7647",
+            "Matale" :"NotQualified",
+            "Kandy" :"1.7482",
+            "Nuwara Eliya" :"NotQualified",
+            "Galle" :"1.7652",
+            "Matara" :"1.7507",
+            "Hambanthota" :"1.7631",
+            "Jaffna" :"1.7800",
+            "Kilinochchi" :"NotQualified",
+            "Mannar" :"NotQualified",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :"1.8165",
+            "Trincomalee" :"1.8803",
+            "Batticaloa" :"1.8462",
+            "Ampara" :"NotQualified",
+            "Puttalam" :"1.7810",
+            "Kurunagala" :"1.7552",
+            "Anuradhapura" :"1.8694",
+            "Polonnaruwa" :"1.8118",
+            "Badulla" :"1.9777",
+            "Monaragala":"NotQualified",
+            "Kegalle" :"1.7507",
+            "Ratnapura" :"1.8441"
+         
+        }
+        
+    },
+    {
+        "COURSE_eng": "ENGINEERING",
+        "COURSE_tam":"பொறியியல்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF JAFFNA",
+        "UNIVERSITY_tam":"யாழ்ப்பாணம் பல்கலைக்கழகம்",
+
+        "UNICODE": "008E",
+        
+
+        "SUBJECTS_eng": ["Physics" ,"Combined Mathematics","Chemistry"],
+        "SUBJECTS_tam":["பௌதீகவியல்", "இணைந்த கணிதம்", "இரசயானவியல்"],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Chemistry": "S"
+            },
+
+            "OtherQualifications":{
+                        
+            }
+        },
+
+       
+        
+         
+        "INTEREST":[
+            "Engineering",
+            "பொறியியல்",
+
+            "Civil",
+            "குடிசார் பொறியியல்",
+
+            "Mechanical",
+            "இயந்திர பொறியியல்",
+
+            "Electrical",
+            "மின் பொறியியல்"
+
+           ],
+
+        "JOB_ROLES_eng": ["Civil Engineer", "Mechanical Engineer", "Electrical Engineer", "Software Engineer"],
+        "JOB_ROLES_tam":["குடிசார் பொறியியலாளர்","இயந்திர பொறியியலாளர்","மின் பொறியியலாளர்","மென்பொருள் பொறியியலாளர்"],
+
+        "DESCRIPTION_eng": "The program focuses on developing technical skills and knowledge in engineering, preparing students for various engineering disciplines.",
+        "DESCRIPTION_tam":"இத்திட்டம் பொறியியல் துறையில் தொழில்நுட்ப திறன்கள் மற்றும் அறிவை வளர்ப்பதில் கவனம் செலுத்துகிறது, பல்வேறு பொறியியல் துறைகளுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+
+        "DEGREE_TYPE": "BScEng (Hons)",
+       
+        "DURATION": "4 YEARS",
+       
+
+        "STREAM" : "Physical",
+        
+
+        "Z_SCORE":  {
+            "Colombo" : "NotQualified",
+            "Gampaha" :"1.4031",
+            "Kalutara":"NotQualified",
+            "Matale" :"1.3920",
+            "Kandy" :"1.5391",
+            "Nuwara Eliya" :"1.3978",
+            "Galle" :"NotQualified",
+            "Matara" :"NotQualified",
+            "Hambanthota" :"NotQualified",
+            "Jaffna" :"NotQualified",
+            "Kilinochchi" :"1.3255",
+            "Mannar" :"1.3880",
+            "Mullaitivu" :"1.3682",
+            "Vavuniya" :"1.3911",
+            "Trincomalee" :"1.3429",
+            "Batticaloa" :"1.4842",
+            "Ampara" :"1.3419",
+            "Puttalam" :"1.3371",
+            "Kurunagala" :"NotQualified",
+            "Anuradhapura" :"1.3887",
+            "Polonnaruwa" :"1.4474",
+            "Badulla" :"1.5255",
+            "Monaragala":"1.3542",
+            "Kegalle" :"NotQualified",
+            "Ratnapura" :"1.4062"
+         
+        }
+        
+    },
+    {
+        "COURSE_eng": "ENGINEERING",
+        "COURSE_tam":"பொறியியல்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF RUHUNA",
+        "UNIVERSITY_tam":"உருகுணை பல்கலைக்கழகம்",
+
+        "UNICODE": "008F",
+        
+
+        "SUBJECTS_eng": ["Physics" ,"Combined Mathematics","Chemistry"],
+        "SUBJECTS_tam":["பௌதீகவியல்", "இணைந்த கணிதம்", "இரசயானவியல்"],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications":{
+                        
+            }
+        },
+        
+
+        "INTEREST_eng":[
+            "Engineering",
+            "Civil",
+            "Mechanical",
+            "Electrical",
+            "Electronic"
+          ],
+        
+          "INTEREST":[
+            "Engineering",
+            "பொறியியல்",
+
+            "Civil",
+            "குடிசார் பொறியியல்",
+
+            "Mechanical",
+            "இயந்திர பொறியியல்",
+
+            "Electrical",
+            "மின் பொறியியல்"
+
+           ],
+
+
+        "JOB_ROLES_eng": ["Civil Engineer", "Mechanical Engineer", "Electrical Engineer", "Software Engineer"],
+        "JOB_ROLES_tam":["குடிசார் பொறியியலாளர்","இயந்திர பொறியியலாளர்","மின் பொறியியலாளர்","மென்பொருள் பொறியியலாளர்"],
+
+        "DESCRIPTION_eng": "This degree provides a solid foundation in engineering principles, preparing students for a variety of engineering careers.",
+        "DESCRIPTION_tam":"இத்திட்டம் பொறியியல் துறையில் தொழில்நுட்ப திறன்கள் மற்றும் அறிவை வளர்ப்பதில் கவனம் செலுத்துகிறது, பல்வேறு பொறியியல் துறைகளுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+
+        "DEGREE_TYPE": "BScEng (Hons)",
+       
+
+        "DURATION": "4 YEARS",
+       
+
+        "STREAM" : "Physical",
+        
+        "Z_SCORE":  {
+            "Colombo" : "1.6861",
+            "Gampaha" :"1.6079",
+            "Kalutara":"1.6421",
+            "Matale" :"1.6520",
+            "Kandy" :"1.6097",
+            "Nuwara Eliya" :"1.6081",
+            "Galle" :"1.7063",
+            "Matara" :"1.7840",
+            "Hambanthota" :"1.6355",
+            "Jaffna" :"NotQualified",
+            "Kilinochchi" :"1.6368",
+            "Mannar" :"1.6789",
+            "Mullaitivu" :"1.6311",
+            "Vavuniya" :"1.6191",
+            "Trincomalee" :"1.6188",
+            "Batticaloa" :"1.6126",
+            "Ampara" :"1.6166",
+            "Puttalam" :"1.6414",
+            "Kurunagala" :"1.6211",
+            "Anuradhapura" :"1.6126",
+            "Polonnaruwa" :"1.6687",
+            "Badulla" :"1.6080",
+            "Monaragala":"1.6237",
+            "Kegalle" :"1.6435",
+            "Ratnapura" :"1.6228"
+         
+        }
+       
+    },
+    {
+        "COURSE_eng": "ENGINEERING",
+        "COURSE_tam":"பொறியியல்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam":"மொறட்டுவை பல்கலைக்கழகம்",
+
+        "UNICODE": "008G",
+        
+
+        "SUBJECTS_eng": [
+            "Physics",
+            "Combined Mathematics",
+            "Chemistry"
+          ],
+
+        "SUBJECTS_tam":["பௌதீகவியல்", "இணைந்த கணிதம்", "இரசயானவியல்" ],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications":{
+                        
+            }
+        },
+      
+
+        
+        "INTEREST":[
+            "Engineering",
+            "பொறியியல்",
+
+            "Civil",
+            "குடிசார் பொறியியல்",
+
+            "Mechanical",
+            "இயந்திர பொறியியல்",
+
+            "Electrical",
+            "மின் பொறியியல்"
+
+           ],
+
+
+        "JOB_ROLES_eng": ["Civil Engineer", "Mechanical Engineer", "Electrical Engineer", "Software Engineer"],
+        "JOB_ROLES_tam":["குடிசார் பொறியியலாளர்","இயந்திர பொறியியலாளர்","மின் பொறியியலாளர்","மென்பொருள் பொறியியலாளர்"],
+
+        "DESCRIPTION_eng": "The curriculum is designed to equip students with the necessary skills and knowledge to excel in various engineering fields.",
+        "DESCRIPTION_tam":"இத்திட்டம் பொறியியல் துறையில் தொழில்நுட்ப திறன்கள் மற்றும் அறிவை வளர்ப்பதில் கவனம் செலுத்துகிறது, பல்வேறு பொறியியல் துறைகளுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+       
+        "DEGREE_TYPE": "BScEng (Hons)",
+        
+
+        "DURATION": "4 YEARS",
+       
+
+        "STREAM" : "Physical",
+       
+
+        "Z_SCORE":  {
+            "Colombo" : "2.1036",
+            "Gampaha" :"2.1067",
+            "Kalutara":"2.1193",
+            "Matale" :"2.1393",
+            "Kandy" :"2.1072",
+            "Nuwara Eliya" :"2.1524",
+            "Galle" :"2.1010",
+            "Matara" :"2.1146",
+            "Hambanthota" :"2.1096",
+            "Jaffna" :"2.1167",
+            "Kilinochchi" :"2.1576",
+            "Mannar" :"2.2964",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :"2.1726",
+            "Trincomalee" :"2.2361",
+            "Batticaloa" :"2.1146",
+            "Ampara" :"2.2577",
+            "Puttalam" :"2.1492",
+            "Kurunagala" :"2.1101",
+            "Anuradhapura" :"2.1096",
+            "Polonnaruwa" :"2.2829",
+            "Badulla" :"2.1020",
+            "Monaragala":"2.1015",
+            "Kegalle" :"2.1115",
+            "Ratnapura" :"2.1048"
+         
+        }
+        
+    },
+    {
+        "COURSE_eng": "ENGINEERING",
+        "COURSE_tam":"பொறியியல்",
+
+        "UNIVERSITY_eng": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam":"தென்கிழக்கு பல்கலைக்கழகம்",
+
+        "UNICODE": "008J",
+        
+
+        "SUBJECTS_eng": ["Physics ,Combined Mathematics,Chemistry"],
+        "SUBJECTS_tam":["பௌதீகவியல்", "இணைந்த கணிதம்", "இரசயானவியல்"],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications":{
+                        
+            }
+        },
+       
+         
+        "INTEREST":[
+            "Engineering",
+            "பொறியியல்",
+
+            "Civil",
+            "குடிசார் பொறியியல்",
+
+            "Mechanical",
+            "இயந்திர பொறியியல்",
+
+            "Electrical",
+            "மின் பொறியியல்"
+
+           ],
+
+
+        "JOB_ROLES_eng": ["Civil Engineer", "Mechanical Engineer", "Electrical Engineer", "Software Engineer"],
+        "JOB_ROLES_tam":["குடிசார் பொறியியலாளர்","இயந்திர பொறியியலாளர்","மின் பொறியியலாளர்","மென்பொருள் பொறியியலாளர்"],
+
+        "DESCRIPTION_eng": "Students will gain a thorough understanding of engineering principles and practices, preparing them for successful careers.",
+        "DESCRIPTION_tam":"இத்திட்டம் பொறியியல் துறையில் தொழில்நுட்ப திறன்கள் மற்றும் அறிவை வளர்ப்பதில் கவனம் செலுத்துகிறது, பல்வேறு பொறியியல் துறைகளுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+
+        "DEGREE_TYPE": "BScEng (Hons)",
+        
+
+        "DURATION": "4 YEARS",
+        
+
+        "STREAM" : "Physical",
+       
+        "Z_SCORE":  {
+            "Colombo" : "NotQualified",
+            "Gampaha" :"NotQualified",
+            "Kalutara":"NotQualified",
+            "Matale" :"1.0985",
+            "Kandy" :"1.5351",
+            "Nuwara Eliya" :"0.7247",
+            "Galle" :"NotQualified",
+            "Matara" :"NotQualified",
+            "Hambanthota" :"NotQualified",
+            "Jaffna" :"NotQualified",
+            "Kilinochchi" :"1.2605",
+            "Mannar" :"1.1786",
+            "Mullaitivu" :"0.8143",
+            "Vavuniya" :"1.3571",
+            "Trincomalee" :"1.2946",
+            "Batticaloa" :"1.5402",
+            "Ampara" :"1.3775",
+            "Puttalam" :"1.2173",
+            "Kurunagala" :"NotQualified",
+            "Anuradhapura" :"NotQualified",
+            "Polonnaruwa" :"0.7871",
+            "Badulla" :"NotQualified",
+            "Monaragala":"1.3110",
+            "Kegalle" :"NotQualified",
+            "Ratnapura" :"1.4407"
+         
+        }
+       
+    },
+    {
+        "COURSE_eng": "ENGINEERING (EM)",
+        "COURSE_tam":"புவிவளங்கள் சார் பொறியியல்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam":"மொறட்டுவ பல்கலைக்கழகம்",
+
+        "UNICODE": "009G",
+        
+        "SUBJECTS_eng": ["Physics" ,"Combined Mathematics","Chemistry"],
+        "SUBJECTS_tam":["பௌதீகவியல்", "இணைந்த கணிதம்", "இரசயானவியல் "],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications":{
+                        
+            }
+        },
+        
+        "INTEREST": ["Earth Resource Engineering",
+                         "புவிவளங்கள் சார் பொறியியல்"],
+        
+        "JOB_ROLES_eng": ["Earth Resources Engineer", "Environmental Engineer", "Geotechnical Engineer"],
+        "JOB_ROLES_tam":["பூமி வள பொறியாளர்", "சுற்றுச்சூழல் பொறியாளர்", "புவி தொழில்நுட்ப பொறியாளர்"],
+
+        "DESCRIPTION_eng": "This specialized program focuses on Earth Resources Engineering, preparing students for careers in environmental and resource management.",
+        "DESCRIPTION_tam":"இந்த சிறப்புத் திட்டம் புவி வளப் பொறியியலில் கவனம் செலுத்துகிறது, சுற்றுச்சூழல் மற்றும் வள மேலாண்மையில் மாணவர்களைத் தயார்படுத்துகிறது",
+
+        "DEGREE_TYPE": "BScEng (Hons)",
+        
+
+        "DURATION": "4 YEARS",
+      
+        "STREAM" : "Physical",
+        
+
+        "Z_SCORE":  {
+            "Colombo" : "1.5225",
+            "Gampaha" :"1.3772",
+            "Kalutara":"1.5348",
+            "Matale" :"1.4027",
+            "Kandy" :"1.4557",
+            "Nuwara Eliya" :"1.2708",
+            "Galle" :"1.4786",
+            "Matara" :"1.5106",
+            "Hambanthota" :"1.5290",
+            "Jaffna" :"1.4386",
+            "Kilinochchi" :"1.0771",
+            "Mannar" :"1.1130",
+            "Mullaitivu" :"0.9722",
+            "Vavuniya" :"1.1943",
+            "Trincomalee" :"1.2499",
+            "Batticaloa" :"1.4094",
+            "Ampara" :"1.2183",
+            "Puttalam" :"1.3329",
+            "Kurunagala" :"1.5353",
+            "Anuradhapura" :"1.3221",
+            "Polonnaruwa" :"1.0241",
+            "Badulla" :"1.4543",
+            "Monaragala":"1.4088",
+            "Kegalle" :"1.5044",
+            "Ratnapura" :"1.4393"
+         
+        }
+        
+    },
+    {
+        "COURSE_eng": "ENGINEERING (TM)",
+        "COURSE_tam":"புடவை மற்றும் ஆடை பொறியியல்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam":"மொறட்டுவை பல்கலைக்கழகம்",
+
+        "UNICODE": "010G",
+        
+        "SUBJECTS_eng":[ "Physics" ,"Combined Mathematics","Chemistry"],
+        "SUBJECTS_tam":["பௌதீகவியல்", "இணைந்த கணிதம்", "இரசயானவியல் "],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications":{
+                        
+            }
+        },
+        
+
+        "INTEREST": ["Fashion Designing Engineering",
+                      "புடவை மற்றும் ஆடை பொறியியல்" ],
+        
+
+        "JOB_ROLES_eng": ["Textile Engineer", "Apparel Engineer", "Production Manager"],
+        "JOB_ROLES_tam":["ஜவுளி பொறியாளர்", "ஆடை பொறியாளர்", "தயாரிப்பு மேலாளர்"],
+
+        "DESCRIPTION_eng": "This program provides specialized knowledge in Textile and Apparel Engineering, preparing graduates for the textile industry.",
+        "DESCRIPTION_tam":"இந்த திட்டம் ஜவுளி மற்றும் ஆடை பொறியியல் துறையில் சிறப்பு அறிவை வழங்குகிறது, பட்டதாரிகளை ஜவுளித் தொழிலுக்கு தயார்படுத்துகிறது.",
+
+        "DEGREE_TYPE": "BScEng (Hons)",
+       
+
+        "DURATION": "4 YEARS",
+        
+
+        "STREAM" : "Physical",
+       
+
+        "Z_SCORE":  {
+            "Colombo" : "1.4990",
+            "Gampaha" :"1.3972",
+            "Kalutara":"1.5398",
+            "Matale" :"1.3238",
+            "Kandy" :"1.4391",
+            "Nuwara Eliya" :"1.2167",
+            "Galle" :"1.5052",
+            "Matara" :"1.5306",
+            "Hambanthota" :"1.4986",
+            "Jaffna" :"1.4641",
+            "Kilinochchi" :"1.2035",
+            "Mannar" :"1.0115",
+            "Mullaitivu" :"0.7608",
+            "Vavuniya" :"1.1720",
+            "Trincomalee" :"1.2394",
+            "Batticaloa" :"1.3920",
+            "Ampara" :"1.1729",
+            "Puttalam" :"1.3391",
+            "Kurunagala" :"1.5258",
+            "Anuradhapura" :"1.3281",
+            "Polonnaruwa" :"1.2206",
+            "Badulla" :"1.4500",
+            "Monaragala":"1.5479",
+            "Kegalle" :"1.5247",
+            "Ratnapura" :"1.4481"
+         
+        }
+        
+       
+    },
+    {
+        "COURSE_eng": "QUANTITY SURVEYING",
+        "COURSE_tam":"கணிய அளவையியல்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam":"மொறட்டுவை பல்கலைக்கழகம்",
+
+        "UNICODE": "011G",
+        
+
+        "SUBJECTS_eng": [
+            "Combined Mathematics",
+            "Higher Mathematics",
+            "Accounting",
+            "Economics",
+            "Business Statistics",
+            "Business Studies",
+            "Physics",
+            "Chemistry",
+            "Information & Communication Technology"
+        ],
+        "SUBJECTS_tam":[
+            "இணைந்த கணிதம்",
+            "இரசயானவியல் ",
+            "பௌதீகவியல்",
+            "கணக்கீடு",
+            "பொருளியல் ",
+            "வணிகப் புள்ளிவிபரவியல் ",
+            "வணிகக் கல்வி ",
+            "தகவல் தொடர்பாடல் தொழிலநுட்பவியல் ",
+            "உயர் கணிதம்"
+        ],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+            
+                    "Combined Mathematics": "S",
+                    "Higher Mathematics": "S",
+                    "Accounting" :"S",
+                    "Economics": "S",
+                    "Business Statistics": "S",
+                    "Business Studies": "S",
+                    "Physics": "S",
+                    "Chemistry": "S",
+                    "Information & Communication Technology": "S"
+                
+            },
+            "OtherQualifications": {
+                "O/L_Mathematics": "C",
+                "O/L_Science": "S",
+                "O/L_English": "C"
+            }
+        },
+
+       
+        "INTEREST": ["Construction",
+                    "கட்டடம்",
+                    "Drawing",
+                    "படம் வரைதல்"],
+        
+
+        "JOB_ROLES_eng": ["Quantity Surveyor", "Cost Estimator", "Project Manager"],
+        "JOB_ROLES_tam":["கணிய அளவையாளர்","செலவு மதிப்பீட்டாளர்", "திட்ட மேலாளர்"],
+
+        "DESCRIPTION_eng": "The course focuses on quantity surveying principles, preparing students for careers in construction and project management.",
+        "DESCRIPTION_tam":"பாடநெறி அளவு கணக்கெடுப்பு கொள்கைகள், கட்டுமானம் மற்றும் திட்ட மேலாண்மை ஆகியவற்றில் மாணவர்களை தயார்படுத்துகிறது",
+
+        "DEGREE_TYPE": "BSc (Hons)",
+        
+
+        "DURATION": "4 YEARS",
+        
+
+        "STREAM" : "Physical",
+        
+
+        "Z_SCORE":  {
+            "Colombo" : "1.3200",
+            "Gampaha" :"1.3058",
+            "Kalutara":"1.2950",
+            "Matale" :"1.2051",
+            "Kandy" :"1.2720",
+            "Nuwara Eliya" :"0.8566",
+            "Galle" :"1.3452",
+            "Matara" :"1.3892",
+            "Hambanthota" :"1.3718",
+            "Jaffna" :"1.3571",
+            "Kilinochchi" :"1.2397",
+            "Mannar" :"1.1677",
+            "Mullaitivu" :"0.7110",
+            "Vavuniya" :"1.2551",
+            "Trincomalee" :"1.1011",
+            "Batticaloa" :"1.3807",
+            "Ampara" :"1.1659",
+            "Puttalam" :"1.1705",
+            "Kurunagala" :"1.3547",
+            "Anuradhapura" :"1.2083",
+            "Polonnaruwa" :"0.8628",
+            "Badulla" :"1.3308",
+            "Monaragala":"1.2582",
+            "Kegalle" :"1.3776",
+            "Ratnapura" :"1.3091"
+         
+        }
+       
+    },
+    {
+        "COURSE_eng": "COMPUTER SCIENCE",
+        "COURSE_tam":"கணினி விஞ்ஞானம்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENAPURA",
+        "UNIVERSITY_tam":"ஸ்ரீ ஜெயவர்தனபுர பல்கலைக்கழகம்",
+
+        "UNICODE": "012C",
+        
+
+        "SUBJECTS_eng": ["Combined Mathematics"," Higher Mathematics", "Physics", "Chemistry", "Information & Communication Technology"],
+        "SUBJECTS_tam":["இணைந்த கணிதம்","உயர் கணிதம்","பௌதீகவியல்","இரசயானவியல் ","தகவல் தொடர்பாடல் தொழிலநுட்பவியல் "],
+        
+        "MINIMUM_QUALIFICATIONS": {
+            
+                "RequiredGrades": {
+                    
+                        "Combined Mathematics": "C",
+                        "Physics": "C",
+                        "Higher Mathematics": "C", 
+                        "Mathematics":"S",
+                        "Chemistry":"S",
+                        "Information & Communication Technology":"S"
+                    },
+                    "OtherQualifications":{
+
+                    }
+                
+            
+        },
+       
+
+        "INTEREST": ["Technology",
+                        "தொழில்நுட்பம்",
+                       "programming", 
+                       "நிரலாக்கம்",
+                        "data analysis",
+                        "தரவு பகுப்பாய்வு",
+                        "software development",
+                        "மென்பொருள் மேம்பாடு"
+                    ],
+       
+
+        "JOB_ROLES_eng": ["Software Developer", "System Analyst", "Database Administrator", "Network Engineer"],
+        "JOB_ROLES_tam":["மென்பொருள் மேம்பாட்டாளர்",
+        "முறைமை பகுப்பாய்வாளர்", 
+        "தரவுத்தள மேற்பார்வையாளர் ",
+        "வலையமைப்பு பொறியியலாளர்"
+        ],
+
+        "DESCRIPTION_eng": "This program provides a solid foundation in computer science principles, preparing students for various roles in IT and software development.",
+        "DESCRIPTION_tam":"இந்த திட்டம் கணினி அறிவியல் கொள்கைகளில் உறுதியான அடித்தளத்தை வழங்குகிறது, தகவல் தொடர்பாடல் மற்றும் மென்பொருள் மேம்பாட்டில் பல்வேறு பாத்திரங்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+        
+        "DEGREE_TYPE": "BSc (Hons)",
+      
+        "DURATION": "3 YEARS",
+       
+        "STREAM" : "Physical",
+        
+        "Z_SCORE":  {
+            "Colombo" : "1.5054",
+            "Gampaha" :"1.5127",
+            "Kalutara":"1.5057",
+            "Matale" :"NotQualified",
+            "Kandy" :"1.5137",
+            "Nuwara Eliya" :"NotQualified",
+            "Galle" :"1.5121",
+            "Matara" :"1.5127",
+            "Hambanthota" :"1.5117",
+            "Jaffna" :"1.5073",
+            "Kilinochchi" :"NotQualified",
+            "Mannar" :"NotQualified",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :"NotQualified",
+            "Trincomalee" :"NotQualified",
+            "Batticaloa" :"NotQualified",
+            "Ampara" :"NotQualified",
+            "Puttalam" :"NotQualified",
+            "Kurunagala" :"1.5103",
+            "Anuradhapura" :"NotQualified",
+            "Polonnaruwa" :"NotQualified",
+            "Badulla" :"NotQualified",
+            "Monaragala":"NotQualified",
+            "Kegalle" :"1.5524",
+            "Ratnapura" :"1.5303"
+         
+        }
+        
+    },
+    {
+        "COURSE_eng": "COMPUTER SCIENCE",
+        "COURSE_tam":"கணினி விஞ்ஞானம்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF KELANIYA",
+        "UNIVERSITY_tam":"களனி பல்கலைக்கழகம் ",
+
+        "UNICODE": "12D",
+        
+
+        "SUBJECTS_eng": ["Combined Mathematics"," Higher Mathematics", "Physics", "Chemistry", "Information & Communication Technology"],
+        "SUBJECTS_tam":["இணைந்த கணிதம்","உயர் கணிதம்","பௌதீகவியல்","இரசயானவியல் ","தகவல் தொடர்பாடல் தொழிலநுட்பவியல் "],
+        
+        "MINIMUM_QUALIFICATIONS": {
+            
+                "RequiredGrades": {
+                    
+                        "Combined Mathematics": "C",
+                        "Physics": "C",
+                        "Higher Mathematics": "C", 
+                        "Mathematics":"S",
+                        "Chemistry":"S",
+                        "Information & Communication Technology":"S"
+                    },
+                    "OtherQualifications":{
+
+                    }
+                
+            
+        },
+       
+
+        "INTEREST": ["Technology",
+                        "தொழில்நுட்பம்",
+                       "programming", 
+                       "நிரலாக்கம்",
+                        "data analysis",
+                        "தரவு பகுப்பாய்வு",
+                        "software development",
+                        "மென்பொருள் மேம்பாடு"
+                    ],
+       
+
+        "JOB_ROLES_eng": ["Software Developer", "System Analyst", "Database Administrator", "Network Engineer"],
+        "JOB_ROLES_tam":["மென்பொருள் மேம்பாட்டாளர்",
+        "முறைமை பகுப்பாய்வாளர்", 
+        "தரவுத்தள மேற்பார்வையாளர் ",
+        "வலையமைப்பு பொறியியலாளர்"
+        ],
+
+        "DESCRIPTION_eng": "This program provides a solid foundation in computer science principles, preparing students for various roles in IT and software development.",
+        "DESCRIPTION_tam":"இந்த திட்டம் கணினி அறிவியல் கொள்கைகளில் உறுதியான அடித்தளத்தை வழங்குகிறது, தகவல் தொடர்பாடல் மற்றும் மென்பொருள் மேம்பாட்டில் பல்வேறு பாத்திரங்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+        
+        "DEGREE_TYPE": "BSc (Hons)",
+      
+        "DURATION": "3 YEARS",
+       
+        "STREAM" : "Physical",
+        
+        "Z_SCORE":   {
+            "Colombo" : "1.5246",
+            "Gampaha" :"1.5586",
+            "Kalutara":"1.5193",
+            "Matale" :"NotQualified",
+            "Kandy" :"1.5380",
+            "Nuwara Eliya" :"NotQualified",
+            "Galle" :"1.5537",
+            "Matara" :"1.5253",
+            "Hambanthota" :"1.5284",
+            "Jaffna" :"1.5575",
+            "Kilinochchi" :"NotQualified",
+            "Mannar" :"NotQualified",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :"NotQualified",
+            "Trincomalee" :"1.5422",
+            "Batticaloa" :"NotQualified",
+            "Ampara" :"NotQualified",
+            "Puttalam" :"NotQualified",
+            "Kurunagala" :"1.5525",
+            "Anuradhapura" :"NotQualified",
+            "Polonnaruwa" :"NotQualified",
+            "Badulla" :"NotQualified",
+            "Monaragala":"NotQualified",
+            "Kegalle" :"1.5784",
+            "Ratnapura" :"1.5353"
+         
+        }
+        
+    },
+    {
+        "COURSE_eng": "COMPUTER SCIENCE",
+        "COURSE_tam":"கணினி விஞ்ஞானம்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF JAFFNA",
+        "UNIVERSITY_tam":"யாழ்ப்பாணப் பல்கலைக்கழகம்",
+
+        "UNICODE": "012E",
+        
+
+        "SUBJECTS_eng": ["Combined Mathematics"," Higher Mathematics", "Physics", "Chemistry", "Information & Communication Technology"],
+        "SUBJECTS_tam":["இணைந்த கணிதம்","உயர் கணிதம்","பௌதீகவியல்","இரசயானவியல் ","தகவல் தொடர்பாடல் தொழிலநுட்பவியல் "],
+        
+        "MINIMUM_QUALIFICATIONS": {
+            
+                "RequiredGrades": {
+                    
+                        "Combined Mathematics": "C",
+                        "Physics": "C",
+                        "Higher Mathematics": "C", 
+                        "Mathematics":"S",
+                        "Chemistry":"S",
+                        "Information & Communication Technology":"S"
+                    },
+                    "OtherQualifications":{
+
+                    }
+                
+            
+        },
+       
+
+        "INTEREST": ["Technology",
+                        "தொழில்நுட்பம்",
+                       "programming", 
+                       "நிரலாக்கம்",
+                        "data analysis",
+                        "தரவு பகுப்பாய்வு",
+                        "software development",
+                        "மென்பொருள் மேம்பாடு"
+                    ],
+       
+
+        "JOB_ROLES_eng": ["Software Developer", "System Analyst", "Database Administrator", "Network Engineer"],
+        "JOB_ROLES_tam":["மென்பொருள் மேம்பாட்டாளர்",
+        "முறைமை பகுப்பாய்வாளர்", 
+        "தரவுத்தள மேற்பார்வையாளர் ",
+        "வலையமைப்பு பொறியியலாளர்"
+        ],
+
+        "DESCRIPTION_eng": "This program provides a solid foundation in computer science principles, preparing students for various roles in IT and software development.",
+        "DESCRIPTION_tam":"இந்த திட்டம் கணினி அறிவியல் கொள்கைகளில் உறுதியான அடித்தளத்தை வழங்குகிறது, தகவல் தொடர்பாடல் மற்றும் மென்பொருள் மேம்பாட்டில் பல்வேறு பாத்திரங்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+        
+        "DEGREE_TYPE": "BSc (Hons)",
+      
+        "DURATION": "3 YEARS",
+       
+        "STREAM" : "Physical",
+        
+        "Z_SCORE":   {
+            "Colombo" : "1.2741",
+            "Gampaha" :"1.1092",
+            "Kalutara":"NotQualified",
+            "Matale" :"1.2467",
+            "Kandy" :"1.1251",
+            "Nuwara Eliya" :"NotQualified",
+            "Galle" :"NotQualified",
+            "Matara" :"NotQualified",
+            "Hambanthota" :"NotQualified",
+            "Jaffna" :"1.3709",
+            "Kilinochchi" :"1.2027",
+            "Mannar" :"NotQualified",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :"1.2433",
+            "Trincomalee" :"1.2893",
+            "Batticaloa" :"1.1515",
+            "Ampara" :"1.1527",
+            "Puttalam" :"1.1268",
+            "Kurunagala" :"1.1948",
+            "Anuradhapura" :"1.1079",
+            "Polonnaruwa" :"NotQualified",
+            "Badulla" :"1.1610",
+            "Monaragala":"1.1033",
+            "Kegalle" :"1.2459",
+            "Ratnapura" :"1.1817"
+         
+        }
+    },
+
+    {
+        "COURSE_eng": "COMPUTER SCIENCE",
+        "COURSE_tam":"கணினி விஞ்ஞானம்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF RUHUNA",
+        "UNIVERSITY_tam":"உருகுணை பல்கலைக்கழகம்",
+
+        "UNICODE": "012F",
+        
+
+        "SUBJECTS_eng": ["Combined Mathematics"," Higher Mathematics", "Physics", "Chemistry", "Information & Communication Technology"],
+        "SUBJECTS_tam":["இணைந்த கணிதம்","உயர் கணிதம்","பௌதீகவியல்","இரசயானவியல் ","தகவல் தொடர்பாடல் தொழிலநுட்பவியல் "],
+        
+        "MINIMUM_QUALIFICATIONS": {
+            
+                "RequiredGrades": {
+                    
+                        "Combined Mathematics": "C",
+                        "Physics": "C",
+                        "Higher Mathematics": "C", 
+                        "Mathematics":"S",
+                        "Chemistry":"S",
+                        "Information & Communication Technology":"S"
+                    },
+                    "OtherQualifications":{
+
+                    }
+                
+            
+        },
+       
+
+        "INTEREST": ["Technology",
+                        "தொழில்நுட்பம்",
+                       "programming", 
+                       "நிரலாக்கம்",
+                        "data analysis",
+                        "தரவு பகுப்பாய்வு",
+                        "software development",
+                        "மென்பொருள் மேம்பாடு"
+                    ],
+       
+
+        "JOB_ROLES_eng": ["Software Developer", "System Analyst", "Database Administrator", "Network Engineer"],
+        "JOB_ROLES_tam":["மென்பொருள் மேம்பாட்டாளர்",
+        "முறைமை பகுப்பாய்வாளர்", 
+        "தரவுத்தள மேற்பார்வையாளர் ",
+        "வலையமைப்பு பொறியியலாளர்"
+        ],
+
+        "DESCRIPTION_eng": "This program provides a solid foundation in computer science principles, preparing students for various roles in IT and software development.",
+        "DESCRIPTION_tam":"இந்த திட்டம் கணினி அறிவியல் கொள்கைகளில் உறுதியான அடித்தளத்தை வழங்குகிறது, தகவல் தொடர்பாடல் மற்றும் மென்பொருள் மேம்பாட்டில் பல்வேறு பாத்திரங்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+        
+        "DEGREE_TYPE": "BSc (Hons)",
+      
+        "DURATION": "3 YEARS",
+       
+        "STREAM" : "Physical",
+        
+        "Z_SCORE":   {
+            "Colombo" : "1.3257",
+            "Gampaha" :"1.3241",
+            "Kalutara":"1.4002",
+            "Matale" :"NotQualified",
+            "Kandy" :"1.3349",
+            "Nuwara Eliya" :"NotQualified",
+            "Galle" :"1.3671",
+            "Matara" :"1.4776",
+            "Hambanthota" :"1.4149",
+            "Jaffna" :"1.3711",
+            "Kilinochchi" :"NotQualified",
+            "Mannar" :"NotQualified",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :"NotQualified",
+            "Trincomalee" :"NotQualified",
+            "Batticaloa" :"NotQualified",
+            "Ampara" :"NotQualified",
+            "Puttalam" :"NotQualified",
+            "Kurunagala" :"1.3281",
+            "Anuradhapura" :"1.3514",
+            "Polonnaruwa" :"NotQualified",
+            "Badulla" :"1.3583",
+            "Monaragala":"NotQualified",
+            "Kegalle" :"1.3279",
+            "Ratnapura" :"1.3333"
+         
+        }
+    },
+    {
+        "COURSE_eng": "COMPUTER SCIENCE",
+        "COURSE_tam":"கணினி விஞ்ஞானம்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO SCHOOL OF COMPUTING",
+        "UNIVERSITY_tam":"கொழும்பு பல்கலைக்கழக கணனி கல்லூரி ",
+
+        "UNICODE": "012T",
+        
+
+        "SUBJECTS_eng": ["Combined Mathematics"," Higher Mathematics", "Physics", "Chemistry", "Information & Communication Technology"],
+        "SUBJECTS_tam":["இணைந்த கணிதம்","உயர் கணிதம்","பௌதீகவியல்","இரசயானவியல் ","தகவல் தொடர்பாடல் தொழிலநுட்பவியல் "],
+        
+        "MINIMUM_QUALIFICATIONS": {
+            
+                "RequiredGrades": {
+                    
+                        "Combined Mathematics": "C",
+                        "Physics": "C",
+                        "Higher Mathematics": "C", 
+                        "Mathematics":"S",
+                        "Chemistry":"S",
+                        "Information & Communication Technology":"S"
+                    },
+                    "OtherQualifications":{
+
+                    }
+                
+            
+        },
+       
+
+        "INTEREST": ["Technology",
+                        "தொழில்நுட்பம்",
+                       "programming", 
+                       "நிரலாக்கம்",
+                        "data analysis",
+                        "தரவு பகுப்பாய்வு",
+                        "software development",
+                        "மென்பொருள் மேம்பாடு"
+                    ],
+       
+
+        "JOB_ROLES_eng": ["Software Developer", "System Analyst", "Database Administrator", "Network Engineer"],
+        "JOB_ROLES_tam":["மென்பொருள் மேம்பாட்டாளர்",
+        "முறைமை பகுப்பாய்வாளர்", 
+        "தரவுத்தள மேற்பார்வையாளர் ",
+        "வலையமைப்பு பொறியியலாளர்"
+        ],
+
+        "DESCRIPTION_eng": "This program provides a solid foundation in computer science principles, preparing students for various roles in IT and software development.",
+        "DESCRIPTION_tam":"இந்த திட்டம் கணினி அறிவியல் கொள்கைகளில் உறுதியான அடித்தளத்தை வழங்குகிறது, தகவல் தொடர்பாடல் மற்றும் மென்பொருள் மேம்பாட்டில் பல்வேறு பாத்திரங்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+        
+        "DEGREE_TYPE": "BSc (Hons)",
+      
+        "DURATION": "3 YEARS",
+       
+        "STREAM" : "Physical",
+        
+        "Z_SCORE":   {
+            "Colombo" : "1.6123",
+            "Gampaha" :"1.6342",
+            "Kalutara":"1.6319",
+            "Matale" :"1.8713",
+            "Kandy" :"1.6176",
+            "Nuwara Eliya" :"1.7593",
+            "Galle" :"1.6196",
+            "Matara" :"1.6129",
+            "Hambanthota" :"1.6148",
+            "Jaffna" :"1.6366",
+            "Kilinochchi" :"NotQualified",
+            "Mannar" :"NotQualified",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :"1.8869",
+            "Trincomalee" :"NotQualified",
+            "Batticaloa" :"2.2870",
+            "Ampara" :"NotQualified",
+            "Puttalam" :"1.7712",
+            "Kurunagala" :"1.6149",
+            "Anuradhapura" :"1.6293",
+            "Polonnaruwa" :"1.6465",
+            "Badulla" :"1.8790",
+            "Monaragala":"1.6545",
+            "Kegalle" :"1.6197",
+            "Ratnapura" :"1.6347"
+         
+        }
+    },
+    {
+        "COURSE_eng": "COMPUTER SCIENCE",
+        "COURSE_tam":"கணினி விஞ்ஞானம்",
+
+        "UNIVERSITY_eng": "EASTERN UNIVERSITY (TRINCOMALEE CAMPUS)",
+        "UNIVERSITY_tam":"கிழக்கு பல்கலைக்கழகம் திருகோணமலை வளாகம் ",
+
+        "UNICODE": "012W",
+        
+
+        "SUBJECTS_eng": ["Combined Mathematics"," Higher Mathematics", "Physics", "Chemistry", "Information & Communication Technology"],
+        "SUBJECTS_tam":["இணைந்த கணிதம்","உயர் கணிதம்","பௌதீகவியல்","இரசயானவியல் ","தகவல் தொடர்பாடல் தொழிலநுட்பவியல் "],
+        
+        "MINIMUM_QUALIFICATIONS": {
+            
+                "RequiredGrades": {
+                    
+                        "Combined Mathematics": "C",
+                        "Physics": "C",
+                        "Higher Mathematics": "C", 
+                        "Mathematics":"S",
+                        "Chemistry":"S",
+                        "Information & Communication Technology":"S"
+                    },
+                    "OtherQualifications":{
+
+                    }
+                
+            
+        },
+       
+
+        "INTEREST": ["Technology",
+                        "தொழில்நுட்பம்",
+                       "programming", 
+                       "நிரலாக்கம்",
+                        "data analysis",
+                        "தரவு பகுப்பாய்வு",
+                        "software development",
+                        "மென்பொருள் மேம்பாடு"
+                    ],
+       
+
+        "JOB_ROLES_eng": ["Software Developer", "System Analyst", "Database Administrator", "Network Engineer"],
+        "JOB_ROLES_tam":["மென்பொருள் மேம்பாட்டாளர்",
+        "முறைமை பகுப்பாய்வாளர்", 
+        "தரவுத்தள மேற்பார்வையாளர் ",
+        "வலையமைப்பு பொறியியலாளர்"
+        ],
+
+        "DESCRIPTION_eng": "This program provides a solid foundation in computer science principles, preparing students for various roles in IT and software development.",
+        "DESCRIPTION_tam":"இந்த திட்டம் கணினி அறிவியல் கொள்கைகளில் உறுதியான அடித்தளத்தை வழங்குகிறது, தகவல் தொடர்பாடல் மற்றும் மென்பொருள் மேம்பாட்டில் பல்வேறு பாத்திரங்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+        
+        "DEGREE_TYPE": "BSc (Hons)",
+      
+        "DURATION": "3 YEARS",
+       
+        "STREAM" : "Physical",
+        
+        "Z_SCORE":   {
+            "Colombo" : "NotQualified",
+            "Gampaha" :"1.1211",
+            "Kalutara":"NotQualified",
+            "Matale" :"0.8035",
+            "Kandy" :"0.8446",
+            "Nuwara Eliya" :"0.4791",
+            "Galle" :"NotQualified",
+            "Matara" :"NotQualified",
+            "Hambanthota" :"NotQualified",
+            "Jaffna" :"NotQualified",
+            "Kilinochchi" :"0.8907",
+            "Mannar" :"0.5131",
+            "Mullaitivu" :"0.6127",
+            "Vavuniya" :"0.7283",
+            "Trincomalee" :"0.7455",
+            "Batticaloa" :"1.0560",
+            "Ampara" :"0.8677",
+            "Puttalam" :"0.6784",
+            "Kurunagala" :"NotQualified",
+            "Anuradhapura" :"0.7886",
+            "Polonnaruwa" :"0.5547",
+            "Badulla" :"1.1729",
+            "Monaragala":"0.8722",
+            "Kegalle" :"NotQualified",
+            "Ratnapura" :"1.2067"
+         
+        }
+    },
+    {
+        "COURSE_eng": "PHYSICAL SCIENCE",
+        "COURSE_tam":"பௌதிக விஞ்ஞானம்",
+
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO",
+        "UNIVERSITY_tam":"கொழும்பு பல்கலைக்கழகம்  ",
+
+        "UNICODE": "013A",
+
+        "SUBJECTS_eng": [
+            "Agricultural Science",
+            "Combined Mathematics",
+            "Biology",
+            "Higher Mathematics",
+            "Chemistry",
+            "Physics"
+          ],
+          "SUBJECTS_tam":[
+            "விவசாய விஞ்ஞானம்",
+            "இணைந்த கணிதம்",
+            "உயிரியல்",
+            "உயர் கணிதம்",
+            "இரசயானவியல்",
+            "பௌதீகவியல்"
+
+          ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+               
+                    "Combined Mathematics": "S",
+                    "Higher Mathematics": "S",
+                    "Physics":"S",
+                    "Chemistry":"S",
+                    "Agricultural Science":"S",
+                    "Biology":"S",
+                    "Information & Communication Technology":"S"
+                
+            },
+            "OtherQualifications":{
+
+            }
+
+        },
+
+        "INTEREST": [
+            "Scientific research",
+            "விஞ்ஞான ஆராய்ச்சி ",
+            "Education",
+            "கல்வி ",
+            "Technology development",
+            "தொழில்நுட்ப அபிவிருத்தி"
+          ],
+
+        "JOB_ROLES_eng": ["Research Scientist", "Laboratory Technician", "Quality Control Analyst"],
+        "JOB_ROLES_tam":[
+            "ஆராய்ச்சி விஞ்ஞானி", 
+            "ஆய்வக தொழில்நுட்ப வல்லுநர்", 
+            "தரக் கட்டுப்பாட்டு ஆய்வாளர்"
+
+        ],
+
+        "DESCRIPTION_eng": "This program provides a strong foundation in physical science, preparing students for careers in research and development.",
+        "DESCRIPTION_tam":"இந்த திட்டம் இயற்பியல் அறிவியலில் வலுவான அடித்தளத்தை வழங்குகிறது, ஆராய்ச்சி மற்றும் மேம்பாட்டிற்கான தொழில்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+
+        "DEGREE_TYPE": "BSc (Hons)",
+
+        "DURATION": "4 YEARS",
+
+        "STREAM" : "Physical",
+
+        "Z_SCORE":  {
+            "Colombo" : "1.2613",
+            "Gampaha" :"1.2675",
+            "Kalutara":"1.2645",
+            "Matale" :"NotQualified",
+            "Kandy" :"1.2615",
+            "Nuwara Eliya" :"NotQualified",
+            "Galle" :"1.2617",
+            "Matara" :"1.2642",
+            "Hambanthota" :"1.2677",
+            "Jaffna" :"1.2689",
+            "Kilinochchi" :"NotQualified",
+            "Mannar" :"NotQualified",
+            "Mullaitivu" :"NotQualified",
+            "Vavuniya" :"NotQualified",
+            "Trincomalee" :"1.3205",
+            "Batticaloa" :"1.3694",
+            "Ampara" :"1.6380",
+            "Puttalam" :"1.3690",
+            "Kurunagala" :"1.2604",
+            "Anuradhapura" :"1.3592",
+            "Polonnaruwa" :"2.2960",
+            "Badulla" :"1.2654",
+            "Monaragala":"NotQualified",
+            "Kegalle" :"1.2610",
+            "Ratnapura" :"1.2627"
+         
+        },
+        {
+            "COURSE_eng": "PHYSICAL SCIENCE",
+            "COURSE_tam":"பௌதிக விஞ்ஞானம்",
+    
+            "UNIVERSITY_eng": "UNIVERSITY OF PERADENIYA",
+            "UNIVERSITY_tam":"பேராதனை பல்கலைக்கழகம்",
+    
+            "UNICODE": "013A",
+    
+            "SUBJECTS_eng": [
+                "Agricultural Science",
+                "Combined Mathematics",
+                "Biology",
+                "Higher Mathematics",
+                "Chemistry",
+                "Physics"
+              ],
+              "SUBJECTS_tam":[
+                "விவசாய விஞ்ஞானம்",
+                "இணைந்த கணிதம்",
+                "உயிரியல்",
+                "உயர் கணிதம்",
+                "இரசயானவியல்",
+                "பௌதீகவியல்"
+    
+              ],
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                   
+                        "Combined Mathematics": "S",
+                        "Higher Mathematics": "S",
+                        "Physics":"S",
+                        "Chemistry":"S",
+                        "Agricultural Science":"S",
+                        "Biology":"S",
+                        "Information & Communication Technology":"S"
+                    
+                },
+                "OtherQualifications":{
+    
+                }
+    
+            },
+    
+            "INTEREST": [
+                "Scientific research",
+                "விஞ்ஞான ஆராய்ச்சி ",
+                "Education",
+                "கல்வி ",
+                "Technology development",
+                "தொழில்நுட்ப அபிவிருத்தி"
+              ],
+    
+            "JOB_ROLES_eng": ["Research Scientist", "Laboratory Technician", "Quality Control Analyst"],
+            "JOB_ROLES_tam":[
+                "ஆராய்ச்சி விஞ்ஞானி", 
+                "ஆய்வக தொழில்நுட்ப வல்லுநர்", 
+                "தரக் கட்டுப்பாட்டு ஆய்வாளர்"
+    
+            ],
+    
+            "DESCRIPTION_eng": "This program provides a strong foundation in physical science, preparing students for careers in research and development.",
+            "DESCRIPTION_tam":"இந்த திட்டம் இயற்பியல் அறிவியலில் வலுவான அடித்தளத்தை வழங்குகிறது, ஆராய்ச்சி மற்றும் மேம்பாட்டிற்கான தொழில்களுக்கு மாணவர்களை தயார்படுத்துகிறது.",
+    
+            "DEGREE_TYPE": "BSc (Hons)",
+    
+            "DURATION": "4 YEARS",
+    
+            "STREAM" : "Physical",
+    
+            "Z_SCORE":  {
+                "Colombo" : "1.2613",
+                "Gampaha" :"1.2675",
+                "Kalutara":"1.2645",
+                "Matale" :"NotQualified",
+                "Kandy" :"1.2615",
+                "Nuwara Eliya" :"NotQualified",
+                "Galle" :"1.2617",
+                "Matara" :"1.2642",
+                "Hambanthota" :"1.2677",
+                "Jaffna" :"1.2689",
+                "Kilinochchi" :"NotQualified",
+                "Mannar" :"NotQualified",
+                "Mullaitivu" :"NotQualified",
+                "Vavuniya" :"NotQualified",
+                "Trincomalee" :"1.3205",
+                "Batticaloa" :"1.3694",
+                "Ampara" :"1.6380",
+                "Puttalam" :"1.3690",
+                "Kurunagala" :"1.2604",
+                "Anuradhapura" :"1.3592",
+                "Polonnaruwa" :"2.2960",
+                "Badulla" :"1.2654",
+                "Monaragala":"NotQualified",
+                "Kegalle" :"1.2610",
+                "Ratnapura" :"1.2627"
+             
+            }
+
+        
+
+    }
+    
+
+    
+
+    
+]
