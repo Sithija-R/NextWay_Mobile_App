@@ -11,6 +11,12 @@ export default function About() {
       <Text style={styles.description}>
         This is the About page of the app. It provides information about the app and its features.
       </Text>
+      <Text style={styles.subtitle}>Key Features:</Text>
+      <View style={styles.bulletContainer}>
+        <Text style={styles.bullet}>• Easy to use and navigate</Text>
+        <Text style={styles.bullet}>• Built with React Native and Expo</Text>
+        <Text style={styles.bullet}>• Supports multiple platforms</Text>
+      </View>
 
     </View>
   )
