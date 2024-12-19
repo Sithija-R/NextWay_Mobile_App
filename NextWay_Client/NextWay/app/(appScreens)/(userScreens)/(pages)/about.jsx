@@ -20,6 +20,7 @@ export default function About() {
       </View>
       <Button title="Go Back" onPress={() => navigation.goBack()} />
       <View style={styles.spacer} />
+      <Button title="Learn More" onPress={() => {}} />
     </View>
   );
 }
