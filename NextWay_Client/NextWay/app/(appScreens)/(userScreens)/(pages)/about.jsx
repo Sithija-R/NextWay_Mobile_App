@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text ,Button, StyleSheet} from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 
@@ -8,6 +8,7 @@ export default function About() {
   return (
     <View style={styles.container} >
       <Text style={styles.text}>About</Text>
+      <Button title="Go Back" onPress={() => navigation.goBack()} />
     </View>
   )
 }
