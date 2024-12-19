@@ -38,4 +38,16 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     lineHeight: 22,
   },
+  subtitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  bulletContainer: {
+    marginBottom: 20,
+  },
+  bullet: {
+    fontSize: 16,
+    marginVertical: 5,
+  },
 });
