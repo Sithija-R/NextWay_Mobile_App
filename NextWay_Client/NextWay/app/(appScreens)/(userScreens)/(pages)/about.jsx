@@ -7,19 +7,29 @@ export default function About() {
 
   return (
     <View style={styles.container} >
-      <Text style={styles.text}>About</Text>
-      <Button title="Go Back" onPress={() => navigation.goBack()} />
+            <Text style={styles.title}>About</Text>
+      <Text style={styles.description}>
+        This is the About page of the app. It provides information about the app and its features.
+      </Text>
+
     </View>
   )
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 20,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
   },
-  text: {
-    fontSize: 24,
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  description: {
+    fontSize: 16,
     marginBottom: 20,
+    lineHeight: 22,
   },
 });
