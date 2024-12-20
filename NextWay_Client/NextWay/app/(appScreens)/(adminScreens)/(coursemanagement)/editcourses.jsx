@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -15,46 +15,66 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
-import { useRouter } from "expo-router";
+import { useLocalSearchParams , useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-// Adjust the path accordingly
-import { collection, addDoc } from "firebase/firestore"; // Import Firestore functions
+
+
 import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboardView";
 import { uploadCourseData } from "../../../../services/adminService";
 import Loading from "../../../../components/Loading/Loading";
-export default function AddCourse() {
-  const router = useRouter();
-  const { t } = useTranslation();
+
+export default function EditCourse() {
+
+
   const [loading, setLoading] = useState(false);
+
+  const { course} = useLocalSearchParams();
+
+  const router = useRouter();
+const{t}= useTranslation();
+
+  const parsedCourse = course ? JSON.parse(course) : null;
+
+
+
+
+ 
+  
+
+
+
 
   const districts = t("districts", { returnObjects: true });
 
   const [courseDetails, setCourseDetails] = useState({
-    COURSE_eng: "",
-    COURSE_sin: "",
-    COURSE_tam: "",
-    UNIVERSITY_eng: "",
-    UNIVERSITY_sin: "",
-    UNIVERSITY_tam: "",
-    UNICODE: "",
-    DURATION_eng: "",
-    DESCRIPTION_eng: "",
-    DESCRIPTION_sin: "",
-    DESCRIPTION_tam: "",
-    STREAM: "",
-    INTEREST: [],
-    JOB_ROLES_eng: [],
-    JOB_ROLES_sin: [],
-    JOB_ROLES_tam: [],
+    COURSE_eng: parsedCourse?.parsedCourse || "",
+    COURSE_sin: parsedCourse?.COURSE_sin || "",
+    COURSE_tam: parsedCourse?.COURSE_tam || "",
+    UNIVERSITY_eng: parsedCourse?.UNIVERSITY_eng || "",
+    UNIVERSITY_sin: parsedCourse?.UNIVERSITY_sin || "",
+    UNIVERSITY_tam: parsedCourse?.UNIVERSITY_tam || "",
+    UNICODE: parsedCourse?.UNICODE || "",
+    DURATION_eng: parsedCourse?.DURATION || "",
+    DESCRIPTION_eng: parsedCourse?.DESCRIPTION || "",
+    DESCRIPTION_sin: parsedCourse?.DESCRIPTION_sin || "",
+    DESCRIPTION_tam: parsedCourse?.DESCRIPTION_tam || "",
+    STREAM: parsedCourse?.STREAM || "",
+    INTEREST: parsedCourse?.INTEREST || [],
+    JOB_ROLES_eng: parsedCourse?.JOB_ROLES_eng || [],
+    JOB_ROLES_sin: parsedCourse?.JOB_ROLES_sin || [],
+    JOB_ROLES_tam: parsedCourse?.JOB_ROLES_tam || [],
   });
 
   const [interests, setInterests] = useState({
-    eng: [],
-    sin: [],
-    tam: [],
+    eng: parsedCourse?.INTEREST || [],
+    sin: parsedCourse?.INTEREST_sin || [],
+    tam: parsedCourse?.INTEREST_tam || [],
   });
+
+
+ 
 
   const handleInterestArrayChange = (field, value) => {
     const arrayValue = value.split(",").map((item) => item.trim()); // Split input into an array
@@ -86,23 +106,55 @@ export default function AddCourse() {
       INTEREST: mergedInterests,
     }));
   };
-
-  const [subjectGrades, setSubjectGrades] = useState([
-    { subject: "", grade: "" },
-  ]);
-
   
-  const [zScore, setZScore] = useState(
-    districts.reduce((acc, district) => {
-      acc[district.value] = null; // Set each district's Z-Score to null
+
+  const [subjectGrades, setSubjectGrades] = useState(() => {
+
+    if (parsedCourse?.MINIMUM_QUALIFICATIONS?.RequiredGrades) {
+      return Object.entries(parsedCourse.MINIMUM_QUALIFICATIONS.RequiredGrades).map(
+        ([subject, grade]) => ({
+          subject,
+          grade,
+        })
+      );
+    }
+    return [{ subject: "", grade: "" }];
+  });
+
+  console.log("grades 1 ",parsedCourse?.MINIMUM_QUALIFICATIONS?.RequiredGrades)
+  console.log("grades ",subjectGrades)
+  // Handle changes in subject or grade
+  const handleSubjectGradeChange = (index, field, value) => {
+    const updatedSubjectGrades = [...subjectGrades];
+    updatedSubjectGrades[index][field] = value;
+    setSubjectGrades(updatedSubjectGrades);
+  };
+
+  // Add a new subject-grade pair
+  const addNewSubjectGrade = () => {
+    setSubjectGrades([...subjectGrades, { subject: "", grade: "" }]);
+  };
+
+  // Remove a subject-grade pair
+  const removeSubjectGrade = (index) => {
+    const updatedSubjectGrades = subjectGrades.filter((_, i) => i !== index);
+    setSubjectGrades(updatedSubjectGrades);
+  };
+
+
+  const [zScore, setZScore] = useState(() => {
+    return districts.reduce((acc, district) => {
+      acc[district.value] = parsedCourse?.Z_SCORE[district.value] || null; // Set the Z-score or null if not found
       return acc;
-    }, {})
-  );
+    }, {});
+  });
+
+
 
   const handleZScoreChange = (district, value) => {
     setZScore((prevScores) => ({
       ...prevScores,
-      [district]: value, // Update the specific district's Z-Score
+      [district]: value, 
     }));
   };
 
@@ -121,20 +173,7 @@ export default function AddCourse() {
     }));
   };
 
-  const handleSubjectGradeChange = (index, field, value) => {
-    const updatedSubjectGrades = [...subjectGrades];
-    updatedSubjectGrades[index][field] = value;
-    setSubjectGrades(updatedSubjectGrades);
-  };
 
-  const addNewSubjectGrade = () => {
-    setSubjectGrades([...subjectGrades, { subject: "", grade: "" }]);
-  };
-
-  const removeSubjectGrade = (index) => {
-    const updatedSubjectGrades = subjectGrades.filter((_, i) => i !== index);
-    setSubjectGrades(updatedSubjectGrades);
-  };
 
   const handleUpload = async () => {
     try {
@@ -338,7 +377,7 @@ export default function AddCourse() {
           <TextInput
             style={styles.input}
             placeholder="Enter interests in English (comma-separated)"
-            value={interests.eng.join(", ")} // Join array into a string for display
+            value={interests.eng.join(", ")}  // Join array into a string for display
             onChangeText={(value) => handleInterestArrayChange("eng", value)}
           />
 

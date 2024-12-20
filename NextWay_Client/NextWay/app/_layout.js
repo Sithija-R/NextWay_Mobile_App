@@ -25,7 +25,7 @@ const MainLayout = () => {
 
       if(isVerified){
         if (userRole === 'admin' ) {
-          router.replace('dashboard');
+          router.replace('viewcourses');
         } else {
           router.replace('home');
         }
