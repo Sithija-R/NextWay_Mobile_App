@@ -271,6 +271,9 @@ export default function ViewCourses() {
     }
   };
 
+
+
+
   return (
     <View style={{ flex: 1 }}>
       <StatusBar style="dark" />

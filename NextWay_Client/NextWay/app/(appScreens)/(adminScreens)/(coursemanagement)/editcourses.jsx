@@ -1,306 +1,524 @@
+import React, { useEffect, useState } from "react";
 import {
-    View,
-    Text,
-    Pressable,
-    Image,
-    TouchableOpacity,
-    TextInput,
-    Alert,
-    StyleSheet,
-    ScrollView,
-  } from "react-native";
-  import React, {  useState } from "react";
-  import AntDesign from "@expo/vector-icons/AntDesign";
-  import { StatusBar } from "expo-status-bar";
-  import { useTranslation } from "react-i18next";
-  import {
-    widthPercentageToDP as wp,
-    heightPercentageToDP as hp,
-  } from "react-native-responsive-screen";
-  import { useRouter } from "expo-router";
-  import { deleteCourseById, fetchCourseByUNICODE } from "../../../../services/fetchingService";
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  Pressable,
+  TextInput,
+  Button,
+  ScrollView,
+  StyleSheet,
+} from "react-native";
+import { StatusBar } from "expo-status-bar";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
+import { useLocalSearchParams , useRouter } from "expo-router";
+import { useTranslation } from "react-i18next";
+import AntDesign from "@expo/vector-icons/AntDesign";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+
+
+import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboardView";
+import { uploadCourseData } from "../../../../services/adminService";
+import Loading from "../../../../components/Loading/Loading";
+
+export default function EditCourse() {
+
+
+  const [loading, setLoading] = useState(false);
+
+  const { course} = useLocalSearchParams();
+
+  const router = useRouter();
+const{t}= useTranslation();
+
+  const parsedCourse = course ? JSON.parse(course) : null;
+
+
+
+
+ 
   
-  export default function EditCourses() {
-    const router = useRouter();
-    const { t } = useTranslation();
-    const [unicode, setUnicode] = useState(null);
-    const [course, setCourse] = useState(null);
-    console.log(unicode);
-    console.log("Res ", course?.COURSE);
+
+
+
+
+  const districts = t("districts", { returnObjects: true });
+
+  const [courseDetails, setCourseDetails] = useState({
+    COURSE_eng: parsedCourse?.parsedCourse || "",
+    COURSE_sin: parsedCourse?.COURSE_sin || "",
+    COURSE_tam: parsedCourse?.COURSE_tam || "",
+    UNIVERSITY_eng: parsedCourse?.UNIVERSITY_eng || "",
+    UNIVERSITY_sin: parsedCourse?.UNIVERSITY_sin || "",
+    UNIVERSITY_tam: parsedCourse?.UNIVERSITY_tam || "",
+    UNICODE: parsedCourse?.UNICODE || "",
+    DURATION_eng: parsedCourse?.DURATION || "",
+    DESCRIPTION_eng: parsedCourse?.DESCRIPTION || "",
+    DESCRIPTION_sin: parsedCourse?.DESCRIPTION_sin || "",
+    DESCRIPTION_tam: parsedCourse?.DESCRIPTION_tam || "",
+    STREAM: parsedCourse?.STREAM || "",
+    INTEREST: parsedCourse?.INTEREST || [],
+    JOB_ROLES_eng: parsedCourse?.JOB_ROLES_eng || [],
+    JOB_ROLES_sin: parsedCourse?.JOB_ROLES_sin || [],
+    JOB_ROLES_tam: parsedCourse?.JOB_ROLES_tam || [],
+  });
+
+  const [interests, setInterests] = useState({
+    eng: parsedCourse?.INTEREST || [],
+    sin: parsedCourse?.INTEREST_sin || [],
+    tam: parsedCourse?.INTEREST_tam || [],
+  });
+
+
+ 
+
+  const handleInterestArrayChange = (field, value) => {
+    const arrayValue = value.split(",").map((item) => item.trim()); // Split input into an array
+
+    // Update the specific interest field
+    setInterests((prevState) => {
+      const newState = {
+        ...prevState,
+        [field]: arrayValue,
+      };
+
+      // Merge interests and update courseDetails
+      mergeInterests(newState);
+      return newState;
+    });
+  };
+
+  // Function to merge interests into the courseDetails
+  const mergeInterests = (interests) => {
+    const mergedInterests = [
+      ...interests.eng,
+      ...interests.sin,
+      ...interests.tam,
+    ].filter((item) => item.trim() !== ""); // Filter out empty strings
+
+    // Update the INTEREST field in courseDetails
+    setCourseDetails((prevState) => ({
+      ...prevState,
+      INTEREST: mergedInterests,
+    }));
+  };
   
-    const handleSearch = async () => {
-      if (!unicode) {
-        Alert.alert("Please enter UNICODE");
-        return;
-      }
-      const response = await fetchCourseByUNICODE(unicode);
-  
-      if (response.success) {
-        setCourse(response.data[0]);
-      } else {
-        Alert.alert("No Course Found!");
-      }
-    };
-  
-  
-    const handleDeleteCourse = async () => {
-      if (!course.id) {
-        Alert.alert("Error", "Invalid course ID");
-        return;
-      }
-    
-      Alert.alert(
-        "Delete Course", 
-        "Are you sure you want to delete this course?", 
-        [
-          {
-            text: "Cancel", 
-            style: "cancel",
-          },
-          {
-            text: "Delete", 
-            style: "destructive", 
-            onPress: async () => {
-             
-              console.log("deleted ",course.id)
-              const response = await deleteCourseById(course.id);
-    
-              if (response.success) {
-                Alert.alert("Success", response.msg);
-                setCourse(null);
-                
-              } else {
-                Alert.alert("Error", response.msg);
-              }
-            },
-          },
-        ]
+
+  const [subjectGrades, setSubjectGrades] = useState(() => {
+
+    if (parsedCourse?.MINIMUM_QUALIFICATIONS?.RequiredGrades) {
+      return Object.entries(parsedCourse.MINIMUM_QUALIFICATIONS.RequiredGrades).map(
+        ([subject, grade]) => ({
+          subject,
+          grade,
+        })
       );
-    };
-  
-    return (
-      <View style={{ flex: 1 }}>
-        <StatusBar style="dark" />
-        <View style={{ flex: 1, alignItems: "flex-start" }}>
-          <Pressable
-            onPress={() => router.back()}
-            style={{
-              position: "absolute",
-              top: hp(5),
-              left: wp(2),
-              zIndex: 5,
-              flexDirection: "row",
-              marginTop: hp(1),
-              alignItems: "center",
-              width: "85%",
-            }}
-          >
-            <AntDesign name="left" size={hp(3)} color="black" />
-            <Text
-              style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: 600 }}
-            >
-              {t("delete_course")}
-            </Text>
-          </Pressable>
-  
-          <Image
-            style={{ width: hp(27), height: hp(20) }}
-            resizeMode="stretch"
-            source={require("../../../../assets/images/elipses.png")}
-          />
-        </View>
-  
-        <View
+    }
+    return [{ subject: "", grade: "" }];
+  });
+
+  console.log("grades 1 ",parsedCourse?.MINIMUM_QUALIFICATIONS?.RequiredGrades)
+  console.log("grades ",subjectGrades)
+  // Handle changes in subject or grade
+  const handleSubjectGradeChange = (index, field, value) => {
+    const updatedSubjectGrades = [...subjectGrades];
+    updatedSubjectGrades[index][field] = value;
+    setSubjectGrades(updatedSubjectGrades);
+  };
+
+  // Add a new subject-grade pair
+  const addNewSubjectGrade = () => {
+    setSubjectGrades([...subjectGrades, { subject: "", grade: "" }]);
+  };
+
+  // Remove a subject-grade pair
+  const removeSubjectGrade = (index) => {
+    const updatedSubjectGrades = subjectGrades.filter((_, i) => i !== index);
+    setSubjectGrades(updatedSubjectGrades);
+  };
+
+
+  const [zScore, setZScore] = useState(() => {
+    return districts.reduce((acc, district) => {
+      acc[district.value] = parsedCourse?.Z_SCORE[district.value] || null; // Set the Z-score or null if not found
+      return acc;
+    }, {});
+  });
+
+
+
+  const handleZScoreChange = (district, value) => {
+    setZScore((prevScores) => ({
+      ...prevScores,
+      [district]: value, 
+    }));
+  };
+
+  const handleChange = (field, value) => {
+    setCourseDetails((prevState) => ({
+      ...prevState,
+      [field]: value,
+    }));
+  };
+
+  const handleArrayChange = (field, value) => {
+    const newArray = value.split(",").map((item) => item.trim()); // Split input string into an array
+    setCourseDetails((prevState) => ({
+      ...prevState,
+      [field]: newArray,
+    }));
+  };
+
+
+
+  const handleUpload = async () => {
+    try {
+      // Ensure required fields are not empty
+      if (
+        !courseDetails.UNICODE ||
+        !courseDetails.COURSE_eng ||
+        !courseDetails.STREAM ||
+        !courseDetails.UNIVERSITY_eng
+      ) {
+        alert("Please fill in all required fields.");
+        return; // Exit the function if any required field is empty
+      }
+
+      // Prepare the Z_SCORE with "NotQualified" for any null values
+      const formattedZScore = Object.fromEntries(
+        Object.entries(zScore).map(([key, value]) => [
+          key,
+          value || "NotQualified",
+        ])
+      );
+
+      // Prepare the data to be uploaded
+      const dataToUpload = {
+        ...courseDetails,
+        MINIMUM_QUALIFICATIONS: {
+          RequiredGrades: subjectGrades.reduce((acc, item) => {
+            if (item.subject && item.grade) {
+              acc[item.subject] = item.grade; // Map subjects to grades
+            }
+            return acc;
+          }, {}),
+          OtherQualifications: {}, // If you have any other qualifications, add them here
+        },
+        Z_SCORE: formattedZScore,
+        SUBJECTS: subjectGrades
+          .map((item) => item.subject)
+          .filter((subject) => subject !== ""), // Filter out empty subjects
+      };
+
+      // Check if there are at least 3 subjects with grades
+      const requiredGradesCount = Object.keys(
+        dataToUpload.MINIMUM_QUALIFICATIONS.RequiredGrades
+      ).length;
+      if (requiredGradesCount < 3) {
+        alert("Please provide at least three subjects with grades.");
+        return; // Exit the function if less than 3 required grades
+      }
+
+      // Call the upload function with the prepared data
+      const uploadResult = await uploadCourseData(dataToUpload);
+      if (uploadResult.success) {
+        // Optionally, reset input fields or navigate away after successful upload
+        // Example: router.push('/nextPage');
+      } else {
+        alert(uploadResult.msg); // Show error message if upload fails
+      }
+    } catch (e) {
+      console.error("Error in handleUpload: ", e);
+    }
+  };
+
+  return (
+    <View style={{ flex: 1 }}>
+      <StatusBar style="dark" />
+      <View style={{ flex: 1, alignItems: "flex-start" }}>
+        <Pressable
+          onPress={() => router.back()}
           style={{
+            position: "absolute",
+            top: hp(5),
+            left: wp(2),
+            zIndex: 5,
+            flexDirection: "row",
+            marginTop: hp(1),
             alignItems: "center",
-            flex: 4.5,
-  
-            justifyContent: "space-between",
-            flexWrap: "wrap",
+            width: "85%",
           }}
         >
-          <View
-            style={{
-              flexWrap: "wrap",
-              padding: wp(6),
-            }}
+          <AntDesign name="left" size={hp(3)} color="black" />
+          <Text
+            style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: 600 }}
           >
-            <Text
-              style={{
-                fontSize: hp(3),
-                fontWeight: "600",
-                textAlign: "left",
-              }}
-            >
-              {t("search_course")}
-            </Text>
-            <View
-              style={{
-                marginTop: hp(2),
-                flexDirection: "row",
-                alignItems: "center",
-                width: "100%",
-                padding: hp(1),
-                marginBottom: hp(3),
-                justifyContent: "space-between",
-              }}
-            >
+            {t("New course")}
+          </Text>
+        </Pressable>
+
+        <Image
+          style={{ width: hp(27), height: hp(20) }}
+          resizeMode="stretch"
+          source={require("../../../../assets/images/elipses.png")}
+        />
+      </View>
+
+      <View
+        style={{
+          alignItems: "left",
+          flex: 4,
+          paddingHorizontal: wp(5),
+          transform: [{ translateY: -hp(5) }],
+        }}
+      >
+        <CustomKeyboardView>
+          <Text style={styles.text}>UNICODE:</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course unicode"
+            value={courseDetails.UNICODE}
+            onChangeText={(value) => handleChange("UNICODE", value)}
+          />
+
+          <Text style={styles.text}>Course Name (English):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course name in English"
+            value={courseDetails.COURSE_eng}
+            onChangeText={(value) => handleChange("COURSE_eng", value)}
+          />
+
+          <Text style={styles.text}>Course Name (Sinhala):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course name in Sinhala"
+            value={courseDetails.COURSE_sin}
+            onChangeText={(value) => handleChange("COURSE_sin", value)}
+          />
+
+          <Text style={styles.text}>Course Name (Tamil):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course name in Tamil"
+            value={courseDetails.COURSE_tam}
+            onChangeText={(value) => handleChange("COURSE_tam", value)}
+          />
+
+          <Text style={styles.text}>University (English):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter university name in English"
+            value={courseDetails.UNIVERSITY_eng}
+            onChangeText={(value) => handleChange("UNIVERSITY_eng", value)}
+          />
+
+          <Text style={styles.text}>University (Sinhala):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter university name in Sinhala"
+            value={courseDetails.UNIVERSITY_sin}
+            onChangeText={(value) => handleChange("UNIVERSITY_sin", value)}
+          />
+
+          <Text style={styles.text}>University (Tamil):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter university name in Tamil"
+            value={courseDetails.UNIVERSITY_tam}
+            onChangeText={(value) => handleChange("UNIVERSITY_tam", value)}
+          />
+
+          <Text style={styles.text}>Stream:</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course stream"
+            value={courseDetails.STREAM}
+            onChangeText={(value) => handleChange("STREAM", value)}
+          />
+
+          <Text style={styles.text}>Description (English):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course description in English"
+            value={courseDetails.DESCRIPTION_eng}
+            onChangeText={(value) => handleChange("DESCRIPTION_eng", value)}
+          />
+
+          <Text style={styles.text}>Description (Sinhala):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course description in Sinhala"
+            value={courseDetails.DESCRIPTION_sin}
+            onChangeText={(value) => handleChange("DESCRIPTION_sin", value)}
+          />
+
+          <Text style={styles.text}>Description (Tamil):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course description in Tamil"
+            value={courseDetails.DESCRIPTION_tam}
+            onChangeText={(value) => handleChange("DESCRIPTION_tam", value)}
+          />
+
+          <Text style={styles.text}>Duration (English):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter course duration in English"
+            value={courseDetails.DURATION_eng}
+            onChangeText={(value) => handleChange("DURATION_eng", value)}
+          />
+
+          <Text style={styles.text}>Interests (English):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter interests in English (comma-separated)"
+            value={interests.eng.join(", ")}  // Join array into a string for display
+            onChangeText={(value) => handleInterestArrayChange("eng", value)}
+          />
+
+          <Text style={styles.text}>Interests (Sinhala):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter interests in Sinhala (comma-separated)"
+            value={interests.sin.join(", ")} // Join array into a string for display
+            onChangeText={(value) => handleInterestArrayChange("sin", value)}
+          />
+
+          <Text style={styles.text}>Interests (Tamil):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter interests in Tamil (comma-separated)"
+            value={interests.tam.join(", ")} // Join array into a string for display
+            onChangeText={(value) => handleInterestArrayChange("tam", value)}
+          />
+
+          <Text style={styles.text}>Job Roles (English):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter job roles in English (comma-separated)"
+            value={courseDetails.JOB_ROLES_eng.join(", ")} // Join array into a string for display
+            onChangeText={(value) => handleArrayChange("JOB_ROLES_eng", value)}
+          />
+
+          <Text style={styles.text}>Job Roles (Sinhala):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter job roles in Sinhala (comma-separated)"
+            value={courseDetails.JOB_ROLES_sin.join(", ")}
+            onChangeText={(value) => handleArrayChange("JOB_ROLES_sin", value)}
+          />
+
+          <Text style={styles.text}>Job Roles (Tamil):</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter job roles in Tamil (comma-separated)"
+            value={courseDetails.JOB_ROLES_tam.join(", ")}
+            onChangeText={(value) => handleArrayChange("JOB_ROLES_tam", value)}
+          />
+
+          <Text style={styles.text}>Minimum Qualifications:</Text>
+          {subjectGrades.map((subjectGrade, index) => (
+            <View key={index} style={styles.subjectGradeContainer}>
               <TextInput
-                style={{
-                  width: "60%",
-                  borderWidth: 2,
-                  borderColor: "rgba(0, 0, 0, 0.1)",
-                  borderRadius: 10,
-  
-                  fontSize: hp(2.5),
-                  paddingHorizontal: wp(3),
-                  paddingVertical: hp(1),
-                  flex: 1,
-                  marginRight: wp(2),
-                }}
-                placeholder={t("UNICODE")}
-                onChangeText={setUnicode}
-                autoCapitalize="characters"
+                style={[styles.input, { flex: 2, marginRight: 10,marginBottom:0  }]}
+                placeholder="Subject"
+                value={subjectGrade.subject}
+                onChangeText={(value) =>
+                  handleSubjectGradeChange(index, "subject", value)
+                }
               />
-  
-              <TouchableOpacity
-                onPress={handleSearch}
-                style={{
-                  backgroundColor: "#149BC6",
-                  padding: hp(1),
-                  paddingHorizontal: wp(2),
-                  borderRadius: 10,
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: hp(3),
-                    fontWeight: "600",
-                    textAlign: "center",
-                    color: "white",
-                  }}
-                >
-                  {t("Search")}
-                </Text>
+              <TextInput
+                style={[styles.input,{ flex: 0.8, marginRight: 10,marginBottom:0 }]}
+                placeholder="Grade"
+                value={subjectGrade.grade}
+                onChangeText={(value) =>
+                  handleSubjectGradeChange(index, "grade", value)
+                }
+              />
+              <TouchableOpacity onPress={() => removeSubjectGrade(index)} style={{alignItems:'center'}}>
+                <MaterialCommunityIcons name="delete" size={40} color="red" />
               </TouchableOpacity>
             </View>
-          </View>
-  
-          <View style={styles.container}>
-            {course ? (
-              <>
-                <Text style={styles.title}>
-                  {course.COURSE}{" "}
-                  <Text style={{ color: "#149BC6", marginLeft: wp(20) }}>
-                    {course.UNICODE}
-                  </Text>
-                </Text>
-  
-                <View
-                  style={{
-                    width: wp(90),
-                    maxHeight: hp(67),
-                    backgroundColor: "rgba(128, 128, 128, 0.2)",
-                    padding: hp(2.2),
-                    borderRadius: 15,
-                  }}
-                >
-                  <ScrollView
-                    contentContainerStyle={{
-                      flexGrow: 1,
-                      paddingHorizontal: wp(2),
-                    }}
-                  >
-              
-  
-                    <Text style={styles.text}>
-                      <Text style={styles.detailHeader}>Stream: </Text>
-                      <Text style={styles.details}> {course.STREAM}</Text>{" "}
-                    </Text>
-                    <Text style={styles.text}>
-                      <Text style={styles.detailHeader}>University: </Text>
-                      <Text style={styles.details}>
-                        {" "}
-                        {course.UNIVERSITY}
-                      </Text>{" "}
-                    </Text>
-                    <Text style={styles.text}>
-                      <Text style={styles.detailHeader}>Description: </Text>
-                      <Text style={[styles.details, { fontWeight: "light" }]}>
-                        {" "}
-                        {course.DESCRIPTION}
-                      </Text>{" "}
-                    </Text>
-                  </ScrollView>
-                  <TouchableOpacity
-                onPress={handleDeleteCourse}
-                style={{
-                
-                  backgroundColor: "red",
-                  padding: hp(1),
-                  paddingHorizontal: wp(2),
-                  borderRadius: 10,
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: hp(3),
-                  paddingHorizontal:wp(20),
-                    fontWeight: "600",
-                    textAlign: "center",
-                    color: "white",
-                  }}
-                >
-                  {t("Delete")}
-                </Text>
-              </TouchableOpacity>
-                </View>
-                
-              </>
-            ) : (
-              <Text> </Text>
-            )}
+          ))}
           
+                <TouchableOpacity style={{ backgroundColor: "#149BC6", padding:hp(1),alignItems:'center'}} onPress={addNewSubjectGrade}>
+                    <Text style={{color:'white',fontSize:hp(2)}}>Add Subject</Text>
+                </TouchableOpacity>
+          <Text style={[styles.text,{marginTop:hp(2)}]}>Z-Scores:</Text>
+          {districts.map((district) => (
+            <View key={district.value} style={styles.zScoreContainer}>
+              <Text style={styles.zScoreText}>{district.label}</Text>
+              <TextInput
+                    style={[styles.input,{marginBottom:0}]}
+                placeholder="Enter Z-Score"
+                keyboardType="numeric"
+                value={zScore[district.value]?.toString() || ""}
+                onChangeText={(value) =>
+                  handleZScoreChange(district.value, value)
+                }
+              />
+            </View>
+          ))}
+          <View style={{ flexDirection: 'row', justifyContent: 'center',marginTop:hp(1) }}>
+
+                {loading ? (
+                <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+                  <Loading size={hp(10)} />
+                </View>
+              ) : (
+                <TouchableOpacity
+                onPress={handleUpload}
+                  style={{
+                    backgroundColor: "#149BC6", padding: hp(2), borderRadius: 40,width:wp(60)
+                  }}
+                >
+                  <Text style={{ fontSize: hp(3), fontWeight: "600", textAlign: "center", color: "white", }}
+                  >
+                    Add Course
+                  </Text>
+                </TouchableOpacity>
+              )}
           </View>
-        </View>
-  
-        <View style={{ alignItems: "flex-end", zIndex: -1 }}>
-          <Image
-            style={{
-              width: hp(15),
-              height: hp(14),
-            }}
-            resizeMode="stretch"
-            source={require("../../../../assets/images/bottomEllipse.png")}
-          />
-        </View>
+
+         
+        </CustomKeyboardView>
       </View>
-    );
-  }
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      padding: 16,
-      alignItems: "center",
-    },
-    title: {
-      fontSize: 20,
-      fontWeight: "bold",
-      marginBottom: 10,
-      textAlign: "center",
-    },
-    detailHeader: {
-      fontSize: 18,
-      marginBottom: 8,
-      fontWeight: "bold",
-    },
-    details: {
-      fontSize: 18,
-      marginBottom: 8,
-      fontWeight: "normal",
-    },
-    text: {
-      marginBottom: hp(2),
-    },
-  });
-  
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: wp(4.5),
+    marginBottom: hp(1),
+  },
+  input: {
+    height: hp(6),
+    borderColor: "#ccc",
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    borderRadius: 5,
+    marginBottom: hp(2),
+  },
+  subjectGradeContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: hp(2),
+  },
+  zScoreContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: hp(2),
+    paddingHorizontal:wp(10)
+  },
+  zScoreText: {
+    flex: 1,
+    fontSize:hp(2)
+  },
+});

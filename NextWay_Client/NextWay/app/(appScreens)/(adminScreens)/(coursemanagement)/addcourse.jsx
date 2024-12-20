@@ -90,6 +90,8 @@ export default function AddCourse() {
   const [subjectGrades, setSubjectGrades] = useState([
     { subject: "", grade: "" },
   ]);
+
+  
   const [zScore, setZScore] = useState(
     districts.reduce((acc, district) => {
       acc[district.value] = null; // Set each district's Z-Score to null

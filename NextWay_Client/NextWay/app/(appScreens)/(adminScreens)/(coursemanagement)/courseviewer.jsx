@@ -10,12 +10,25 @@ import {
 import { useTranslation } from "react-i18next";
 
 export default function CourseDetailsScreen() {
-  const { course,district } = useLocalSearchParams();
+  const { course} = useLocalSearchParams();
 
   const router = useRouter();
 const{t}= useTranslation();
 
   const parsedCourse = course ? JSON.parse(course) : null;
+
+console.log("pc ",parsedCourse)
+
+  const handleEdit=()=>{
+    router.push({
+      pathname: "editcourses",
+      params: {
+        course: course
+      },
+    });
+
+  }
+
 
   return (
 
@@ -82,7 +95,7 @@ const{t}= useTranslation();
       
         
 </Text>
-          <Text  style={styles.text}><Text style={styles.detailHeader}>Z-Score</Text><Text style={styles.details}> {parsedCourse.Z_SCORE[district]}</Text> </Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>Z-Score</Text><Text style={styles.details}> </Text> </Text>
           {Object.entries(parsedCourse.Z_SCORE).map(
     ([subject, grade], index) => (
       <Text  style={styles.details} key={index}>  {"\t"}
@@ -101,7 +114,7 @@ const{t}= useTranslation();
         <Text>No course details available.</Text>
       )}
     <TouchableOpacity
-              
+              onPress={handleEdit}
               style={{
                 backgroundColor: "#149BC6",
                 marginTop:hp(1),
