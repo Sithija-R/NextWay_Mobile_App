@@ -70,7 +70,7 @@ export default function ViewCourses() {
               key={index}
               onPress={() => {
                 router.push({
-                  pathname: "coursedisplayer",
+                  pathname: "courseviewer",
                   params: { course: JSON.stringify(course) },
                 });
               }}
@@ -96,7 +96,7 @@ export default function ViewCourses() {
             key={index}
             onPress={() => {
               router.push({
-                pathname: "coursedisplayer",
+                pathname: "courseviewer",
                 params: { course: JSON.stringify(course) },
               });
             }}
@@ -316,6 +316,7 @@ export default function ViewCourses() {
           style={{
             flexWrap: "wrap",
             padding: wp(6),
+            alignItems:'center'
           }}
         >
           <Text
@@ -331,10 +332,13 @@ export default function ViewCourses() {
           {/* Radio Button Section */}
           <View
             style={{
+              width:"80%",
+              alignItems:'center',
               flexDirection: "row",
               justifyContent: "space-between",
               marginTop: hp(2),
               marginBottom: hp(1),
+            
             }}
           >
             <TouchableOpacity
@@ -458,7 +462,7 @@ export default function ViewCourses() {
           </View>
         </View>
 
-        <View style={{ flex: 5, width: "100%" }}>
+        <View style={{ flex: 5, width: "100%",alignItems:'center' }}>
           {courses.length > 0 && keyword ? (
             <ScrollView style={styles.courseTable}>
               <View style={styles.tableHeader}>
@@ -471,7 +475,7 @@ export default function ViewCourses() {
                   key={index}
                   onPress={() => {
                     router.push({
-                      pathname: "coursedisplayer",
+                      pathname: "courseviewer",
                       params: { course: JSON.stringify(course) },
                     });
                   }}
@@ -495,7 +499,7 @@ export default function ViewCourses() {
                   {...props}
                   scrollEnabled={true} // Enables horizontal scrolling
                   indicatorStyle={{ backgroundColor: "white" }} // Tab indicator styling
-                  style={{ backgroundColor: "#149BC6" }} // Tab bar background styling
+                  style={{ backgroundColor: "#149BC6",width:'98%' }} // Tab bar background styling
                   tabStyle={{ width: 110 }} // Adjust tab width
                   labelStyle={{ fontSize: 14, color: "white" }} // Tab label styling
                 />
