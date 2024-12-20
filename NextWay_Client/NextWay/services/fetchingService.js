@@ -78,6 +78,38 @@ const fetchCoursesByStream = async (stream) => {
   }
 };
 
+//fetch by name
+
+
+const fetchCoursesByName = async (name) => {
+  try {
+    // Ensure the keyword is in uppercase
+    const processedName = name.trim().toUpperCase();
+
+    // Fetch all courses from Firestore
+    const coursesCollection = collection(db, "courses");
+    const coursesSnapshot = await getDocs(coursesCollection);
+
+    // Map Firestore documents to course data
+    const coursesList = coursesSnapshot.docs.map((doc) => doc.data());
+
+    // Filter courses to find matches (check if COURSE field exists)
+    const filteredCourses = coursesList.filter(
+      (course) => course.COURSE && course.COURSE.includes(processedName)
+    );
+
+    // Return results
+    if (filteredCourses.length > 0) {
+      return { success: true, data: filteredCourses };
+    } else {
+      return { success: false, msg: "No courses found matching the keyword!" };
+    }
+  } catch (error) {
+    console.error("Error fetching courses:", error.message);
+    return { success: false, msg: error.message };
+  }
+};
+
 // Fetch courses by subject grade
 const fetchCoursesBySubjectGrade = async (subject, grade) => {
   try {
@@ -318,5 +350,6 @@ export {
   fetchCourseById,
   fetchCoursesByCriteria,
   fetchCourseByUNICODE,
-  deleteCourseById
+  deleteCourseById,
+  fetchCoursesByName
 };

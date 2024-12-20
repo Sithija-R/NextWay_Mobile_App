@@ -88,6 +88,7 @@ export default function coursemanagement() {
           <AntDesign name="right" size={24} color="black" />
         </TouchableOpacity>
         <TouchableOpacity
+        onPress={()=>router.push('viewcourses')}
           style={{
             backgroundColor: "#EEEEEE",
             paddingVertical: hp(2),
