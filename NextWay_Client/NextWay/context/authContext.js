@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
   const [isVerified, setIsVerified] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
 
-  console.log("auth ", user);
+
 
   const updateUserData = async (userId) => {
     const userDocRef = doc(db, "users", userId);

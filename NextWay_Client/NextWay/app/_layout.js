@@ -1,54 +1,43 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { Slot, Stack, useRouter, useSegments } from 'expo-router'
-import { AuthProvider, useAuth } from '../context/authContext'
-import { useEffect } from 'react'
-
-
+import { View, Text } from "react-native";
+import React from "react";
+import { Slot, Stack, useRouter, useSegments } from "expo-router";
+import { AuthProvider, useAuth } from "../context/authContext";
+import { useEffect } from "react";
 
 const MainLayout = () => {
   const { isAuthenticated, userRole, isVerified } = useAuth();
   const segments = useSegments();
   const router = useRouter();
 
- 
-
   useEffect(() => {
-    if (typeof isAuthenticated == 'undefined'){
-      return
-    };
+    if (typeof isAuthenticated == "undefined") {
+      return;
+    }
 
-    const inApp = segments[0] == 'appScreens';
+    const inApp = segments[0] == "appScreens";
 
     if (isAuthenticated && !inApp) {
-
-
-      if(isVerified){
-        if (userRole === 'admin' ) {
-          router.replace('viewcourses');
+      if (isVerified) {
+        if (userRole === "admin") {
+          router.replace("deleteuser");
         } else {
-          router.replace('home');
+          router.replace("home");
         }
+      } else {
+        router.replace("IsVerified");
       }
-      else{
-        router.replace('IsVerified')
-      }
-      
     } else if (isAuthenticated === false) {
-     
-      router.replace('signIn');
+      router.replace("signIn");
     }
   }, [isAuthenticated, userRole, isVerified]);
 
   return <Slot />;
 };
 
-
-
 export default function _layout() {
   return (
- <AuthProvider>
-    <MainLayout/>
- </AuthProvider>
-  )
+    <AuthProvider>
+      <MainLayout />
+    </AuthProvider>
+  );
 }

@@ -15,8 +15,7 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Feather from '@expo/vector-icons/Feather';
 
-
-export default function coursemanagement() {
+export default function UserManagement() {
   const router = useRouter();
 
   return (
@@ -49,7 +48,7 @@ export default function coursemanagement() {
         }}
       >
         <TouchableOpacity
-        onPress={()=>router.push('addcourse')}
+        onPress={()=>router.push('viewprofile')}
           style={{
             backgroundColor: "#EEEEEE",
             paddingVertical: hp(2),
@@ -61,15 +60,15 @@ export default function coursemanagement() {
             marginTop:hp(2)
           }}
         >
-          <FontAwesome5 name="book-open" size={24} color="black" />
+          <FontAwesome6 name="user-pen" size={28} color="black" />
           <Text style={{ fontSize: hp(2.5), fontWeight: "600" }}>
-            Add Course
+          Profile View & Edit
           </Text>
           <FontAwesome6 name="add" size={24} color="black" />
         </TouchableOpacity>
 
         <TouchableOpacity
-         onPress={()=>router.push('deletecourses')}
+         onPress={()=>router.push('deleteuser')}
           style={{
             backgroundColor: "#EEEEEE",
             paddingVertical: hp(2),
@@ -81,14 +80,15 @@ export default function coursemanagement() {
             marginTop:hp(2)
           }}
         >
-          <MaterialIcons name="delete" size={32} color="black" />
+     <FontAwesome6 name="user-xmark" size={28} color="black" />
+        
           <Text style={{ fontSize: hp(2.5), fontWeight: "600" }}>
-            Delete Course
+            Delete User Profile
           </Text>
           <AntDesign name="right" size={24} color="black" />
         </TouchableOpacity>
         <TouchableOpacity
-        onPress={()=>router.push('viewcourses')}
+        onPress={()=>router.push('rolemanagement')}
           style={{
             backgroundColor: "#EEEEEE",
             paddingVertical: hp(2),
@@ -100,9 +100,9 @@ export default function coursemanagement() {
             marginTop:hp(2)
           }}
         >
-        <MaterialIcons name="edit-document" size={24} color="black" />
+        <FontAwesome6 name="user-gear" size={28} color="black" />
           <Text style={{ fontSize: hp(2.5), fontWeight: "600" }}>
-           View & Edit Course
+          User Role Management
           </Text>
           <AntDesign name="right" size={24} color="black" />
         </TouchableOpacity>

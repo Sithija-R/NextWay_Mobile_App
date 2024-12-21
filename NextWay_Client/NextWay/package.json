@@ -38,6 +38,7 @@
     "i18next": "^23.14.0",
     "lottie-react-native": "^6.7.0",
     "nativewind": "^2.0.11",
+    "nextway": "file:",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-google-multi-lang": "^1.0.6",
