@@ -1,0 +1,480 @@
+[
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "UNIVERSITY OF COLOMBO",
+        "UNICODE": "016A",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Business Analyst", "Financial Manager", "Marketing Manager", "Human Resource Manager"],
+        "DESCRIPTION": "The course focuses on developing managerial skills and knowledge in various business functions, preparing students for leadership roles in organizations.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.7267"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "UNIVERSITY OF PERADENIYA",
+        "UNICODE": "016B",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Business Consultant", "Operations Manager", "Project Manager", "Sales Manager"],
+        "DESCRIPTION": "This program aims to equip students with the essential skills to manage and lead organizations effectively in a competitive environment.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.5942"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "UNIVERSITY OF SRI JEYAWARDENAPURA",
+        "UNICODE": "016C",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Management Trainee", "Business Development Executive", "Account Manager", "Strategic Planner"],
+        "DESCRIPTION": "The curriculum is designed to provide a comprehensive understanding of management principles and practices, fostering critical thinking and problem-solving skills.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.7921"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "UNIVERSITY OF KELANIYA",
+        "UNICODE": "016D",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Financial Analyst", "Market Research Analyst", "Human Resource Specialist", "Business Operations Manager"],
+        "DESCRIPTION": "This degree focuses on practical and theoretical aspects of management, preparing students for various roles in business settings.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.6355"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "UNIVERSITY OF JAFFNA",
+        "UNICODE": "016E",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Corporate Trainer", "Business Operations Analyst", "Product Manager", "Retail Manager"],
+        "DESCRIPTION": "The program emphasizes the development of strategic management skills and an understanding of the business environment.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.1516"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "UNIVERSITY OF RUHUNA",
+        "UNICODE": "016F",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Supply Chain Manager", "Business Intelligence Analyst", "Entrepreneur", "Consulting Manager"],
+        "DESCRIPTION": "Students will gain insights into various management theories and practices, preparing them for dynamic business challenges.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.4112"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "EASTERN UNIVERSITY, SRI LANKA",
+        "UNICODE": "016H",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Business Operations Supervisor", "Financial Consultant", "Marketing Coordinator", "HR Manager"],
+        "DESCRIPTION": "The course prepares students for effective decision-making and leadership in various business contexts.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.0118"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
+        "UNICODE": "016J",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Business Development Manager", "Financial Planner", "Market Analyst", "Operations Coordinator"],
+        "DESCRIPTION": "Focuses on the integration of theory and practice in management, guiding students to become effective leaders.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "0.6814"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "RAJARATA UNIVERSITY OF SRI LANKA",
+        "UNICODE": "016K",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Business Analyst", "Project Coordinator", "Sales Executive", "HR Consultant"],
+        "DESCRIPTION": "Students will learn to analyze business problems and develop effective solutions in a managerial context.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.2881"
+    },
+    {
+        "COURSE": "MANAGEMENT",
+        "UNIVERSITY": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "UNICODE": "016L",
+        "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+        "STREAM": "Commerce",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Accounting": "S",
+                "Economics": "S",
+                "Business Studies": "S"
+            },
+            "OtherQualifications": {
+                "OL_Maths": "S"
+            }
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Corporate Manager", "Business Strategist", "Finance Officer", "Operations Manager"],
+        "DESCRIPTION": "The curriculum focuses on strategic management and operational efficiency in organizations.",
+        "DEGREE_TYPE": "B.Com (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.3487"
+    },
+
+    [
+        {
+            "COURSE": "MANAGEMENT",
+            "UNIVERSITY": "WAYAMBA UNIVERSITY OF SRI LANKA",
+            "UNICODE": "016M",
+            "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Management Consultant", "Business Operations Analyst", "Marketing Specialist", "HR Director"],
+            "DESCRIPTION": "Students will develop skills in strategic planning, resource management, and operational effectiveness.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.3746"
+        },
+        {
+            "COURSE": "REAL ESTATE MANAGEMENT AND EVALUATION",
+            "UNIVERSITY": "UNIVERSITY OF SRI JEYAWARDENAPURA",
+            "UNICODE": "017C",
+            "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Real Estate Manager", "Property Valuer", "Real Estate Consultant", "Market Research Analyst"],
+            "DESCRIPTION": "This program focuses on the principles of real estate management and valuation, equipping students with practical skills.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.3095"
+        },
+        {
+            "COURSE": "COMMERCE",
+            "UNIVERSITY": "UNIVERSITY OF SRI JEYAWARDENAPURA",
+            "UNICODE": "018C",
+            "SUBJECTS": "Economics or Business Studies and Business Statistics or Information & Communication Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Accountant", "Financial Analyst", "Business Consultant", "Tax Advisor"],
+            "DESCRIPTION": "The course provides a strong foundation in commerce, preparing students for various roles in finance and business.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.6016"
+        },
+        {
+            "COURSE": "COMMERCE",
+            "UNIVERSITY": "UNIVERSITY OF KELANIYA",
+            "UNICODE": "018D",
+            "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Business Analyst", "Financial Manager", "Marketing Specialist", "Operations Manager"],
+            "DESCRIPTION": "Students will gain insights into business operations and financial management, preparing them for diverse career paths.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.4847"
+        },
+        {
+            "COURSE": "COMMERCE",
+            "UNIVERSITY": "UNIVERSITY OF JAFFNA",
+            "UNICODE": "018E",
+            "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Account Manager", "Financial Consultant", "Market Research Analyst", "HR Specialist"],
+            "DESCRIPTION": "The program emphasizes analytical skills and business acumen, preparing students for careers in commerce.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": " 1.1743"
+        },
+        {
+            "COURSE": "COMMERCE",
+            "UNIVERSITY": "EASTERN UNIVERSITY, SRI LANKA",
+            "UNICODE": "018H",
+            "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Business Operations Manager", "Financial Analyst", "Marketing Manager", "Sales Executive"],
+            "DESCRIPTION": "This course prepares students for various roles in the business sector, focusing on practical applications of commerce.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.0406"
+        },
+        {
+            "COURSE": "COMMERCE",
+            "UNIVERSITY": "UNIVERSITY OF COLOMBO",
+            "UNICODE": "018J",
+            "SUBJECTS": "Economics or Business Studies and Business Statistics or Information & Communication Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Financial Manager", "Business Consultant", "Market Research Analyst", "HR Manager"],
+            "DESCRIPTION": "The program provides a comprehensive education in commerce, preparing students for leadership roles in various sectors.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.0511 "
+        },
+        {
+            "COURSE": "MANAGEMENT STUDIES",
+            "UNIVERSITY": "UNIVERSITY OF VAVUNIYA, SRI LANKA",
+            "UNICODE": "022R",
+            "SUBJECTS": "Economics, Business Studies ,Accounting",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Business Analyst", "Operations Manager", "Project Coordinator", "HR Specialist"],
+            "DESCRIPTION": "This program focuses on management principles and practices, equipping students for various managerial roles.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.1014"
+        },
+        {
+            "COURSE": "MANAGEMENT STUDIES",
+            "UNIVERSITY": "EASTERN UNIVERSITY (TRINCOMALEE CAMPUS)",
+            "UNICODE": "022W",
+            "SUBJECTS": "Economics, Business Studies ,Accounting",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Management Consultant", "Business Development Executive", "Financial Analyst", "Marketing Manager"],
+            "DESCRIPTION": "Students will learn to apply management theories in practical settings, preparing for careers in various sectors.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "0.9347"
+        },
+        {
+            "COURSE": "BUSINESS INFORMATION SYSTEMS (BIS)",
+            "UNIVERSITY": "UNIVERSITY OF SRI JEYAWARDENAPURA",
+            "UNICODE": "077C",
+            "SUBJECTS": "Economics, Business Studies ,Accounting or Information & Communication Technology,Comined Mathematics,Logic & Scientific Method,Business Statistics,Physics",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Studies": "S",
+                    "Business Statistics": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["IT Manager", "Business Analyst", "System Analyst", "Data Analyst"],
+            "DESCRIPTION": "This program combines business and technology, preparing students for roles in information systems management.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.0130"
+        },
+        {
+            "COURSE": "ACCOUNTING INFORMATION SYSTEMS",
+            "UNIVERSITY": "UNIVERSITY OF KELANIYA",
+            "UNICODE": "127D",
+            "SUBJECTS": "Economics or Business Studies and Business Statistics or Information & Communication Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Accountant", "Financial Analyst", "IT Consultant", "Business Systems Analyst"],
+            "DESCRIPTION": "Focuses on integrating accounting principles with information systems, preparing students for specialized roles in accounting technology.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "0.0579"
+        },
+        {
+            "COURSE": "BANKING AND INSURANCE",
+            "UNIVERSITY": "UNIVERSITY OF VAVUNIYA, SRI LANKA",
+            "UNICODE": "133R",
+            "SUBJECTS": "Economics,Accounting",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Accounting": "S",
+                    "Economics": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Bank Manager", "Insurance Underwriter", "Financial Advisor", "Risk Manager"],
+            "DESCRIPTION": "This program covers the principles of banking and insurance, equipping students for careers in financial services.",
+            "DEGREE_TYPE": "B.Com (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.0582"
+        }
+    ]
+
+]
+
+    
+
+    
+   

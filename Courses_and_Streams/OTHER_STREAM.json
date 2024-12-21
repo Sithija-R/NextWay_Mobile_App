@@ -1,0 +1,414 @@
+[
+ 
+    {
+        "COURSE": "INFORMATION TECHNOLOGY (IT)",
+        "UNIVERSITY": "UNIVERSITY OF MORATUWA",
+        "UNICODE": "026G",
+        "SUBJECTS": [
+            "Higher Mathematics",
+            "Combined Mathematics",
+            "Mathematics",
+            "Physics"
+        ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "AtLeastOneSubject": {
+                    "Higher Mathematics": "C",
+                    "Combined Mathematics": "C",
+                    "Mathematics": "C",
+                    "Physics": "C"
+                }
+            }
+        },
+        "INTEREST": [
+            "Software Development",
+            "Networking"
+        ],
+        "JOB_ROLES": [
+            "Software Engineer",
+            "Network Administrator",
+            "Database Manager"
+        ],
+        "DESCRIPTION": "The IT program at the University of Moratuwa provides a comprehensive foundation in computer science, networking, and software engineering, equipping students for the dynamic IT industry.",
+        "DEGREE_TYPE": "BSc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.2152",
+        "STREAM": "Other"
+    
+    },
+    {
+        "COURSE": "MANAGEMENT AND INFORMATION TECHNOLOGY (MIT)",
+        "UNIVERSITY": "UNIVERSITY OF KELANIYA",
+        "UNICODE": "027D",
+        "SUBJECTS": [
+            "Biological Science Stream",
+            "Physical Science Stream",
+            "Information & Communication Technology"
+        ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "AtLeastOneSubject": {
+                    "Higher Mathematics": "C",
+                    "Combined Mathematics": "C",
+                    "Mathematics": "C",
+                    "Physics": "C"
+                }
+                
+            }
+            
+        },
+        "INTEREST": [
+            "Management",
+            "Technology"
+        ],
+        "JOB_ROLES": [
+            "IT Manager",
+            "Business Analyst",
+            "Project Manager"
+        ],
+        "DESCRIPTION": "The MIT program blends management principles with IT skills, training students to manage technology-driven projects in modern business environments.",
+        "DEGREE_TYPE": "BSc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "0.5830",
+        "STREAM": "Other"
+    },
+    {
+        "COURSE": "TOWN AND COUNTRY PLANNING",
+        "UNIVERSITY": "UNIVERSITY OF MORATUWA",
+        "UNICODE": "030G",
+        "SUBJECTS": [],
+        "MINIMUM_QUALIFICATIONS":{
+         "RequiredGrades": {
+            "AtLeastOneSubject":{
+            "Combined Mathematics":"S",
+            "Chemistry":"S",
+            "Physics":"S",
+            "Biology":"S"
+         },
+       
+         "OtherSubjects": {
+            "Accounting":"S",
+            "Agricultural Science":"S",
+            "Business Studies":"S",
+            "Business Statistics":"S",
+            "Information & Communication Technology":"S",
+            "Economics":"S",
+            "Geography":"S",
+            "Higher Mathematics":"S",
+            "Logic & Scientific Methods":"S",
+            "Mathematics":"S",
+            "Biosystems Technology":"S",
+            "Science for Technology":"S",
+            "Engineering Technology":"S",
+            "Political Science":"S"
+         }
+    }
+    },
+    "OtherQualifications": {
+        "O/L_English": "B",
+        "O/L_Mathematics": "C"
+    },
+
+        "INTEREST": [
+            "Urban Development",
+            "Sustainability"
+        ],
+        "JOB_ROLES": [
+            "Urban Planner",
+            "Town Planner",
+            "GIS Specialist"
+        ],
+        "DESCRIPTION": "Focused on urban and regional development, the Town and Country Planning program equips students with the skills to design sustainable and efficient urban environments.",
+        "DEGREE_TYPE": "BSc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "0.4869",
+        "STREAM": "Other"
+    },
+  {
+    "COURSE": "QUANTITY SURVEYING",
+    "UNIVERSITY": "UNIVERSITY OF MORATUWA",
+    "UNICODE": "011",
+    "SUBJECTS":[
+        "Combined Mathematics",
+        "Chemistry",
+        "Physics",
+        "Biology",
+        "Accounting",
+        "Agricultural Science",
+        "Business Studies",
+        "Business Statistics",
+        "Information & Communication Technology",
+        "Economics",
+        "Geography",
+        "Higher Mathematics",
+        "Logic & Scientific Methods",
+        "Mathematics",
+        "Biosystems Technology",
+        "Science for Technology",
+        "Engineering Technology",
+        "Political Science"
+    ],
+    "MINIMUM_QUALIFICATIONS": {
+        
+            "RequiredSubjects": {
+                "AtLeastOneSubject": {
+                    "Combined Mathematics": "S",
+                    "Higher Mathematics": "S"
+                },
+                "OtherSubjects": {
+                    "Accounting":"S",
+                    "Economics":"S",
+                    "Business Statistics":"S",
+                    "Business Studies":"S",
+                    "Physics":"S",
+                    "Chemistry":"S",
+                    "Information & Communication Technology":"S"
+                }
+            }
+        },
+        "OtherQualifications": {
+            "O/L_Mathematics": "C",
+            "O/L_Science": "S",
+            "O/L_English": "C"
+        },
+    
+    "INTEREST": "Construction management, cost estimation, and project management.",
+    "JOB_ROLES": ["Quantity Surveyor, Cost Estimator,Project Manager,Construction Manager"],
+    "DESCRIPTION": "The Bachelor of Science Honours in Quantity Surveying program at the University of Moratuwa focuses on equipping students with the skills necessary for effective cost management and project delivery in the construction industry.",
+    "DEGREE_TYPE": "BScHons (QS)",
+    "DURATION": "4 YEARS",
+    "Z_SCORE": "0.9754",
+    "STREAM" :"Other"
+},
+{
+    "COURSE": "SURVEYING SCIENCE",
+    "UNIVERSITY": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+    "UNICODE": "014",
+    "SUBJECTS":"Physics,Combined Mathematics",
+    
+    "MINIMUM_QUALIFICATIONS": {
+        "RequiredGrades": {
+            
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Other_subject": "S"
+            
+        }
+    },
+    "INTEREST": [
+        "Geospatial Analysis",
+        "Land Management",
+        "Urban Planning"
+    ],
+    "JOB_ROLES": [
+        "Surveyor",
+        "Geomatic Engineer",
+        "Land Surveyor",
+        "GIS Technician"
+    ],
+    "DESCRIPTION": "The Bachelor of Science in Surveying Science program at Sabaragamuwa University provides students with the knowledge and skills needed for surveying and geospatial analysis, focusing on land management and urban planning.",
+    "DEGREE_TYPE": "BSc (Hons)",
+    "DURATION": "4 YEARS",
+    "Z_SCORE": "0.7668",
+    "STREAM": "Other"
+},
+  {
+      "COURSE": "ARCHITECTURE",
+      "UNIVERSITY": "UNIVERSITY OF MORATUWA",
+      "UNICODE": "023G",
+      "SUBJECTS": [
+        "Art",
+        "Chemistry",
+        "Higher Mathematics",
+        "Biology",
+        "Combined Mathematics",
+        "Physics",
+        "Geography"
+    ],
+      "MINIMUM_QUALIFICATIONS": {
+          "RequiredGrades": {
+            
+                "Art": "S",
+                "Chemistry": "S",
+                "Higher Mathematics": "S",
+                "Biology": "S",
+                "Combined Mathematics": "S",
+                "Physics": "S",
+                "Geography": "S"
+            
+          },
+          "OtherSubjects": {
+            "Accounting": "S",
+            "Mathematics": "S",
+            "Hindu Civilization": "S",
+            "Sanskrit": "S",
+            "Business Statistics": "S",
+            "German": "S",
+            "Islamic Civilization": "S",
+            "Information & Communication Technology": "S",
+            "Political Science": "S",
+            "Arabic": "S",
+            "English": "S",
+            "History": "S",
+            "Sinhala": "S",
+            "Business Studies": "S",
+            "Communication & Media Studies": "S",
+            "Japanese": "S",
+            "Christian Civilization": "S",
+            "Economics": "S",
+            "Hindi": "S",
+            "Pali": "S",
+            "Buddhist Civilization": "S",
+            "French": "S",
+            "Home Economics": "S",
+            "Tamil": "S",
+            "Chinese": "S",
+            "Agricultural Science": "S",
+            "Logic & Scientific Method": "S"
+        }
+    
+      },
+      "INTEREST": ["Design", "Construction"],
+      "JOB_ROLES": ["Architect", "Interior Designer", "Urban Designer"],
+      "DESCRIPTION": "The Architecture program provides a blend of theoretical knowledge and practical skills necessary to design innovative and functional spaces.",
+      "DEGREE_TYPE": "BSc (Hons)",
+      "DURATION": "4 YEARS",
+      "Z_SCORE":"0.4934",
+      "STREAM": "Other"
+  },
+  {
+      "Course": "FASHION DESIGN AND PRODUCT DEVELOPMENT",
+      "University": "UNIVERSITY OF MORATUWA",
+      "Unicode": "034G",
+      "Subjects": [],
+      "MinimumQualifications": {
+          "RequiredGrades": {
+              "Any Relevant Subject": "S"
+          }
+      },
+      "Interest": ["Fashion", "Textile Design"],
+      "JobRoles": ["Fashion Designer", "Product Developer", "Textile Designer"],
+      "Description": "This program merges creativity with technical skills, preparing students for careers in fashion design and product development.",
+      "DegreeType": "B Des Hons",
+      "Duration": "4 YEARS",
+      "ZScore":"0.3805",
+      "Stream": "Other"
+  },
+  {
+      "Course": "LANDSCAPE ARCHITECTURE",
+      "University": "UNIVERSITY OF MORATUWA",
+      "Unicode": "097G",
+      "Subjects": [],
+      "MinimumQualifications": {
+          "RequiredGrades": {
+              "Any Relevant Subject": "S"
+          }
+      },
+      "Interest": ["Environmental Design", "Sustainability"],
+      "JobRoles": ["Landscape Architect", "Environmental Planner", "Urban Designer"],
+      "Description": "The Landscape Architecture program combines design principles with environmental awareness to create sustainable outdoor spaces.",
+      "DegreeType": "Bachelor of Landscape Architecture",
+      "Duration": "4 YEARS",
+      "ZScore":"0.1867",
+      "Stream": "Other"
+  },
+  {
+      "Course": "DESIGN",
+      "University": "UNIVERSITY OF MORATUWA",
+      "Unicode": "024G",
+      "Subjects": [],
+      "MinimumQualifications": {
+          "RequiredGrades": {
+              "Any Relevant Subject": "S"
+          }
+      },
+      "Interest": ["Visual Arts", "Product Design"],
+      "JobRoles": ["Graphic Designer", "Product Designer", "UX/UI Designer"],
+      "Description": "The Design program at University of Moratuwa provides a broad education in design, focusing on both creativity and practicality.",
+      "DegreeType": "Bachelor of Design Honours",
+      "Duration": "4 YEARS",
+      "ZScore":"0.3273",
+      "Stream": "Design"
+  },
+  {
+      "Course": "LAW",
+      "University": "UNIVERSITY OF COLOMBO",
+      "Unicode": "025A",
+      "Subjects": [],
+      "MinimumQualifications": {
+          "RequiredGrades": {
+              "Any Relevant Subject": "S"
+          }
+      },
+      "Interest": ["Legal Studies", "Justice"],
+      "JobRoles": ["Lawyer", "Legal Advisor", "Corporate Lawyer"],
+      "Description": "The Law program offers a comprehensive legal education, preparing students for careers in various fields of law.",
+      "DegreeType": "Bachelor of Laws",
+      "Duration": "4 YEARS",
+      "ZScore":"2.0202",
+      "Stream": "Other"
+  },
+  {
+      "Course": "LAW",
+      "University": "UNIVERSITY OF PERADENIYA",
+      "Unicode": "025B",
+      "Subjects": [],
+      "MinimumQualifications": {
+          "RequiredGrades": {
+              "Any Relevant Subject": "S"
+          }
+      },
+      "Interest": ["Legal Studies", "Justice"],
+      "JobRoles": ["Lawyer", "Legal Advisor", "Corporate Lawyer"],
+      "Description": "The Law program at University of Peradeniya provides students with a solid foundation in legal principles and practices.",
+      "DegreeType": "Bachelor of Laws",
+      "Duration": "4 YEARS",
+      "ZScore":"1.9908",
+      "Stream": "Other"
+  },
+  {
+      "Course": "LAW",
+      "University": "UNIVERSITY OF JAFFNA",
+      "Unicode": "025E",
+      "Subjects": [],
+      "MinimumQualifications": {
+          "RequiredGrades": {
+              "Any Relevant Subject": "S"
+          }
+      },
+      "Interest": ["Legal Studies", "Justice"],
+      "JobRoles": ["Lawyer", "Legal Advisor", "Corporate Lawyer"],
+      "Description": "The Law program at University of Jaffna prepares students for legal careers, focusing on both theory and practical application.",
+      "DegreeType": "Bachelor of Laws",
+      "Duration": "4 YEARS",
+      "ZScore":"1.7645",
+      "Stream": "Other"
+  },
+  {
+      "Course": "FACILITIES MANAGEMENT",
+      "University": "UNIVERSITY OF MORATUWA",
+      "Unicode": "056G",
+      "Subjects": [],
+      "MinimumQualifications": {
+          "RequiredGrades": {
+              "CategoryA": {
+                  "Chemistry": "S",
+                  "Combined Mathematics": "S",
+                  "Physics": "S"
+              },
+              "CategoryB": {
+                  "Business Studies": "S",
+                  "Economics": "S",
+                  "Accounting": "S"
+              }
+          }
+      },
+      "Interest": ["Property Management", "Engineering"],
+      "JobRoles": ["Facilities Manager", "Property Manager", "Building Services Engineer"],
+      "Description": "Facilities Management program equips students with skills to manage and maintain infrastructure and facilities in both commercial and residential settings.",
+      "DegreeType": "BSc Hons (FM)",
+      "Duration": "4 YEARS",
+      "ZScore":"1.0274",
+      "Stream": "Other"
+  }
+]
