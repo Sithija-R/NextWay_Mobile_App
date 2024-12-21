@@ -25,8 +25,7 @@ import {
   fetchCourses,
 } from "../../../../services/fetchingService";
 import { TabView, SceneMap, TabBar } from "react-native-tab-view";
-
-
+import Loading from "../../../../components/Loading/Loading";
 
 export default function ViewCourses() {
   const router = useRouter();
@@ -35,6 +34,7 @@ export default function ViewCourses() {
   const [keyword, setKeyword] = useState("");
   const [courses, setCourses] = useState([]);
   const [searchType, setSearchType] = useState("UNICODE");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchAllCourses = async () => {
@@ -53,12 +53,11 @@ export default function ViewCourses() {
     fetchAllCourses();
   }, []);
 
-
-  useEffect(()=>{
-    if(keyword===""){
-        setCourses([])
+  useEffect(() => {
+    if (keyword === "") {
+      setCourses([]);
     }
-  },[keyword])
+  }, [keyword]);
 
   const FirstRoute = () => (
     <View style={[styles.scene]}>
@@ -76,7 +75,11 @@ export default function ViewCourses() {
               }}
             >
               <View style={styles.tableRow}>
-                <Text style={[styles.tableCell,{flex:0.5,textAlign:'center'}]}>{course.UNICODE}</Text>
+                <Text
+                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+                >
+                  {course.UNICODE}
+                </Text>
                 <Text style={styles.tableCell}>{course.COURSE}</Text>
                 <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
               </View>
@@ -88,132 +91,152 @@ export default function ViewCourses() {
 
   const SecondRoute = () => (
     <View style={[styles.scene]}>
-    <ScrollView>
-      {allcourses
-        .filter((course) => course.STREAM === "Biology")
-        .map((course, index) => (
-          <Pressable
-            key={index}
-            onPress={() => {
-              router.push({
-                pathname: "courseviewer",
-                params: { course: JSON.stringify(course) },
-              });
-            }}
-          >
-            <View style={styles.tableRow}>
-              <Text style={[styles.tableCell,{flex:0.5,textAlign:'center'}]}>{course.UNICODE}</Text>
-              <Text style={styles.tableCell}>{course.COURSE}</Text>
-              <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
-            </View>
-          </Pressable>
-        ))}
-    </ScrollView>
-  </View>
+      <ScrollView>
+        {allcourses
+          .filter((course) => course.STREAM === "Biology")
+          .map((course, index) => (
+            <Pressable
+              key={index}
+              onPress={() => {
+                router.push({
+                  pathname: "courseviewer",
+                  params: { course: JSON.stringify(course) },
+                });
+              }}
+            >
+              <View style={styles.tableRow}>
+                <Text
+                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+                >
+                  {course.UNICODE}
+                </Text>
+                <Text style={styles.tableCell}>{course.COURSE}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+              </View>
+            </Pressable>
+          ))}
+      </ScrollView>
+    </View>
   );
 
   const ThirddRoute = () => (
     <View style={[styles.scene]}>
-    <ScrollView>
-      {allcourses
-        .filter((course) => course.STREAM === "Commerce")
-        .map((course, index) => (
-          <Pressable
-            key={index}
-            onPress={() => {
-              router.push({
-                pathname: "coursedisplayer",
-                params: { course: JSON.stringify(course) },
-              });
-            }}
-          >
-            <View style={styles.tableRow}>
-              <Text style={[styles.tableCell,{flex:0.5,textAlign:'center'}]}>{course.UNICODE}</Text>
-              <Text style={styles.tableCell}>{course.COURSE}</Text>
-              <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
-            </View>
-          </Pressable>
-        ))}
-    </ScrollView>
-  </View>
+      <ScrollView>
+        {allcourses
+          .filter((course) => course.STREAM === "Commerce")
+          .map((course, index) => (
+            <Pressable
+              key={index}
+              onPress={() => {
+                router.push({
+                  pathname: "coursedisplayer",
+                  params: { course: JSON.stringify(course) },
+                });
+              }}
+            >
+              <View style={styles.tableRow}>
+                <Text
+                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+                >
+                  {course.UNICODE}
+                </Text>
+                <Text style={styles.tableCell}>{course.COURSE}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+              </View>
+            </Pressable>
+          ))}
+      </ScrollView>
+    </View>
   );
 
   const FourthRoute = () => (
     <View style={[styles.scene]}>
-    <ScrollView>
-      {allcourses
-        .filter((course) => course.STREAM === "Technology")
-        .map((course, index) => (
-          <Pressable
-            key={index}
-            onPress={() => {
-              router.push({
-                pathname: "coursedisplayer",
-                params: { course: JSON.stringify(course) },
-              });
-            }}
-          >
-            <View style={styles.tableRow}>
-              <Text style={[styles.tableCell,{flex:0.5,textAlign:'center'}]}>{course.UNICODE}</Text>
-              <Text style={styles.tableCell}>{course.COURSE}</Text>
-              <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
-            </View>
-          </Pressable>
-        ))}
-    </ScrollView>
-  </View>
+      <ScrollView>
+        {allcourses
+          .filter((course) => course.STREAM === "Technology")
+          .map((course, index) => (
+            <Pressable
+              key={index}
+              onPress={() => {
+                router.push({
+                  pathname: "coursedisplayer",
+                  params: { course: JSON.stringify(course) },
+                });
+              }}
+            >
+              <View style={styles.tableRow}>
+                <Text
+                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+                >
+                  {course.UNICODE}
+                </Text>
+                <Text style={styles.tableCell}>{course.COURSE}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+              </View>
+            </Pressable>
+          ))}
+      </ScrollView>
+    </View>
   );
 
   const FifththRoute = () => (
     <View style={[styles.scene]}>
-    <ScrollView>
-      {allcourses
-        .filter((course) => course.STREAM === "Art")
-        .map((course, index) => (
-          <Pressable
-            key={index}
-            onPress={() => {
-              router.push({
-                pathname: "coursedisplayer",
-                params: { course: JSON.stringify(course) },
-              });
-            }}
-          >
-            <View style={styles.tableRow}>
-              <Text style={[styles.tableCell,{flex:0.5,textAlign:'center'}]}>{course.UNICODE}</Text>
-              <Text style={styles.tableCell}>{course.COURSE}</Text>
-              <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
-            </View>
-          </Pressable>
-        ))}
-    </ScrollView>
-  </View>
+      <ScrollView>
+        {allcourses
+          .filter((course) => course.STREAM === "Art")
+          .map((course, index) => (
+            <Pressable
+              key={index}
+              onPress={() => {
+                router.push({
+                  pathname: "coursedisplayer",
+                  params: { course: JSON.stringify(course) },
+                });
+              }}
+            >
+              <View style={styles.tableRow}>
+                <Text
+                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+                >
+                  {course.UNICODE}
+                </Text>
+                <Text style={styles.tableCell}>{course.COURSE}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+              </View>
+            </Pressable>
+          ))}
+      </ScrollView>
+    </View>
   );
 
   const SixthRoute = () => (
     <View style={[styles.scene]}>
-    <ScrollView>
-      {allcourses
-        .filter((course) => course.STREAM === "Common")
-        .map((course, index) => (
-          <Pressable
-            key={index}
-            onPress={() => {
-              router.push({
-                pathname: "coursedisplayer",
-                params: { course: JSON.stringify(course) },
-              });
-            }}
-          >
-            <View style={styles.tableRow}>
-              <Text style={[styles.tableCell,{flex:0.5,textAlign:'center'}]}>{course.UNICODE}</Text>
-              <Text style={styles.tableCell}>{course.COURSE}</Text>
-              <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
-            </View>
-          </Pressable>
-        ))}
-    </ScrollView>
-  </View>
+      <ScrollView>
+        {allcourses
+          .filter((course) => course.STREAM === "Common")
+          .map((course, index) => (
+            <Pressable
+              key={index}
+              onPress={() => {
+                router.push({
+                  pathname: "coursedisplayer",
+                  params: { course: JSON.stringify(course) },
+                });
+              }}
+            >
+              <View style={styles.tableRow}>
+                <Text
+                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+                >
+                  {course.UNICODE}
+                </Text>
+                <Text style={styles.tableCell}>{course.COURSE}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+              </View>
+            </Pressable>
+          ))}
+      </ScrollView>
+    </View>
   );
 
   const renderScene = SceneMap({
@@ -237,15 +260,13 @@ export default function ViewCourses() {
   const layout = useWindowDimensions();
   const [index, setIndex] = React.useState(0);
 
-  console.log("key ", keyword);
-
-  console.log("result ", courses);
   const handleSearch = async () => {
     if (!keyword) {
       Alert.alert("Please enter a search keyword");
       return;
     }
 
+    setLoading(true);
     try {
       if (searchType === "UNICODE") {
         const response = await fetchCourseByUNICODE(keyword);
@@ -269,10 +290,8 @@ export default function ViewCourses() {
       Alert.alert("An error occurred while searching for courses.");
       console.error(error);
     }
+    setLoading(false);
   };
-
-
-
 
   return (
     <View style={{ flex: 1 }}>
@@ -319,7 +338,7 @@ export default function ViewCourses() {
           style={{
             flexWrap: "wrap",
             padding: wp(6),
-            alignItems:'center'
+            alignItems: "center",
           }}
         >
           <Text
@@ -335,13 +354,12 @@ export default function ViewCourses() {
           {/* Radio Button Section */}
           <View
             style={{
-              width:"80%",
-              alignItems:'center',
+              width: "80%",
+              alignItems: "center",
               flexDirection: "row",
               justifyContent: "space-between",
               marginTop: hp(2),
               marginBottom: hp(1),
-            
             }}
           >
             <TouchableOpacity
@@ -442,30 +460,36 @@ export default function ViewCourses() {
               autoCapitalize="characters"
             />
 
-            <TouchableOpacity
-              onPress={handleSearch}
-              style={{
-                backgroundColor: "#149BC6",
-                padding: hp(1),
-                paddingHorizontal: wp(2),
-                borderRadius: 10,
-              }}
-            >
-              <Text
+            {loading ? (
+              <View style={{ flexDirection: "row", paddingHorizontal: wp(6) }}>
+                <Loading size={hp(6)} />
+              </View>
+            ) : (
+              <TouchableOpacity
+                onPress={handleSearch}
                 style={{
-                  fontSize: hp(3),
-                  fontWeight: "600",
-                  textAlign: "center",
-                  color: "white",
+                  backgroundColor: "#149BC6",
+                  padding: hp(1),
+                  paddingHorizontal: wp(2),
+                  borderRadius: 10,
                 }}
               >
-                {t("Search")}
-              </Text>
-            </TouchableOpacity>
+                <Text
+                  style={{
+                    fontSize: hp(3),
+                    fontWeight: "600",
+                    textAlign: "center",
+                    color: "white",
+                  }}
+                >
+                  {t("Search")}
+                </Text>
+              </TouchableOpacity>
+            )}
           </View>
         </View>
 
-        <View style={{ flex: 5, width: "100%",alignItems:'center' }}>
+        <View style={{ flex: 5, width: "100%", alignItems: "center" }}>
           {courses.length > 0 && keyword ? (
             <ScrollView style={styles.courseTable}>
               <View style={styles.tableHeader}>
@@ -502,7 +526,7 @@ export default function ViewCourses() {
                   {...props}
                   scrollEnabled={true} // Enables horizontal scrolling
                   indicatorStyle={{ backgroundColor: "white" }} // Tab indicator styling
-                  style={{ backgroundColor: "#149BC6",width:'98%' }} // Tab bar background styling
+                  style={{ backgroundColor: "#149BC6", width: "98%" }} // Tab bar background styling
                   tabStyle={{ width: 110 }} // Adjust tab width
                   labelStyle={{ fontSize: 14, color: "white" }} // Tab label styling
                 />
@@ -549,7 +573,6 @@ const styles = StyleSheet.create({
   tableCell: {
     flex: 1,
     textAlign: "left",
-    paddingLeft:wp(2)
-  
+    paddingLeft: wp(2),
   },
 });

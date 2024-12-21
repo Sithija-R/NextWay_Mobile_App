@@ -25,8 +25,7 @@ export default function DeleteCourses() {
   const { t } = useTranslation();
   const [unicode, setUnicode] = useState(null);
   const [course, setCourse] = useState(null);
-  console.log(unicode);
-  console.log("Res ", course?.COURSE);
+
 
   const handleSearch = async () => {
     if (!unicode) {
