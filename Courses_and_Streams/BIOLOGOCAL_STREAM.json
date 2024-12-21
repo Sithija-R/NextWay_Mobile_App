@@ -1,0 +1,623 @@
+[
+    {
+        "COURSE_eng": "MEDICINE",
+        "UNIVERSITY": "UNIVERSITY OF COLOMBO",
+        "UNICODE": "001A",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the University of Colombo provides comprehensive medical education, preparing students for careers as qualified medical professionals.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "2.3291"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "UNIVERSITY OF PERADENIYA",
+        "UNICODE": "001B",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The Faculty of Medicine at the University of Peradeniya offers a comprehensive MBBS program, focusing on both theoretical knowledge and practical skills.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "2.1807"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENAPURA",
+        "UNICODE": "001C",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the University of Sri Jayewardenapura emphasizes evidence-based medicine and patient-centered care, preparing students for diverse medical careers.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "2.1291"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "UNIVERSITY OF KELANIYA",
+        "UNICODE": "001D",
+        "SUBJECTS": "Physics, Chemistry,Biology",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The Faculty of Medicine at the University of Kelaniya offers an MBBS program that emphasizes clinical skills, research, and community engagement.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "2.0511"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "UNIVERSITY OF JAFFNA",
+        "UNICODE": "001E",
+        "SUBJECTS": "Physics, Chemistry,Biology",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the University of Jaffna focuses on providing quality medical education to students, preparing them for careers in diverse medical fields.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.7018"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "UNIVERSITY OF RUHUNA",
+        "UNICODE": "001F",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The Faculty of Medicine at the University of Ruhuna offers an MBBS program that emphasizes evidence-based practice, ethical conduct, and community service.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.9632"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "UNIVERSITY OF MORATUWA",
+        "UNICODE": "001G",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the University of Moratuwa emphasizes the integration of medical knowledge with engineering principles, preparing students for innovative medical careers.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.9024"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "EASTERN UNIVERSITY, SRI LANKA",
+        "UNICODE": "001H",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the Eastern University, Sri Lanka focuses on providing quality medical education to students from diverse backgrounds, preparing them for careers in the medical field.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.4059"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "RAJARATA UNIVERSITY OF SRI LANKA",
+        "UNICODE": "001K",
+        "SUBJECTS":"Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the Rajarata University of Sri Lanka emphasizes community-based education and research, preparing students for careers in rural and underserved areas.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": " 1.8387"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "UNICODE": "001L",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the Sabaragamuwa University of Sri Lanka emphasizes problem-based learning and community engagement, preparing students for careers in diverse medical fields.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.6983"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "WAYAMBA UNIVERSITY OF SRI LANKA",
+        "UNICODE": "001M",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the Wayamba University of Sri Lanka emphasizes the integration of medical knowledge with technology, preparing students for careers in cutting-edge medical fields.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.6030"
+    },
+    {
+        "COURSE": "MEDICINE",
+        "UNIVERSITY": "UVA WELLASSA UNIVERSITY OF SRI LANKA",
+        "UNICODE": "001U",
+        "SUBJECTS": "Medicine",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Practitioner", "Surgeon", "Pediatrician", "Psychiatrist"],
+        "DESCRIPTION": "The MBBS program at the Uva Wellassa University of Sri Lanka emphasizes the integration of medical knowledge with entrepreneurship, preparing students for careers in innovative medical fields.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.5923"
+    },
+    {
+        "COURSE": "DENTAL SURGERY",
+        "UNIVERSITY": "UNIVERSITY OF PERADENIYA",
+        "UNICODE": "002B",
+        "SUBJECTS": "Medicine,Dentist",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Dentist", "Orthodontist", "Periodontist", "Oral Surgeon"],
+        "DESCRIPTION": "The DMD program at the University of Peradeniya provides comprehensive dental education, preparing students for careers as qualified dental professionals.",
+        "DEGREE_TYPE": "DMD",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.4966"
+    },
+    {
+        "COURSE": "DENTAL SURGERY",
+        "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENAPURA",
+        "UNICODE": "002C",
+        "SUBJECTS": "Medicine,Dentist",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["General Dentist", "Orthodontist", "Periodontist", "Oral Surgeon"],
+        "DESCRIPTION": "The DMD program at the University of Sri Jayewardenapura emphasizes evidence-based dentistry and patient-centered care, preparing students for diverse dental careers.",
+        "DEGREE_TYPE": "DMD",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.4042"
+    },
+    {
+        "COURSE": "VETERINARY SCIENCE",
+        "UNIVERSITY": "UNIVERSITY OF PERADENIYA",
+        "UNICODE": "003B",
+        "SUBJECTS": "Medicine,Animal Surgery",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Veterinarian", "Animal Scientist", "Wildlife Biologist", "Livestock Specialist"],
+        "DESCRIPTION": "The BVSc program at the University of Peradeniya provides comprehensive veterinary education, preparing students for careers in animal health and welfare.",
+        "DEGREE_TYPE": "BVSc",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": "1.3783"
+    },
+    {
+        "COURSE": "AGRICULTURAL TECHNOLOGY AND MANAGEMENT",
+        "UNIVERSITY": "UNIVERSITY OF PERADENIYA",
+        "UNICODE": "039B",
+        "SUBJECTS": "Agribusiness Management,Agriculture",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Chemistry": "S",
+                "Physics": "S",
+                "Biology": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Agricultural Manager", "Farm Manager", "Agricultural Consultant", "Agribusiness Specialist"],
+        "DESCRIPTION": "The BSc (Hons) program in Agricultural Technology and Management at the University of Peradeniya focuses on the application of scientific principles to agricultural production and management.",
+        "DEGREE_TYPE": "BSc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "1.0146"
+    },
+    {
+        "COURSE": "AGRICULTURE",
+        "UNIVERSITY": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "UNICODE": "004E",
+        "SUBJECTS": "Agribusiness Management,Agriculture",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Chemistry": "S",
+                "Physics": "S",
+                "Biology": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Agricultural Scientist", "Crop Specialist", "Soil Scientist", "Agricultural Extension Officer"],
+        "DESCRIPTION": "The BSc program in Agriculture at the Sabaragamuwa University of Sri Lanka provides a broad-based education in agricultural sciences, preparing students for careers in research, development, and management.",
+        "DEGREE_TYPE": "B.Sc",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "0.7376"
+    },
+    {
+        "COURSE": "AGRICULTURE",
+        "UNIVERSITY": "EASTERN UNIVERSITY, SRI LANKA",
+        "UNICODE": "004H",
+        "SUBJECTS": "Agribusiness Management,Agriculture",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Chemistry": "S",
+                "Biology": "S",
+                "Agricultural Science": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Agricultural Scientist", "Crop Specialist", "Soil Scientist", "Agricultural Extension Officer"],
+        "DESCRIPTION": "The BSc (Hons) program in Agriculture at Eastern University focuses on sustainable agricultural practices and resource management.",
+        "DEGREE_TYPE": "B.Sc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "0.3941"
+    },
+    {
+        "COURSE": "AGRICULTURE",
+        "UNIVERSITY": "UNIVERSITY OF JAFFNA",
+        "UNICODE": "004K",
+        "SUBJECTS": "Agribusiness Management,Agriculture",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Chemistry": "S",
+                "Biology": "S",
+                "Agricultural Science": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": "",
+        "JOB_ROLES": ["Agricultural Scientist", "Crop Specialist", "Soil Scientist", "Agricultural Extension Officer"],
+        "DESCRIPTION": "The BSc (Hons) program in Agriculture at the University of Jaffna emphasizes research and practical applications in agriculture.",
+        "DEGREE_TYPE": "B.Sc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": "0.5091"
+    },
+    [
+        {
+            "COURSE": "AGRICULTURE",
+            "UNIVERSITY": "RAJARATA UNIVERSITY OF SRI LANKA",
+            "UNICODE": "004L",
+            "SUBJECTS": "Agribusiness Management,Agriculture",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Biology": "S",
+                    "Agricultural Science": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Agricultural Scientist", "Crop Specialist", "Soil Scientist", "Agricultural Extension Officer"],
+            "DESCRIPTION": "The BSc (Hons) program in Agriculture at Rajarata University focuses on agricultural research and sustainable practices.",
+            "DEGREE_TYPE": "B.Sc (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "0.6106"
+        },
+        {
+            "COURSE": "AGRICULTURE",
+            "UNIVERSITY": "WAYAMBA UNIVERSITY OF SRI LANKA",
+            "UNICODE": "004M",
+            "SUBJECTS": "Agribusiness Management,Agriculture",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Biology": "S",
+                    "Agricultural Science": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Agricultural Scientist", "Crop Specialist", "Soil Scientist", "Agricultural Extension Officer"],
+            "DESCRIPTION": "The BSc (Hons) program in Agriculture at Wayamba University emphasizes modern agricultural practices and technology.",
+            "DEGREE_TYPE": "B.Sc (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "0.6247"
+        },
+        {
+            "COURSE": "FOOD SCIENCE AND NUTRITION",
+            "UNIVERSITY": "WAYAMBA UNIVERSITY OF SRI LANKA",
+            "UNICODE": "005M",
+            "SUBJECTS": "",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Food Scientist", "Nutritionist", "Quality Assurance Manager", "Food Product Developer"],
+            "DESCRIPTION": "The BSc (Hons) program in Food Science and Nutrition at Wayamba University covers both food science and applied nutrition, preparing students for diverse careers in the food industry and health sectors.",
+            "DEGREE_TYPE": "B.Sc (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "0.6139"
+        },
+        {
+            "COURSE": "FOOD SCIENCE AND TECHNOLOGY",
+            "UNIVERSITY": "UNIVERSITY OF PERADENIYA",
+            "UNICODE": "035B",
+            "SUBJECTS": "Chemistry, Information Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Food Technologist", "Product Developer", "Quality Assurance Manager", "Food Safety Specialist"],
+            "DESCRIPTION": "The BSc (Hons) program in Food Science and Technology at the University of Peradeniya focuses on the science and technology behind food processing and preservation.",
+            "DEGREE_TYPE": "B.Sc (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": " 1.5884"
+        },
+        {
+            "COURSE": "FOOD SCIENCE AND TECHNOLOGY",
+            "UNIVERSITY": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+            "UNICODE": "035C",
+            "SUBJECTS": "Chemistry, Information Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Food Technologist", "Product Developer", "Quality Assurance Manager", "Food Safety Specialist"],
+            "DESCRIPTION": "The BSc (Hons) program in Food Science and Technology at Sabaragamuwa University emphasizes the application of scientific principles to food processing and quality control.",
+            "DEGREE_TYPE": "B.Sc (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "0.5559"
+        },
+        {
+            "COURSE": "FOOD SCIENCE AND TECHNOLOGY",
+            "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENAPURA",
+            "UNICODE": "035L",
+            "SUBJECTS": "Chemistry, Information Technology",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Food Technologist", "Product Developer", "Quality Assurance Manager", "Food Safety Specialist"],
+            "DESCRIPTION": "The BSc (Hons) program in Food Science and Technology at the University of Sri Jayewardenepura focuses on the latest trends and technologies in food processing and packaging.",
+            "DEGREE_TYPE": "B.Sc (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": "1.5471"
+        },
+        {
+            "COURSE": "AYURVEDIC MEDICINE AND SURGERY",
+            "UNIVERSITY": "UNIVERSITY OF COLOMBO",
+            "UNICODE": "032A",
+            "SUBJECTS": "Medicine,Ayurvedic",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Ayurvedic Physician", "Herbal Medicine Specialist", "Ayurvedic Surgeon"],
+            "DESCRIPTION": "The BAMS program at the University of Colombo focuses on traditional Ayurvedic medicine and surgery, preparing students for careers as qualified Ayurvedic practitioners.",
+            "DEGREE_TYPE": "B.A.M.S",
+            "DURATION": "5 YEARS",
+            "Z_SCORE": "1.2077"
+        },
+        {
+            "COURSE": "AYURVEDIC MEDICINE AND SURGERY",
+            "UNIVERSITY": "GAMPAHA WICKRAMARACHCHI UNIVERSITY OF INDIGENOUS MEDICINE, SRI LANKA",
+            "UNICODE": "032P",
+            "SUBJECTS": "Medicine,Ayurvedic",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Ayurvedic Physician", "Herbal Medicine Specialist", "Ayurvedic Surgeon"],
+            "DESCRIPTION": "The BAMS program at the Gampaha Wickramarachchi University of Indigenous Medicine focuses on integrating modern medical knowledge with traditional Ayurvedic practices.",
+            "DEGREE_TYPE": "B.A.M.S",
+            "DURATION": "5 YEARS",
+            "Z_SCORE": " 0.6477"
+        },
+        {
+            "COURSE": "UNANI MEDICINE AND SURGERY",
+            "UNIVERSITY": "UNIVERSITY OF COLOMBO",
+            "UNICODE": "033A",
+            "SUBJECTS": "Medicine,Unani",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Unani Practitioner", "Herbal Medicine Specialist", "Unani Surgeon"],
+            "DESCRIPTION": "The BUMS program at the University of Colombo focuses on traditional Unani medicine and surgery, emphasizing the use of natural remedies and holistic healing.",
+            "DEGREE_TYPE": "B.U.M.S",
+            "DURATION": "5 YEARS",
+            "Z_SCORE": "0.2824"
+        },
+        {
+            "COURSE": "SIDDHA MEDICINE AND SURGERY",
+            "UNIVERSITY": "UNIVERSITY OF JAFFNA",
+            "UNICODE": "036E",
+            "SUBJECTS": "Medicine,Siddha Surgery",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Siddha Practitioner", "Herbal Medicine Specialist", "Traditional Healer"],
+            "DESCRIPTION": "The BSMS program at the University of Jaffna focuses on Siddha Medicine, emphasizing traditional healing practices and the use of herbal remedies.",
+            "DEGREE_TYPE": "B.S.M.S",
+            "DURATION": "5 YEARS",
+            "Z_SCORE": "-0.1695"
+        },
+        {
+            "COURSE": "SIDDHA MEDICINE AND SURGERY",
+            "UNIVERSITY": "EASTERN UNIVERSITY, SRI LANKA",
+            "UNICODE": "036W",
+            "SUBJECTS": "Medicine,Siddha Surgery",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": "",
+            "JOB_ROLES": ["Siddha Practitioner", "Herbal Medicine Specialist", "Traditional Healer"],
+            "DESCRIPTION": "The BSMS program at Eastern University focuses on the principles of Siddha Medicine, preparing students for careers in traditional healing.",
+            "DEGREE_TYPE": "B.S.M.S",
+            "DURATION": "5 YEARS",
+            "Z_SCORE": "0.4857"
+        }
+    ]
+]
