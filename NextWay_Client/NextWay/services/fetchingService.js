@@ -13,14 +13,21 @@ import { db } from "../firebaseConfig/firebaseConfiguration";
 // Fetch all courses
 const fetchCourses = async () => {
   try {
-    const coursesCollection = collection(db, "courses");
+    const coursesCollection = collection(db, "coursetest");
     const coursesSnapshot = await getDocs(coursesCollection);
-    const coursesList = coursesSnapshot.docs.map((doc) => doc.data());
+    
+    // Map over the documents and include the document id
+    const coursesList = coursesSnapshot.docs.map((doc) => ({
+      id: doc.id, 
+      ...doc.data() 
+    }));
+
     return { success: true, data: coursesList };
   } catch (error) {
     return { success: false, msg: error.message };
   }
 };
+
 
 //Fetch Cousre by UNICODE
 const fetchCourseByUNICODE = async (unicode) => {
@@ -28,15 +35,15 @@ const fetchCourseByUNICODE = async (unicode) => {
     const q = query(collection(db, "courses"), where("UNICODE", "==", unicode));
     const snapshot = await getDocs(q);
 
-    // Use map to extract data and handle the case where no courses are found
+    
     const coursesList = snapshot.docs.map(doc => ({
       id: doc.id,
       ...doc.data()
     }));
 console.log(coursesList)
-    // If coursesList is empty, return not found
+   
     if (coursesList.length > 0) {
-      return { success: true, data: coursesList }; // Return only the first course
+      return { success: true, data: coursesList }; 
     }
 
     return { success: false, msg: "Course not found with the given UNICODE" };

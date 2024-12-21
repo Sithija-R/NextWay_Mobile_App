@@ -17,7 +17,7 @@ const{t}= useTranslation();
 
   const parsedCourse = course ? JSON.parse(course) : null;
 
-console.log("pc ",parsedCourse)
+
 
   const handleEdit=()=>{
     router.push({

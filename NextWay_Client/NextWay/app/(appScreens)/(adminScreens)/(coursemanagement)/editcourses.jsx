@@ -6,8 +6,6 @@ import {
   TouchableOpacity,
   Pressable,
   TextInput,
-  Button,
-  ScrollView,
   StyleSheet,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
@@ -22,7 +20,7 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
 
 import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboardView";
-import { uploadCourseData } from "../../../../services/adminService";
+import { uploadOrUpdateCourseData } from "../../../../services/adminService";
 import Loading from "../../../../components/Loading/Loading";
 
 export default function EditCourse() {
@@ -38,18 +36,10 @@ const{t}= useTranslation();
   const parsedCourse = course ? JSON.parse(course) : null;
 
 
-
-
- 
-  
-
-
-
-
   const districts = t("districts", { returnObjects: true });
 
   const [courseDetails, setCourseDetails] = useState({
-    COURSE_eng: parsedCourse?.parsedCourse || "",
+    COURSE_eng: parsedCourse?.COURSE_eng || "",
     COURSE_sin: parsedCourse?.COURSE_sin || "",
     COURSE_tam: parsedCourse?.COURSE_tam || "",
     UNIVERSITY_eng: parsedCourse?.UNIVERSITY_eng || "",
@@ -121,8 +111,7 @@ const{t}= useTranslation();
     return [{ subject: "", grade: "" }];
   });
 
-  console.log("grades 1 ",parsedCourse?.MINIMUM_QUALIFICATIONS?.RequiredGrades)
-  console.log("grades ",subjectGrades)
+  
   // Handle changes in subject or grade
   const handleSubjectGradeChange = (index, field, value) => {
     const updatedSubjectGrades = [...subjectGrades];
@@ -135,11 +124,12 @@ const{t}= useTranslation();
     setSubjectGrades([...subjectGrades, { subject: "", grade: "" }]);
   };
 
-  // Remove a subject-grade pair
-  const removeSubjectGrade = (index) => {
-    const updatedSubjectGrades = subjectGrades.filter((_, i) => i !== index);
-    setSubjectGrades(updatedSubjectGrades);
-  };
+
+const removeSubjectGrade = (index) => {
+  const updatedSubjectGrades = subjectGrades.filter((_, i) => i !== index);
+  setSubjectGrades(updatedSubjectGrades); // Update local state
+};
+
 
 
   const [zScore, setZScore] = useState(() => {
@@ -175,9 +165,8 @@ const{t}= useTranslation();
 
 
 
-  const handleUpload = async () => {
+  const handleUpload = async () => { 
     try {
-      // Ensure required fields are not empty
       if (
         !courseDetails.UNICODE ||
         !courseDetails.COURSE_eng ||
@@ -185,56 +174,57 @@ const{t}= useTranslation();
         !courseDetails.UNIVERSITY_eng
       ) {
         alert("Please fill in all required fields.");
-        return; // Exit the function if any required field is empty
+        return;
       }
-
-      // Prepare the Z_SCORE with "NotQualified" for any null values
+  
       const formattedZScore = Object.fromEntries(
         Object.entries(zScore).map(([key, value]) => [
           key,
           value || "NotQualified",
         ])
       );
-
-      // Prepare the data to be uploaded
+  
       const dataToUpload = {
         ...courseDetails,
         MINIMUM_QUALIFICATIONS: {
           RequiredGrades: subjectGrades.reduce((acc, item) => {
             if (item.subject && item.grade) {
-              acc[item.subject] = item.grade; // Map subjects to grades
+              acc[item.subject] = item.grade;
             }
             return acc;
           }, {}),
-          OtherQualifications: {}, // If you have any other qualifications, add them here
+          OtherQualifications: {}, // Assuming OtherQualifications is empty or passed with data
         },
         Z_SCORE: formattedZScore,
         SUBJECTS: subjectGrades
           .map((item) => item.subject)
-          .filter((subject) => subject !== ""), // Filter out empty subjects
+          .filter((subject) => subject !== ""),
       };
+    
 
-      // Check if there are at least 3 subjects with grades
       const requiredGradesCount = Object.keys(
+       
         dataToUpload.MINIMUM_QUALIFICATIONS.RequiredGrades
       ).length;
       if (requiredGradesCount < 3) {
         alert("Please provide at least three subjects with grades.");
-        return; // Exit the function if less than 3 required grades
+        return;
       }
+  
+      setLoading(true)
+      const uploadResult = await uploadOrUpdateCourseData(parsedCourse.id, dataToUpload);
+      setLoading(false)
 
-      // Call the upload function with the prepared data
-      const uploadResult = await uploadCourseData(dataToUpload);
       if (uploadResult.success) {
-        // Optionally, reset input fields or navigate away after successful upload
-        // Example: router.push('/nextPage');
+        alert(uploadResult.msg); 
       } else {
-        alert(uploadResult.msg); // Show error message if upload fails
+        alert(uploadResult.msg); 
       }
     } catch (e) {
       console.error("Error in handleUpload: ", e);
     }
   };
+  
 
   return (
     <View style={{ flex: 1 }}>
@@ -377,7 +367,7 @@ const{t}= useTranslation();
           <TextInput
             style={styles.input}
             placeholder="Enter interests in English (comma-separated)"
-            value={interests.eng.join(", ")}  // Join array into a string for display
+            value={interests.eng.join(", ")}  
             onChangeText={(value) => handleInterestArrayChange("eng", value)}
           />
 
@@ -385,7 +375,7 @@ const{t}= useTranslation();
           <TextInput
             style={styles.input}
             placeholder="Enter interests in Sinhala (comma-separated)"
-            value={interests.sin.join(", ")} // Join array into a string for display
+            value={interests.sin.join(", ")} 
             onChangeText={(value) => handleInterestArrayChange("sin", value)}
           />
 
@@ -393,7 +383,7 @@ const{t}= useTranslation();
           <TextInput
             style={styles.input}
             placeholder="Enter interests in Tamil (comma-separated)"
-            value={interests.tam.join(", ")} // Join array into a string for display
+            value={interests.tam.join(", ")} 
             onChangeText={(value) => handleInterestArrayChange("tam", value)}
           />
 
@@ -401,7 +391,7 @@ const{t}= useTranslation();
           <TextInput
             style={styles.input}
             placeholder="Enter job roles in English (comma-separated)"
-            value={courseDetails.JOB_ROLES_eng.join(", ")} // Join array into a string for display
+            value={courseDetails.JOB_ROLES_eng.join(", ")} 
             onChangeText={(value) => handleArrayChange("JOB_ROLES_eng", value)}
           />
 
@@ -479,7 +469,7 @@ const{t}= useTranslation();
                 >
                   <Text style={{ fontSize: hp(3), fontWeight: "600", textAlign: "center", color: "white", }}
                   >
-                    Add Course
+                    Save Changes
                   </Text>
                 </TouchableOpacity>
               )}
