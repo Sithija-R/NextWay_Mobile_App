@@ -1,107 +1,111 @@
-import { createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
 import { auth, db } from "../firebaseConfig/firebaseConfiguration";
 import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 
-const registerUser = async (email, password,username) => {
+const registerUser = async (email, password, username) => {
   try {
+    const response = await createUserWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
 
-    const response = await createUserWithEmailAndPassword(auth, email,password);
+    await setDoc(doc(db, "users", response?.user?.uid), {
+      username,
+      role: "student",
+      userId: response?.user?.uid,
+      email: email,
+    });
 
-     await setDoc(doc(db,"users", response?.user?.uid),{
-        username,
-        role:'student',
-        userId:response?.user?.uid
-     });
-
-     await sendEmailVerification(response?.user);
-     return {success:true, data:response?.user};
-
+    await sendEmailVerification(response?.user);
+    return { success: true, data: response?.user };
   } catch (error) {
     let msg = error.message;
-    if(msg.includes('(auth/invalid-email)') ) msg='Invalid Email'
-    if(msg.includes('(auth/email-already-in-use)')) msg='Email already exist!'
-    return {success:false, msg};
-
+    if (msg.includes("(auth/invalid-email)")) msg = "Invalid Email";
+    if (msg.includes("(auth/email-already-in-use)"))
+      msg = "Email already exist!";
+    return { success: false, msg };
   }
 };
 
 const loginUser = async (email, password) => {
- try {
+  try {
+    const response = await signInWithEmailAndPassword(auth, email, password);
+    return { success: true };
+  } catch (error) {
+    let msg = error.message;
+    if (msg.includes("(auth/invalid-credential)"))
+      msg = "Invalid email or password";
 
-  const response = await signInWithEmailAndPassword(auth,email,password);
-  return {success:true}
-    
- } catch (error) {
-  let msg = error.message;
-  if(msg.includes('(auth/invalid-credential)') ) msg='Invalid email or password'
- 
-  return {success:false, msg};
-
- }
+    return { success: false, msg };
+  }
 };
 
 const getUserRole = async (uid) => {
- try {
-    
- } catch (error) {
-    
- }
+  try {
+  } catch (error) {}
 };
 
- const sendPwResetEmail = async (email) => {
-  
+const sendPwResetEmail = async (email) => {
   try {
     const res = await sendPasswordResetEmail(auth, email);
-   
-    return { success: true, msg: 'Password reset email sent successfully' };
+
+    return { success: true, msg: "Password reset email sent successfully" };
   } catch (error) {
     return { success: false, msg: error.message };
   }
 };
 
 const logoutUser = async (email, password) => {
-    try {
-      await signOut(auth);
-      return {success:true}
-       
-    } catch (error) {
-      return {success:false, msg:error.message, error:error}
+  try {
+    await signOut(auth);
+    return { success: true };
+  } catch (error) {
+    return { success: false, msg: error.message, error: error };
+  }
+};
+
+const updateUserProfile = async (uid, updatedData) => {
+  try {
+    const userDocRef = doc(db, "users", uid);
+
+    const docSnap = await getDoc(userDocRef);
+
+    if (docSnap.exists()) {
+      const currentData = docSnap.data();
+
+      const newFields = {
+        username: updatedData.username || currentData.username || "", // Use existing if not provided
+        age:
+          updatedData.age !== undefined
+            ? updatedData.age
+            : currentData.age || null, // Use existing if not provided
+        phoneNumber: updatedData.phoneNumber || currentData.phoneNumber || "", // Use existing if not provided
+        profileImage:
+          updatedData.profileImage || currentData.profileImage || "", // Use existing if not provided
+      };
+
+      await updateDoc(userDocRef, newFields);
+      return { success: true, msg: "Profile updated successfully" };
+    } else {
+      return { success: false, msg: "User document does not exist" };
     }
-   };
+  } catch (error) {
+    return { success: false, msg: error.message };
+  }
+};
 
-
-   const updateUserProfile = async (uid, updatedData) => {
-    try {
-      const userDocRef = doc(db, "users", uid);
-  
-     
-      const docSnap = await getDoc(userDocRef);
-  
-      if (docSnap.exists()) {
-      
-        const currentData = docSnap.data();
-  
-        const newFields = {
-          username: updatedData.username || currentData.username || "", // Use existing if not provided
-          age: updatedData.age !== undefined ? updatedData.age : (currentData.age || null), // Use existing if not provided
-          phoneNumber: updatedData.phoneNumber || currentData.phoneNumber || "", // Use existing if not provided
-          profileImage: updatedData.profileImage || currentData.profileImage || "" // Use existing if not provided
-        };
-  
-        
-        await updateDoc(userDocRef, newFields);
-        return { success: true, msg: 'Profile updated successfully' };
-  
-      } else {
-       
-        return { success: false, msg: 'User document does not exist' };
-      }
-  
-    } catch (error) {
-      return { success: false, msg: error.message };
-    }
-  };
-
-export { registerUser, loginUser, getUserRole, logoutUser, sendPwResetEmail, updateUserProfile };
-
-
+export {
+  registerUser,
+  loginUser,
+  getUserRole,
+  logoutUser,
+  sendPwResetEmail,
+  updateUserProfile,
+};

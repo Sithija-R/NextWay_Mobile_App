@@ -24,6 +24,8 @@ import { collection, addDoc } from "firebase/firestore"; // Import Firestore fun
 import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboardView";
 import { uploadCourseData } from "../../../../services/adminService";
 import Loading from "../../../../components/Loading/Loading";
+
+
 export default function AddCourse() {
   const router = useRouter();
   const { t } = useTranslation();

@@ -39,7 +39,7 @@ export default function ViewCourses() {
   useEffect(() => {
     const fetchAllCourses = async () => {
       try {
-        const res = await fetchCourses(); // Fetch all courses
+        const res = await fetchCourses(); 
         if (res.success && res.data.length > 0) {
           setAllCourses(res.data);
         } else {
@@ -489,7 +489,7 @@ export default function ViewCourses() {
           </View>
         </View>
 
-        <View style={{ flex: 5, width: "100%", alignItems: "center" }}>
+        <View style={{ flex: 5, width: "98%" }}>
           {courses.length > 0 && keyword ? (
             <ScrollView style={styles.courseTable}>
               <View style={styles.tableHeader}>
@@ -508,7 +508,7 @@ export default function ViewCourses() {
                   }}
                 >
                   <View style={styles.tableRow}>
-                    <Text style={styles.tableCell}>{course.UNICODE}</Text>
+                    <Text style={[styles.tableCell,{ flex: 0.5, textAlign: "center" }]}>{course.UNICODE}</Text>
                     <Text style={styles.tableCell}>{course.COURSE}</Text>
                     <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
                   </View>
@@ -554,7 +554,7 @@ export default function ViewCourses() {
 const styles = StyleSheet.create({
   tableHeader: {
     flexDirection: "row",
-
+    width:"100%",
     paddingVertical: 10,
     marginBottom: 5,
     zIndex: 10,
@@ -563,6 +563,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontWeight: "bold",
     textAlign: "center",
+    width:"100%",
   },
   tableRow: {
     flexDirection: "row",
