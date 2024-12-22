@@ -180,7 +180,7 @@ const handleNext=()=>{
               setIsStreamFocus(false);
             }}
             renderLeftIcon={() => (
-              <FontAwesome5 name="stream"style={styles.icon}
+              <FontAwesome5 name="stream" style={styles.icon}
               color={isStreamFocus ? "#149BC6" : "gray"}
              
               size={25} />

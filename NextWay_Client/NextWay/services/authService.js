@@ -81,14 +81,15 @@ const updateUserProfile = async (uid, updatedData) => {
       const currentData = docSnap.data();
 
       const newFields = {
-        username: updatedData.username || currentData.username || "", // Use existing if not provided
+        username: updatedData.username || currentData.username || "", 
         age:
           updatedData.age !== undefined
             ? updatedData.age
-            : currentData.age || null, // Use existing if not provided
-        phoneNumber: updatedData.phoneNumber || currentData.phoneNumber || "", // Use existing if not provided
+            : currentData.age || null, 
+        phoneNumber: updatedData.phoneNumber || currentData.phoneNumber || "", 
         profileImage:
-          updatedData.profileImage || currentData.profileImage || "", // Use existing if not provided
+          updatedData.profileImage || currentData.profileImage || "", 
+        role: updatedData.role || currentData.role || "",
       };
 
       await updateDoc(userDocRef, newFields);
