@@ -331,13 +331,13 @@ const fetchCoursesByCriteria = async (
   }
 };
 
-// Function to normalize text
+
 const normalizeText = (text) => {
   return text.normalize('NFC'); // Choose the normalization form as needed
 };
 
 
-//Delete Course
+
 const deleteCourseById = async (courseId) => {
   try {
     const courseDoc = doc(db, "courses", courseId);
@@ -347,6 +347,7 @@ const deleteCourseById = async (courseId) => {
     return { success: false, msg: error.message }; // Return error message if deletion fails
   }
 };
+
 
 
 export {

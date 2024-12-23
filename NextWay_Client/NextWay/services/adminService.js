@@ -17,13 +17,9 @@ export const uploadOrUpdateCourseData = async (id, dataToUpload) => {
     if (!id) {
       throw new Error("Document ID is required for updating the course.");
     }
-
-    console.log("Updating document with ID: ", id);
-
     const courseDocRef = doc(db, "coursetest", id);
     await setDoc(courseDocRef, dataToUpload, { merge: true });
 
-    console.log("Document written/updated with ID: ", id);
     return { success: true, msg: "Course data updated successfully" };
   } catch (error) {
     console.error("Error updating document: ", error);

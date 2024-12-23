@@ -21,7 +21,7 @@ const MainLayout = () => {
         if (userRole === "admin") {
           router.replace("dashboard");
         } else {
-          router.replace("home");
+          router.replace("advertiserrequest");
         }
       } else {
         router.replace("IsVerified");

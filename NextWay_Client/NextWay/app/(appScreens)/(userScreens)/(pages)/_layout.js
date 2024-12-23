@@ -5,6 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 import customdrawercontent from '../../../../components/DrawerContent/customdrawercontent';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 export default function _layout() {
   return (
@@ -38,7 +39,8 @@ export default function _layout() {
         title: 'Profile',
         headerShown:false,
         drawerIcon:({size,color})=>(
-          <Ionicons name='home' size={size} color={color}/>
+          <FontAwesome name="user" size={size} color={color}/>
+        
         ),
         drawerLabelStyle: {
           fontSize: 18, 

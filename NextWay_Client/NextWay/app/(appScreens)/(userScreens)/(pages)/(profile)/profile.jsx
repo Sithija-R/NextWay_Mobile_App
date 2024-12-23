@@ -147,6 +147,7 @@ export default function Profile() {
           >
             {t("edit-profile")}
           </Text>
+     
 
           <MaterialIcons
             name="navigate-next"
