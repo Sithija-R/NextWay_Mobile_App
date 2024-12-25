@@ -53,6 +53,12 @@
   "search_course":"Search Course",
   "delete_course":"Delete Course",
   "view_courses":"View Courses",
+  "send_req":"Send Request",
+  "ad_acc_req":"Advertiser Account Request",
+  "business_name":"Business Name",
+  "description":"Description",
+  "contact_no":"Contact Number",
+  "business_type":"Business Type",
   
   "streams": [
     {

@@ -18,6 +18,7 @@ import Fontisto from "@expo/vector-icons/Fontisto";
 import Feather from "@expo/vector-icons/Feather";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { useAuth } from "../../../../../context/authContext";
+import Entypo from '@expo/vector-icons/Entypo';
 
 
 export default function Profile() {
@@ -52,9 +53,12 @@ export default function Profile() {
     <View style={{ flex: 1 }}>
       <StatusBar style="dark" />
       <View style={{ flex: 1, alignItems: "flex-start" }}>
+        
         <Pressable style={{ position: "absolute", top: hp(5), left: wp(2), zIndex: 5 }}>
           <CustomHeader />
         </Pressable>
+     
+      
         <Image
           style={{
             width: hp(27),
@@ -147,6 +151,7 @@ export default function Profile() {
           >
             {t("edit-profile")}
           </Text>
+     
 
           <MaterialIcons
             name="navigate-next"

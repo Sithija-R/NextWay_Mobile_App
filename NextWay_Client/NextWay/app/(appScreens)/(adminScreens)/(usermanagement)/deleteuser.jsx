@@ -19,19 +19,23 @@ import {
 } from "react-native-responsive-screen";
 import { useRouter } from "expo-router";
 import { deleteCourseById } from "../../../../services/fetchingService";
-import { deleteUser, fetchUsers, searchUser } from "../../../../services/adminService";
+import {
+  deleteUser,
+  fetchUsers,
+  searchUser,
+} from "../../../../services/adminService";
 import { Avatar } from "@rneui/themed";
 import Loading from "../../../../components/Loading/Loading";
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { auth } from "../../../../firebaseConfig/firebaseConfiguration";
 
-export default function DeleteCourses() {
+export default function DeleteUsers() {
   const router = useRouter();
   const { t } = useTranslation();
   const [keyword, setKeyword] = useState("");
   const [user, setUser] = useState([]);
   const [alluser, setAllUser] = useState([]);
   const [loading, setLoading] = useState(false);
-
 
   useEffect(() => {
     const fetchall = async () => {
@@ -47,14 +51,13 @@ export default function DeleteCourses() {
       }
     };
     fetchall();
-  }, []); 
+  }, []);
 
   useEffect(() => {
     if (keyword === "") {
-      setUser([]); 
+      setUser([]);
     }
   }, [keyword]);
-
 
   const handleSearch = async () => {
     if (!keyword) {
@@ -72,7 +75,6 @@ export default function DeleteCourses() {
     }
   };
 
-  
   const handleDeleteUser = async (id) => {
     Alert.alert("Delete User", "Are you sure you want to delete this user?", [
       {
@@ -83,16 +85,15 @@ export default function DeleteCourses() {
         text: "Delete",
         style: "destructive",
         onPress: async () => {
-     
           const response = await deleteUser(id);
-          
+
           if (response.success) {
             Alert.alert("Success", response.msg);
-            
-            
-            setUser(prevUsers => prevUsers.filter(user => user.id !== id));
-            setAllUser(prevUsers => prevUsers.filter(user => user.id !== id));
-          
+
+            setUser((prevUsers) => prevUsers.filter((user) => user.id !== id));
+            setAllUser((prevUsers) =>
+              prevUsers.filter((user) => user.id !== id)
+            );
           } else {
             Alert.alert("Error", response.msg);
           }
@@ -100,7 +101,7 @@ export default function DeleteCourses() {
       },
     ]);
   };
-  
+
   return (
     <View style={{ flex: 1 }}>
       <StatusBar style="dark" />
@@ -119,7 +120,9 @@ export default function DeleteCourses() {
           }}
         >
           <AntDesign name="left" size={hp(3)} color="black" />
-          <Text style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: 600 }}>
+          <Text
+            style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: 600 }}
+          >
             {t("Delete Users")}
           </Text>
         </Pressable>
@@ -131,12 +134,30 @@ export default function DeleteCourses() {
         />
       </View>
 
-      <View style={{ alignItems: "center", flex: 7, justifyContent: "space-between", flexWrap: "wrap" }}>
+      <View
+        style={{
+          alignItems: "center",
+          flex: 7,
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+        }}
+      >
         <View style={{ flexWrap: "wrap", padding: wp(6) }}>
-          <Text style={{ fontSize: hp(2.5), fontWeight: "600", textAlign: "left" }}>
+          <Text
+            style={{ fontSize: hp(2.5), fontWeight: "600", textAlign: "left" }}
+          >
             {t("Search Users")}
           </Text>
-          <View style={{ marginTop: hp(2), flexDirection: "row", alignItems: "center", width: "100%", padding: hp(1), justifyContent: "space-between" }}>
+          <View
+            style={{
+              marginTop: hp(2),
+              flexDirection: "row",
+              alignItems: "center",
+              width: "100%",
+              padding: hp(1),
+              justifyContent: "space-between",
+            }}
+          >
             <TextInput
               style={{
                 width: "60%",
@@ -188,54 +209,65 @@ export default function DeleteCourses() {
             {user.length > 0 ? (
               user.map((user, index) => (
                 <View
-                key={index}
-                style={{
-                  flexDirection: "row",
-                  width: wp(90),
-                  maxHeight: hp(67),
-                  backgroundColor: "rgba(128, 128, 128, 0.2)",
-                  padding: hp(1),
-                  paddingVertical: hp(2),
-                  borderRadius: 15,
-                  marginBottom: hp(2),
-                  position: "relative",
-                }}
-              >
-                <Avatar
-                  size={hp(10)}
-                  rounded
-                  source={{
-                    uri:
-                      user?.profileImage ||
-                      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541",
-                  }}
-                  containerStyle={{
-                    borderWidth: 2,
-                    borderColor: "#149BC6",
-                  }}
-                />
-                <View style={{ paddingLeft: wp(3) }}>
-                  <Text style={{ fontSize: hp(2.1), fontWeight: "bold" }}>
-                    {user?.username}
-                  </Text>
-                  <Text style={{ fontSize: hp(2), color: "#149BC6" }}>
-                    {user?.email}
-                  </Text>
-                  <Text style={{ fontSize: hp(2) }}>{user?.role}</Text>
-                </View>
-
-                <TouchableOpacity
-                  onPress={() => handleDeleteUser(user?.id)} 
+                  key={index}
                   style={{
-                    position: "absolute",
-                    right: wp(2),
-                    top: "70%",
-                    transform: [{ translateY: -18 }],
+                    flexDirection: "row",
+                    width: wp(90),
+                    maxHeight: hp(67),
+                    backgroundColor: "rgba(128, 128, 128, 0.2)",
+                    padding: hp(1),
+                    paddingVertical: hp(2),
+                    borderRadius: 15,
+                    marginBottom: hp(2),
+                    position: "relative",
                   }}
                 >
-                  <MaterialIcons name="delete-forever" size={40} color="red" />
-                </TouchableOpacity>
-              </View>
+                  <Avatar
+                    size={hp(10)}
+                    rounded
+                    source={{
+                      uri:
+                        user?.profileImage ||
+                        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541",
+                    }}
+                    containerStyle={{
+                      borderWidth: 2,
+                      borderColor: "#149BC6",
+                    }}
+                  />
+                  <View style={{ paddingLeft: wp(3) }}>
+                    <Text style={{ fontSize: hp(2.1), fontWeight: "bold" }}>
+                      {user?.username}
+                      <Text style={{ color: "#6bc720" }}>
+                        {user?.id === auth.currentUser?.uid ? "  (you)" : ""}
+                      </Text>
+                    </Text>
+                    <Text style={{ fontSize: hp(2), color: "#149BC6" }}>
+                      {user?.email}
+                    </Text>
+                    <Text style={{ fontSize: hp(2) }}>{user?.role}</Text>
+                  </View>
+
+                  {user?.id === auth.currentUser?.uid ? (
+                    <Text></Text>
+                  ) : (
+                    <TouchableOpacity
+                      onPress={() => handleDeleteUser(user?.id)}
+                      style={{
+                        position: "absolute",
+                        right: wp(2),
+                        top: "70%",
+                        transform: [{ translateY: -18 }],
+                      }}
+                    >
+                      <MaterialIcons
+                        name="delete-forever"
+                        size={40}
+                        color="red"
+                      />
+                    </TouchableOpacity>
+                  )}
+                </View>
               ))
             ) : alluser.length > 0 ? (
               alluser.map((user, index) => (
@@ -269,6 +301,9 @@ export default function DeleteCourses() {
                   <View style={{ paddingLeft: wp(3) }}>
                     <Text style={{ fontSize: hp(2.1), fontWeight: "bold" }}>
                       {user?.username}
+                      <Text style={{ color: "#6bc720" }}>
+                        {user?.id === auth.currentUser?.uid ? "  (you)" : ""}
+                      </Text>
                     </Text>
                     <Text style={{ fontSize: hp(2), color: "#149BC6" }}>
                       {user?.email}
@@ -276,17 +311,25 @@ export default function DeleteCourses() {
                     <Text style={{ fontSize: hp(2) }}>{user?.role}</Text>
                   </View>
 
-                  <TouchableOpacity
-                    onPress={() => handleDeleteUser(user?.id)} 
-                    style={{
-                      position: "absolute",
-                      right: wp(2),
-                      top: "70%",
-                      transform: [{ translateY: -18 }],
-                    }}
-                  >
-                    <MaterialIcons name="delete-forever" size={40} color="red" />
-                  </TouchableOpacity>
+                  {user?.id === auth.currentUser?.uid ? (
+                    <Text></Text>
+                  ) : (
+                    <TouchableOpacity
+                      onPress={() => handleDeleteUser(user?.id)}
+                      style={{
+                        position: "absolute",
+                        right: wp(2),
+                        top: "70%",
+                        transform: [{ translateY: -18 }],
+                      }}
+                    >
+                      <MaterialIcons
+                        name="delete-forever"
+                        size={40}
+                        color="red"
+                      />
+                    </TouchableOpacity>
+                  )}
                 </View>
               ))
             ) : (

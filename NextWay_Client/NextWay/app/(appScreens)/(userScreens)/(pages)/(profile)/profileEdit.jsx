@@ -42,16 +42,7 @@ export default function ProfileEdit() {
     
   });
 
-  // useEffect(() => {
-  //   if (user) {
-  //     setProfileData({
-  //       username: user.username || "",
-  //       email: user.email || "",
-  //       age: user.age || "",
-  //       phoneNumber: user.phoneNumber || "",
-  //     });
-  //   }
-  // }, [user]);
+ 
 
   const handleInputChange = (key, value) => {
     setProfileData((prevData) => ({

@@ -19,7 +19,7 @@ const MainLayout = () => {
     if (isAuthenticated && !inApp) {
       if (isVerified) {
         if (userRole === "admin") {
-          router.replace("deleteuser");
+          router.replace("dashboard");
         } else {
           router.replace("home");
         }

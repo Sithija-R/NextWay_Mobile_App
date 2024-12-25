@@ -80,8 +80,8 @@ export default function ViewCourses() {
                 >
                   {course.UNICODE}
                 </Text>
-                <Text style={styles.tableCell}>{course.COURSE}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
               </View>
             </Pressable>
           ))}
@@ -110,8 +110,8 @@ export default function ViewCourses() {
                 >
                   {course.UNICODE}
                 </Text>
-                <Text style={styles.tableCell}>{course.COURSE}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
               </View>
             </Pressable>
           ))}
@@ -140,8 +140,8 @@ export default function ViewCourses() {
                 >
                   {course.UNICODE}
                 </Text>
-                <Text style={styles.tableCell}>{course.COURSE}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
               </View>
             </Pressable>
           ))}
@@ -170,8 +170,8 @@ export default function ViewCourses() {
                 >
                   {course.UNICODE}
                 </Text>
-                <Text style={styles.tableCell}>{course.COURSE}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
               </View>
             </Pressable>
           ))}
@@ -200,8 +200,8 @@ export default function ViewCourses() {
                 >
                   {course.UNICODE}
                 </Text>
-                <Text style={styles.tableCell}>{course.COURSE}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
               </View>
             </Pressable>
           ))}
@@ -230,8 +230,8 @@ export default function ViewCourses() {
                 >
                   {course.UNICODE}
                 </Text>
-                <Text style={styles.tableCell}>{course.COURSE}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
               </View>
             </Pressable>
           ))}
