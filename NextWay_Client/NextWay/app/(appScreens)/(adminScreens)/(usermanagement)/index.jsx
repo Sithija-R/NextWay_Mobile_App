@@ -87,7 +87,7 @@ export default function UserManagement() {
           </Text>
           <AntDesign name="right" size={24} color="black" />
         </TouchableOpacity>
-        <TouchableOpacity
+        {/* <TouchableOpacity
         onPress={()=>router.push('rolemanagement')}
           style={{
             backgroundColor: "#EEEEEE",
@@ -105,7 +105,7 @@ export default function UserManagement() {
           User Role Management
           </Text>
           <AntDesign name="right" size={24} color="black" />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
 
       <View style={{ alignItems: "flex-end", zIndex: -1 }}>
