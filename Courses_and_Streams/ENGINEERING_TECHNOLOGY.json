@@ -1,9 +1,15 @@
 [
     {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "UNIVERSITY OF COLOMBO",
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)"
+,
+
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO",
+        "UNIVERSITY_tam": "கொழும்பு பல்கலைக்கழகம்"
+,
+
         "UNICODE": "102A",
-        "SUBJECTS": [
+        "SUBJECTS_eng": [
             "Economics",
             "Geography",
             "Home Economics",
@@ -16,6 +22,18 @@
             "Accountancy",
             "Mathematics"
           ],
+          "SUBJECTS_tam": [
+    "பொருளியல்",
+    "புவியியல்",
+    "மனைப்பொருளியல்",
+    "ஆங்கிலம்",
+    "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+    "சித்திரம்",
+    "விவசாயம்",
+    "கணக்கீடு",
+    "கணிதம்"
+],
+          
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Economics": "S",
@@ -32,16 +50,29 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST": [
+        "INTEREST_eng": [
             "Applying engineering.",
             "Innovation and problem-solving.",
             "Engineering fields.",
             "Practical applications in engineering."
           ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at the University of Colombo focuses on practical and theoretical aspects of engineering technology, preparing students for diverse careers in the engineering field.",
+
+        "INTEREST_tam": [
+         "பொறியியல் பயன்பாடுகள்.",
+           "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+          "பொறியியல் துறைகள்.",
+         "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+                         ],
+
+
+        "JOB_ROLES_eng": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
+         "JOB_ROLES_tam": ["பொறியியல் தொழில்நுட்பவியலாளர்", "திட்ட மேலாளர்", "தர உறுதி பொறியியலாளர்", "தொழில்நுட்ப ஆலோசகர்"],
+
+
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at the University of Colombo focuses on practical and theoretical aspects of engineering technology, preparing students for diverse careers in the engineering field.",
         "DEGREE_TYPE": "BET (Hons)",
         "DURATION": "4 YEARS",
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
         "Z_SCORE":  {
             "Colombo" : "1.7916",
             "Gampaha" :"1.7798",
@@ -72,504 +103,98 @@
         }
     },
     {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENAPURA",
-        "UNICODE": "102C",
-        "SUBJECTS": "Economics, Geography, Home Economics, English, Communication and Media Studies, Information & Communication Technology, Art, Business Studies, Agricultural Science, Accountancy, Mathematics",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Economics": "S",
-                "Geography": "S",
-                "Home Economics": "S",
-                "English": "S",
-                "Communication and Media Studies": "S",
-                "Information & Communication Technology": "S",
-                "Art": "S",
-                "Business Studies": "S",
-                "Agricultural Science": "S",
-                "Accountancy": "S",
-                "Mathematics": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": [
-            "Applying engineering.",
-            "Innovation and problem-solving.",
-            "Engineering fields.",
-            "Practical applications in engineering."
-          ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at the University of Sri Jayewardenapura emphasizes practical applications and innovative solutions in engineering technology.",
-        "DEGREE_TYPE": "BET (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.9059",
-            "Gampaha" :"1.9400",
-            "Kalutara":"1.9259",
-            "Matale" :"1.9103",
-            "Kandy" :"2.0072",
-            "Nuwara Eliya" :"1.9312",
-            "Galle" :"1.9312",
-            "Matara" :"1.9102",
-            "Hambanthota" :"1.9196",
-            "Jaffna" :"NotQualified",
-            "Kilinochchi" :"2.0729",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"2.2248",
-            "Batticaloa" :"1.9269",
-            "Ampara" :"2.1369",
-            "Puttalam" :"2.0283",
-            "Kurunagala" :"1.9116",
-            "Anuradhapura" :"1.9146",
-            "Polonnaruwa" :"NotQualified",
-            "Badulla" :"1.9190",
-            "Monaragala":"2.0072",
-            "Kegalle" :"2.1312",
-            "Ratnapura" :"1.9326"
-         
-        }
-        
-    },
-    {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "UNIVERSITY OF KELANIYA",
-        "UNICODE": "102D",
-        "SUBJECTS": [
-            "Economics",
-            "Geography",
-            "Home Economics",
-            "English",
-            "Communication and Media Studies",
-            "Information & Communication Technology",
-            "Art",
-            "Business Studies",
-            "Agricultural Science",
-            "Accountancy",
-            "Mathematics"
-          ],
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Economics": "S",
-                "Geography": "S",
-                "Home Economics": "S",
-                "English": "S",
-                "Communication and Media Studies": "S",
-                "Information & Communication Technology": "S",
-                "Art": "S",
-                "Business Studies": "S",
-                "Agricultural Science": "S",
-                "Accountancy": "S",
-                "Mathematics": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": [
-            "Applying engineering.",
-            "Innovation and problem-solving.",
-            "Engineering fields.",
-            "Practical applications in engineering."
-          ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at the University of Kelaniya focuses on developing technical skills and knowledge necessary for a successful career in engineering technology.",
-        "DEGREE_TYPE": "BET (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.6559",
-            "Gampaha" :"1.6534",
-            "Kalutara":"1.6480",
-            "Matale" :"1.6926",
-            "Kandy" :"1.6514",
-            "Nuwara Eliya" :"1.7028",
-            "Galle" :"1.6549",
-            "Matara" :"1.6526",
-            "Hambanthota" :"1.6672",
-            "Jaffna" :"1.6823",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.7241",
-            "Batticaloa" :"1.6570",
-            "Ampara" :"1.6995",
-            "Puttalam" :"1.7054",
-            "Kurunagala" :"1.6475",
-            "Anuradhapura" :"1.6682",
-            "Polonnaruwa" :"1.6681",
-            "Badulla" :"1.6578",
-            "Monaragala":"NotQualified",
-            "Kegalle" :"1.6593",
-            "Ratnapura" :"1.6637"
-         
-        }
-    },
-    {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "UNIVERSITY OF JAFFNA",
-        "UNICODE": "102E",
-        "SUBJECTS": [
-            "Economics",
-            "Geography",
-            "Home Economics",
-            "English",
-            "Communication and Media Studies",
-            "Information & Communication Technology",
-            "Art",
-            "Business Studies",
-            "Agricultural Science",
-            "Accountancy",
-            "Mathematics"
-          ],
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Economics": "S",
-                "Geography": "S",
-                "Home Economics": "S",
-                "English": "S",
-                "Communication and Media Studies": "S",
-                "Information & Communication Technology": "S",
-                "Art": "S",
-                "Business Studies": "S",
-                "Agricultural Science": "S",
-                "Accountancy": "S",
-                "Mathematics": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": [
-            "Applying engineering.",
-            "Innovation and problem-solving.",
-            "Engineering fields.",
-            "Practical applications in engineering."
-          ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at the University of Jaffna prepares students for careers in engineering technology through a balanced curriculum of theory and practice.",
-        "DEGREE_TYPE": "BET (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.0845",
-            "Gampaha" :"1.0934",
-            "Kalutara":"1.1722",
-            "Matale" :"1.1816",
-            "Kandy" :"0.9870",
-            "Nuwara Eliya" :"0.9164",
-            "Galle" :"1.2399",
-            "Matara" :"1.3020",
-            "Hambanthota" :"1762",
-            "Jaffna" :"0.7821",
-            "Kilinochchi" :"0.0642",
-            "Mannar" :"0.4322",
-            "Mullaitivu" :"0.5534",
-            "Vavuniya" :"0.2225",
-            "Trincomalee" :"0.5950",
-            "Batticaloa" :"0.9831",
-            "Ampara" :"0.7647",
-            "Puttalam" :"0.6744",
-            "Kurunagala" :"1.1684",
-            "Anuradhapura" :"0.9217",
-            "Polonnaruwa" :"0.7440",
-            "Badulla" :"1.1227",
-            "Monaragala":"0.7680",
-            "Kegalle" :"1.3712",
-            "Ratnapura" :"1.0801"
-         
-        }
-    },
-    {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "UNIVERSITY OF RUHUNA",
-        "UNICODE": "102F",
-        "SUBJECTS": [
-            "Economics",
-            "Geography",
-            "Home Economics",
-            "English",
-            "Communication and Media Studies",
-            "Information & Communication Technology",
-            "Art",
-            "Business Studies",
-            "Agricultural Science",
-            "Accountancy",
-            "Mathematics"
-          ],
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Economics": "S",
-                "Geography": "S",
-                "Home Economics": "S",
-                "English": "S",
-                "Communication and Media Studies": "S",
-                "Information & Communication Technology": "S",
-                "Art": "S",
-                "Business Studies": "S",
-                "Agricultural Science": "S",
-                "Accountancy": "S",
-                "Mathematics": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": [
-            "Applying engineering.",
-            "Innovation and problem-solving.",
-            "Engineering fields.",
-            "Practical applications in engineering."
-          ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at the University of Ruhuna emphasizes hands-on experience and practical applications in engineering technology.",
-        "DEGREE_TYPE": "BET (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.3305",
-            "Gampaha" :"1.3324",
-            "Kalutara":"1.3432",
-            "Matale" :"1.3594",
-            "Kandy" :"1.3364",
-            "Nuwara Eliya" :"1.3314",
-            "Galle" :"1.3448",
-            "Matara" :"1.3384",
-            "Hambanthota" :"1.3703",
-            "Jaffna" :"NotQualified",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"1.4436",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.5264",
-            "Batticaloa" :"1.6356",
-            "Ampara" :"1.5802",
-            "Puttalam" :"1.5422",
-            "Kurunagala" :"1.3397",
-            "Anuradhapura" :"1.3960",
-            "Polonnaruwa" :"1.4564",
-            "Badulla" :"1.3429",
-            "Monaragala":"1.3838",
-            "Kegalle" :"1.3500",
-            "Ratnapura" :"1.3427"
-         
-        }
-    },
-    {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "RAJARATA UNIVERSITY OF SRI LANKA",
-        "UNICODE": "102K",
-        "SUBJECTS": [
-            "Economics",
-            "Geography",
-            "Home Economics",
-            "English",
-            "Communication and Media Studies",
-            "Information & Communication Technology",
-            "Art",
-            "Business Studies",
-            "Agricultural Science",
-            "Accountancy",
-            "Mathematics"
-          ],
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Economics": "S",
-                "Geography": "S",
-                "Home Economics": "S",
-                "English": "S",
-                "Communication and Media Studies": "S",
-                "Information & Communication Technology": "S",
-                "Art": "S",
-                "Business Studies": "S",
-                "Agricultural Science": "S",
-                "Accountancy": "S",
-                "Mathematics": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": [
-            "Applying engineering.",
-            "Innovation and problem-solving.",
-            "Engineering fields.",
-            "Practical applications in engineering."
-          ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at Rajarata University of Sri Lanka prepares students for careers in engineering technology with a focus on community engagement and sustainable practices.",
-        "DEGREE_TYPE": "BET (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.0776",
-            "Gampaha" :"1.0672",
-            "Kalutara":"1.0766",
-            "Matale" :"1.2354",
-            "Kandy" :"0.9805",
-            "Nuwara Eliya" :"0.9125",
-            "Galle" :"1.2663",
-            "Matara" :"1.4843",
-            "Hambanthota" :"NotQualified",
-            "Jaffna" :"1.0437",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"0.9334",
-            "Trincomalee" :"0.9775",
-            "Batticaloa" :"1.0002",
-            "Ampara" :"0.9684",
-            "Puttalam" :"0.9488",
-            "Kurunagala" :"1.1712",
-            "Anuradhapura" :"0.9205",
-            "Polonnaruwa" :"0.9219",
-            "Badulla" :"1.1501",
-            "Monaragala":"0.9738",
-            "Kegalle" :"1.1298",
-            "Ratnapura" :"1.0947                                                                                                                                                                                                                                                                        "
-         
-        }
-    },
-    {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
-        "UNICODE": "102L",
-        "SUBJECTS": [
-            "Economics",
-            "Geography",
-            "Home Economics",
-            "English",
-            "Communication and Media Studies",
-            "Information & Communication Technology",
-            "Art",
-            "Business Studies",
-            "Agricultural Science",
-            "Accountancy",
-            "Mathematics"
-          ],
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Economics": "S",
-                "Geography": "S",
-                "Home Economics": "S",
-                "English": "S",
-                "Communication and Media Studies": "S",
-                "Information & Communication Technology": "S",
-                "Art": "S",
-                "Business Studies": "S",
-                "Agricultural Science": "S",
-                "Accountancy": "S",
-                "Mathematics": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST":[
-            "Applying engineering.",
-            "Innovation and problem-solving.",
-            "Engineering fields.",
-            "Practical applications in engineering."
-          ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at Sabaragamuwa University of Sri Lanka emphasizes practical training and real-world applications in engineering technology.",
-        "DEGREE_TYPE": "BET (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.1389",
-            "Gampaha" :"1.1374",
-            "Kalutara":"1.1472",
-            "Matale" :"1.2403",
-            "Kandy" :"1.1482",
-            "Nuwara Eliya" :"1.2403",
-            "Galle" :"1.1767",
-            "Matara" :"1.3418",
-            "Hambanthota" :"1.1694",
-            "Jaffna" :"NotQualified",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"1.1804",
-            "Vavuniya" :"1.5407",
-            "Trincomalee" :"NotQualified",
-            "Batticaloa" :"1.2859",
-            "Ampara" :"1.1709",
-            "Puttalam" :"1.1810",
-            "Kurunagala" :"1.1884",
-            "Anuradhapura" :"1.1829",
-            "Polonnaruwa" :"NotQualified",
-            "Badulla" :"1.1399",
-            "Monaragala":"1.1678",
-            "Kegalle" :"1.1409",
-            "Ratnapura" :"1.1389"
-         
-        }
-    },
-    {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "WAYAMBA UNIVERSITY OF SRI LANKA",
-        "UNICODE": "102M",
-        "SUBJECTS": [
-            "Economics",
-            "Geography",
-            "Home Economics",
-            "English",
-            "Communication and Media Studies",
-            "Information & Communication Technology",
-            "Art",
-            "Business Studies",
-            "Agricultural Science",
-            "Accountancy",
-            "Mathematics"
-          ],
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Economics": "S",
-                "Geography": "S",
-                "Home Economics": "S",
-                "English": "S",
-                "Communication and Media Studies": "S",
-                "Information & Communication Technology": "S",
-                "Art": "S",
-                "Business Studies": "S",
-                "Agricultural Science": "S",
-                "Accountancy": "S",
-                "Mathematics": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST":  [
-            "Applying engineering.",
-            "Innovation and problem-solving.",
-            "Engineering fields.",
-            "Practical applications in engineering."
-          ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at Wayamba University of Sri Lanka focuses on developing innovative solutions in engineering technology to meet industry demands.",
-        "DEGREE_TYPE": "BET (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.2138",
-            "Gampaha" :"1.2094",
-            "Kalutara":"1.2399",
-            "Matale" :"1.2222",
-            "Kandy" :"1.2194",
-            "Nuwara Eliya" :"1.2109",
-            "Galle" :"1.2163",
-            "Matara" :"1.3251",
-            "Hambanthota" :"1.2114",
-            "Jaffna" :"1.2638",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.2614",
-            "Batticaloa" :"1.2088",
-            "Ampara" :"1.2379",
-            "Puttalam" :"1.2221",
-            "Kurunagala" :"1.2134",
-            "Anuradhapura" :"1.2119",
-            "Polonnaruwa" :"1.5420",
-            "Badulla" :"1.2260",
-            "Monaragala":"1.2055",
-            "Kegalle" :"1.2144",
-            "Ratnapura" :"1.2139"
-         
-        }
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)",
 
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENAPURA",
+        "UNIVERSITY_tam": "ஜயவர்தனபுர பல்கலைக்கழகம்",
+
+        "UNICODE": "102C",
+        "SUBJECTS_eng": "Economics, Geography, Home Economics, English, Communication and Media Studies, Information & Communication Technology, Art, Business Studies, Agricultural Science, Accountancy, Mathematics",
+        "SUBJECTS_tam": "பொருளியல், புவியியல், மனைப்பொருளியல், ஆங்கிலம், தகவல் தொடர்பாடல் தொழில்நுட்பம், சித்திரம், விவசாயம், கணக்கீடு, கணிதம்",
+         "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Economics": "S",
+                "Geography": "S",
+                "Home Economics": "S",
+                "English": "S",
+                "Communication and Media Studies": "S",
+                "Information & Communication Technology": "S",
+                "Art": "S",
+                "Business Studies": "S",
+                "Agricultural Science": "S",
+                "Accountancy": "S",
+                "Mathematics": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST_eng": [
+            "Applying engineering.",
+            "Innovation and problem-solving.",
+            "Engineering fields.",
+            "Practical applications in engineering."
+        ],
+        "INTEREST_tam": [
+            "பொறியியல் பயன்பாடுகள்.",
+            "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+            "பொறியியல் துறைகள்.",
+            "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+        ],
+        "JOB_ROLES_eng": [
+            "Engineering Technologist",
+            "Project Manager",
+            "Quality Assurance Engineer",
+            "Technical Consultant"
+        ],
+        "JOB_ROLES_tam": [
+            "பொறியியல் தொழில்நுட்பவியலாளர்",
+            "திட்ட மேலாளர்",
+            "தர உறுதி பொறியியலாளர்",
+            "தொழில்நுட்ப ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at the University of Sri Jayewardenapura emphasizes practical applications and innovative solutions in engineering technology.",
+        "DESCRIPTION_tam": "சிரேஷ்ட இலங்கைப் பல்கலைக்கழகத்தில் பொறியியல் தொழில்நுட்பம் பட்டதாரி சிறப்புப் பாடம் பொறியியல் தொழில்நுட்பத்தில் நடைமுறைப் பயன்பாடுகளையும் புதுமைத் தீர்வுகளையும் முக்கியமாக கவனமாக்குகிறது.",
+        "DEGREE_TYPE": "BET (Hons)",
+        "DURATION": "4 YEARS",
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
+        "Z_SCORE": {
+            "Colombo": "1.9059",
+            "Gampaha": "1.9400",
+            "Kalutara": "1.9259",
+            "Matale": "1.9103",
+            "Kandy": "2.0072",
+            "Nuwara Eliya": "1.9312",
+            "Galle": "1.9312",
+            "Matara": "1.9102",
+            "Hambanthota": "1.9196",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "2.0729",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "2.2248",
+            "Batticaloa": "1.9269",
+            "Ampara": "2.1369",
+            "Puttalam": "2.0283",
+            "Kurunagala": "1.9116",
+            "Anuradhapura": "1.9146",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "1.9190",
+            "Monaragala": "2.0072",
+            "Kegalle": "2.1312",
+            "Ratnapura": "1.9326"
+        }
     },
+    
+        
+
     {
-        "COURSE": "ENGINEERING TECHNOLOGY (ET)",
-        "UNIVERSITY": "UVA WELLASSA UNIVERSITY OF SRI LANKA",
-        "UNICODE": "102U",
-        "SUBJECTS":[
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)",
+        "UNIVERSITY_eng": "UNIVERSITY OF KELANIYA",
+        "UNIVERSITY_tam": "களனி பல்கலைக்கழகம்",
+        "UNICODE": "102D",
+        "SUBJECTS_eng": [
             "Economics",
             "Geography",
             "Home Economics",
@@ -581,7 +206,18 @@
             "Agricultural Science",
             "Accountancy",
             "Mathematics"
-          ],
+        ],
+        "SUBJECTS_tam": [
+            "பொருளியல்",
+            "புவியியல்",
+            "மனைப்பொருளியல்",
+            "ஆங்கிலம்",
+            "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+            "சித்திரம்",
+            "விவசாயம்",
+            "கணக்கீடு",
+            "கணிதம்"
+        ],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Economics": "S",
@@ -598,43 +234,688 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST": [
+        "INTEREST_eng": [
             "Applying engineering.",
             "Innovation and problem-solving.",
             "Engineering fields.",
             "Practical applications in engineering."
-          ],
-        "JOB_ROLES": ["Engineering Technologist", "Project Manager", "Quality Assurance Engineer", "Technical Consultant"],
-        "DESCRIPTION": "The Bachelor of Engineering Technology Honours program at Uva Wellassa University of Sri Lanka emphasizes the application of engineering technology to solve real-world problems.",
+        ],
+        "INTEREST_tam": [
+            "பொறியியல் பயன்பாடுகள்.",
+            "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+            "பொறியியல் துறைகள்.",
+            "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+        ],
+        "JOB_ROLES_eng": [
+            "Engineering Technologist",
+            "Project Manager",
+            "Quality Assurance Engineer",
+            "Technical Consultant"
+        ],
+        "JOB_ROLES_tam": [
+            "பொறியியல் தொழில்நுட்பவியலாளர்",
+            "திட்ட மேலாளர்",
+            "தர உறுதி பொறியியலாளர்",
+            "தொழில்நுட்ப ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at the University of Kelaniya focuses on developing technical skills and knowledge necessary for a successful career in engineering technology.",
+        "DESCRIPTION_tam": "களனி பல்கலைக்கழகத்தில் பொறியியல் தொழில்நுட்பம் பட்டதாரி சிறப்புப் பாடம் பொறியியல் தொழில்நுட்பத்தில் தொழில்நுட்ப நுட்பங்களையும் அறிவையும் மேம்படுத்துவதற்கு முக்கியமாக கவனமாக்குகிறது.",
         "DEGREE_TYPE": "BET (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.0934",
-            "Gampaha" :"1.0757",
-            "Kalutara":"1.0733",
-            "Matale" :"1.1874",
-            "Kandy" :"1.0243",
-            "Nuwara Eliya" :"1.0223",
-            "Galle" :"1.1782",
-            "Matara" :"1.3046",
-            "Hambanthota" :"1.2055",
-            "Jaffna" :"1.0287",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"1.0215",
-            "Trincomalee" :"1.1551",
-            "Batticaloa" :"1.0721",
-            "Ampara" :"0.9938",
-            "Puttalam" :"1.0835",
-            "Kurunagala" :"1.2148",
-            "Anuradhapura" :"1.0047",
-            "Polonnaruwa" :"1.0262",
-            "Badulla" :"1.0948",
-            "Monaragala":"0.9880",
-            "Kegalle" :"1.1452",
-            "Ratnapura" :"1.1187"
-         
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
+        "Z_SCORE": {
+            "Colombo": "1.6559",
+            "Gampaha": "1.6534",
+            "Kalutara": "1.6480",
+            "Matale": "1.6926",
+            "Kandy": "1.6514",
+            "Nuwara Eliya": "1.7028",
+            "Galle": "1.6549",
+            "Matara": "1.6526",
+            "Hambanthota": "1.6672",
+            "Jaffna": "1.6823",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.7241",
+            "Batticaloa": "1.6570",
+            "Ampara": "1.6995",
+            "Puttalam": "1.7054",
+            "Kurunagala": "1.6475",
+            "Anuradhapura": "1.6682",
+            "Polonnaruwa": "1.6681",
+            "Badulla": "1.6578",
+            "Monaragala": "NotQualified",
+            "Kegalle": "1.6593",
+            "Ratnapura": "1.6637"
+        }
+    },
+     
+    {
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)",
+        "UNIVERSITY_eng": "UNIVERSITY OF JAFFNA",
+        "UNIVERSITY_tam": "யாழ்ப்பாண பல்கலைக்கழகம்",
+        "UNICODE": "102E",
+        "SUBJECTS_eng": [
+            "Economics",
+            "Geography",
+            "Home Economics",
+            "English",
+            "Communication and Media Studies",
+            "Information & Communication Technology",
+            "Art",
+            "Business Studies",
+            "Agricultural Science",
+            "Accountancy",
+            "Mathematics"
+        ],
+        "SUBJECTS_tam": [
+            "பொருளியல்",
+            "புவியியல்",
+            "மனைப்பொருளியல்",
+            "ஆங்கிலம்",
+            "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+            "சித்திரம்",
+            "விவசாயம்",
+            "கணக்கீடு",
+            "கணிதம்"
+        ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Economics": "S",
+                "Geography": "S",
+                "Home Economics": "S",
+                "English": "S",
+                "Communication and Media Studies": "S",
+                "Information & Communication Technology": "S",
+                "Art": "S",
+                "Business Studies": "S",
+                "Agricultural Science": "S",
+                "Accountancy": "S",
+                "Mathematics": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST_eng": [
+            "Applying engineering.",
+            "Innovation and problem-solving.",
+            "Engineering fields.",
+            "Practical applications in engineering."
+        ],
+        "INTEREST_tam": [
+            "பொறியியல் பயன்பாடுகள்.",
+            "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+            "பொறியியல் துறைகள்.",
+            "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+        ],
+        "JOB_ROLES_eng": [
+            "Engineering Technologist",
+            "Project Manager",
+            "Quality Assurance Engineer",
+            "Technical Consultant"
+        ],
+        "JOB_ROLES_tam": [
+            "பொறியியல் தொழில்நுட்பவியலாளர்",
+            "திட்ட மேலாளர்",
+            "தர உறுதி பொறியியலாளர்",
+            "தொழில்நுட்ப ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at the University of Jaffna prepares students for careers in engineering technology through a balanced curriculum of theory and practice.",
+        "DESCRIPTION_tam": "யாழ்ப்பாண பல்கலைக்கழகத்தில் உள்ள பொறியியல் தொழில்நுட்பம் பட்ட மேற்படிப்பு திட்டம், பொறியியல் தொழில்நுட்பத்தின் நடைமுறையும் கோட்பாடும் பற்றிய அடிப்படைகளில் கவனம் செலுத்தி, மாணவர்களை பொறியியல் துறையில் பல்வேறு தொழில்முறை வியுக்களில் பயிற்சியளிக்கும்.",
+        "DEGREE_TYPE": "BET (Hons)",
+        "DURATION": "4 YEARS",
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
+        "Z_SCORE": {
+            "Colombo": "1.0845",
+            "Gampaha": "1.0934",
+            "Kalutara": "1.1722",
+            "Matale": "1.1816",
+            "Kandy": "0.9870",
+            "Nuwara Eliya": "0.9164",
+            "Galle": "1.2399",
+            "Matara": "1.3020",
+            "Hambanthota": "1762",
+            "Jaffna": "0.7821",
+            "Kilinochchi": "0.0642",
+            "Mannar": "0.4322",
+            "Mullaitivu": "0.5534",
+            "Vavuniya": "0.2225",
+            "Trincomalee": "0.5950",
+            "Batticaloa": "0.9831",
+            "Ampara": "0.7647",
+            "Puttalam": "0.6744",
+            "Kurunagala": "1.1684",
+            "Anuradhapura": "0.9217",
+            "Polonnaruwa": "0.7440",
+            "Badulla": "1.1227",
+            "Monaragala": "0.7680",
+            "Kegalle": "1.3712",
+            "Ratnapura": "1.0801"
+        }
+    },
+    
+   
+    {
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)",
+        "UNIVERSITY_eng": "UNIVERSITY OF RUHUNA",
+        "UNIVERSITY_tam": "உருகுணை பல்கலைக்கழகம்",
+        "UNICODE": "102F",
+        "SUBJECTS_eng": [
+            "Economics",
+            "Geography",
+            "Home Economics",
+            "English",
+            "Communication and Media Studies",
+            "Information & Communication Technology",
+            "Art",
+            "Business Studies",
+            "Agricultural Science",
+            "Accountancy",
+            "Mathematics"
+        ],
+        "SUBJECTS_tam": [
+            "பொருளியல்",
+            "புவியியல்",
+            "மனைப்பொருளியல்",
+            "ஆங்கிலம்",
+            "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+            "சித்திரம்",
+            "விவசாயம்",
+            "கணக்கீடு",
+            "கணிதம்"
+        ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Economics": "S",
+                "Geography": "S",
+                "Home Economics": "S",
+                "English": "S",
+                "Communication and Media Studies": "S",
+                "Information & Communication Technology": "S",
+                "Art": "S",
+                "Business Studies": "S",
+                "Agricultural Science": "S",
+                "Accountancy": "S",
+                "Mathematics": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST_eng": [
+            "Applying engineering.",
+            "Innovation and problem-solving.",
+            "Engineering fields.",
+            "Practical applications in engineering."
+        ],
+        "INTEREST_tam": [
+            "பொறியியல் பயன்பாடுகள்.",
+            "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+            "பொறியியல் துறைகள்.",
+            "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+        ],
+        "JOB_ROLES_eng": [
+            "Engineering Technologist",
+            "Project Manager",
+            "Quality Assurance Engineer",
+            "Technical Consultant"
+        ],
+        "JOB_ROLES_tam": [
+            "பொறியியல் தொழில்நுட்பவியலாளர்",
+            "திட்ட மேலாளர்",
+            "தர உறுதி பொறியியலாளர்",
+            "தொழில்நுட்ப ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at the University of Ruhuna emphasizes hands-on experience and practical applications in engineering technology.",
+        "DESCRIPTION_tam": "உருகுணை பல்கலைக்கழகத்தில் உள்ள பொறியியல் தொழில்நுட்பம் பட்ட மேற்படிப்பு திட்டம், பொறியியல் தொழில்நுட்பத்தில் நடைமுறை அனுபவமும், தொழில்நுட்ப பயன்பாடுகளையும் கவனமாக அடிப்படையாகக் கொண்டது.",
+        "DEGREE_TYPE": "BET (Hons)",
+        "DURATION": "4 YEARS",
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
+        "Z_SCORE": {
+            "Colombo": "1.3305",
+            "Gampaha": "1.3324",
+            "Kalutara": "1.3432",
+            "Matale": "1.3594",
+            "Kandy": "1.3364",
+            "Nuwara Eliya": "1.3314",
+            "Galle": "1.3448",
+            "Matara": "1.3384",
+            "Hambanthota": "1.3703",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "1.4436",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.5264",
+            "Batticaloa": "1.6356",
+            "Ampara": "1.5802",
+            "Puttalam": "1.5422",
+            "Kurunagala": "1.3397",
+            "Anuradhapura": "1.3960",
+            "Polonnaruwa": "1.4564",
+            "Badulla": "1.3429",
+            "Monaragala": "1.3838",
+            "Kegalle": "1.3500",
+            "Ratnapura": "1.3427"
+        }
+    },
+    
+    {
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)",
+        "UNIVERSITY_eng": "RAJARATA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": " ராஜரட்ட பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "102K",
+        "SUBJECTS_eng": [
+            "Economics",
+            "Geography",
+            "Home Economics",
+            "English",
+            "Communication and Media Studies",
+            "Information & Communication Technology",
+            "Art",
+            "Business Studies",
+            "Agricultural Science",
+            "Accountancy",
+            "Mathematics"
+        ],
+        "SUBJECTS_tam": [
+            "பொருளியல்",
+            "புவியியல்",
+            "மனைப்பொருளியல்",
+            "ஆங்கிலம்",
+            "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+            "சித்திரம்",
+            "விவசாயம்",
+            "கணக்கீடு",
+            "கணிதம்"
+        ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Economics": "S",
+                "Geography": "S",
+                "Home Economics": "S",
+                "English": "S",
+                "Communication and Media Studies": "S",
+                "Information & Communication Technology": "S",
+                "Art": "S",
+                "Business Studies": "S",
+                "Agricultural Science": "S",
+                "Accountancy": "S",
+                "Mathematics": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST_eng": [
+            "Applying engineering.",
+            "Innovation and problem-solving.",
+            "Engineering fields.",
+            "Practical applications in engineering."
+        ],
+        "INTEREST_tam": [
+            "பொறியியல் பயன்பாடுகள்.",
+            "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+            "பொறியியல் துறைகள்.",
+            "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+        ],
+        "JOB_ROLES_eng": [
+            "Engineering Technologist",
+            "Project Manager",
+            "Quality Assurance Engineer",
+            "Technical Consultant"
+        ],
+        "JOB_ROLES_tam": [
+            "பொறியியல் தொழில்நுட்பவியலாளர்",
+            "திட்ட மேலாளர்",
+            "தர உறுதி பொறியியலாளர்",
+            "தொழில்நுட்ப ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at Rajarata University of Sri Lanka prepares students for careers in engineering technology with a focus on community engagement and sustainable practices.",
+        "DESCRIPTION_tam": "ராஜரட்ட பல்கலைக்கழகத்தில் உள்ள பொறியியல் தொழில்நுட்பம் பட்ட மேற்படிப்பு திட்டம், பொறியியல் தொழில்நுட்பத்தில் சமூக பங்கீடு மற்றும் நிலையான நடைமுறைகள் மீது கவனம் செலுத்தி மாணவர்களை தொழில்முறை பயிற்சிக்காக தயார prepares.",
+        "DEGREE_TYPE": "BET (Hons)",
+        "DURATION": "4 YEARS",
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
+        "Z_SCORE": {
+            "Colombo": "1.0776",
+            "Gampaha": "1.0672",
+            "Kalutara": "1.0766",
+            "Matale": "1.2354",
+            "Kandy": "0.9805",
+            "Nuwara Eliya": "0.9125",
+            "Galle": "1.2663",
+            "Matara": "1.4843",
+            "Hambanthota": "NotQualified",
+            "Jaffna": "1.0437",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "0.9334",
+            "Trincomalee": "0.9775",
+            "Batticaloa": "1.0002",
+            "Ampara": "0.9684",
+            "Puttalam": "0.9488",
+            "Kurunagala": "1.1712",
+            "Anuradhapura": "0.9205",
+            "Polonnaruwa": "0.9219",
+            "Badulla": "1.1501",
+            "Monaragala": "0.9738",
+            "Kegalle": "1.1298",
+            "Ratnapura": "1.0947"
+        }
+    },
+    
+    {
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)",
+        "UNIVERSITY_eng": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "சபரகமுவ பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "102L",
+        "SUBJECTS_eng": [
+            "Economics",
+            "Geography",
+            "Home Economics",
+            "English",
+            "Communication and Media Studies",
+            "Information & Communication Technology",
+            "Art",
+            "Business Studies",
+            "Agricultural Science",
+            "Accountancy",
+            "Mathematics"
+        ],
+        "SUBJECTS_tam": [
+            "பொருளியல்",
+            "புவியியல்",
+            "மனைப்பொருளியல்",
+            "ஆங்கிலம்",
+            "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+            "சித்திரம்",
+            "விவசாயம்",
+            "கணக்கீடு",
+            "கணிதம்"
+        ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Economics": "S",
+                "Geography": "S",
+                "Home Economics": "S",
+                "English": "S",
+                "Communication and Media Studies": "S",
+                "Information & Communication Technology": "S",
+                "Art": "S",
+                "Business Studies": "S",
+                "Agricultural Science": "S",
+                "Accountancy": "S",
+                "Mathematics": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST_eng": [
+            "Applying engineering.",
+            "Innovation and problem-solving.",
+            "Engineering fields.",
+            "Practical applications in engineering."
+        ],
+        "INTEREST_tam": [
+            "பொறியியல் பயன்பாடுகள்.",
+            "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+            "பொறியியல் துறைகள்.",
+            "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+        ],
+        "JOB_ROLES_eng": [
+            "Engineering Technologist",
+            "Project Manager",
+            "Quality Assurance Engineer",
+            "Technical Consultant"
+        ],
+        "JOB_ROLES_tam": [
+            "பொறியியல் தொழில்நுட்பவியலாளர்",
+            "திட்ட மேலாளர்",
+            "தர உறுதி பொறியியலாளர்",
+            "தொழில்நுட்ப ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at Sabaragamuwa University of Sri Lanka emphasizes practical training and real-world applications in engineering technology.",
+        "DESCRIPTION_tam": "சபரகமுவ பல்கலைக்கழகத்தில் உள்ள பொறியியல் தொழில்நுட்பம் பட்ட மேற்படிப்பு திட்டம், பொறியியல் தொழில்நுட்பத்தில் நடைமுறை பயிற்சி மற்றும் உலகளாவிய பயன்பாடுகளில் கவனம் செலுத்துகிறது.",
+        "DEGREE_TYPE": "BET (Hons)",
+        "DURATION": "4 YEARS",
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
+        "Z_SCORE": {
+            "Colombo": "1.1389",
+            "Gampaha": "1.1374",
+            "Kalutara": "1.1472",
+            "Matale": "1.2403",
+            "Kandy": "1.1482",
+            "Nuwara Eliya": "1.2403",
+            "Galle": "1.1767",
+            "Matara": "1.3418",
+            "Hambanthota": "1.1694",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "1.1804",
+            "Vavuniya": "1.5407",
+            "Trincomalee": "NotQualified",
+            "Batticaloa": "1.2859",
+            "Ampara": "1.1709",
+            "Puttalam": "1.1810",
+            "Kurunagala": "1.1884",
+            "Anuradhapura": "1.1829",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "1.1399",
+            "Monaragala": "1.1678",
+            "Kegalle": "1.1409",
+            "Ratnapura": "1.1389"
+        }
+    },
+    
+    {
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)",
+        "UNIVERSITY_eng": "WAYAMBA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "வயம்ப பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "102M",
+        "SUBJECTS_eng": [
+            "Economics",
+            "Geography",
+            "Home Economics",
+            "English",
+            "Communication and Media Studies",
+            "Information & Communication Technology",
+            "Art",
+            "Business Studies",
+            "Agricultural Science",
+            "Accountancy",
+            "Mathematics"
+        ],
+        "SUBJECTS_tam": [
+            "பொருளியல்",
+            "புவியியல்",
+            "மனைப்பொருளியல்",
+            "ஆங்கிலம்",
+            "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+            "சித்திரம்",
+            "விவசாயம்",
+            "கணக்கீடு",
+            "கணிதம்"
+        ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Economics": "S",
+                "Geography": "S",
+                "Home Economics": "S",
+                "English": "S",
+                "Communication and Media Studies": "S",
+                "Information & Communication Technology": "S",
+                "Art": "S",
+                "Business Studies": "S",
+                "Agricultural Science": "S",
+                "Accountancy": "S",
+                "Mathematics": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST_eng": [
+            "Applying engineering.",
+            "Innovation and problem-solving.",
+            "Engineering fields.",
+            "Practical applications in engineering."
+        ],
+        "INTEREST_tam": [
+            "பொறியியல் பயன்பாடுகள்.",
+            "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+            "பொறியியல் துறைகள்.",
+            "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+        ],
+        "JOB_ROLES_eng": [
+            "Engineering Technologist",
+            "Project Manager",
+            "Quality Assurance Engineer",
+            "Technical Consultant"
+        ],
+        "JOB_ROLES_tam": [
+            "பொறியியல் தொழில்நுட்பவியலாளர்",
+            "திட்ட மேலாளர்",
+            "தர உறுதி பொறியியலாளர்",
+            "தொழில்நுட்ப ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at Wayamba University of Sri Lanka focuses on developing innovative solutions in engineering technology to meet industry demands.",
+        "DESCRIPTION_tam": "வயம்ப பல்கலைக்கழகத்தில் உள்ள பொறியியல் தொழில்நுட்பம் பட்ட மேற்படிப்பு திட்டம், தொழில்நுட்பத் தேவைகளை பூர்த்தி செய்ய புதுமையான தீர்வுகளை உருவாக்கத் திறமை கொண்டுள்ளது.",
+        "DEGREE_TYPE": "BET (Hons)",
+        "DURATION": "4 YEARS",
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
+        "Z_SCORE": {
+            "Colombo": "1.2138",
+            "Gampaha": "1.2094",
+            "Kalutara": "1.2399",
+            "Matale": "1.2222",
+            "Kandy": "1.2194",
+            "Nuwara Eliya": "1.2109",
+            "Galle": "1.2163",
+            "Matara": "1.3251",
+            "Hambanthota": "1.2114",
+            "Jaffna": "1.2638",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.2614",
+            "Batticaloa": "1.2088",
+            "Ampara": "1.2379",
+            "Puttalam": "1.2221",
+            "Kurunagala": "1.2134",
+            "Anuradhapura": "1.2119",
+            "Polonnaruwa": "1.5420",
+            "Badulla": "1.2260",
+            "Monaragala": "1.2055",
+            "Kegalle": "1.2144",
+            "Ratnapura": "1.2139"
+        }
+    },
+    
+    {
+        "COURSE_eng": "ENGINEERING TECHNOLOGY (ET)",
+        "COURSE_tam": "பொறியியல் தொழில்நுட்பம் (ET)",
+        "UNIVERSITY_eng": "UVA WELLASSA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "உவா வெலசா பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "102U",
+        "SUBJECTS_eng": [
+            "Economics",
+            "Geography",
+            "Home Economics",
+            "English",
+            "Communication and Media Studies",
+            "Information & Communication Technology",
+            "Art",
+            "Business Studies",
+            "Agricultural Science",
+            "Accountancy",
+            "Mathematics"
+        ],
+        "SUBJECTS_tam": [
+            "பொருளியல்",
+            "புவியியல்",
+            "மனைப்பொருளியல்",
+            "ஆங்கிலம்",
+            "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+            "சித்திரம்",
+            "விவசாயம்",
+            "கணக்கீடு",
+            "கணிதம்"
+        ],
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Economics": "S",
+                "Geography": "S",
+                "Home Economics": "S",
+                "English": "S",
+                "Communication and Media Studies": "S",
+                "Information & Communication Technology": "S",
+                "Art": "S",
+                "Business Studies": "S",
+                "Agricultural Science": "S",
+                "Accountancy": "S",
+                "Mathematics": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST_eng": [
+            "Applying engineering.",
+            "Innovation and problem-solving.",
+            "Engineering fields.",
+            "Practical applications in engineering."
+        ],
+        "INTEREST_tam": [
+            "பொறியியல் பயன்பாடுகள்.",
+            "புதுமை மற்றும் பிரச்சினைகளைத் தீர்க்குதல்.",
+            "பொறியியல் துறைகள்.",
+            "பொறியியலில் நடைமுறை பயன்பாடுகள்."
+        ],
+        "JOB_ROLES_eng": [
+            "Engineering Technologist",
+            "Project Manager",
+            "Quality Assurance Engineer",
+            "Technical Consultant"
+        ],
+        "JOB_ROLES_tam": [
+            "பொறியியல் தொழில்நுட்பவியலாளர்",
+            "திட்ட மேலாளர்",
+            "தர உறுதி பொறியியலாளர்",
+            "தொழில்நுட்ப ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Engineering Technology Honours program at Uva Wellassa University of Sri Lanka emphasizes the application of engineering technology to solve real-world problems.",
+        "DESCRIPTION_tam": "ஊவா வெல்லச பல்கலைக்கழகத்தின் பொறியியல் தொழில்நுட்பம் பட்ட மேற்படிப்பு திட்டம், இயல்பான பிரச்சினைகளை தீர்க்க பொறியியல் தொழில்நுட்பத்தின் பயன்பாட்டை முக்கியமாகக் காட்டுகிறது.",
+        "DEGREE_TYPE": "BET (Hons)",
+        "DURATION": "4 YEARS",
+        "STREAM":"ENGINEERING TECHNOLOGY (ET)",
+        "Z_SCORE": {
+            "Colombo": "1.0934",
+            "Gampaha": "1.0757",
+            "Kalutara": "1.0733",
+            "Matale": "1.1874",
+            "Kandy": "1.0243",
+            "Nuwara Eliya": "1.0223",
+            "Galle": "1.1782",
+            "Matara": "1.3046",
+            "Hambanthota": "1.2055",
+            "Jaffna": "1.0287",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "1.0215",
+            "Trincomalee": "1.1551",
+            "Batticaloa": "1.0721",
+            "Ampara": "0.9938",
+            "Puttalam": "1.0835",
+            "Kurunagala": "1.2148",
+            "Anuradhapura": "1.0047",
+            "Polonnaruwa": "1.0262",
+            "Badulla": "1.0948",
+            "Monaragala": "0.9880",
+            "Kegalle": "1.1452",
+            "Ratnapura": "1.1187"
         }
     }
+    
+    
 ]
