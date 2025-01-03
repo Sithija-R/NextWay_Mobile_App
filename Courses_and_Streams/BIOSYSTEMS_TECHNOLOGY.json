@@ -1,15 +1,15 @@
 [
     {
         "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
-        "COURSE_tam":"",
+        "COURSE_tam":"உயிர்முறைமைகள் தொழில்நுட்பம்",
 
         "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENEPURA",
-        "UNIVERSITY_tam":"",
+        "UNIVERSITY_tam":"ஜயவர்த்தனபுர பல்கலைக்கழகம்",
 
         "UNICODE": "103C",
 
         "SUBJECTS_eng": ["Biotechnology", "Information Technology","Biology"],
-        "SUBJECTS_tam":[],
+        "SUBJECTS_tam":["உயிர்முறைமைகள் தொழில்நுட்பம்","தகவல் தொடர்பாடல் தொழில்நுட்பம்","உயிரியல்"],
 
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
@@ -19,22 +19,37 @@
             "OtherQualifications": {}
         },
         
-        "INTEREST":  [
+        "INTEREST_eng":  [
             "Biotechnology Applications",
             "Data Analysis",
-            "Sustainable Practices",
             "Problem Solving",
             "Research Methodologies"
         ],
+        "INTEREST_tam": [
+    "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+    "தரவு பகுப்பாய்வு",
+    "பிரச்சினை தீர்க்கும் திறன்",
+    "ஆராய்ச்சி முறைமைகள்"
+],
+
+
         "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "JOB_ROLES_tam":[],
+        "JOB_ROLES_tam": [
+    "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+    "விவசாய ஆலோசகர்",
+    "உணவு தொழில்நுட்ப நிபுணர்",
+    "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+],
+
 
         "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at the University of Sri Jayewardenepura provides a broad-based education in the application of biological principles to various fields, including agriculture, food processing, and environmental management.",
-        "DESCRIPTION_tam":"",
+        "DESCRIPTION_tam": "ஸ்ரீ ஜயவர்தனபுர பல்கலைக்கழகத்தில் உள்ள உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம், விவசாயம், உணவு செயலாக்கம் மற்றும் சூழல் மேலாண்மை உள்ளிட்ட பல்வேறு துறைகளில் உயிரியல் கொள்கைகளை பயன்பாட்டில் கொண்டு வருவதற்கான பரந்த அடிப்படை கல்வியை வழங்குகிறது.",
+
 
         "DEGREE_TYPE": "BBST (Hons)",
 
         "DURATION": "4 YEARS",
+        "STREAM":"Biosystems Technology",
         
         "Z_SCORE": {
             "Colombo" : "1.9350",
@@ -66,486 +81,677 @@
         }
     },
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF JAFFNA",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF JAFFNA",
+        "UNIVERSITY_tam": "யாழ்ப்பாண பல்கலைக்கழகம்",
         "UNICODE": "103E",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S"
-                },
+            },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
             "Sustainable Practices",
             "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at the University of Jaffna focuses on the application of biosystems principles to crops, livestock, aquatic systems, and microorganisms, preparing students for diverse careers in the field.",
-        "DEGREE_TYPE": "BBST (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "0.8181",
-            "Gampaha" :"0.8056",
-            "Kalutara":"0.8846",
-            "Matale" :"1.1028",
-            "Kandy" :"0.9489",
-            "Nuwara Eliya" :"0.8727",
-            "Galle" :"1.0020",
-            "Matara" :"NotQualified",
-            "Hambanthota" :"1.0592",
-            "Jaffna" :"0.8051",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"0.8241",
-            "Trincomalee" :"0.9341",
-            "Batticaloa" :"0.8730",
-            "Ampara" :"0.9533",
-            "Puttalam" :"0.8061",
-            "Kurunagala" :"1.0150",
-            "Anuradhapura" :"0.9981",
-            "Polonnaruwa" :"0.8136",
-            "Badulla" :"1.1218",
-            "Monaragala":"0,9894",
-            "Kegalle" :"NotQualified",
-            "Ratnapura" :"0,9367"
-
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "தொழில்நுட்ப கடைகளை உணர்ந்து பயன்பாட்டி",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at the University of Jaffna focuses on the application of biosystems principles to crops, livestock, aquatic systems, and microorganisms, preparing students for diverse careers in the field.",
+        "DESCRIPTION_tam": "யாழ்ப்பாண பல்கலைக்கழகத்தில் உள்ள உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம், விவசாயம், உணவு செயலாக்கம் மற்றும் சூழல் மேலாண்மை உள்ளிட்ட பல்வேறு துறைகளில் உயிரியல் கொள்கைகளை பயன்பாட்டில் கொண்டு வருவதற்கான பரந்த அடிப்படை கல்வியை வழங்குகிறது.",
+        "Z_SCORE": {
+            "Colombo": "0.8181",
+            "Gampaha": "0.8056",
+            "Kalutara": "0.8846",
+            "Matale": "1.1028",
+            "Kandy": "0.9489",
+            "Nuwara Eliya": "0.8727",
+            "Galle": "1.0020",
+            "Matara": "NotQualified",
+            "Hambanthota": "1.0592",
+            "Jaffna": "0.8051",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "0.8241",
+            "Trincomalee": "0.9341",
+            "Batticaloa": "0.8730",
+            "Ampara": "0.9533",
+            "Puttalam": "0.8061",
+            "Kurunagala": "1.0150",
+            "Anuradhapura": "0.9981",
+            "Polonnaruwa": "0.8136",
+            "Badulla": "1.1218",
+            "Monaragala": "0.9894",
+            "Kegalle": "NotQualified",
+            "Ratnapura": "0.9367"
         }
     },
+    
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "EASTERN UNIVERSITY, SRI LANKA",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "EASTERN UNIVERSITY, SRI LANKA",
+        "UNIVERSITY_tam": "கிழக்கு பல்கலைக்கழகம், இலங்கை",
         "UNICODE": "103H",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S",
-                "Third Subject": ["Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", "Accountancy", "Mathematics"]
+                "Third Subject": [
+                    "Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", 
+                    "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", 
+                    "Accountancy", "Mathematics"
+                ]
             },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
-            "Sustainable Practices",
-            "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at Eastern University, Sri Lanka emphasizes the integration of biosystems principles with entrepreneurship, preparing students for innovative careers in the field.",
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            " தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at Eastern University, Sri Lanka emphasizes the integration of biosystems principles with entrepreneurship, preparing students for innovative careers in the field.",
+        "DESCRIPTION_tam": "கிழக்கு பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பின் கல்வி திட்டம் புவியியல் பொருளாதாரம் போதுமான கலைவுயிரியல் ஆகியவை உட்பட பல துறைகளின் உருவாக்க வாய்ப்புகளுக்கு நேர்மையாக உள்ளது.",
         "DEGREE_TYPE": "BBST (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "0.4505",
-            "Gampaha" :"6740",
-            "Kalutara":"9300",
-            "Matale" :"NotQualified",
-            "Kandy" :"1.0142",
-            "Nuwara Eliya" :"0.8509",
-            "Galle" :"0.7175",
-            "Matara" :"NotQualified",
-            "Hambanthota" :"1.0748",
-            "Jaffna" :"0.4389",
-            "Kilinochchi" :"0.0815",
-            "Mannar" :"0.6483",
-            "Mullaitivu" :"0.1977",
-            "Vavuniya" :"0.5622",
-            "Trincomalee" :"0.6076",
-            "Batticaloa" :"0.9926",
-            "Ampara" :"1.3297",
-            "Puttalam" :"0.7654",
-            "Kurunagala" :"1.0276",
-            "Anuradhapura" :"1.0094",
-            "Polonnaruwa" :"0.7598",
-            "Badulla" :"1.1276",
-            "Monaragala":"0.8823",
-            "Kegalle" :"NotQualified",
-            "Ratnapura" :"0.9579"
-
+        
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "0.4505",
+            "Gampaha": "6740",
+            "Kalutara": "9300",
+            "Matale": "NotQualified",
+            "Kandy": "1.0142",
+            "Nuwara Eliya": "0.8509",
+            "Galle": "0.7175",
+            "Matara": "NotQualified",
+            "Hambanthota": "1.0748",
+            "Jaffna": "0.4389",
+            "Kilinochchi": "0.0815",
+            "Mannar": "0.6483",
+            "Mullaitivu": "0.1977",
+            "Vavuniya": "0.5622",
+            "Trincomalee": "0.6076",
+            "Batticaloa": "0.9926",
+            "Ampara": "1.3297",
+            "Puttalam": "0.7654",
+            "Kurunagala": "1.0276",
+            "Anuradhapura": "1.0094",
+            "Polonnaruwa": "0.7598",
+            "Badulla": "1.1276",
+            "Monaragala": "0.8823",
+            "Kegalle": "NotQualified",
+            "Ratnapura": "0.9579"
         }
     },
+    
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "தென்கிழக்கு பல்கலைக்கழகம், இலங்கை",
         "UNICODE": "103J",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S",
-                "Third Subject": ["Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", "Accountancy", "Mathematics"]
+                "Third Subject": [
+                    "Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", 
+                    "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", 
+                    "Accountancy", "Mathematics"
+                ]
             },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
-            "Sustainable Practices",
-            "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at South Eastern University of Sri Lanka focuses on the application of biosystems principles to agricultural technology, preparing students for careers in sustainable agriculture and rural development.",
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at South Eastern University of Sri Lanka focuses on the application of biosystems principles to agricultural technology, preparing students for careers in sustainable agriculture and rural development.",
+        "DESCRIPTION_tam": "தென்கிழக்கு பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பின் கல்வி திட்டம் வேளாண்மையில் புவியியல் கொள்கைகளை வட்டாரபிரயோகம் செய்கிறது.",
         "DEGREE_TYPE": "BBST (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "0.4282",
-            "Gampaha" :"0.6711",
-            "Kalutara":"0.9123",
-            "Matale" :"NotQualified",
-            "Kandy" :"0.9851",
-            "Nuwara Eliya" :"0.8014",
-            "Galle" :"0.6873",
-            "Matara" :"NotQualified",
-            "Hambanthota" :"NotQualified",
-            "Jaffna" :"0.4207",
-            "Kilinochchi" :"0.5054",
-            "Mannar" :"0.6748",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"0.4994",
-            "Trincomalee" :"0.6722",
-            "Batticaloa" :"1.1852",
-            "Ampara" :"0.9778",
-            "Puttalam" :"0.8261",
-            "Kurunagala" :"1.0485",
-            "Anuradhapura" :"NotQualified",
-            "Polonnaruwa" :"0.6787",
-            "Badulla" :"1.1268",
-            "Monaragala":"0.9414",
-            "Kegalle" :"NotQualified",
-            "Ratnapura" :"0.9553"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "0.4282",
+            "Gampaha": "0.6711",
+            "Kalutara": "0.9123",
+            "Matale": "NotQualified",
+            "Kandy": "0.9851",
+            "Nuwara Eliya": "0.8014",
+            "Galle": "0.6873",
+            "Matara": "NotQualified",
+            "Hambanthota": "NotQualified",
+            "Jaffna": "0.4207",
+            "Kilinochchi": "0.5054",
+            "Mannar": "0.6748",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "0.4994",
+            "Trincomalee": "0.6722",
+            "Batticaloa": "1.1852",
+            "Ampara": "0.9778",
+            "Puttalam": "0.8261",
+            "Kurunagala": "1.0485",
+            "Anuradhapura": "NotQualified",
+            "Polonnaruwa": "0.6787",
+            "Badulla": "1.1268",
+            "Monaragala": "0.9414",
+            "Kegalle": "NotQualified",
+            "Ratnapura": "0.9553"
         }
     },
+    
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "RAJARATA UNIVERSITY OF SRI LANKA",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "RAJARATA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam":"ரஜரட்ட பல்கலைக்கழகம், இலங்கை",
         "UNICODE": "103K",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S",
-                "Third Subject": ["Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", "Accountancy", "Mathematics"]
+                "Third Subject": [
+                    "Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", 
+                    "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", 
+                    "Accountancy", "Mathematics"
+                ]
             },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
-            "Sustainable Practices",
-            "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at Rajarata University of Sri Lanka emphasizes community-based education and research, preparing students for careers in rural and underserved areas.",
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at Rajarata University of Sri Lanka emphasizes community-based education and research, preparing students for careers in rural and underserved areas.",
+        "DESCRIPTION_tam": "ரஜரட்ட பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் சமூக மையப் படிப்பு மற்றும் ஆராய்ச்சியில் கவனம் செலுத்துகிறது, மாணவர்களை ஊரக மற்றும் குறைந்த அளவில் சேவை செய்யப்படும் பகுதிகளில் வேலை வாய்ப்புகளுக்காக தயாராக்குகிறது.",
         "DEGREE_TYPE": "BBST (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.1045",
-            "Gampaha" :"1.1069",
-            "Kalutara":"1.1074",
-            "Matale" :"1.1011",
-            "Kandy" :"1.1036",
-            "Nuwara Eliya" :"1.2979",
-            "Galle" :"1.1071",
-            "Matara" :"1.3619",
-            "Hambanthota" :"1.1025",
-            "Jaffna" :"1.3054",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.2816",
-            "Batticaloa" :"1.1164",
-            "Ampara" :"NotQualified",
-            "Puttalam" :"1.1168",
-            "Kurunagala" :"1.1157",
-            "Anuradhapura" :"1.1094",
-            "Polonnaruwa" :"NotQualified",
-            "Badulla" :"1.1227",
-            "Monaragala":"1.1224",
-            "Kegalle" :"1.1227",
-            "Ratnapura" :"1.1143"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "1.1045",
+            "Gampaha": "1.1069",
+            "Kalutara": "1.1074",
+            "Matale": "1.1011",
+            "Kandy": "1.1036",
+            "Nuwara Eliya": "1.2979",
+            "Galle": "1.1071",
+            "Matara": "1.3619",
+            "Hambanthota": "1.1025",
+            "Jaffna": "1.3054",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.2816",
+            "Batticaloa": "1.1164",
+            "Ampara": "NotQualified",
+            "Puttalam": "1.1168",
+            "Kurunagala": "1.1157",
+            "Anuradhapura": "1.1094",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "1.1227",
+            "Monaragala": "1.1224",
+            "Kegalle": "1.1227",
+            "Ratnapura": "1.1143"
         }
     },
+    
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "WAYAMBA UNIVERSITY OF SRI LANKA",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "WAYAMBA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "வயம்ப பல்கலைக்கழகம், இலங்கை",
         "UNICODE": "103M",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S",
-                "Third Subject": ["Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", "Accountancy", "Mathematics"]
+                "Third Subject": [
+                    "Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", 
+                    "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", 
+                    "Accountancy", "Mathematics"
+                ]
             },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
             "Sustainable Practices",
             "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at Wayamba University of Sri Lanka emphasizes the integration of biosystems principles with modern technologies, preparing students for careers in cutting-edge applications of biosystems technology.",
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "தரமான நடைமுறைகள்",
+            "பிரச்சினை தீர்வு",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at Wayamba University of Sri Lanka emphasizes the integration of biosystems principles with modern technologies, preparing students for careers in cutting-edge applications of biosystems technology.",
+        "DESCRIPTION_tam": "வயம்ப பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் உயிர்முறைமைகள் கருத்துக்களுடன் நவீன தொழில்நுட்பங்களை ஒருங்கிணைக்க கவனம் செலுத்துகிறது, மாணவர்களை உயிர்முறைமைகள் தொழில்நுட்பத்தின் முன்னணி பயன்பாடுகளுக்கு வேலை வாய்ப்புகளுக்காக தயாராக்குகிறது.",
         "DEGREE_TYPE": "BBST (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.3115",
-            "Gampaha" :"1.2845",
-            "Kalutara":"1.3059",
-            "Matale" :"1.3021",
-            "Kandy" :"1.3500",
-            "Nuwara Eliya" :"1.5024",
-            "Galle" :"1.3731",
-            "Matara" :"1.2998",
-            "Hambanthota" :"1.2959",
-            "Jaffna" :"NotQualified",
-            "Kilinochchi" :"1.3952",
-            "Mannar" :"1.3073",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.4643",
-            "Batticaloa" :"1.4707",
-            "Ampara" :"1.3013",
-            "Puttalam" :"1.2947",
-            "Kurunagala" :"1.3399",
-            "Anuradhapura" :"1.2827",
-            "Polonnaruwa" :"1.5222",
-            "Badulla" :"1.2904",
-            "Monaragala":"1.2984",
-            "Kegalle" :" 1.3118",
-            "Ratnapura" :"1.3437"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "1.3115",
+            "Gampaha": "1.2845",
+            "Kalutara": "1.3059",
+            "Matale": "1.3021",
+            "Kandy": "1.3500",
+            "Nuwara Eliya": "1.5024",
+            "Galle": "1.3731",
+            "Matara": "1.2998",
+            "Hambanthota": "1.2959",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "1.3952",
+            "Mannar": "1.3073",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.4643",
+            "Batticaloa": "1.4707",
+            "Ampara": "1.3013",
+            "Puttalam": "1.2947",
+            "Kurunagala": "1.3399",
+            "Anuradhapura": "1.2827",
+            "Polonnaruwa": "1.5222",
+            "Badulla": "1.2904",
+            "Monaragala": "1.2984",
+            "Kegalle": "1.3118",
+            "Ratnapura": "1.3437"
         }
     },
+    
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "UVA WELLASSA UNIVERSITY OF SRI LANKA",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UVA WELLASSA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "ஊவா வெல்லச பல்கலைக்கழகம், இலங்கை",
         "UNICODE": "103U",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S",
-                "Third Subject": ["Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", "Accountancy", "Mathematics"]
+                "Third Subject": [
+                    "Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", 
+                    "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", 
+                    "Accountancy", "Mathematics"
+                ]
             },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
             "Sustainable Practices",
             "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at Uva Wellassa University of Sri Lanka provides a broad-based education in the application of biosystems principles to various fields, with a focus on entrepreneurship and innovation.",
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "தரமான நடைமுறைகள்",
+            "பிரச்சினை தீர்வு",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at Uva Wellassa University of Sri Lanka provides a broad-based education in the application of biosystems principles to various fields, with a focus on entrepreneurship and innovation.",
+        "DESCRIPTION_tam": "ஊவா வெல்லச பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் பல துறைகளில் உயிர்முறைமைகள் கருத்துக்களைப் பயன்படுத்தும் ஒரு விரிவான கல்வி அளித்து, தொழில்முனைவோர்களாகவும் புதுமை செய்பவராகவும் தயாராக்குகிறது.",
         "DEGREE_TYPE": "BBST (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.1466",
-            "Gampaha" :"1.1423",
-            "Kalutara":"1.1392",
-            "Matale" :"1.4005",
-            "Kandy" :"1.1435",
-            "Nuwara Eliya" :"1.1323",
-            "Galle" :"1.2831",
-            "Matara" :"1.1920",
-            "Hambanthota" :"1.1367",
-            "Jaffna" :"1.4436",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"1.1446",
-            "Trincomalee" :"NotQualified",
-            "Batticaloa" :"1.1487",
-            "Ampara" :"1.1408",
-            "Puttalam" :"NotQualified",
-            "Kurunagala" :"1.1463",
-            "Anuradhapura" :"1.1522",
-            "Polonnaruwa" :"1.2411",
-            "Badulla" :"1.1403",
-            "Monaragala":"1.1313",
-            "Kegalle" :"1.1638",
-            "Ratnapura" :"1.1338"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "1.1466",
+            "Gampaha": "1.1423",
+            "Kalutara": "1.1392",
+            "Matale": "1.4005",
+            "Kandy": "1.1435",
+            "Nuwara Eliya": "1.1323",
+            "Galle": "1.2831",
+            "Matara": "1.1920",
+            "Hambanthota": "1.1367",
+            "Jaffna": "1.4436",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "1.1446",
+            "Trincomalee": "NotQualified",
+            "Batticaloa": "1.1487",
+            "Ampara": "1.1408",
+            "Puttalam": "NotQualified",
+            "Kurunagala": "1.1463",
+            "Anuradhapura": "1.1522",
+            "Polonnaruwa": "1.2411",
+            "Badulla": "1.1403",
+            "Monaragala": "1.1313",
+            "Kegalle": "1.1638",
+            "Ratnapura": "1.1338"
         }
     },
+    
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF COLOMBO",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO",
+        "UNIVERSITY_tam": "கொழும்பு பல்கலைக்கழகம்",
         "UNICODE": "103A",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S",
-                "Third Subject": ["Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", "Accountancy", "Mathematics"]
+                "Third Subject": [
+                    "Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", 
+                    "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", 
+                    "Accountancy", "Mathematics"
+                ]
             },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
             "Sustainable Practices",
             "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at the University of Colombo focuses on the application of biosystems principles to environmental technology and sustainable agriculture, preparing students for careers in environmental management and conservation.",
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "தரமான நடைமுறைகள்",
+            "பிரச்சினை தீர்வு",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at the University of Colombo focuses on the application of biosystems principles to environmental technology and sustainable agriculture, preparing students for careers in environmental management and conservation.",
+        "DESCRIPTION_tam": "கொழும்பு பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் சுற்றுச்சூழல் தொழில்நுட்பம் மற்றும் சுயமையமான விவசாயத்திற்கு உயிர்முறைமைகள் கொள்கைகள் பயன்பாட்டை முன்னிலைப்படுத்தி, சுற்றுச்சூழல் மேலாண்மை மற்றும் பாதுகாப்பில் மாணவர்களைத் தயாராக்குகிறது.",
         "DEGREE_TYPE": "BBST (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.7011",
-            "Gampaha" :"1.6256",
-            "Kalutara":"1.6699",
-            "Matale" :"1.6552",
-            "Kandy" :"1.6894",
-            "Nuwara Eliya" :"1.6240",
-            "Galle" :"1.6564",
-            "Matara" :"1.6347",
-            "Hambanthota" :"1.6236",
-            "Jaffna" :"1.8488",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"1.6709",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.6355",
-            "Batticaloa" :"1.7305",
-            "Ampara" :"1.7506",
-            "Puttalam" :"1.6433",
-            "Kurunagala" :"1.6345",
-            "Anuradhapura" :"1.6543",
-            "Polonnaruwa" :"NotQualified",
-            "Badulla" :"1.6552",
-            "Monaragala":"2.2985",
-            "Kegalle" :"1.6243",
-            "Ratnapura" :"1.6512"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "1.7011",
+            "Gampaha": "1.6256",
+            "Kalutara": "1.6699",
+            "Matale": "1.6552",
+            "Kandy": "1.6894",
+            "Nuwara Eliya": "1.6240",
+            "Galle": "1.6564",
+            "Matara": "1.6347",
+            "Hambanthota": "1.6236",
+            "Jaffna": "1.8488",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "1.6709",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.6355",
+            "Batticaloa": "1.7305",
+            "Ampara": "1.7506",
+            "Puttalam": "1.6433",
+            "Kurunagala": "1.6345",
+            "Anuradhapura": "1.6543",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "1.6552",
+            "Monaragala": "2.2985",
+            "Kegalle": "1.6243",
+            "Ratnapura": "1.6512"
         }
     },
+    
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "சபரகமுவ பல்கலைக்கழகம்",
         "UNICODE": "103L",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S",
-                "Third Subject": ["Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", "Accountancy", "Mathematics"]
+                "Third Subject": [
+                    "Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", 
+                    "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", 
+                    "Accountancy", "Mathematics"
+                ]
             },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
             "Sustainable Practices",
             "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at Sabaragamuwa University of Sri Lanka emphasizes problem-based learning and community engagement, preparing students for careers in diverse fields of biosystems technology.",
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "தரமான நடைமுறைகள்",
+            "பிரச்சினை தீர்வு",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at Sabaragamuwa University of Sri Lanka emphasizes problem-based learning and community engagement, preparing students for careers in diverse fields of biosystems technology.",
+        "DESCRIPTION_tam": "சபரகமுவ பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் பிரச்சினை அடிப்படையில் கற்றல் மற்றும் சமூக ஒத்துழைப்பு முன்னிலைப்படுத்தி, உயிர்முறைமைகள் தொழில்நுட்பத்தின் பல்வேறு துறைகளில் மாணவர்களைத் தயாராக்குகிறது.",
         "DEGREE_TYPE": "BBST (Hons)",
         "DURATION": "4 YEARS",
         "Z_SCORE": {
-            "Colombo" : "1.2020",
-            "Gampaha" :"1.2185",
-            "Kalutara":"1.2119",
-            "Matale" :"1.3209",
-            "Kandy" :"1.1942",
-            "Nuwara Eliya" :"1.1940",
-            "Galle" :"1.2103",
-            "Matara" :"1.1956",
-            "Hambanthota" :"1.1885",
-            "Jaffna" :"NotQualified",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"1.2247",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"NotQualified",
-            "Batticaloa" :"1.6174",
-            "Ampara" :"1.2470",
-            "Puttalam" :"1.1945",
-            "Kurunagala" :"1.1883",
-            "Anuradhapura" :"1.1997",
-            "Polonnaruwa" :"1.3367",
-            "Badulla" :"1.1894",
-            "Monaragala":"1.2130",
-            "Kegalle" :"1.1895",
-            "Ratnapura" :"1.2063"
-
+            "Colombo": "1.2020",
+            "Gampaha": "1.2185",
+            "Kalutara": "1.2119",
+            "Matale": "1.3209",
+            "Kandy": "1.1942",
+            "Nuwara Eliya": "1.1940",
+            "Galle": "1.2103",
+            "Matara": "1.1956",
+            "Hambanthota": "1.1885",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "1.2247",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "NotQualified",
+            "Batticaloa": "1.6174",
+            "Ampara": "1.2470",
+            "Puttalam": "1.1945",
+            "Kurunagala": "1.1883",
+            "Anuradhapura": "1.1997",
+            "Polonnaruwa": "1.3367",
+            "Badulla": "1.1894",
+            "Monaragala": "1.2130",
+            "Kegalle": "1.1895",
+            "Ratnapura": "1.2063"
         }
     },
+    
     {
-        "COURSE": "BIOSYSTEMS TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF RUHUNA",
+        "COURSE_eng": "BIOSYSTEMS TECHNOLOGY",
+        "COURSE_tam": "உயிர்முறைமைகள் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF RUHUNA",
+        "UNIVERSITY_tam": "உருகுணை பல்கலைக்கழகம்",
         "UNICODE": "103F",
-        "SUBJECTS": ["Biotechnology", "Information Technology","Biology"],
+        "SUBJECTS_eng": ["Biotechnology", "Information Technology", "Biology"],
+        "SUBJECTS_tam": ["உயிர்முறைமைகள் தொழில்நுட்பம்", "தகவல் தொடர்பாடல் தொழில்நுட்பம்", "உயிரியல்"],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Biosystems Technology": "S",
                 "Science for Technology": "S",
-                "Third Subject": ["Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", "Accountancy", "Mathematics"]
+                "Third Subject": [
+                    "Economics", "Geography", "Home Economics", "English", "Communication and Media Studies", 
+                    "Information & Communication Technology", "Art", "Business Studies", "Agricultural Science", 
+                    "Accountancy", "Mathematics"
+                ]
             },
             "OtherQualifications": {}
         },
-        "INTEREST":  [
+        "INTEREST_eng": [
             "Biotechnology Applications",
             "Data Analysis",
             "Sustainable Practices",
             "Problem Solving",
             "Research Methodologies"
         ],
-        "JOB_ROLES": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
-        "DESCRIPTION": "The Bachelor of Biosystems Technology Honours program at the University of Ruhuna provides a solid foundation in biosystems principles and their applications, preparing students for diverse careers in the field.",
+        "INTEREST_tam": [
+            "புவியியல் தொழில்நுட்ப பயன்பாடுகள்",
+            "தரவு பகுப்பாய்வு",
+            "தரமான நடைமுறைகள்",
+            "பிரச்சினை தீர்வு",
+            "ஆராய்ச்சி முறைமைகள்"
+        ],
+        "JOB_ROLES_eng": ["Biosystems Technologist", "Agricultural Consultant", "Food Technologist", "Environmental Scientist"],
+        "JOB_ROLES_tam": [
+            "உயிர்முறைமைகள் தொழில்நுட்ப நிபுணர்",
+            "விவசாய ஆலோசகர்",
+            "உணவு தொழில்நுட்ப நிபுணர்",
+            "பார்வையாள தொழில்நுட்ப வல்லுநர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Biosystems Technology Honours program at the University of Ruhuna provides a solid foundation in biosystems principles and their applications, preparing students for diverse careers in the field.",
+        "DESCRIPTION_tam": " உருகுணை பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் உயிர்முறைமைகள் விதிகள் மற்றும் அவற்றின் பயன்பாடுகளில் உறுதிப்படுத்தப்பட்ட அடித்தளத்தை வழங்குகிறது, மாணவர்களை துறையில் பல்வேறு தொழில்களில் தயாராக்குகிறது.",
         "DEGREE_TYPE": "BBST (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" :"1.4331" ,
-            "Gampaha" :"1.4198",
-            "Kalutara":"1.4293",
-            "Matale" :"NotQualified",
-            "Kandy" :"1.4457",
-            "Nuwara Eliya" :"1.4823",
-            "Galle" :"1.4506",
-            "Matara" :"1.4648",
-            "Hambanthota" :"1.5426",
-            "Jaffna" :"NotQualified",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"1.4963",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.5564",
-            "Batticaloa" :"NotQualified",
-            "Ampara" :"1,4465",
-            "Puttalam" :"NotQualified",
-            "Kurunagala" :"1.4225",
-            "Anuradhapura" :"1.4193",
-            "Polonnaruwa" :"NotQualified",
-            "Badulla" :"1.4861",
-            "Monaragala":"1.4434",
-            "Kegalle" :"1.4191",
-            "Ratnapura" :"1.4192"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "1.4331",
+            "Gampaha": "1.4198",
+            "Kalutara": "1.4293",
+            "Matale": "NotQualified",
+            "Kandy": "1.4457",
+            "Nuwara Eliya": "1.4823",
+            "Galle": "1.4506",
+            "Matara": "1.4648",
+            "Hambanthota": "1.5426",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "1.4963",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.5564",
+            "Batticaloa": "NotQualified",
+            "Ampara": "1.4465",
+            "Puttalam": "NotQualified",
+            "Kurunagala": "1.4225",
+            "Anuradhapura": "1.4193",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "1.4861",
+            "Monaragala": "1.4434",
+            "Kegalle": "1.4191",
+            "Ratnapura": "1.4192"
         }
     },
+    
     {
-        "COURSE": "INFORMATION COMMUNICATION TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENEPURA",
+        "COURSE_eng": "INFORMATION COMMUNICATION TECHNOLOGY",
+        "COURSE_tam": "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENEPURA",
+        "UNIVERSITY_tam": "ஸ்ரீ ஜயவர்தனபுர பல்கலைக்கழகம்",
         "UNICODE": "104C",
-        "SUBJECTS": ["Information & Communication Technology (ICT)", "Science for Technology (SFT)" ,"Engineering Technology (ET)","Biosystems Technology (BST)"],
+        "SUBJECTS_eng": [
+            "Information & Communication Technology (ICT)", 
+            "Science for Technology (SFT)", 
+            "Engineering Technology (ET)", 
+            "Biosystems Technology (BST)"
+        ],
+        "SUBJECTS_tam": [
+            "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம் (ICT)", 
+            "தொழில்நுட்பத்திற்கு அறிவியல் (SFT)", 
+            "பொறியியல் தொழில்நுட்பம் (ET)", 
+            "உயிர்முறைமைகள் தொழில்நுட்பம் (BST)"
+        ],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Information & Communication Technology": "S",
@@ -554,45 +760,76 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST": ["Software development", "Networking", "IT solutions"],
-        "JOB_ROLES": ["Software Developer", "IT Consultant", "Network Administrator", "Database Manager"],
-        "DESCRIPTION": "The Bachelor of Information and Communication Technology Honours program at the University of Sri Jayewardenepura provides a comprehensive education in information and communication technologies, preparing students for careers in software development, IT consulting, and digital solutions.",
+        "INTEREST_eng": [
+            "Software development", 
+            "Networking", 
+            "IT solutions"
+        ],
+        "INTEREST_tam": [
+            "மென்பொருள் மேம்பாடு", 
+            "நெட்வொர்க் இணைப்பு", 
+            "ஐ.டி தீர்வுகள்"
+        ],
+        "JOB_ROLES_eng": [
+            "Software Developer", 
+            "Database Manager"
+        ],
+        "JOB_ROLES_tam": [
+            "மென்பொருள் உருவாக்குநர்", 
+            "தரவுத்தளம் மேலாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Information and Communication Technology Honours program at the University of Sri Jayewardenepura provides a comprehensive education in information and communication technologies, preparing students for careers in software development, IT consulting, and digital solutions.",
+        "DESCRIPTION_tam": "ஸ்ரீ ஜயவர்தனபுர பல்கலைக்கழகத்தில் தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பங்களில் முழுமையான கல்வி வழங்குகிறது, மாணவர்களை மென்பொருள் மேம்பாடு, ஐ.டி ஆலோசனை மற்றும் டிஜிட்டல் தீர்வுகளுக்கான தொழில்களில் தயாராக்குகிறது.",
         "DEGREE_TYPE": "BICT (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" :"2.2594" ,
-            "Gampaha" :"2.2575",
-            "Kalutara":"2.2523",
-            "Matale" :"2.2375",
-            "Kandy" :"2.2748",
-            "Nuwara Eliya" :"2.2490",
-            "Galle" :"2.2330",
-            "Matara" :"2.2341",
-            "Hambanthota" :"2.3179",
-            "Jaffna" :"2.2743",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"2.2778",
-            "Batticaloa" :"2.2707",
-            "Ampara" :"2.4197",
-            "Puttalam" :"2.2483",
-            "Kurunagala" :"2.3076",
-            "Anuradhapura" :"2.3644",
-            "Polonnaruwa" :"2.1166",
-            "Badulla" :"2.2533",
-            "Monaragala":"2.2375",
-            "Kegalle" :"2.2542",
-            "Ratnapura" :"2.3350"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "2.2594",
+            "Gampaha": "2.2575",
+            "Kalutara": "2.2523",
+            "Matale": "2.2375",
+            "Kandy": "2.2748",
+            "Nuwara Eliya": "2.2490",
+            "Galle": "2.2330",
+            "Matara": "2.2341",
+            "Hambanthota": "2.3179",
+            "Jaffna": "2.2743",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "2.2778",
+            "Batticaloa": "2.2707",
+            "Ampara": "2.4197",
+            "Puttalam": "2.2483",
+            "Kurunagala": "2.3076",
+            "Anuradhapura": "2.3644",
+            "Polonnaruwa": "2.1166",
+            "Badulla": "2.2533",
+            "Monaragala": "2.2375",
+            "Kegalle": "2.2542",
+            "Ratnapura": "2.3350"
         }
     },
+    
     {
-        "COURSE": "INFORMATION COMMUNICATION TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF KELANIYA",
+        "COURSE_eng": "INFORMATION COMMUNICATION TECHNOLOGY",
+        "COURSE_tam": "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF KELANIYA",
+        "UNIVERSITY_tam": "களனி பல்கலைக்கழகம்",
         "UNICODE": "104D",
-        "SUBJECTS": ["Information & Communication Technology (ICT)", "Science for Technology (SFT)" ,"Engineering Technology (ET)","Biosystems Technology (BST)"],
+        "SUBJECTS_eng": [
+            "Information & Communication Technology (ICT)", 
+            "Science for Technology (SFT)", 
+            "Engineering Technology (ET)", 
+            "Biosystems Technology (BST)"
+        ],
+        "SUBJECTS_tam": [
+            "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம் (ICT)", 
+            "தொழில்நுட்பத்திற்கு அறிவியல் (SFT)", 
+            "பொறியியல் தொழில்நுட்பம் (ET)", 
+            "உயிர்முறைமைகள் தொழில்நுட்பம் (BST)"
+        ],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Information & Communication Technology": "S",
@@ -601,45 +838,76 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST": ["Software development", "Networking", "IT solutions"],
-        "JOB_ROLES": ["Software Developer", "IT Consultant", "Network Administrator", "Database Manager"],
-        "DESCRIPTION": "The Bachelor of Information and Communication Technology Honours program at the University of Kelaniya emphasizes practical applications of ICT, preparing students for careers in technology-driven industries and startups.",
+        "INTEREST_eng": [
+            "Software development", 
+            "Networking", 
+            "IT solutions"
+        ],
+        "INTEREST_tam": [
+            "மென்பொருள் மேம்பாடு", 
+            "நெட்வொர்க் இணைப்பு", 
+            "ஐ.டி தீர்வுகள்"
+        ],
+        "JOB_ROLES_eng": [
+            "Software Developer",  
+            "Database Manager"
+        ],
+        "JOB_ROLES_tam": [
+            "மென்பொருள் உருவாக்குநர்",  
+            "தரவுத்தளம் மேலாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Information and Communication Technology Honours program at the University of Kelaniya emphasizes practical applications of ICT, preparing students for careers in technology-driven industries and startups.",
+        "DESCRIPTION_tam": "களனி பல்கலைக்கழகத்தில் தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் ICT செயல்பாடுகளின் நடைமுறைகளை முன்னுரிமை அளித்து, தொழில்நுட்ப அடிப்படையிலான தொழில்களில் மற்றும் தொடக்கம் நிறுவனங்களில் பணியாற்ற கற்றல் மற்றும் பயிற்சி வழங்குகிறது.",
         "DEGREE_TYPE": "BICT (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" :"1.9023" ,
-            "Gampaha" :"1.9146",
-            "Kalutara":"1.9073",
-            "Matale" :"1.9106",
-            "Kandy" :"1.9205",
-            "Nuwara Eliya" :"2.0037",
-            "Galle" :"1.9038",
-            "Matara" :"1.9567",
-            "Hambanthota" :"1.9451",
-            "Jaffna" :"1.9039",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.9857",
-            "Batticaloa" :"1.9048",
-            "Ampara" :"2.0068",
-            "Puttalam" :"1.9019",
-            "Kurunagala" :"1.9087",
-            "Anuradhapura" :"1.9023",
-            "Polonnaruwa" :"1.9857",
-            "Badulla" :"1.9184",
-            "Monaragala":"1.9940",
-            "Kegalle" :"1.9378",
-            "Ratnapura" :"1.9812"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "1.9023",
+            "Gampaha": "1.9146",
+            "Kalutara": "1.9073",
+            "Matale": "1.9106",
+            "Kandy": "1.9205",
+            "Nuwara Eliya": "2.0037",
+            "Galle": "1.9038",
+            "Matara": "1.9567",
+            "Hambanthota": "1.9451",
+            "Jaffna": "1.9039",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.9857",
+            "Batticaloa": "1.9048",
+            "Ampara": "2.0068",
+            "Puttalam": "1.9019",
+            "Kurunagala": "1.9087",
+            "Anuradhapura": "1.9023",
+            "Polonnaruwa": "1.9857",
+            "Badulla": "1.9184",
+            "Monaragala": "1.9940",
+            "Kegalle": "1.9378",
+            "Ratnapura": "1.9812"
         }
     },
+    
     {
-        "COURSE": "INFORMATION COMMUNICATION TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF VAVUNIYA, SRI LANKA",
+        "COURSE_eng": "INFORMATION COMMUNICATION TECHNOLOGY",
+        "COURSE_tam": "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF VAVUNIYA, SRI LANKA",
+        "UNIVERSITY_tam": "வவுனியா பல்கலைக்கழகம், இலங்கை",
         "UNICODE": "104R",
-        "SUBJECTS": ["Information & Communication Technology (ICT)", "Science for Technology (SFT)" ,"Engineering Technology (ET)","Biosystems Technology (BST)"],
+        "SUBJECTS_eng": [
+            "Information & Communication Technology (ICT)", 
+            "Science for Technology (SFT)", 
+            "Engineering Technology (ET)", 
+            "Biosystems Technology (BST)"
+        ],
+        "SUBJECTS_tam": [
+            "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம் (ICT)", 
+            "தொழில்நுட்பத்திற்கு அறிவியல் (SFT)", 
+            "பொறியியல் தொழில்நுட்பம் (ET)", 
+            "உயிர்முறைமைகள் தொழில்நுட்பம் (BST)"
+        ],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Information & Communication Technology": "S",
@@ -648,45 +916,72 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST": ["Software development", "Networking", "IT solutions"],
-        "JOB_ROLES": ["Software Developer", "IT Consultant", "Network Administrator", "Database Manager"],
-        "DESCRIPTION": "The Bachelor of Information and Communication Technology Honours program at the University of Vavuniya focuses on the application of ICT to rural development and community empowerment, preparing students for careers in technology-driven social enterprises and non-profit organizations.",
+        "INTEREST_eng": [
+            "Software development"
+        ],
+        "INTEREST_tam": [
+            "மென்பொருள் மேம்பாடு"
+        ],
+        "JOB_ROLES_eng": [
+            "Software Developer", 
+            "Database Manager"
+        ],
+        "JOB_ROLES_tam": [
+            "மென்பொருள் உருவாக்குநர்", 
+            "தரவுத்தளம் மேலாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Information and Communication Technology Honours program at the University of Vavuniya focuses on the application of ICT to rural development and community empowerment, preparing students for careers in technology-driven social enterprises and non-profit organizations.",
+        "DESCRIPTION_tam": "வவுனியா பல்கலைக்கழகத்தில் தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் ICT ஐ கிராமப்புற வளர்ச்சிக்கும் சமூக அதிகாரிப்புக்கும் பயன்படுத்துவதில் கவனம் செலுத்தி, தொழில்நுட்ப அடிப்படையிலான சமூக நிறுவனங்களில் மற்றும் லாபம் தராத அமைப்புகளில் பணியாற்ற கற்றல் மற்றும் பயிற்சி வழங்குகிறது.",
         "DEGREE_TYPE": "BICT (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "0.9974",
-            "Gampaha" :"1.0193",
-            "Kalutara":"1.4977",
-            "Matale" :"NotQualified",
-            "Kandy" :"0.9404",
-            "Nuwara Eliya" :"8619",
-            "Galle" :"NotQualified",
-            "Matara" :"NotQualified",
-            "Hambanthota" :"1.3141",
-            "Jaffna" :"0.8547",
-            "Kilinochchi" :"0.8913",
-            "Mannar" :"0.5081",
-            "Mullaitivu" :"0.2412",
-            "Vavuniya" :"0.1369",
-            "Trincomalee" :"0.7518",
-            "Batticaloa" :"1.3603",
-            "Ampara" :"0.8812",
-            "Puttalam" :"0.8199",
-            "Kurunagala" :"1.3026",
-            "Anuradhapura" :"1.0335",
-            "Polonnaruwa" :"0.6690",
-            "Badulla" :"1.2276",
-            "Monaragala":"0.7886",
-            "Kegalle" :"1.2555",
-            "Ratnapura" :"1.0482"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "0.9974",
+            "Gampaha": "1.0193",
+            "Kalutara": "1.4977",
+            "Matale": "NotQualified",
+            "Kandy": "0.9404",
+            "Nuwara Eliya": "8619",
+            "Galle": "NotQualified",
+            "Matara": "NotQualified",
+            "Hambanthota": "1.3141",
+            "Jaffna": "0.8547",
+            "Kilinochchi": "0.8913",
+            "Mannar": "0.5081",
+            "Mullaitivu": "0.2412",
+            "Vavuniya": "0.1369",
+            "Trincomalee": "0.7518",
+            "Batticaloa": "1.3603",
+            "Ampara": "0.8812",
+            "Puttalam": "0.8199",
+            "Kurunagala": "1.3026",
+            "Anuradhapura": "1.0335",
+            "Polonnaruwa": "0.6690",
+            "Badulla": "1.2276",
+            "Monaragala": "0.7886",
+            "Kegalle": "1.2555",
+            "Ratnapura": "1.0482"
         }
     },
+    
     {
-        "COURSE": "INFORMATION COMMUNICATION TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF RUHUNA",
+        "COURSE_eng": "INFORMATION COMMUNICATION TECHNOLOGY",
+        "COURSE_tam": "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF RUHUNA",
+        "UNIVERSITY_tam": "உருகுணை பல்கலைக்கழகம்",
         "UNICODE": "104F",
-        "SUBJECTS": ["Information & Communication Technology (ICT)", "Science for Technology (SFT)" ,"Engineering Technology (ET)","Biosystems Technology (BST)"],
+        "SUBJECTS_eng": [
+            "Information & Communication Technology (ICT)", 
+            "Science for Technology (SFT)", 
+            "Engineering Technology (ET)", 
+            "Biosystems Technology (BST)"
+        ],
+        "SUBJECTS_tam": [
+            "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம் (ICT)", 
+            "தொழில்நுட்பத்திற்கு அறிவியல் (SFT)", 
+            "பொறியியல் தொழில்நுட்பம் (ET)", 
+            "உயிர்முறைமைகள் தொழில்நுட்பம் (BST)"
+        ],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Information & Communication Technology": "S",
@@ -695,40 +990,54 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST": ["Software development", "Networking", "IT solutions"],
-        "JOB_ROLES": ["Software Developer", "IT Consultant", "Network Administrator", "Database Manager"],
-        "DESCRIPTION": "The Bachelor of Information and Communication Technology Honours program at the University of Ruhuna provides a strong foundation in ICT principles and their application to various domains, preparing students for careers in technology consulting and digital transformation.",
+        "INTEREST_eng": [
+            "Software development"
+        ],
+        "INTEREST_tam": [
+            "மென்பொருள் மேம்பாடு"
+        ],
+        "JOB_ROLES_eng": [
+            "Software Developer", 
+            "Database Manager"
+        ],
+        "JOB_ROLES_tam": [
+            "மென்பொருள் உருவாக்குநர்", 
+            "தரவுத்தளம் மேலாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Information and Communication Technology Honours program at the University of Ruhuna provides a strong foundation in ICT principles and their application to various domains, preparing students for careers in technology consulting and digital transformation.",
+        "DESCRIPTION_tam": "உருகுணை பல்கலைக்கழகத்தில் தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் ICT விதிகளையும் அவற்றின் பல்வேறு துறைகளில் பயன்பாட்டையும் பற்றிய வலுவான அடித்தளத்தை வழங்கி, தொழில்நுட்ப ஆலோசனையும் டிஜிட்டல் பரிமாற்றத்திலும் பணியாற்ற கற்றல் மற்றும் பயிற்சி வழங்குகிறது.",
         "DEGREE_TYPE": "BICT (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "1.6931",
-            "Gampaha" :"1.6873",
-            "Kalutara":"1.6794",
-            "Matale" :"1.6922",
-            "Kandy" :"1.7525",
-            "Nuwara Eliya" :"1.7607",
-            "Galle" :"1.6740",
-            "Matara" :"1.6745",
-            "Hambanthota" :"1.6927",
-            "Jaffna" :"NotQualified",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"NotQualified",
-            "Batticaloa" :"1.6993",
-            "Ampara" :"1.8338",
-            "Puttalam" :"NotQualified",
-            "Kurunagala" :"1.7529",
-            "Anuradhapura" :"1.6760",
-            "Polonnaruwa" :"NotQualified",
-            "Badulla" :"1.6766",
-            "Monaragala":"NotQualified",
-            "Kegalle" :"1.7883",
-            "Ratnapura" :"1.6966"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "1.6931",
+            "Gampaha": "1.6873",
+            "Kalutara": "1.6794",
+            "Matale": "1.6922",
+            "Kandy": "1.7525",
+            "Nuwara Eliya": "1.7607",
+            "Galle": "1.6740",
+            "Matara": "1.6745",
+            "Hambanthota": "1.6927",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "NotQualified",
+            "Batticaloa": "1.6993",
+            "Ampara": "1.8338",
+            "Puttalam": "NotQualified",
+            "Kurunagala": "1.7529",
+            "Anuradhapura": "1.6760",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "1.6766",
+            "Monaragala": "NotQualified",
+            "Kegalle": "1.7883",
+            "Ratnapura": "1.6966"
         }
     },
+    
     {
         "COURSE": "INFORMATION COMMUNICATION TECHNOLOGY",
         "UNIVERSITY": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
@@ -747,6 +1056,7 @@
         "DESCRIPTION": "The Bachelor of Information and Communication Technology Honours program at South Eastern University of Sri Lanka focuses on the application of ICT to enhance productivity and efficiency in various sectors.",
         "DEGREE_TYPE": "BICT (Hons)",
         "DURATION": "4 YEARS",
+        "STREAM":"Biosystems Technology",
         "Z_SCORE":  {
             "Colombo" :"1.0585" ,
             "Gampaha" :"1.1511",
@@ -794,6 +1104,7 @@
         "DESCRIPTION": "The Bachelor of Information and Communication Technology Honours program at Rajarata University emphasizes the integration of ICT with business practices, preparing students for careers in IT management.",
         "DEGREE_TYPE": "BICT (Hons)",
         "DURATION": "4 YEARS",
+        "STREAM":"Biosystems Technology",
         "Z_SCORE":  {
             "Colombo" : "1.4153",
             "Gampaha" :"1.3908",
@@ -824,10 +1135,23 @@
         }
     },
     {
-        "COURSE": "INFORMATION COMMUNICATION TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF COLOMBO",
+        "COURSE_eng": "INFORMATION COMMUNICATION TECHNOLOGY",
+        "COURSE_tam": "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO",
+        "UNIVERSITY_tam": "கொழும்பு பல்கலைக்கழகம்",
         "UNICODE": "104A",
-        "SUBJECTS": ["Information & Communication Technology (ICT)", "Science for Technology (SFT)" ,"Engineering Technology (ET)","Biosystems Technology (BST)"],
+        "SUBJECTS_eng": [
+            "Information & Communication Technology (ICT)", 
+            "Science for Technology (SFT)", 
+            "Engineering Technology (ET)", 
+            "Biosystems Technology (BST)"
+        ],
+        "SUBJECTS_tam": [
+            "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம் (ICT)", 
+            "தொழில்நுட்பத்திற்கு அறிவியல் (SFT)", 
+            "பொறியியல் தொழில்நுட்பம் (ET)", 
+            "உயிர்முறைமைகள் தொழில்நுட்பம் (BST)"
+        ],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Information & Communication Technology": "S",
@@ -836,46 +1160,73 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST": ["Software development", "Networking", "IT solutions"],
-        "JOB_ROLES": ["Software Developer", "IT Consultant", "Network Administrator", "Database Manager"],
-        "DESCRIPTION": "The Bachelor of Information and Communication Technology Honours program at Rajarata University emphasizes the integration of ICT with business practices, preparing students for careers in IT management.",
+        "INTEREST_eng": [
+            "Software development"
+        ],
+        "INTEREST_tam": [
+            "மென்பொருள் மேம்பாடு"
+        ],
+        "JOB_ROLES_eng": [
+            "Software Developer", 
+            "Database Manager"
+        ],
+        "JOB_ROLES_tam": [
+            "மென்பொருள் உருவாக்குநர்", 
+            "தரவுத்தளம் மேலாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Information and Communication Technology Honours program at Rajarata University emphasizes the integration of ICT with business practices, preparing students for careers in IT management.",
+        "DESCRIPTION_tam": "ரஜரட்ட பல்கலைக்கழகத்தில் உயிர்முறைமைகள் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் சமூக மையப் படிப்பு மற்றும் ஆராய்ச்சியில் கவனம் செலுத்துகிறது, மாணவர்களை ஊரக மற்றும் குறைந்த அளவில் சேவை செய்யப்படும் பகுதிகளில் வேலை வாய்ப்புகளுக்காக தயாராக்குகிறது.",
         "DEGREE_TYPE": "BICT (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE":  {
-            "Colombo" : "2.0302",
-            "Gampaha" :"2.0519",
-            "Kalutara":"2.0287",
-            "Matale" :"2.0708",
-            "Kandy" :"2.0953",
-            "Nuwara Eliya" :"2.0682",
-            "Galle" :"2.0443",
-            "Matara" :"2.0278",
-            "Hambanthota" :"2.0748",
-            "Jaffna" :"2.0449",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"2.1626",
-            "Batticaloa" :"2.2895",
-            "Ampara" :"2.0736",
-            "Puttalam" :"2.2166",
-            "Kurunagala" :"2.0660",
-            "Anuradhapura" :"2.0410",
-            "Polonnaruwa" :"2.0605",
-            "Badulla" :"2.0492",
-            "Monaragala":"2.0420",
-            "Kegalle" :"NotQualified",
-            "Ratnapura" :"2.0827"
-
+        "STREAM":"Biosystems Technology",
+        "Z_SCORE": {
+            "Colombo": "2.0302",
+            "Gampaha": "2.0519",
+            "Kalutara": "2.0287",
+            "Matale": "2.0708",
+            "Kandy": "2.0953",
+            "Nuwara Eliya": "2.0682",
+            "Galle": "2.0443",
+            "Matara": "2.0278",
+            "Hambanthota": "2.0748",
+            "Jaffna": "2.0449",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "2.1626",
+            "Batticaloa": "2.2895",
+            "Ampara": "2.0736",
+            "Puttalam": "2.2166",
+            "Kurunagala": "2.0660",
+            "Anuradhapura": "2.0410",
+            "Polonnaruwa": "2.0605",
+            "Badulla": "2.0492",
+            "Monaragala": "2.0420",
+            "Kegalle": "NotQualified",
+            "Ratnapura": "2.0827"
         }
     },
+    
 
     {
-        "COURSE": "INFORMATION COMMUNICATION TECHNOLOGY",
-        "UNIVERSITY": "UVA WELLASSA UNIVERSITY OF SRI LANKA",
+        "COURSE_eng": "INFORMATION COMMUNICATION TECHNOLOGY",
+        "COURSE_tam": "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UVA WELLASSA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": " ஊவா வெல்லச பல்கலைக்கழகம்",
         "UNICODE": "104U",
-        "SUBJECTS": ["Information & Communication Technology (ICT)", "Science for Technology (SFT)" ,"Engineering Technology (ET)","Biosystems Technology (BST)"],
+        "SUBJECTS_eng": [
+            "Information & Communication Technology (ICT)", 
+            "Science for Technology (SFT)", 
+            "Engineering Technology (ET)", 
+            "Biosystems Technology (BST)"
+        ],
+        "SUBJECTS_tam": [
+            "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம் (ICT)", 
+            "தொழில்நுட்பத்திற்கு அறிவியல் (SFT)", 
+            "பொறியியல் தொழில்நுட்பம் (ET)", 
+            "உயிர்முறைமைகள் தொழில்நுட்பம் (BST)"
+        ],
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
                 "Information & Communication Technology": "S",
@@ -884,38 +1235,57 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST": ["Software development", "Networking", "IT solutions"],
-        "JOB_ROLES": ["Software Developer", "IT Consultant", "Network Administrator", "Database Manager"],
-        "DESCRIPTION": "The Bachelor of Information and Communication Technology Honours program at Rajarata University emphasizes the integration of ICT with business practices, preparing students for careers in IT management.",
+        "INTEREST_eng": [
+            "Software development", 
+            "Networking", 
+            "IT solutions"
+        ],
+        "INTEREST_tam": [
+            "மென்பொருள் மேம்பாடு", 
+            "தகவல் தொழில்நுட்பத் தீர்வுகள்"
+        ],
+        "JOB_ROLES_eng": [
+            "Software Developer", 
+            "IT Consultant", 
+            "Database Manager"
+        ],
+        "JOB_ROLES_tam": [
+            "மென்பொருள் உருவாக்குநர்", 
+            "தகவல் தொழில்நுட்ப ஆலோசகர்",  
+            "தரவுத்தளம் மேலாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Information and Communication Technology Honours program at Rajarata University emphasizes the integration of ICT with business practices, preparing students for careers in IT management.",
+        "DESCRIPTION_tam": "ஊவா வெல்லச பல்கலைக்கழகத்தில் தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்ப பட்டப்படிப்பு திட்டம் ICT-ஐ வணிக நடைமுறைகளுடன் ஒருங்கிணைப்பை முன்னிறுத்தி, தொழில்நுட்ப மேலாண்மையில் பணியாற்ற கற்றல் மற்றும் பயிற்சி வழங்குகிறது.",
         "DEGREE_TYPE": "BICT (Hons)",
         "DURATION": "4 YEARS",
+        "STREAM":"Biosystems Technology",
         "Z_SCORE": {
-            "Colombo" :"1.5338" ,
-            "Gampaha" :"1.5746",
-            "Kalutara":"1.5374",
-            "Matale" :"1.5794",
-            "Kandy" :"1.5392",
-            "Nuwara Eliya" :"1.6373",
-            "Galle" :"1.5480",
-            "Matara" :"1.5540",
-            "Hambanthota" :"1.5584",
-            "Jaffna" :"1.8565",
-            "Kilinochchi" :"NotQualified",
-            "Mannar" :"NotQualified",
-            "Mullaitivu" :"NotQualified",
-            "Vavuniya" :"NotQualified",
-            "Trincomalee" :"1.7729",
-            "Batticaloa" :"1.5967",
-            "Ampara" :"1.6034",
-            "Puttalam" :"1.6217",
-            "Kurunagala" :"1.5324",
-            "Anuradhapura" :"1.5535",
-            "Polonnaruwa" :"1.8568",
-            "Badulla" :"1.5882",
-            "Monaragala":"1.5603",
-            "Kegalle" :"1.5584",
-            "Ratnapura" :"1.5407"
-
+            "Colombo": "1.5338",
+            "Gampaha": "1.5746",
+            "Kalutara": "1.5374",
+            "Matale": "1.5794",
+            "Kandy": "1.5392",
+            "Nuwara Eliya": "1.6373",
+            "Galle": "1.5480",
+            "Matara": "1.5540",
+            "Hambanthota": "1.5584",
+            "Jaffna": "1.8565",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.7729",
+            "Batticaloa": "1.5967",
+            "Ampara": "1.6034",
+            "Puttalam": "1.6217",
+            "Kurunagala": "1.5324",
+            "Anuradhapura": "1.5535",
+            "Polonnaruwa": "1.8568",
+            "Badulla": "1.5882",
+            "Monaragala": "1.5603",
+            "Kegalle": "1.5584",
+            "Ratnapura": "1.5407"
         }
     }
+    
 ]
