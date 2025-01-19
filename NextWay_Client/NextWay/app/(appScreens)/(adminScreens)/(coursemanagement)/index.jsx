@@ -15,7 +15,7 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import AntDesign from '@expo/vector-icons/AntDesign';
 
 
-
+// Main component for course management functionality
 export default function CourseManagement() {
   const router = useRouter();
 
