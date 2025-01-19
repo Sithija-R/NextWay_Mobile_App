@@ -4,11 +4,13 @@ import { Slot, Stack, useRouter, useSegments } from "expo-router";
 import { AuthProvider, useAuth } from "../context/authContext";
 import { useEffect } from "react";
 
+// MainLayout component to handle user redirection and layout structure
 const MainLayout = () => {
   const { isAuthenticated, userRole, isVerified } = useAuth();
   const segments = useSegments();
   const router = useRouter();
 
+  // Effect to handle redirection logic based on authentication and verification state
   useEffect(() => {
     if (typeof isAuthenticated == "undefined") {
       return;
