@@ -7,19 +7,20 @@ import CustomKeyboardView from '../components/keyboardView/CustomKeyboardView';
 import { registerUser } from '../services/authService';
 import Loading from '../components/Loading/Loading';
 
-
+// SignUp Component
 export default function signUp() {
 
   const router = useRouter();
   const [loading,setLoading] = useState(false);
 
+  // Refs to store input values
   const emailRef = useRef("");
   const nameRef = useRef("");
   const passwordRef = useRef("");
   const passwordConfirmRef = useRef("");
 
 
-
+ // Function to handle user registration
 const handleRegister= async()=>{
   if (!emailRef.current || !passwordRef.current || !nameRef.current || !passwordConfirmRef.current) {
     Alert.alert('Sign In',"All fields are required!");
@@ -28,6 +29,8 @@ const handleRegister= async()=>{
   else if(passwordRef.current != passwordConfirmRef.current){
   Alert.alert("Sign Up", 'passwords not match!')
 }
+
+  // Set loading to true while waiting for registration response
   setLoading(true);
   let response = await registerUser(emailRef.current.trim(),passwordRef.current,nameRef.current);
   setLoading(false);

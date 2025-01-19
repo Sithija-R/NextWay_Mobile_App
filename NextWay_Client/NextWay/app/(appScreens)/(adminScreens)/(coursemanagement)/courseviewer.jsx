@@ -10,6 +10,7 @@ import {
 import { useTranslation } from "react-i18next";
 
 export default function CourseDetailsScreen() {
+  // Get the course details passed via local search parameters
   const { course} = useLocalSearchParams();
 
   const router = useRouter();
@@ -18,7 +19,7 @@ const{t}= useTranslation();
   const parsedCourse = course ? JSON.parse(course) : null;
 
 
-
+  // Function to handle the navigation to the Edit Course screen
   const handleEdit=()=>{
     router.push({
       pathname: "editcourses",
