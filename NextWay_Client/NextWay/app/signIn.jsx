@@ -7,17 +7,21 @@ import Loading from "../components/Loading/Loading";
 import CustomKeyboardView from "../components/keyboardView/CustomKeyboardView";
 import { loginUser, sendPwResetEmail } from "../services/authService";
 
+// SignIn Component
 export default function SignIn() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
+  // References for email and password input fields
   const emailRef = useRef("");
   const passwordRef = useRef("");
 
+  // Handle user login
   const handleLogin = async () => {
     const email = emailRef.current.trim();
     const password = passwordRef.current;
 
+    // Validation checks
     if (!email || !password) {
       Alert.alert('Sign In', "All fields are required!");
       return;
@@ -25,6 +29,8 @@ export default function SignIn() {
     setLoading(true);
     const response = await loginUser(email, password);
     setLoading(false);
+
+    // Show error or success message
     if (!response.success) {
       Alert.alert('Sign In', response.msg);
     }
@@ -40,7 +46,8 @@ export default function SignIn() {
     setLoading(true);
     const response = await sendPwResetEmail(email);
     setLoading(false);
-    
+   
+    // Show appropriate message after attempting to send password reset
     if (!response.success) {
       Alert.alert('Change Password', response.msg);
     } else {

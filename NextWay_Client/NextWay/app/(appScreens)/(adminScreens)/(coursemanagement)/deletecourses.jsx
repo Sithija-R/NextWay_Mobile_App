@@ -21,8 +21,10 @@ import { useRouter } from "expo-router";
 import { deleteCourseById, fetchCourseByUNICODE } from "../../../../services/fetchingService";
 
 export default function DeleteCourses() {
+  // Initialize hooks for navigation and translation
   const router = useRouter();
   const { t } = useTranslation();
+  // State variables for storing course UNICODE and details
   const [unicode, setUnicode] = useState(null);
   const [course, setCourse] = useState(null);
 
@@ -32,6 +34,8 @@ export default function DeleteCourses() {
       Alert.alert("Please enter UNICODE");
       return;
     }
+
+    // Fetch course details from the service
     const response = await fetchCourseByUNICODE(unicode);
 
     if (response.success) {
@@ -41,7 +45,7 @@ export default function DeleteCourses() {
     }
   };
 
-
+  // Function to handle course deletion
   const handleDeleteCourse = async () => {
     if (!course.id) {
       Alert.alert("Error", "Invalid course ID");
@@ -276,6 +280,8 @@ export default function DeleteCourses() {
     </View>
   );
 }
+
+// Styles for the component
 const styles = StyleSheet.create({
   container: {
     flex: 1,
