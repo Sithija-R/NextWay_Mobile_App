@@ -19,10 +19,6 @@ import { useTranslation } from "react-i18next";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Avatar } from "@rneui/themed";
 import Feather from "@expo/vector-icons/Feather";
-// import CustomKeyboardView from "../../../../../components/keyboardView/CustomKeyboardView";
-
-import { auth } from "../../../../firebaseConfig/firebaseConfiguration";
-import { useAuth } from "../../../../context/authContext";
 import Loading from "../../../../components/Loading/Loading";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import * as ImagePicker from "expo-image-picker";
@@ -30,7 +26,7 @@ import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboa
 import { decode } from "base-64";
 import { updateUserProfile } from "../../../../services/authService";
 import { Dropdown } from "react-native-element-dropdown";
-import Entypo from "@expo/vector-icons/Entypo";
+
 
 export default function EditUser() {
   const router = useRouter();
