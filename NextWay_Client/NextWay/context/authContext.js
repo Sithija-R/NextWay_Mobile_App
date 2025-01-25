@@ -34,6 +34,7 @@ export const AuthProvider = ({ children }) => {
         role: data.role,
         age: data.age,
         profileImage: data.profileImage,
+        isAdvertiser: data.isAdvertiser,
       });
       setUserRole(data.role);
     }
