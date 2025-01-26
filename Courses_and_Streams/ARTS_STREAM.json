@@ -1,373 +1,989 @@
 [
+ 
     {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "UNIVERSITY OF COLOMBO",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at the University of Colombo provides a comprehensive education in the arts, preparing students for various careers in the cultural and social sectors.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.7686"
-    },
-    {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "UNIVERSITY OF PERADENIYA",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-               "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at the University of Peradeniya offers a diverse curriculum in the arts, preparing students for careers in various fields.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.6494"
-    },
-    {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENAPURA",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-               "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at the University of Sri Jayewardenapura focuses on developing critical thinking and analytical skills in the arts.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.5844"
-    },
-    {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "UNIVERSITY OF KELANIYA",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-               "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at the University of Kelaniya provides students with a strong foundation in the humanities and social sciences.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.5027"
-    },
-    {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "UNIVERSITY OF JAFFNA",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at the University of Jaffna emphasizes cultural studies and community engagement.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.7645"
-    },
-    {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "UNIVERSITY OF RUHUNA",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-               "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at the University of Ruhuna provides a comprehensive education in the arts and social sciences.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.4158"
-    },
-    {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "EASTERN UNIVERSITY, SRI LANKA",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at Eastern University, Sri Lanka focuses on developing critical thinking and analytical skills in the arts.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.1925"
-    },
-    {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at South Eastern University of Sri Lanka emphasizes community engagement and cultural studies.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.3357"
-    },
-    {
-        "COURSE": "ARTS",
-        "UNIVERSITY": "RAJARATA UNIVERSITY OF SRI LANKA",
-        "UNICODE": "O19A",
-        "SUBJECTS": "Any_3_arts_subjects",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Teacher", "Social Worker", "Researcher", "Cultural Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts Honours program at Rajarata University of Sri Lanka provides a strong foundation in the humanities and social sciences.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.3776"
-    },
-    {
-        "COURSE": "ARTS (SP) - MASS MEDIA",
-        "UNIVERSITY": "UNIVERSITY OF COLOMBO (SRIPALEE CAMPUS)",
-        "UNICODE": "020S",
-        "SUBJECTS": "Drama ,Music,Dance,Journalism,Television Production,Public Relations,Statistics",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "English": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Journalist", "Media Producer", "Public Relations Officer", "Media Researcher"],
-        "DESCRIPTION": "The Bachelor of Arts Honours in Mass Media program at the Sripalee Campus of the University of Colombo prepares students for careers in media, communication, and journalism.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.2367"
-    },
-    {
-        "COURSE": "ARTS (SP) - PERFORMING ARTS",
-        "UNIVERSITY": "UNIVERSITY OF COLOMBO (SRIPALEE CAMPUS)",
-        "UNICODE": "041S",
-        "SUBJECTS": "Drama ,Music,Dance,Journalism,Television Production,Public Relations,Statistics",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "English": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Actor", "Dancer", "Theatre Director", "Choreographer"],
-        "DESCRIPTION": "The Bachelor of Arts Honours in Performing Arts program at the Sripalee Campus of the University of Colombo focuses on developing skills in drama, dance, and other performing arts.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "0.7248"
-    },
-    {
-        "COURSE": "COMMUNICATION STUDIES",
-        "UNIVERSITY": "EASTERN UNIVERSITY (TRINCOMALEE CAMPUS)",
-        "UNICODE": "029W",
-        "SUBJECTS": "Public Relations, Communication, Media Strategy,Advertising",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Common General Paper": "30%"
-                
-            },
-            "OtherQualifications": {
-                "Sinhala, Tamil or English": "C"
-            }
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Communication Specialist", "Public Relations Officer", "Media Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts in Communication Studies program at Eastern University focuses on effective communication strategies and media studies.",
-        "DEGREE_TYPE": "B.A",
-        "DURATION": "3 YEARS",
-        "Z_SCORE": "1.3079"
-    },
-    {
-        "COURSE": "PEACE AND CONFLICT RESOLUTION",
-        "UNIVERSITY": "UNIVERSITY OF KELANIYA",
-        "UNICODE": "031D",
-        "SUBJECTS": "Communication, Law",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Common General Paper": "30%"
-            },
-            "OtherQualifications": {
+        "COURSE_eng": "INFORMATION TECHNOLOGY (IT)",
+        "COURSE_tam":"தகவல் தொழில்நுட்பம் (IT)",
 
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam":"மொறட்டுவைப் பல்கலைக்கழகம்",
+
+        "UNICODE": "026G",
+        "SUBJECTS_eng": [
+            "Higher Mathematics",
+            "Combined Mathematics",
+            "Mathematics",
+            "Physics"
+        ],
+        "SUBJECTS_tam":[
+            "உயர் கணிதம்",
+            "இணைந்த கணிதம்",
+            "கணிதம்",
+            "பௌதீகவியல்"
+        ],
+
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "AtLeastOneSubject": {
+                    "Higher Mathematics": "C",
+                    "Combined Mathematics": "C",
+                    "Mathematics": "C",
+                    "Physics": "C"
+                }
             }
         },
-        "INTEREST": "",
-        "JOB_ROLES": ["Conflict Resolution Specialist", "Peace Advocate", "Community Organizer"],
-        "DESCRIPTION": "The Bachelor of Arts Honours in Peace and Conflict Resolution program at the University of Kelaniya prepares students to address issues of conflict and promote peace.",
-        "DEGREE_TYPE": "B.A (Hons)",
+        "INTEREST_eng": [
+            "Software Development",
+            "Networking"
+        ],
+        "INTEREST_tam":[
+            "மென்பொருள் மேம்பாடு",
+            "வலையமைப்பு"
+        ],
+
+        "JOB_ROLES_eng": [
+            "Software Engineer",
+            "Network Administrator",
+            "Database Manager"
+        ],
+        "JOB_ROLES_tam":[
+            "மென்பொருள் பொறியாளர்",
+            " வலையமைப்பு நிர்வாகி",
+            "தரவுத்தள மேலாளர்"
+        ],
+
+        "DESCRIPTION_eng": "The IT program at the University of Moratuwa provides a comprehensive foundation in computer science, networking, and software engineering, equipping students for the dynamic IT industry.",
+        "DESCRIPTION_tam": " மொறட்டுவைப் பல்கலைக்கழகத்தின் தகவல் தொழில்நுட்ப (IT) நிகழ்ச்சி கணினி அறிவியல், நெட்வொர்க்கிங் மற்றும் மென்பொருள் பொறியியல் ஆகியவற்றில் விரிவான அடிப்படையை வழங்குகிறது, மாணவர்களை மாற்றத்துடன் கூடிய தகவல் தொழில்நுட்ப துறைக்காக தயார் செய்கிறது.",
+
+        "DEGREE_TYPE": "BSc (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE": "1.7847"
+        "Z_SCORE":{
+            "Colombo": " 1.6983",
+            "Gampaha": "1.5670",
+            "Kalutara": " 1.6458",
+            "Matale": "1.3254",
+            "Kandy": " 1.6390",
+            "Nuwara Eliya": "1.3012",
+            "Galle": "1.7065",
+            "Matara": "1.7336",
+            "Hambanthota": "1.6923",
+            "Jaffna": " 1.7388",
+            "Kilinochchi": "1.3178",
+            "Mannar": "1.4707",
+            "Mullaitivu": "1.4911",
+            "Vavuniya": "1.5225",
+            "Trincomalee": " 1.5588",
+            "Batticaloa": "1.5310",
+            "Ampara": "1.4474",
+            "Puttalam": "1.3475",
+            "Kurunagala": "1.6197",
+            "Anuradhapura": "1.4700",
+            "Polonnaruwa": " 1.3141",
+            "Badulla": " 1.4983",
+            "Monaragala": " 1.4741",
+            "Kegalle": " 1.5964",
+            "Ratnapura": "1.5941"
+        },
+
+        "STREAM": "Other"
+    
     },
     {
-        "COURSE": "ISLAMIC STUDIES",
-        "UNIVERSITY": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
-        "UNICODE": "063J",
-        "SUBJECTS": "Islam , law",
+        "COURSE_eng": "MANAGEMENT AND INFORMATION TECHNOLOGY (MIT)",
+        "COURSE_tam": "கணினி தகவல் தொழில்நுட்ப மேலாண்மை (MIT)",
+    
+        "UNIVERSITY_eng": "UNIVERSITY OF KELANIYA",
+        "UNIVERSITY_tam": "களனிப் பல்கலைக்கழகம்",
+    
+        "UNICODE": "027D",
+        "SUBJECTS_eng": [
+            "Biological Science Stream",
+            "Physical Science Stream",
+            "Information & Communication Technology"
+        ],
+        "SUBJECTS_tam": [
+            "உயிரியல் விஞ்ஞான துறை",
+            "பௌதிக விஞ்ஞான துறை",
+            "தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்"
+        ],
+    
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
-                "Any_three_subjects": "S"
-                
-            },
-            "OtherQualifications": {}
+                "AtLeastOneSubject": {
+                    "Higher Mathematics": "C",
+                    "Combined Mathematics": "C",
+                    "Mathematics": "C",
+                    "Physics": "C"
+                }
+            }
         },
-        "INTEREST": "",
-        "JOB_ROLES": ["Islamic Scholar", "Religious Teacher", "Cultural Advisor"],
-        "DESCRIPTION": "The Bachelor of Arts in Islamic Studies program at South Eastern University focuses on the study of Islam and its cultural contexts.",
-        "DEGREE_TYPE": "B.A",
-        "DURATION": "3 YEARS",
-        "Z_SCORE": "1.0994"
-    },
-    {
-        "COURSE": "ARABIC LANGUAGE",
-        "UNIVERSITY": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
-        "UNICODE": "084J",
-        "SUBJECTS": "Translation, Teaching_Language",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["Arabic Language Teacher", "Translator", "Cultural Liaison"],
-        "DESCRIPTION": "The Bachelor of Arts in Arabic Language program at South Eastern University focuses on the Arabic language and its literature, preparing students for careers in translation and education.",
-        "DEGREE_TYPE": "B.A",
-        "DURATION": "3 YEARS",
-        "Z_SCORE": "0.7264"
-    },
-    {
-        "COURSE": "TEACHING ENGLISH AS A SECOND LANGUAGE (TESL)",
-        "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENEPURA",
-        "UNICODE": "105C",
-        "SUBJECTS": "Teaching",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-              
-            },
-            "OtherQualifications": {}
-        },
-        "INTEREST": "",
-        "JOB_ROLES": ["English Teacher", "ESL Instructor", "Curriculum Developer"],
-        "DESCRIPTION": "The Bachelor of Arts Honours in Teaching English as a Second Language program at the University of Sri Jayewardenepura prepares students for careers in English language education.",
-        "DEGREE_TYPE": "B.A (Hons)",
+    
+        "INTEREST_eng": [
+            "Management",
+            "Technology"
+        ],
+        "INTEREST_tam": [
+            "மேலாண்மை",
+            "தொழில்நுட்பம்"
+        ],
+    
+        "JOB_ROLES_eng": [
+            "IT Manager",
+            "Business Analyst",
+            "Project Manager"
+        ],
+        "JOB_ROLES_tam": [
+            "தகவல் தொழில்நுட்ப மேலாளர்",
+            "வணிக பகுப்பாய்வாளர்",
+            "திட்ட மேலாளர்"
+        ],
+    
+        "DESCRIPTION_eng": "The MIT program blends management principles with IT skills, training students to manage technology-driven projects in modern business environments.",
+        "DESCRIPTION_tam": "MIT திட்டம் மேலாண்மை கோட்பாடுகளை IT திறன்களுடன் இணைக்கிறது, மாணவர்களை நவீன வணிக சூழல்களில் தொழில்நுட்ப சார்ந்த திட்டங்களை நிர்வகிக்க பயிற்சி அளிக்கிறது.",
+    
+        "DEGREE_TYPE": "BSc (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE": "1.2088"
-    },
-    {
-        "COURSE": "TEACHING ENGLISH AS A SECOND LANGUAGE (TESL)",
-        "UNIVERSITY": "UNIVERSITY OF KELANIYA",
-        "UNICODE": "105D",
-        "SUBJECTS": "Teaching",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-               "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
+        "Z_SCORE": {
+            "Colombo": "1.2478",
+            "Gampaha": "1.2728",
+            "Kalutara": "1.2294",
+            "Matale": "1.3236",
+            "Kandy": "1.2685",
+            "Nuwara Eliya": "0.7213",
+            "Galle": "1.2934",
+            "Matara": "1.3459",
+            "Hambanthota": "1.3027",
+            "Jaffna": "1.3509",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "1.0933",
+            "Mullaitivu": "0.7165",
+            "Vavuniya": "0.7135",
+            "Trincomalee": "1.0237",
+            "Batticaloa": "1.3141",
+            "Ampara": "0.8861",
+            "Puttalam": "1.0236",
+            "Kurunagala": "1.2605",
+            "Anuradhapura": "1.2434",
+            "Polonnaruwa": "0.6901",
+            "Badulla": "1.1443",
+            "Monaragala": "1.2309",
+            "Kegalle": "1.2025",
+            "Ratnapura": "1.2087"
         },
-        "INTEREST": "",
-        "JOB_ROLES": ["English Teacher", "ESL Instructor", "Curriculum Developer"],
-        "DESCRIPTION": "The Bachelor of Arts Honours in Teaching English as a Second Language program at the University of Kelaniya emphasizes practical teaching methods and language acquisition.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.1920"
+    
+        "STREAM": "Other"
     },
+    
     {
-        "COURSE": "SOCIAL WORK",
-        "UNIVERSITY": "UNIVERSITY OF PERADENIYA",
-        "UNICODE": "112B",
-        "SUBJECTS": "Mental Health, Community Development",
+        "COURSE_eng": "TOWN AND COUNTRY PLANNING",
+        "COURSE_tam": "நகரம் மற்றும் நாட்டின் திட்டமிடல்",
+    
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam": "மொறட்டுவைப் பல்கலைக்கழகம்",
+    
+        "UNICODE": "030G",
+        "SUBJECTS_eng": [
+            "Combined Mathematics",
+            "Chemistry",
+            "Physics",
+            "Biology",
+            "Accounting",
+            "Agricultural Science",
+            "Business Studies",
+            "Business Statistics",
+            "Information & Communication Technology",
+            "Economics",
+            "Geography",
+            "Higher Mathematics",
+            "Logic & Scientific Methods",
+            "Mathematics",
+            "Biosystems Technology",
+            "Science for Technology",
+            "Engineering Technology",
+            "Political Science"
+        ],
+        "SUBJECTS_tam": [
+            "இணைந்த கணிதம்",
+            "இரசாயனவியல்",
+            "பௌதிகவியல்",
+            "உயிரியல்",
+            "கணக்குப்பதிவு",
+            "விவசாய அறிவியல்",
+            "வியாபாரக் கற்றல்",
+            "வியாபார புள்ளியியல்",
+            "தகவல் மற்றும் தொடர்பு தொழில்நுட்பம்",
+            "பொருளாதாரம்",
+            "புவியியல்",
+            "உயர் கணிதம்",
+            "தர்க்கமும் அறிவியல் முறைகளும்",
+            "கணிதம்",
+            "உயிர்வேதத்துறை தொழில்நுட்பம்",
+            "தொழில்நுட்பத்திற்கான அறிவியல்",
+            "பொறியியல் தொழில்நுட்பம்",
+            "அரசியல் அறிவியல்"
+        ],
+    
         "MINIMUM_QUALIFICATIONS": {
             "RequiredGrades": {
-                "Any_three_subjects": "S"
-            },
-            "OtherQualifications": {}
+                "AtLeastOneSubject": {
+                    "Combined Mathematics": "S",
+                    "Chemistry": "S",
+                    "Physics": "S",
+                    "Biology": "S"
+                },
+                "OtherSubjects": {
+                    "Accounting": "S",
+                    "Agricultural Science": "S",
+                    "Business Studies": "S",
+                    "Business Statistics": "S",
+                    "Information & Communication Technology": "S",
+                    "Economics": "S",
+                    "Geography": "S",
+                    "Higher Mathematics": "S",
+                    "Logic & Scientific Methods": "S",
+                    "Mathematics": "S",
+                    "Biosystems Technology": "S",
+                    "Science for Technology": "S",
+                    "Engineering Technology": "S",
+                    "Political Science": "S"
+                }
+            }
         },
-        "INTEREST": "",
-        "JOB_ROLES": ["Social Worker", "Community Development Officer", "Counselor"],
-        "DESCRIPTION": "The Bachelor of Arts Honours in Social Work program at the University of Peradeniya prepares students for careers in social services and community development.",
-        "DEGREE_TYPE": "B.A (Hons)",
-        "DURATION": "4 YEARS",
-        "Z_SCORE": "1.8307"
-    },
-    {
-        "COURSE": "SOCIAL WORK",
-        "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENEPURA",
-        "UNICODE": "112C",
-        "SUBJECTS": "Mental Health ,Community Development",
-        "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-                
-            },
-            "OtherQualifications": {}
+    
+        "OtherQualifications": {
+            "O/L_English": "B",
+            "O/L_Mathematics": "C"
         },
-        "INTEREST": "",
-        "JOB_ROLES": ["Social Worker", "Community Development Officer", "Counselor"],
-        "DESCRIPTION": "The Bachelor of Arts Honours in Social Work program at the University of Sri Jayewardenepura focuses on developing skills for effective social work practice.",
-        "DEGREE_TYPE": "B.A (Hons)",
+    
+        "INTEREST_eng": [
+            "Urban Development",
+            "Sustainability"
+        ],
+        "INTEREST_tam": [
+            "நகர வளர்ச்சி",
+            "தற்காலிகத்தன்மை"
+        ],
+    
+        "JOB_ROLES_eng": [
+            "Urban Planner",
+            "Town Planner",
+            "GIS Specialist"
+        ],
+        "JOB_ROLES_tam": [
+            "நகர திட்டமிடுநர்",
+            "ஊராட்சித் திட்டமிடுநர்",
+            "GIS நிபுணர்"
+        ],
+    
+        "DESCRIPTION_eng": "Focused on urban and regional development, the Town and Country Planning program equips students with the skills to design sustainable and efficient urban environments.",
+        "DESCRIPTION_tam": "நகர மற்றும் பிராந்திய மேம்பாட்டில் கவனம் செலுத்தி, நகரம் மற்றும் நாட்டின் திட்டமிடல் திட்டம் மாணவர்களுக்கு தற்காலிக மற்றும் செயல்திறனான நகர சூழல்களை வடிவமைக்கும் திறன்களை வழங்குகிறது.",
+    
+        "DEGREE_TYPE": "BSc (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE": "1.8307"
+        "Z_SCORE": {
+            "Colombo": "1.0697",
+            "Gampaha": "0.9684",
+            "Kalutara": "1.0595",
+            "Matale": "1.0800",
+            "Kandy": "0.9261",
+            "Nuwara Eliya": "0.8728",
+            "Galle": "1.0997",
+            "Matara": "1.0875",
+            "Hambanthota": "1.0208",
+            "Jaffna": "1.1080",
+            "Kilinochchi": "1.0034",
+            "Mannar": "0.8432",
+            "Mullaitivu": "0.9077",
+            "Vavuniya": "1.0356",
+            "Trincomalee": "1.1375",
+            "Batticaloa": "0.9939",
+            "Ampara": "1.0158",
+            "Puttalam": "0.8864",
+            "Kurunagala": "1.0637",
+            "Anuradhapura": "0.9754",
+            "Polonnaruwa": "0.7398",
+            "Badulla": "1.0761",
+            "Monaragala": "1.1026",
+            "Kegalle": "1.1404",
+            "Ratnapura": "1.0998"
+        },
+    
+        "STREAM": "Other"
     },
+    
     {
-        "COURSE": "ARTS - INFORMATION TECHNOLOGY",
-        "UNIVERSITY": "UNIVERSITY OF SRI JAYEWARDENEPURA",
-        "UNICODE": "128C",
-        "SUBJECTS": "Informaton_technology",
+        "COURSE_eng": "QUANTITY SURVEYING",
+        "COURSE_tam": "அளவியல் கணக்கீடு",
+    
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam": "மொறட்டுவைப் பல்கலைக்கழகம்",
+    
+        "UNICODE": "011",
+        "SUBJECTS_eng": [
+            "Combined Mathematics",
+            "Chemistry",
+            "Physics",
+            "Biology",
+            "Accounting",
+            "Agricultural Science",
+            "Business Studies",
+            "Business Statistics",
+            "Information & Communication Technology",
+            "Economics",
+            "Geography",
+            "Higher Mathematics",
+            "Logic & Scientific Methods",
+            "Mathematics",
+            "Biosystems Technology",
+            "Science for Technology",
+            "Engineering Technology",
+            "Political Science"
+        ],
+        "SUBJECTS_tam": [
+            "இணைந்த கணிதம்",
+            "வேதியியல்",
+            "பௌதீகவியல்",
+            "உயிரியல்",
+            "கணக்கியல்",
+            "விவசாய அறிவியல்",
+            "வணிகக் கல்வி",
+            "வணிக புள்ளிவிவரம்",
+            "தகவல் மற்றும் தொடர்பு தொழில்நுட்பம்",
+            "பொருளியல்",
+            "புவியியல்",
+            "உயர் கணிதம்",
+            "தர்க்கம் மற்றும் அறிவியல் முறைகள்",
+            "கணிதம்",
+            "உயிரியல் முறை தொழில்நுட்பம்",
+            "தொழில்நுட்பத்திற்கான அறிவியல்",
+            "பொறியியல் தொழில்நுட்பம்",
+            "அரசியல் அறிவியல்"
+        ],
+    
         "MINIMUM_QUALIFICATIONS": {
-            "RequiredGrades": {
-                "Any_three_subjects": "S"
-                
+            "RequiredSubjects": {
+                "AtLeastOneSubject": {
+                    "Combined Mathematics": "S",
+                    "Higher Mathematics": "S"
+                },
+                "OtherSubjects": {
+                    "Accounting": "S",
+                    "Economics": "S",
+                    "Business Statistics": "S",
+                    "Business Studies": "S",
+                    "Physics": "S",
+                    "Chemistry": "S",
+                    "Information & Communication Technology": "S"
+                }
             },
             "OtherQualifications": {
-                "O/L_Mathematics" :"C"
+                "O/L_Mathematics": "C",
+                "O/L_Science": "S",
+                "O/L_English": "C"
             }
         },
-        "INTEREST": "",
-        "JOB_ROLES": ["IT Consultant", "Software Developer", "Data Analyst"],
-        "DESCRIPTION": "The Bachelor of Arts in Information Technology program at the University of Sri Jayewardenepura provides a comprehensive education in IT principles and applications.",
-        "DEGREE_TYPE": "B.A (Hons)",
+    
+        "INTEREST_eng": [
+            "Construction management",
+            "Cost estimation",
+            "Project management"
+        ],
+        "INTEREST_tam": [
+            "முகாமைத்துவ மேலாண்மை",
+            "செலவுத்தொகை கணக்கீடு",
+            "திட்ட மேலாண்மை"
+        ],
+    
+        "JOB_ROLES_eng": [
+            "Quantity Surveyor",
+            "Cost Estimator",
+            "Project Manager",
+            "Construction Manager"
+        ],
+        "JOB_ROLES_tam": [
+            "அளவியல் கணக்கீட்டாளர்",
+            "செலவுத்தொகை மதிப்பீட்டாளர்",
+            "திட்ட மேலாளர்",
+            "கட்டுமான மேலாளர்"
+        ],
+    
+        "DESCRIPTION_eng": "The Bachelor of Science Honours in Quantity Surveying program at the University of Moratuwa focuses on equipping students with the skills necessary for effective cost management and project delivery in the construction industry.",
+        "DESCRIPTION_tam": "மொறட்டுவைப் பல்கலைக்கழகத்தில் அளவியல் கணக்கீடு அறிவியல் பட்டமேற்படிப்பு (BSc Hons) நிகழ்ச்சி, கட்டுமான துறையில் செலவுத் திட்ட மேலாண்மை மற்றும் திட்ட விநியோகத்தைச் செயல்படுத்துவதற்குத் தேவையான திறன்களை மாணவர்களுக்கு வழங்குதல் ஆகும்.",
+    
+        "DEGREE_TYPE": "BSc (Hons)",
         "DURATION": "4 YEARS",
-        "Z_SCORE": "1.8649"
+        "Z_SCORE": {
+            "Colombo": "1.3200",
+            "Gampaha": "1.3058",
+            "Kalutara": "1.2950",
+            "Matale": "1.2051",
+            "Kandy": "1.2720",
+            "Nuwara Eliya": "0.8556",
+            "Galle": "1.3452",
+            "Matara": "1.3892",
+            "Hambanthota": "1.3718",
+            "Jaffna": "1.3571",
+            "Kilinochchi": "1.2397",
+            "Mannar": "1.1677",
+            "Mullaitivu": "0.7110",
+            "Vavuniya": "1.2552",
+            "Trincomalee": "1.1011",
+            "Batticaloa": "1.3807",
+            "Ampara": "1.1659",
+            "Puttalam": "1.1705",
+            "Kurunagala": "1.3547",
+            "Anuradhapura": "1.2083",
+            "Polonnaruwa": "0.8628",
+            "Badulla": "1.3308",
+            "Monaragala": "1.2582",
+            "Kegalle": "1.3776",
+            "Ratnapura": "1.3091"
+        },
+    
+        "STREAM": "Other"
+    },
+    
+    {
+        "COURSE_eng": "SURVEYING SCIENCE",
+        "COURSE_tam":"பூகோள விஞ்ஞானம்",
+    
+        "UNIVERSITY_eng": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "இலங்கையின் சபரகமுவ பல்கலைக்கழகம்",
+    
+        "UNICODE": "014",
+        "SUBJECTS_eng": [
+            "Physics",
+            "Combined Mathematics"
+        ],
+        "SUBJECTS_tam": [
+            "பௌதீகவியல்",
+            "இணைந்த கணிதம்"
+        ],
+    
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Combined Mathematics": "S",
+                "Other_subject": "S"
+            }
+        },
+    
+        "INTEREST_eng": [
+            "Geospatial Analysis",
+            "Land Management",
+            "Urban Planning"
+        ],
+        "INTEREST_tam": [
+            "கோவிலியல் பகுப்பாய்வு",
+            "நில மேலாண்மை",
+            "நகர திட்டமிடல்"
+        ],
+    
+        "JOB_ROLES_eng": [
+            "Surveyor",
+            "Geomatic Engineer",
+            "Land Surveyor",
+            "GIS Technician"
+        ],
+        "JOB_ROLES_tam": [
+            "தரையளவையாளர்",
+            " பூகோள விஞ்ஞான பொறியாளர்",
+            "நில அளவையாளர்",
+            "GIS தொழில்நுட்ப நிபுணர்"
+        ],
+    
+        "DESCRIPTION_eng": "The Bachelor of Science in Surveying Science program at Sabaragamuwa University provides students with the knowledge and skills needed for surveying and geospatial analysis, focusing on land management and urban planning.",
+        "DESCRIPTION_tam": "சபரகமுவ பல்கலைக்கழகத்தில் பூகோள விஞ்ஞானம் பட்டப் படிப்பு பூகோள விஞ்ஞானம் பகுப்பாய்வுக்கான அறிவு மற்றும் திறன்களை மாணவர்களுக்கு வழங்குகிறது, நில மேலாண்மை மற்றும் நகர திட்டமிடலில் கவனம் செலுத்துகிறது.",
+    
+        "DEGREE_TYPE": "BSc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "0.8887",
+            "Gampaha": "0.9417",
+            "Kalutara": "1.0562",
+            "Matale": "0.9743",
+            "Kandy": "0.8958",
+            "Nuwara Eliya": "0.6227",
+            "Galle": "1.0750",
+            "Matara": "1.0723",
+            "Hambanthota": "1.1194",
+            "Jaffna": "1.0978",
+            "Kilinochchi": "0.9730",
+            "Mannar": "0.9445",
+            "Mullaitivu": "0.6239",
+            "Vavuniya": "0.9950",
+            "Trincomalee": "1.0721",
+            "Batticaloa": "1.0850",
+            "Ampara": "1.0476",
+            "Puttalam": "0.9590",
+            "Kurunagala": "1.0521",
+            "Anuradhapura": "1.0297",
+            "Polonnaruwa": "0.7790",
+            "Badulla": "1.0278",
+            "Monaragala": "1.0800",
+            "Kegalle": "1.0232",
+            "Ratnapura": "1.0664"
+        },
+    
+        "STREAM": "Other"
+    },
+    
+ 
+    {
+        "COURSE_eng": "ARCHITECTURE",
+        "COURSE_tam": "வடிவமைப்பு",
+    
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam": "மொறட்டுவைப் பல்கலைக்கழகம்",
+    
+        "UNICODE": "023G",
+        "SUBJECTS_eng": [
+            "Art",
+            "Chemistry",
+            "Higher Mathematics",
+            "Biology",
+            "Combined Mathematics",
+            "Physics",
+            "Geography"
+        ],
+        "SUBJECTS_tam": [
+            "கலை",
+            "ரசாயனம்",
+            "உயர் கணிதம்",
+            "உயிரியல்",
+            "இணைந்த கணிதம்",
+            "பௌதீகவியல்",
+            "புவியியல்"
+        ],
+    
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Art": "S",
+                "Chemistry": "S",
+                "Higher Mathematics": "S",
+                "Biology": "S",
+                "Combined Mathematics": "S",
+                "Physics": "S",
+                "Geography": "S"
+            },
+            "OtherSubjects": {
+                "Accounting": "S",
+                "Mathematics": "S",
+                "Hindu Civilization": "S",
+                "Sanskrit": "S",
+                "Business Statistics": "S",
+                "German": "S",
+                "Islamic Civilization": "S",
+                "Information & Communication Technology": "S",
+                "Political Science": "S",
+                "Arabic": "S",
+                "English": "S",
+                "History": "S",
+                "Sinhala": "S",
+                "Business Studies": "S",
+                "Communication & Media Studies": "S",
+                "Japanese": "S",
+                "Christian Civilization": "S",
+                "Economics": "S",
+                "Hindi": "S",
+                "Pali": "S",
+                "Buddhist Civilization": "S",
+                "French": "S",
+                "Home Economics": "S",
+                "Tamil": "S",
+                "Chinese": "S",
+                "Agricultural Science": "S",
+                "Logic & Scientific Method": "S"
+            }
+        },
+    
+        "INTEREST_eng": [
+            "Design",
+            "Construction"
+        ],
+        "INTEREST_tam": [
+            "வடிவமைப்பு",
+            "கட்டமைப்பு"
+        ],
+    
+        "JOB_ROLES_eng": [
+            "Architect",
+            "Interior Designer",
+            "Urban Designer"
+        ],
+        "JOB_ROLES_tam": [
+            "கட்டிட வடிவமைப்பாளர்",
+            "உள்ளமைப்பு வடிவமைப்பாளர்",
+            "நகர வடிவமைப்பாளர்"
+        ],
+    
+        "DESCRIPTION_eng": "The Architecture program provides a blend of theoretical knowledge and practical skills necessary to design innovative and functional spaces.",
+        "DESCRIPTION_tam": "வடிவமைப்பு பட்டப் படிப்பானது புதுமையான மற்றும் செயல்பாட்டுடைய இடங்களை வடிவமைப்பதற்கு தேவையான கோட்பாடும், நடைமுறைக்கான திறனையும் வழங்குகிறது.",
+    
+        "DEGREE_TYPE": "BSc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.1027",
+            "Gampaha": "0.3956",
+            "Kalutara": "0.8229",
+            "Matale": "1.0112",
+            "Kandy": "1.0442",
+            "Nuwara Eliya": "1.1282",
+            "Galle": "1.2613",
+            "Matara": "1.1287",
+            "Hambanthota": "0.9159",
+            "Jaffna": "1.2043",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "1.0359",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "0.6160",
+            "Batticaloa": "1.0429",
+            "Ampara": "0.9578",
+            "Puttalam": "0.4771",
+            "Kurunagala": "1.1679",
+            "Anuradhapura": "0.3166",
+            "Polonnaruwa": "0.4470",
+            "Badulla": "0.9134",
+            "Monaragala": "0.5779",
+            "Kegalle": "1.0945",
+            "Ratnapura": "0.8104"
+        },
+    
+        "STREAM": "Other"
     }
+    ,
+ 
+    [
+        {
+            "Course_eng": "FASHION DESIGN AND PRODUCT DEVELOPMENT",
+            "Course_tam": "போக்கு வடிவமைப்பு மற்றும் தயாரிப்பு மேம்பாடு",
+    
+            "University_eng": "UNIVERSITY OF MORATUWA",
+            "University_tam": "மொறட்டுவைப் பல்கலைக்கழகம்",
+    
+            "Unicode": "034G",
+            "Subjects_eng": [],
+            "Subjects_tam": [],
+    
+            "MinimumQualifications": {
+                "RequiredGrades": {
+                    "Any Relevant Subject": "S"
+                }
+            },
+    
+            "Interest_eng": ["Fashion", "Textile Design"],
+            "Interest_tam": ["போக்கு", "பட்டை வடிவமைப்பு"],
+    
+            "JobRoles_eng": ["Fashion Designer", "Product Developer", "Textile Designer"],
+            "JobRoles_tam": ["போக்கு வடிவமைப்பாளர்", "தயாரிப்பு மேம்பாட்டாளர்", "பட்டை வடிவமைப்பாளர்"],
+    
+            "Description_eng": "This program merges creativity with technical skills, preparing students for careers in fashion design and product development.",
+            "Description_tam": "இந்த பாடம் படைப்பாற்றலை தொழில்நுட்ப திறன்களுடன் கலந்துக்கொண்டு, மாணவர்களை போக்கு வடிவமைப்பு மற்றும் தயாரிப்பு மேம்பாட்டு வேலைகளுக்கு தயார prepares.",
+    
+            "DegreeType": "B Des Hons",
+            "Duration": "4 YEARS",
+            "ZScore": "0.3805",
+            "Stream": "Other"
+        },
+        {
+            "Course_eng": "LANDSCAPE ARCHITECTURE",
+            "Course_tam": " நில அறிவியல்",
+    
+            "University_eng": "UNIVERSITY OF MORATUWA",
+            "University_tam": "மொறட்டுவைப் பல்கலைக்கழகம்",
+    
+            "Unicode": "097G",
+            "Subjects_eng": [],
+            "Subjects_tam": [],
+    
+            "MinimumQualifications": {
+                "RequiredGrades": {
+                    "Any Relevant Subject": "S"
+                }
+            },
+    
+            "Interest_eng": ["Environmental Design", "Sustainability"],
+            "Interest_tam": ["சூழ வடிவமைப்பு", "சுயமுகப்புத் திறன்"],
+    
+            "JobRoles_eng": ["Landscape Architect", "Environmental Planner", "Urban Designer"],
+            "JobRoles_tam": ["நில வடிவமைப்பாளர்", "சூழல் திட்டமிடுபவர்", "நகர வடிவமைப்பாளர்"],
+    
+            "Description_eng": "The Landscape Architecture program combines design principles with environmental awareness to create sustainable outdoor spaces.",
+            "Description_tam": "நில வடிவமைப்பு பாடம் வடிவமைப்பு கோட்பாடுகளை சூழல் விழிப்புணர்வுடன் இணைத்து, நிலையான வெளிப்புற இடங்களை உருவாக்குகிறது.",
+    
+            "DegreeType": "Bachelor of Landscape Architecture",
+            "Duration": "4 YEARS",
+            "ZScore": {
+                "Colombo": "1.1710",
+                "Gampaha": "0.8354",
+                "Kalutara": "1.2241",
+                "Matale": "0.8278",
+                "Kandy": "0.7925",
+                "Nuwara Eliya": "-0.0576",
+                "Galle": "0.9833",
+                "Matara": "0.6762",
+                "Hambanthota": "0.6245",
+                "Jaffna": "0.9751",
+                "Kilinochchi": "NotQualified",
+                "Mannar": "NotQualified",
+                "Mullaitivu": "NotQualified",
+                "Vavuniya": "NotQualified",
+                "Trincomalee": "0.2069",
+                "Batticaloa": "NotQualified",
+                "Ampara": "0.7401",
+                "Puttalam": "0.7015",
+                "Kurunagala": "1.0022",
+                "Anuradhapura": "0.3905",
+                "Polonnaruwa": "1.1116",
+                "Badulla": "0.5494",
+                "Monaragala": "0.6034",
+                "Kegalle": "0.9389",
+                "Ratnapura": "0.5435"
+            },
+            "Stream": "Other"
+        }
+    ]
+    ,
+    {
+        "Course_eng": "DESIGN",
+        "Course_tam": "வடிவமைப்பு",
+    
+        "University_eng": "UNIVERSITY OF MORATUWA",
+        "University_tam": "மொறட்டுவைப் பல்கலைக்கழகம்",
+    
+        "Unicode": "024G",
+        "Subjects_eng": [],
+        "Subjects_tam": [],
+    
+        "MinimumQualifications": {
+            "RequiredGrades": {
+                "Any Relevant Subject": "S"
+            }
+        },
+    
+        "Interest_eng": ["Visual Arts", "Product Design"],
+        "Interest_tam": ["காட்சி கலை", "தயாரிப்பு வடிவமைப்பு"],
+    
+        "JobRoles_eng": ["Graphic Designer", "Product Designer", "UX/UI Designer"],
+        "JobRoles_tam": ["கிராபிக் வடிவமைப்பாளர்", "தயாரிப்பு வடிவமைப்பாளர்", "UX/UI வடிவமைப்பாளர்"],
+    
+        "Description_eng": "The Design program at University of Moratuwa provides a broad education in design, focusing on both creativity and practicality.",
+        "Description_tam": "மொறட்டுவைப் பல்கலைக்கழகத்தில் உள்ள வடிவமைப்பு பாடம் படைப்பாற்றல் மற்றும் நடைமுறைமையை இணைத்து வடிவமைப்பில் பரந்த கல்வி அளிக்கின்றது.",
+    
+        "DegreeType": "Bachelor of Design Honours",
+        "Duration": "4 YEARS",
+        "ZScore": {
+            "Colombo": "1.1710",
+            "Gampaha": "0.4672",
+            "Kalutara": "0.8747",
+            "Matale": "0.7659",
+            "Kandy": "0.7393",
+            "Nuwara Eliya": "0.5186",
+            "Galle": "0.6972",
+            "Matara": "1.0700",
+            "Hambanthota": "0.6614",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "NotQualified",
+            "Batticaloa": "NotQualified",
+            "Ampara": "0.1072",
+            "Puttalam": "1.9784",
+            "Kurunagala": "0.8923",
+            "Anuradhapura": "0.2262",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "0.6454",
+            "Monaragala": "0.1659",
+            "Kegalle": "0.4628",
+            "Ratnapura": "0.5249"
+        },
+        "Stream": "Other"
+    },
+    
+    {
+        "Course_eng": "LAW",
+        "Course_tam": "சட்டம்",
+    
+        "University_eng": "UNIVERSITY OF PERADENIYA",
+        "University_tam": " பேராதனைப் பல்கலைக்கழகம்",
+    
+        "Unicode": "025B",
+        "Subjects_eng": [],
+        "Subjects_tam": [],
+    
+        "MinimumQualifications": {
+            "RequiredGrades": {
+                "Any Relevant Subject": "S"
+            }
+        },
+    
+        "Interest_eng": ["Legal Studies", "Justice"],
+        "Interest_tam": ["சட்ட படிப்புகள்", "நீதி"],
+    
+        "JobRoles_eng": ["Lawyer", "Legal Advisor"], 
+        "JobRoles_tam": ["சட்ட வாதி", "சட்ட ஆலோசகர்"],
+    
+        "Description_eng": "The Law program at University of Peradeniya provides students with a solid foundation in legal principles and practices.",
+        "Description_tam": "பேராதனைப் பல்கலைக்கழகத்தில் உள்ள சட்டப் பாடம், மாணவர்களுக்கு சட்டக் கொள்கைகள் மற்றும் நடைமுறை செயல்பாடுகளில் உறுதியான அடித்தளத்தை வழங்குகிறது.",
+    
+        "DegreeType": "Bachelor of Laws",
+        "Duration": "4 YEARS",
+        "ZScore": {
+            "Colombo": "1.9530",
+            "Gampaha": "1.9628",
+            "Kalutara": "1.9653",
+            "Matale": "1.9852",
+            "Kandy": "1.9618",
+            "Nuwara Eliya": "1.9687",
+            "Galle": "1.9857",
+            "Matara": "1.9597",
+            "Hambanthota": "NotQualified",
+            "Jaffna": "1.9529",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "1.9594",
+            "Vavuniya": "1.9934",
+            "Trincomalee": "1.9595",
+            "Batticaloa": "1.9797",
+            "Ampara": "1.9530",
+            "Puttalam": "1.9763",
+            "Kurunagala": "1.9841",
+            "Anuradhapura": "1.9585",
+            "Polonnaruwa": "1.9948",
+            "Badulla": "1.9570",
+            "Monaragala": "2.0972",
+            "Kegalle": "1.9769",
+            "Ratnapura": "1.9621"
+        },
+        "Stream": "Other"
+    },
+    
+ 
+    {
+        "Course_eng": "LAW",
+        "Course_tam": "சட்டம்",
+    
+        "University_eng": "UNIVERSITY OF JAFFNA",
+        "University_tam": "யாழ்ப்பாணப் பல்கலைக்கழகம்",
+    
+        "Unicode": "025E",
+        "Subjects_eng": [],
+        "Subjects_tam": [],
+    
+        "MinimumQualifications": {
+            "RequiredGrades": {
+                "Any Relevant Subject": "S"
+            }
+        },
+    
+        "Interest_eng": ["Legal Studies", "Justice"],
+        "Interest_tam": ["சட்ட படிப்புகள்", "நீதி"],
+    
+        "JobRoles_eng": ["Lawyer", "Legal Advisor"],
+        "JobRoles_tam": ["சட்ட வாதி", "சட்ட ஆலோசகர்"],
+    
+        "Description_eng": "The Law program at University of Jaffna prepares students for legal careers, focusing on both theory and practical application.",
+        "Description_tam": "யாழ்ப்பாணப் பல்கலைக்கழகத்தில் உள்ள சட்டப் பாடம், மாணவர்களை சட்டத் தொழில்களில் சிறப்பாக நிலைநாட்டும் வகையில் தயார் செய்கிறது, இதில் குறிப்பு மற்றும் நடைமுறை செயல்பாடுகளையும் சேர்த்து கவனம் செலுத்துகிறது.",
+    
+        "DegreeType": "Bachelor of Laws",
+        "Duration": "4 YEARS",
+        "ZScore": {
+            "Colombo": "1.9239",
+            "Gampaha": "1.9009",
+            "Kalutara": "1.8048",
+            "Matale": "NotQualified",
+            "Kandy": "1.8142",
+            "Nuwara Eliya": "1.7784",
+            "Galle": "NotQualified",
+            "Matara": "1.9404",
+            "Hambanthota": "NotQualified",
+            "Jaffna": "1.9029",
+            "Kilinochchi": "1.7541",
+            "Mannar": "1.7475",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "1.9205",
+            "Trincomalee": "1.9353",
+            "Batticaloa": "1.9360",
+            "Ampara": "1.9327",
+            "Puttalam": "1.8898",
+            "Kurunagala": "1.8426",
+            "Anuradhapura": "1.9008",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "1.9148",
+            "Monaragala": "NotQualified",
+            "Kegalle": "1.8861",
+            "Ratnapura": "1.9210"
+        },
+        "Stream": "Other"
+    }
+    ,
+    {
+        "Course_eng": "FACILITIES MANAGEMENT",
+        "Course_tam": "வசதிகள் மேலாண்மை",
+    
+        "University_eng": "UNIVERSITY OF MORATUWA",
+        "University_tam": "மொரட்டு பல்கலைக்கழகம்",
+    
+        "Unicode": "056G",
+        "Subjects_eng": [],
+        "Subjects_tam": [],
+    
+        "MinimumQualifications": {
+            "RequiredGrades": {
+                "CategoryA": {
+                    "Chemistry": "S",
+                    "Combined Mathematics": "S",
+                    "Physics": "S"
+                },
+                "CategoryB": {
+                    "Business Studies": "S",
+                    "Economics": "S",
+                    "Accounting": "S"
+                }
+            }
+        },
+    
+        "Interest_eng": ["Property Management", "Engineering"],
+        "Interest_tam": ["சொத்து மேலாண்மை", "பொறியியல்"],
+    
+        "JobRoles_eng": ["Facilities Manager", "Property Manager", "Building Services Engineer"],
+        "JobRoles_tam": ["வசதிகள் மேலாளர்", "சொத்து மேலாளர்", "கட்டிட சேவைகள் பொறியாளர்"],
+    
+        "Description_eng": "Facilities Management program equips students with skills to manage and maintain infrastructure and facilities in both commercial and residential settings.",
+        "Description_tam": "வசதிகள் மேலாண்மை பாடமுறையில் மாணவர்களுக்கு வணிக மற்றும் குடியிருப்பு சூழல்களில் உட்பட்ட கட்டமைப்புகள் மற்றும் வசதிகளை நிர்வகிக்கும் மற்றும் பராமரிக்கும் திறன்களை உருவாக்குகிறது.",
+    
+        "DegreeType": "BSc Hons (FM)",
+        "Duration": "4 YEARS",
+        "ZScore": {
+            "Colombo": "1.5402",
+            "Gampaha": "1.4289",
+            "Kalutara": "1.5413",
+            "Matale": "1.4563",
+            "Kandy": "1.4694",
+            "Nuwara Eliya": "1.4563",
+            "Galle": "1.4443",
+            "Matara": "1.5603",
+            "Hambanthota": "1.4689",
+            "Jaffna": "1.3551",
+            "Kilinochchi": "1.1817",
+            "Mannar": "1.4705",
+            "Mullaitivu": "1.1849",
+            "Vavuniya": "1.5549",
+            "Trincomalee": "1.5491",
+            "Batticaloa": "1.4509",
+            "Ampara": "1.2264",
+            "Puttalam": "1.4384",
+            "Kurunagala": "1.3966",
+            "Anuradhapura": "1.5064",
+            "Polonnaruwa": "1.4111",
+            "Badulla": "1.5751",
+            "Monaragala": "1.5587",
+            "Kegalle": "1.4342",
+            "Ratnapura": "1.5024"
+        },
+        "Stream": "Other"
+    }
+    
 ]
