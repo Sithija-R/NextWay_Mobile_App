@@ -399,8 +399,9 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     width: wp(90),
-    maxHeight: hp(85),
+    maxHeight: hp(86),
     padding: 20,
+    paddingBottom: 20,
     backgroundColor: "white",
     borderRadius: 10,
     shadowColor: "#000",

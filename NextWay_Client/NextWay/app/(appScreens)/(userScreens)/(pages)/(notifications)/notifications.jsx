@@ -52,7 +52,6 @@ export default function Notifications() {
     return () => clearInterval(interval);
   }, [flag]);
 
-
   const handleNotificationView = async (id) => {
     try {
       const response = await viewNotification(id);
@@ -115,73 +114,76 @@ export default function Notifications() {
             }}
           >
             {notifications.length > 0 ? (
-              notifications.map((notification, index) => (
-                notification.read?(null):(
+              notifications.map((notification, index) =>
+                notification.read ? null : (
+                  <View
+                    key={index}
+                    style={{
+                      marginTop: hp(3),
+                      width: wp(90),
 
-                    <View
-                      key={index}
-                      style={{
-                        marginTop: hp(3),
-                        width: wp(90),
-    
-                        justifyContent: "space-between",
-    
-                        padding: hp(2),
-                        borderRadius: 13,
-    
-                        borderWidth:
-                          notification.type === "ad_request_declined" ||
-                          notification.type === "ad_request_accepted"
-                            ? 2
-                            : 0,
-                        borderColor:
-                          notification.type === "ad_request_declined"
-                            ? "#FFCCCC"
-                            : notification.type === "ad_request_accepted"
-                            ? "#CCFFCC"
-                            : "transparent",
-    
-                        // Dynamic background color
-                        backgroundColor:
-                          notification.type === "ad_request_declined"
-                            ? "#FFF5F5"
-                            : notification.type === "ad_request_accepted"
-                            ? "#F5FFF5"
-                            : "#FFFFFF",
-    
-                        // Shadow for iOS
-                        shadowColor: "#000",
-                        shadowOffset: { width: 0, height: 2 }, // Shadow only downward
-                        shadowOpacity: 0.2,
-                        shadowRadius: 2.62,
-                        // Android Shadow (Bottom Only)
-                        elevation: 5,
-                      }}
-                    >
-                      <Text style={{ fontSize: wp(4) }}>
-                        {notification.message}
-                      </Text>
-                      <View style={{ alignItems: "flex-end" }}>
-                        <TouchableOpacity
-                          onPress={() => handleNotificationView(notification.id)}
-                          style={{
-                            backgroundColor: "#149BC6",
-                            padding: hp(1),
-                            borderRadius: 10,
-                            width: wp(20),
-                            alignItems: "center",
-                            marginTop: hp(1),
-                          }}
-                        >
-                          <Text style={{ color: "white", fontSize: hp(2) }}>
-                            Ok
-                          </Text>
-                        </TouchableOpacity>
-                      </View>
+                      justifyContent: "space-between",
+
+                      padding: hp(2),
+                      borderRadius: 13,
+
+                      borderWidth:
+                        notification.type === "ad_request_declined" ||
+                        notification.type === "ad_request_accepted"
+                          ? 2
+                          : 0,
+                      borderColor:
+                        notification.type === "ad_request_declined"
+                          ? "#FFCCCC"
+                          : notification.type === "ad_request_accepted"
+                          ? "#CCFFCC"
+                          : "transparent",
+
+                      // Dynamic background color
+                      backgroundColor:
+                        notification.type === "ad_request_declined"
+                          ? "#FFF5F5"
+                          : notification.type === "ad_request_accepted"
+                          ? "#F5FFF5"
+                          : "#FFFFFF",
+
+                      // Shadow for iOS
+                      shadowColor: "#000",
+                      shadowOffset: { width: 0, height: 2 }, // Shadow only downward
+                      shadowOpacity: 0.2,
+                      shadowRadius: 2.62,
+                      // Android Shadow (Bottom Only)
+                      elevation: 5,
+                    }}
+                  >
+                     <Text style={{ fontSize: wp(4.5),marginBottom:hp(1), fontWeight:'bold'}}>{notification.title}</Text> 
+                    <Text style={{ fontSize: wp(4) }}>
+                      {notification.message}
+                    </Text>
+
+                
+
+
+                    <View style={{ alignItems: "flex-end" }}>
+                      <TouchableOpacity
+                        onPress={() => handleNotificationView(notification.id)}
+                        style={{
+                          backgroundColor: "#149BC6",
+                          padding: hp(1),
+                          borderRadius: 10,
+                          width: wp(20),
+                          alignItems: "center",
+                          marginTop: hp(1),
+                        }}
+                      >
+                        <Text style={{ color: "white", fontSize: hp(2) }}>
+                          Ok
+                        </Text>
+                      </TouchableOpacity>
                     </View>
-                  ))
+                  </View>
                 )
-
+              )
             ) : (
               <Text>No notifications!</Text>
             )}

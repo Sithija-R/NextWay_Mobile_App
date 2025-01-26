@@ -87,7 +87,7 @@ export default function Home() {
                 height: 10,
                 borderRadius: 4,
                 backgroundColor: "red",
-                marginLeft: 6, // Space between text and dot
+                marginLeft: 6, 
               }}
             />
           )}

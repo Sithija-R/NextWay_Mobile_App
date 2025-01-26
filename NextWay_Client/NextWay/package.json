@@ -58,7 +58,8 @@
     "react-native-tab-view": "^4.0.5",
     "react-native-web": "~0.19.10",
     "tailwind-rn": "^4.2.0",
-    "yup": "^1.4.0"
+    "yup": "^1.4.0",
+    "expo-linear-gradient": "~13.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

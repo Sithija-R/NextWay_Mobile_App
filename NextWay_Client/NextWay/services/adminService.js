@@ -129,6 +129,7 @@ export const acceptAdRequest = async (id,email,uid) => {
 
       await createNotification({
         type: "ad_request_accepted",
+        title:"Advertiser Request Accepted",
         message: `Advertiser profile request with Email: ${email} has been accepted.`,
         userId: uid, 
       });
@@ -158,6 +159,7 @@ export const declineAdRequest = async (id,email,uid) => {
 
       await createNotification({
         type: "ad_request_declined",
+        title:"Advertiser Request Declined",
         message: `Advertiser profile request with Email: ${email} has been declined.`,
         userId: uid, 
       });
@@ -173,10 +175,11 @@ export const declineAdRequest = async (id,email,uid) => {
 };
 
 
-export const createNotification = async ({ type, message, userId }) => {
+export const createNotification = async ({ type, message, userId ,title}) => {
   try {
     const notification = {
       type,
+      title,
       message,
       userId, 
       read: false, 
