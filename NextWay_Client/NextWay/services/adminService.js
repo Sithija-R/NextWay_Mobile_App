@@ -102,7 +102,7 @@ export const getAdRequest = async () => {
   }
 };
 
-export const acceptAdRequest = async (id) => {
+export const acceptAdRequest = async (id,email,uid) => {
   try {
     const adDocref = doc(db, "advertiser_req", id);
     const adDoc = await getDoc(adDocref);
@@ -114,6 +114,25 @@ export const acceptAdRequest = async (id) => {
       };
       await updateDoc(adDocref, newfields);
 
+      const userDocref = doc(db, "users", uid);
+      const userDoc = await getDoc(userDocref);
+
+      if (userDoc.exists()) {
+        const userFields = {
+          isAdvertiser: true,
+        };
+        await updateDoc(userDocref, userFields);
+        
+      }else{
+        return { success: false, msg: "User does not exist" };
+      }
+
+      await createNotification({
+        type: "ad_request_accepted",
+        title:"Advertiser Request Accepted",
+        message: `Advertiser profile request with Email: ${email} has been accepted.`,
+        userId: uid, 
+      });
 
       return { success: true, msg: "Advertiser request accepted" };
     } else {
@@ -125,7 +144,7 @@ export const acceptAdRequest = async (id) => {
 };
 
 
-export const declineAdRequest = async (id) => {
+export const declineAdRequest = async (id,email,uid) => {
 
   try {
     const adDocref = doc(db, "advertiser_req", id);
@@ -138,6 +157,13 @@ export const declineAdRequest = async (id) => {
       };
       await updateDoc(adDocref, newfields);
 
+      await createNotification({
+        type: "ad_request_declined",
+        title:"Advertiser Request Declined",
+        message: `Advertiser profile request with Email: ${email} has been declined.`,
+        userId: uid, 
+      });
+
       return { success: true, msg: "Advertiser request accepted" };
     } else {
       return { success: false, msg: "Document does not exist" };
@@ -146,4 +172,25 @@ export const declineAdRequest = async (id) => {
     return { success: false, msg: error.message };
   }
 
+};
+
+
+export const createNotification = async ({ type, message, userId ,title}) => {
+  try {
+    const notification = {
+      type,
+      title,
+      message,
+      userId, 
+      read: false, 
+      timestamp: new Date(),
+    };
+
+    const notificationRef = collection(db, "notifications");
+    await addDoc(notificationRef, notification);
+
+    return { success: true, msg: "Notification created successfully" };
+  } catch (error) {
+    return { success: false, msg: error.message };
+  }
 };

@@ -43,8 +43,6 @@ export default function SecondScreen() {
   const subjectData= t('subjectData', { returnObjects: true });
   const streams= t('streams', { returnObjects: true });
 
-
-
   
   useEffect(() => {
     if (stream && subjectData[stream.toLowerCase()]) {
@@ -52,7 +50,7 @@ export default function SecondScreen() {
     }
   }, [stream]);
 
-console.log(subjectOptions)
+
   useEffect(() => {
     // If subjectOptions contains at least 3 elements
     if (subjectOptions.length >= 3) {
@@ -115,7 +113,6 @@ console.log(subjectOptions)
     }
   };
   
-
   return (
     <View style={{ flex: 1 }}>
       <StatusBar style="dark" />

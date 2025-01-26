@@ -64,7 +64,7 @@ export default function AdvertiserReq() {
     setSelectedAd(null);
   };
 
-  const handleAccept = async (id) => {
+  const handleAccept = async (id,email,uid) => {
     Alert.alert(
       "Confirm Accept",
       `Are you sure you want to accept the advertiser request?`,
@@ -76,7 +76,7 @@ export default function AdvertiserReq() {
         {
           text: "Yes",
           onPress: async () => {
-            await acceptAdRequest(id);
+            await acceptAdRequest(id,email,uid);
             alert("Advertiser request accepted");
             closeModal();
             setReloadAds(prev => !prev);
@@ -87,7 +87,7 @@ export default function AdvertiserReq() {
 
   };
 
-  const handleDecline = (id) => {
+  const handleDecline = (id,email,uid) => {
     Alert.alert(
       "Confirm Decline",
       "Are you sure you want to decline the advertiser request?",
@@ -99,7 +99,7 @@ export default function AdvertiserReq() {
         {
           text: "Yes",
           onPress: async () => {
-            await declineAdRequest(id);
+            await declineAdRequest(id,email,uid);
             alert("Advertiser request declined");
             closeModal();
             setReloadAds(prev => !prev);
@@ -329,7 +329,7 @@ export default function AdvertiserReq() {
                 </View>
 
                 <TouchableOpacity
-                  onPress={() => handleDecline(selectedAd.docid)}
+                  onPress={() => handleDecline(selectedAd.docid,selectedAd.email,selectedAd.id)}
                   style={{
                     backgroundColor: "#f53131",
                     paddingVertical: hp(1),
@@ -350,7 +350,7 @@ export default function AdvertiserReq() {
                   </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                  onPress={() => handleAccept(selectedAd.docid)}
+                  onPress={() => handleAccept(selectedAd.docid,selectedAd.email,selectedAd.id)}
                   style={{
                     backgroundColor: "#149BC6",
                     paddingVertical: hp(1),
@@ -399,8 +399,9 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     width: wp(90),
-    maxHeight: hp(85),
+    maxHeight: hp(86),
     padding: 20,
+    paddingBottom: 20,
     backgroundColor: "white",
     borderRadius: 10,
     shadowColor: "#000",

@@ -1,11 +1,4 @@
-import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  Pressable,
-  
-} from "react-native";
+import { View, Text, Image, TouchableOpacity, Pressable } from "react-native";
 import React, { useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -17,13 +10,38 @@ import CustomHeader from "../../../../components/CustomHeader/customheader";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
+import { fetchNotification } from "../../../../services/fetchingService";
+import { auth } from "../../../../firebaseConfig/firebaseConfiguration";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function Home() {
   const router = useRouter();
-
-
   const { t } = useTranslation();
+  const [notifications, setNotifications] = useState(0);
+  
+
+  useEffect(() => {
+    const getNotifications = async () => {
+      try {
+        const response = await fetchNotification();
+        if (response.success && response.data.length > 0) {
+          const notifi = response.data.filter(
+            (noti) =>
+              noti.userId === auth?.currentUser?.uid || noti.userId === "all"
+          );
+          const unread = notifi.filter((noti) => noti.read === false).length;
+          setNotifications(unread);
+        } else {
+          console.log("No notifications found");
+        }
+      } catch (error) {
+        console.error("Error fetching notifications:", error);
+      }
+    };
+    getNotifications();
+    const interval = setInterval(getNotifications, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const loadSavedLanguage = async () => {
@@ -31,7 +49,6 @@ export default function Home() {
         const savedLanguage = await AsyncStorage.getItem("language");
         if (savedLanguage) {
           i18next.changeLanguage(savedLanguage);
-         
         }
       } catch (e) {
         console.error("Failed to load language", e);
@@ -44,11 +61,36 @@ export default function Home() {
   return (
     <View style={{ flex: 1 }}>
       <StatusBar style="dark" />
-      <View style={{ flex: 1, alignItems: "flex-start" }}>
+      <View style={{ flex: 1 }}>
         <Pressable
           style={{ position: "absolute", top: hp(5), left: wp(2), zIndex: 5 }}
         >
           <CustomHeader />
+        </Pressable>
+        <Pressable
+          onPress={() => router.push("notifications")}
+          style={{
+            position: "absolute",
+            top: hp(5),
+            right: wp(4),
+            marginTop: hp(2),
+          }}
+        >
+          <Ionicons name="notifications" size={hp(4)} color="#141414" />
+          {notifications > 0 && (
+            <View
+              style={{
+                position: "absolute",
+                top: 1,
+                right: 0,
+                width: 10,
+                height: 10,
+                borderRadius: 4,
+                backgroundColor: "red",
+                marginLeft: 6, 
+              }}
+            />
+          )}
         </Pressable>
 
         <Image
@@ -103,7 +145,7 @@ export default function Home() {
                 color: "white",
               }}
             >
-              {t('find-course')}
+              {t("find-course")}
             </Text>
           </TouchableOpacity>
 
@@ -124,16 +166,11 @@ export default function Home() {
                 color: "white",
               }}
             >
-             {t('advertisement')}
+              {t("advertisement")}
             </Text>
           </TouchableOpacity>
-
-
-
-
         </View>
       </View>
-
 
       <View style={{ alignItems: "flex-end", zIndex: -1 }}>
         <Image
@@ -148,4 +185,3 @@ export default function Home() {
     </View>
   );
 }
-

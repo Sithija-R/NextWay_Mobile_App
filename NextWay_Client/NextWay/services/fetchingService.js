@@ -7,6 +7,7 @@ import {
   getDocs,
   collection,
   deleteDoc,
+  updateDoc,
 } from "firebase/firestore";
 import { db } from "../firebaseConfig/firebaseConfiguration";
 
@@ -15,11 +16,11 @@ const fetchCourses = async () => {
   try {
     const coursesCollection = collection(db, "coursetest");
     const coursesSnapshot = await getDocs(coursesCollection);
-    
+
     // Map over the documents and include the document id
     const coursesList = coursesSnapshot.docs.map((doc) => ({
-      id: doc.id, 
-      ...doc.data() 
+      id: doc.id,
+      ...doc.data(),
     }));
 
     return { success: true, data: coursesList };
@@ -28,22 +29,20 @@ const fetchCourses = async () => {
   }
 };
 
-
 //Fetch Cousre by UNICODE
 const fetchCourseByUNICODE = async (unicode) => {
   try {
     const q = query(collection(db, "courses"), where("UNICODE", "==", unicode));
     const snapshot = await getDocs(q);
 
-    
-    const coursesList = snapshot.docs.map(doc => ({
+    const coursesList = snapshot.docs.map((doc) => ({
       id: doc.id,
-      ...doc.data()
+      ...doc.data(),
     }));
-console.log(coursesList)
-   
+    console.log(coursesList);
+
     if (coursesList.length > 0) {
-      return { success: true, data: coursesList }; 
+      return { success: true, data: coursesList };
     }
 
     return { success: false, msg: "Course not found with the given UNICODE" };
@@ -51,9 +50,6 @@ console.log(coursesList)
     return { success: false, msg: error.message };
   }
 };
-
-
-
 
 // Fetch a single course by ID
 const fetchCourseById = async (courseId) => {
@@ -70,8 +66,6 @@ const fetchCourseById = async (courseId) => {
   }
 };
 
-
-
 // Fetch courses by stream
 const fetchCoursesByStream = async (stream) => {
   try {
@@ -86,7 +80,6 @@ const fetchCoursesByStream = async (stream) => {
 };
 
 //fetch by name
-
 
 const fetchCoursesByName = async (name) => {
   try {
@@ -146,8 +139,6 @@ const fetchCoursesByUniversity = async (university) => {
   }
 };
 
-
-
 // const fetchCoursesByCriteria = async (
 //   stream,
 //   subjectsJson,
@@ -157,22 +148,17 @@ const fetchCoursesByUniversity = async (university) => {
 //   district
 // ) => {
 //   try {
-   
+
 //     console.log(`Interest: ${interest}`);
-    
 
 //     // Parse JSON data
 //     const subjects = JSON.parse(subjectsJson);
 //     const results = JSON.parse(resultsJson);
 
-   
-
 //     const subjectGrades = {};
 //     results.forEach((result, index) => {
 //       subjectGrades[subjects[index]] = result;
 //     });
-
-  
 
 //     // Fetch courses from the database
 //     const coursesCollection = collection(db, "courses");
@@ -183,8 +169,6 @@ const fetchCoursesByUniversity = async (university) => {
 //       const data = doc.data();
 //       return data;
 //     });
-
-    
 
 //     const gradeOrder = { A: 1, B: 2, C: 3, S: 4 };
 
@@ -203,8 +187,6 @@ const fetchCoursesByUniversity = async (university) => {
 //         const enteredGradeValue = gradeOrder[enteredGrade];
 //         const requiredGradeValue = gradeOrder[requiredGrade];
 
-        
-      
 //         return enteredGradeValue <= requiredGradeValue;
 //       });
 //     };
@@ -214,16 +196,12 @@ const fetchCoursesByUniversity = async (university) => {
 
 //       const matchGrades = doesMatchGrades(requiredGrades, subjectGrades);
 
-     
-
 //       // Retrieve the Z-Score specific to the district
 //       const districtZScore = course.Z_SCORE[district];
 //       const isZScoreValid = !zScore || (districtZScore && districtZScore <= parseFloat(zScore));
 
-     
-
 //       // Check interest if provided
-//       const interestMatches = !interest || 
+//       const interestMatches = !interest ||
 //         (course.INTEREST && course.INTEREST.some(keyword =>
 //           interest.toLowerCase().includes(keyword.toLowerCase())
 //         ));
@@ -233,15 +211,12 @@ const fetchCoursesByUniversity = async (university) => {
 //       return matchGrades && isZScoreValid && interestMatches;
 //     });
 
-    
-
 //     return { success: true, data: filteredCourses };
 //   } catch (error) {
 //     console.error("Error fetching courses by criteria:", error);
 //     return { success: false, msg: error.message };
 //   }
 // };
-
 
 const fetchCoursesByCriteria = async (
   stream,
@@ -255,9 +230,9 @@ const fetchCoursesByCriteria = async (
     console.log(`Interest: ${interest}`);
 
     // Normalize and parse the interest parameter
-    const normalizedInterestArray = (interest || '')
-      .split(',')
-      .map(term => normalizeText(term.trim()));
+    const normalizedInterestArray = (interest || "")
+      .split(",")
+      .map((term) => normalizeText(term.trim()));
 
     // Parse JSON data
     const subjects = JSON.parse(subjectsJson);
@@ -269,7 +244,7 @@ const fetchCoursesByCriteria = async (
     });
 
     // Fetch courses from the database
-    const coursesCollection = collection(db, "courses"); 
+    const coursesCollection = collection(db, "courses");
     const q = query(coursesCollection, where("STREAM", "==", stream));
     const coursesSnapshot = await getDocs(q);
 
@@ -280,8 +255,8 @@ const fetchCoursesByCriteria = async (
     const gradeOrder = { A: 1, B: 2, C: 3, S: 4 };
 
     const doesMatchGrades = (requiredGrades, subjectGrades) => {
-      const allSubjectsPresent = Object.keys(subjectGrades).every(
-        (subject) => requiredGrades.hasOwnProperty(subject)
+      const allSubjectsPresent = Object.keys(subjectGrades).every((subject) =>
+        requiredGrades.hasOwnProperty(subject)
       );
 
       if (!allSubjectsPresent) {
@@ -305,21 +280,26 @@ const fetchCoursesByCriteria = async (
 
       // Retrieve the Z-Score specific to the district
       const districtZScore = course.Z_SCORE[district];
-      const isZScoreValid = !zScore || (districtZScore && districtZScore <= parseFloat(zScore));
+      const isZScoreValid =
+        !zScore || (districtZScore && districtZScore <= parseFloat(zScore));
 
       // Normalize and check interest if provided
       const normalizedCourseInterests = course.INTEREST.map(normalizeText);
 
       // Handle both Sinhala and English text
-      const interestMatches = !normalizedInterestArray.length || 
-        normalizedCourseInterests.some(keyword => 
-          normalizedInterestArray.some(interest => 
-            interest.includes(keyword) || 
-            keyword.toLowerCase().includes(interest.toLowerCase())
+      const interestMatches =
+        !normalizedInterestArray.length ||
+        normalizedCourseInterests.some((keyword) =>
+          normalizedInterestArray.some(
+            (interest) =>
+              interest.includes(keyword) ||
+              keyword.toLowerCase().includes(interest.toLowerCase())
           )
         );
 
-      console.log(`Course: ${course.COURSE} - Interest Matches: ${interestMatches}`);
+      console.log(
+        `Course: ${course.COURSE} - Interest Matches: ${interestMatches}`
+      );
 
       return matchGrades && isZScoreValid && interestMatches;
     });
@@ -331,12 +311,9 @@ const fetchCoursesByCriteria = async (
   }
 };
 
-
 const normalizeText = (text) => {
-  return text.normalize('NFC'); // Choose the normalization form as needed
+  return text.normalize("NFC"); // Choose the normalization form as needed
 };
-
-
 
 const deleteCourseById = async (courseId) => {
   try {
@@ -348,7 +325,39 @@ const deleteCourseById = async (courseId) => {
   }
 };
 
+const fetchNotification = async () => {
+  try {
+    const notificationCollection = collection(db, "notifications");
+    const notificationSnapshot = await getDocs(notificationCollection);
+    const notificationList = notificationSnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
 
+    return { success: true, data: notificationList };
+  } catch (error) {
+    return { success: false, msg: error.message };
+  }
+};
+
+const viewNotification = async (id) => {
+  try {
+    const notificationDoc = doc(db, "notifications", id);
+    const notificationSnapshot = await getDoc(notificationDoc);
+    if (notificationSnapshot.exists()) {
+      const newData = {
+        read: true,
+      };
+      await updateDoc(notificationDoc, newData);
+
+      return { success: true, msg: "Notification read successfully" };
+    } else {
+      return { success: false, msg: "Notification not found" };
+    }
+  } catch (error) {
+    return { success: false, msg: error.message };
+  }
+};
 
 export {
   fetchCourses,
@@ -359,5 +368,7 @@ export {
   fetchCoursesByCriteria,
   fetchCourseByUNICODE,
   deleteCourseById,
-  fetchCoursesByName
+  fetchCoursesByName,
+  fetchNotification,
+  viewNotification,
 };
