@@ -174,6 +174,68 @@ export const declineAdRequest = async (id,email,uid) => {
 
 };
 
+export const acceptAd = async (id,uid) => {
+
+  try {
+    const adDocref = doc(db, "advertisements", id);
+    const adDoc = await getDoc(adDocref);
+
+    if (adDoc.exists()) {
+      const newfields = {
+        accepted: true,
+        pending: false,
+      };
+      await updateDoc(adDocref, newfields);
+
+
+      await createNotification({
+        type: "ad_accepted",
+        title:"Advertisement Accepted",
+        message: `Your advertisement has been accepted.`,
+        userId: uid, 
+      });
+
+      return { success: true, msg: "Advertisment accepted" };
+    } else {
+      return { success: false, msg: "Document does not exist" };
+    }
+  } catch (error) {
+    return { success: false, msg: error.message };
+  }
+};
+
+
+export const declineAd = async (id,uid) => {
+
+  try {
+    const adDocref = doc(db, "advertisements", id);
+    const adDoc = await getDoc(adDocref);
+
+    if (adDoc.exists()) {
+      const newfields = {
+        accepted: false,
+        pending: false,
+      };
+      await updateDoc(adDocref, newfields);
+
+  
+      await createNotification({
+        type: "ad_declined",
+        title:"Advertisement Declined",
+        message: `Your advertisement has been declined.`,
+        userId: uid, 
+      });
+
+      return { success: true, msg: "Advertisement accepted" };
+    } else {
+      return { success: false, msg: "Document does not exist" };
+    }
+  } catch (error) {
+    return { success: false, msg: error.message };
+  }
+
+};
+
 
 export const createNotification = async ({ type, message, userId ,title}) => {
   try {

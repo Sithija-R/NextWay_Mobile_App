@@ -43,10 +43,10 @@ export default function Profile() {
 
           setPendingReq(usersAds);
         } else {
-          console.log("No ads found");
+          console.log("No advertiser found");
         }
       } catch (error) {
-        console.error("Error fetching ads:", error);
+        console.error("Error fetching advertiser:", error);
       }
     };
     fetchAds();

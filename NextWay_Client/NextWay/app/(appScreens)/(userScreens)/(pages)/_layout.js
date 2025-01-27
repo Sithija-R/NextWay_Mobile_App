@@ -141,20 +141,21 @@ export default function _layout() {
         }}
       />
 
-      <Drawer.Screen
-        name="about"
+<Drawer.Screen
+        name="languageChange"
         options={{
-          drawerLabel: "About",
-          title: "About",
+          drawerLabel: "Language",
+          title: "Language",
           headerShown: false,
           drawerIcon: ({ size, color }) => (
-            <Ionicons name="information-circle" size={size} color={color} />
+            <MaterialIcons name="language" size={size} color={color} />
           ),
           drawerLabelStyle: {
             fontSize: 18,
           },
         }}
       />
+    
       <Drawer.Screen
         name="(settings)"
         options={{
@@ -169,20 +170,22 @@ export default function _layout() {
           },
         }}
       />
-      <Drawer.Screen
-        name="languageChange"
+   
+  <Drawer.Screen
+        name="about"
         options={{
-          drawerLabel: "Language",
-          title: "Language",
+          drawerLabel: "About",
+          title: "About",
           headerShown: false,
           drawerIcon: ({ size, color }) => (
-            <MaterialIcons name="language" size={size} color={color} />
+            <Ionicons name="information-circle" size={size} color={color} />
           ),
           drawerLabelStyle: {
             fontSize: 18,
           },
         }}
       />
+
     </Drawer>
   );
 }

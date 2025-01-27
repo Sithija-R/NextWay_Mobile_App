@@ -12,28 +12,43 @@ const MainLayout = () => {
 
   // Effect to handle redirection logic based on authentication and verification state
   useEffect(() => {
-    if (typeof isAuthenticated == "undefined") {
+    if (typeof isAuthenticated === "undefined") {
       return;
     }
-
-    const inApp = segments[0] == "appScreens";
-
-    // Handle user redirection based on authentication and verification state
-    if (isAuthenticated && !inApp) {
-      if (isVerified) {
-        if (userRole === "admin") {
-          router.replace("advertiserreq");
+  console.log("hiy")
+    const inApp = segments[0] === "appScreens";
+  
+    // Function to handle user redirection
+    const handleRedirection = () => {
+      if (isAuthenticated && !inApp) {
+        if (isVerified) {
+          if (userRole === "admin") {
+            router.replace("dashboard");
+          } else {
+            router.replace("home");
+          }
         } else {
-          router.replace("advertisements");
+          router.replace("IsVerified");
         }
-      } else {
-        router.replace("IsVerified");
+      } else if (isAuthenticated === false) {
+        // Redirect to sign-in screen if the user is not authenticated
+        router.replace("signIn");
       }
-    } else if (isAuthenticated === false) {
-      // Redirect to sign-in screen if the user is not authenticated
-      router.replace("signIn");
-    }
-  }, [isAuthenticated, userRole, isVerified]);
+    };
+  
+    // Run redirection logic immediately
+    handleRedirection();
+  
+    // Set up an interval to run redirection logic every minute
+    const interval = setInterval(() => {
+      console.log("Running redirection check...");
+      handleRedirection();
+    }, 60000); 
+
+    
+    return () => clearInterval(interval);
+  }, [isAuthenticated, userRole, isVerified, segments, router]);
+  
 
   return <Slot />;
 };
