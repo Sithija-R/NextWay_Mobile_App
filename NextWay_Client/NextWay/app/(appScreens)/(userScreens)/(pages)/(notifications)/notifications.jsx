@@ -129,21 +129,23 @@ export default function Notifications() {
 
                       borderWidth:
                         notification.type === "ad_request_declined" ||
-                        notification.type === "ad_request_accepted"
+                        notification.type === "ad_request_accepted" ||
+                        notification.type === "ad_declined" ||
+                        notification.type === "ad_accepted"
                           ? 2
                           : 0,
                       borderColor:
-                        notification.type === "ad_request_declined"
+                        notification.type === "ad_request_declined" || notification.type === "ad_declined" 
                           ? "#FFCCCC"
-                          : notification.type === "ad_request_accepted"
+                          : notification.type === "ad_request_accepted" || notification.type === "ad_accepted"
                           ? "#CCFFCC"
                           : "transparent",
 
                       // Dynamic background color
                       backgroundColor:
-                        notification.type === "ad_request_declined"
+                        notification.type === "ad_request_declined" ||  notification.type === "ad_declined" 
                           ? "#FFF5F5"
-                          : notification.type === "ad_request_accepted"
+                          : notification.type === "ad_request_accepted" || notification.type === "ad_accepted"
                           ? "#F5FFF5"
                           : "#FFFFFF",
 

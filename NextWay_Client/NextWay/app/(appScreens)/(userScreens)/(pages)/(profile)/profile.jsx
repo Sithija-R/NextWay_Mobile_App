@@ -119,7 +119,7 @@ export default function Profile() {
                 onPress={() => {
                   router.push("advertiserrequest");
                 }}
-                title="Advertiser Request"
+                title={t("advertiser-request")}
                 contentStyle={{
                   paddingHorizontal: 10, 
                 }}

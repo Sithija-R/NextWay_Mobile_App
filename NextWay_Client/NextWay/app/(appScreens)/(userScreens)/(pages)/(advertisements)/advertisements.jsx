@@ -38,8 +38,9 @@ import { useAuth } from "../../../../../context/authContext";
 
 export default function Advertisements() {
   const router = useRouter();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { user } = useAuth();
+  const currentLan = i18n.language;
 
   const [ads, setAds] = useState([]);
   const [usersAds, setUsersAds] = useState([]);
@@ -50,22 +51,38 @@ export default function Advertisements() {
   const [editModelVisible, setEditModelVisible] = useState(false);
   const [flag, setFlag] = useState(false);
 
-  const [newAdData, setNewAdData] = useState({
-    title: "",
+  const initialState = {
+    title_en: "",
+    title_sin: "",
+    title_tam: "",
     web: "",
     contact: "",
-    description: "",
-    userId: auth.currentUser?.uid,
+    description_en: "",
+    description_sin: "",
+    description_tam: "",
+    userId: auth.currentUser?.uid || "",
     accepted: false,
     pending: true,
-  });
+  };
+
+  const [newAdData, setNewAdData] = useState(initialState);
+  const handleInputChange = (field, value) => {
+    setNewAdData((prevState) => ({
+      ...prevState,
+      [field]: value,
+    }));
+  };
 
   const [editImage, setEditImage] = useState(null);
   const [editAdData, seteditAdData] = useState({
-    title: "",
+    title_en: "",
+    title_sin: "",
+    title_tam: "",
     web: "",
     contact: "",
-    description: "",
+    description_en: "",
+    description_sin: "",
+    description_tam: "",
     userId: auth.currentUser?.uid,
     accepted: false,
     pending: true,
@@ -138,7 +155,8 @@ export default function Advertisements() {
         return;
       }
       setLoading(true);
-      let imageUrl = "";
+      let imageUrl =
+        "https://adaptcommunitynetwork.org/wp-content/uploads/2022/01/ef3-placeholder-image.jpg";
 
       if (selectedImage) {
         const response = await fetch(selectedImage);
@@ -173,9 +191,9 @@ export default function Advertisements() {
       }
 
       setCreateModalVisible(false);
-      setNewAdData(null);
+      setNewAdData(initialState);
       setSelectedImage(null);
-      setSelectedAd(null)
+      setSelectedAd(null);
       setFlag(!flag);
     } catch (error) {
       console.error("Error creating advertisement:", error);
@@ -206,15 +224,14 @@ export default function Advertisements() {
               try {
                 const res = await deleteAdvertisement(id);
                 if (res.success) {
-
                   Alert.alert(
                     "Success",
                     "Your advertisement has been deleted.",
                     [{ text: "OK" }],
                     { cancelable: false }
                   );
-                  setSelectedAd(null)
-                  setFlag(!flag)
+                  setSelectedAd(null);
+                  setFlag(!flag);
                 }
               } catch (error) {
                 console.error("Error deleting item:", error);
@@ -224,8 +241,6 @@ export default function Advertisements() {
         ],
         { cancelable: false }
       );
-
-    
     } catch (error) {
       console.error("Error deleting item:", error);
     }
@@ -233,10 +248,14 @@ export default function Advertisements() {
 
   const handleEdit = async (ad) => {
     seteditAdData({
-      title: ad.title || "",
+      title_en: ad.title_en || "",
+      title_sin: ad.title_sin || "",
+      title_tam: ad.title_tam || "",
       web: ad.web || "",
       contact: ad.contact || "",
-      description: ad.description || "",
+      description_en: ad.description_en || "",
+      description_sin: ad.description_sin || "",
+      description_tam: ad.description_tam || "",
       userId: auth.currentUser?.uid,
       accepted: false,
       pending: true,
@@ -254,7 +273,7 @@ export default function Advertisements() {
         return;
       }
       setLoading(true);
-      let imageUrl = "";
+      let imageUrl = editAdData?.image || "";
 
       if (editImage) {
         const response = await fetch(editImage);
@@ -266,8 +285,6 @@ export default function Advertisements() {
 
         await uploadBytes(imageref, blob);
         imageUrl = await getDownloadURL(imageref);
-
-        seteditAdData({ ...editAdData, image: imageUrl });
       }
       const { id, ...restOfAdData } = editAdData;
 
@@ -297,7 +314,7 @@ export default function Advertisements() {
       seteditAdData(null);
       setEditImage(null);
       setFlag(!flag);
-      setSelectedAd(null)
+      setSelectedAd(null);
     } catch (error) {
       console.error("Error creating advertisement:", error);
       Alert.alert(
@@ -336,7 +353,7 @@ export default function Advertisements() {
           <Text
             style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: "600" }}
           >
-            {t("Advertisements")}
+            {t("advertisement")}
           </Text>
         </Pressable>
 
@@ -375,105 +392,111 @@ export default function Advertisements() {
                 fontWeight: "bold",
               }}
             >
-              Create a new Ad
+              {t("create_ad")}
             </Text>
           </Pressable>
         ) : null}
 
         <ScrollView style={{ marginBottom: hp(1) }}>
-          {user?.isAdvertiser && usersAds.length > 0
-            ? usersAds?.map((ad) => (
-                <Pressable key={ad.id} onPress={() => openModal(ad)}>
-                  <View style={styles.imageContainer}>
-                    <Image style={styles.image} source={{ uri: ad.image }} />
+          {user?.isAdvertiser && usersAds.length > 0 ? (
+            usersAds?.map((ad) => (
+              <Pressable key={ad.id} onPress={() => openModal(ad)}>
+                <View style={styles.imageContainer}>
+                  <Image style={styles.image} source={{ uri: ad.image }} />
 
-                    <LinearGradient
-                      colors={["transparent", "rgba(0, 0, 0, 0.8)"]}
-                      style={styles.topGradientOverlay}
-                      start={{ x: 0, y: 1 }}
-                      end={{ x: 0, y: 0 }}
-                    >
-                      <Text style={styles.title}>{ad.title}</Text>
-                      {ad.pending ? (
-                        <Text
-                          style={{
-                            position: "absolute",
-                            top: hp(1),
-                            right: wp(2),
-                            color: "#ffa012",
-                            fontWeight: "bold",
-                            fontSize: hp(1.9),
-                          }}
-                        >
-                          Pending
-                        </Text>
-                      ) : ad.accepted ? (
-                        <Text
-                          style={{
-                            position: "absolute",
-                            top: hp(1),
-                            right: wp(2),
-                            color: "#28ed35",
-                            fontWeight: "bold",
-                            fontSize: hp(1.9),
-                          }}
-                        >
-                          Accepted
-                        </Text>
-                      ) : (
-                        <Text
-                          style={{
-                            position: "absolute",
-                            top: hp(1),
-                            right: wp(2),
-                            color: "red",
-                            fontWeight: "bold",
-                            fontSize: hp(1.9),
-                          }}
-                        >
-                          Declined
-                        </Text>
-                      )}
-                    </LinearGradient>
-
-                    <LinearGradient
-                      colors={["transparent", "rgba(0, 0, 0, 0.8)"]}
-                      style={styles.bottomGradientOverlay}
-                    >
-                      <Text style={styles.content}>
-                        {ad.description.slice(0, 150)}...
+                  <LinearGradient
+                    colors={["transparent", "rgba(0, 0, 0, 0.8)"]}
+                    style={styles.topGradientOverlay}
+                    start={{ x: 0, y: 1 }}
+                    end={{ x: 0, y: 0 }}
+                  >
+                    <Text style={styles.title}>
+                      {ad[`title_${currentLan}`]}
+                    </Text>
+                    {ad.pending ? (
+                      <Text
+                        style={{
+                          position: "absolute",
+                          top: hp(1),
+                          right: wp(2),
+                          color: "#ffa012",
+                          fontWeight: "bold",
+                          fontSize: hp(1.9),
+                        }}
+                      >
+                        Pending
                       </Text>
-                    </LinearGradient>
-                  </View>
-                </Pressable>
-              ))
-            : ads.length > 0
-            ? ads.map((ad) => (
-                <Pressable key={ad.id} onPress={() => openModal(ad)}>
-                  <View style={styles.imageContainer}>
-                    <Image style={styles.image} source={{ uri: ad.image }} />
-
-                    <LinearGradient
-                      colors={["transparent", "rgba(0, 0, 0, 0.5)"]}
-                      style={styles.topGradientOverlay}
-                      start={{ x: 0, y: 1 }}
-                      end={{ x: 0, y: 0 }}
-                    >
-                      <Text style={styles.title}>{ad.title}</Text>
-                    </LinearGradient>
-
-                    <LinearGradient
-                      colors={["transparent", "rgba(0, 0, 0, 0.8)"]}
-                      style={styles.bottomGradientOverlay}
-                    >
-                      <Text style={styles.content}>
-                        {ad.description.slice(0, 150)}...
+                    ) : ad.accepted ? (
+                      <Text
+                        style={{
+                          position: "absolute",
+                          top: hp(1),
+                          right: wp(2),
+                          color: "#28ed35",
+                          fontWeight: "bold",
+                          fontSize: hp(1.9),
+                        }}
+                      >
+                        Accepted
                       </Text>
-                    </LinearGradient>
-                  </View>
-                </Pressable>
-              ))
-            : <Text style={{fontSize:hp(2)}}>No advertisements found!</Text>}
+                    ) : (
+                      <Text
+                        style={{
+                          position: "absolute",
+                          top: hp(1),
+                          right: wp(2),
+                          color: "red",
+                          fontWeight: "bold",
+                          fontSize: hp(1.9),
+                        }}
+                      >
+                        Declined
+                      </Text>
+                    )}
+                  </LinearGradient>
+
+                  <LinearGradient
+                    colors={["transparent", "rgba(0, 0, 0, 0.8)"]}
+                    style={styles.bottomGradientOverlay}
+                  >
+                    <Text style={styles.content}>
+                      {ad[`description_${currentLan}`]?.slice(0, 150)}...
+                    </Text>
+                  </LinearGradient>
+                </View>
+              </Pressable>
+            ))
+          ) : ads.length > 0 ? (
+            ads.map((ad) => (
+              <Pressable key={ad.id} onPress={() => openModal(ad)}>
+                <View style={styles.imageContainer}>
+                  <Image style={styles.image} source={{ uri: ad.image }} />
+
+                  <LinearGradient
+                    colors={["transparent", "rgba(0, 0, 0, 0.5)"]}
+                    style={styles.topGradientOverlay}
+                    start={{ x: 0, y: 1 }}
+                    end={{ x: 0, y: 0 }}
+                  >
+                    <Text style={styles.title}>
+                      {ad[`title_${currentLan}`]}
+                    </Text>
+                  </LinearGradient>
+
+                  <LinearGradient
+                    colors={["transparent", "rgba(0, 0, 0, 0.8)"]}
+                    style={styles.bottomGradientOverlay}
+                  >
+                    <Text style={styles.content}>
+                      {ad[`description_${currentLan}`]?.slice(0, 150)}...
+                    </Text>
+                  </LinearGradient>
+                </View>
+              </Pressable>
+            ))
+          ) : (
+            <Text style={{ fontSize: hp(2) }}>{t("no_ads")}</Text>
+          )}
         </ScrollView>
       </View>
 
@@ -507,26 +530,37 @@ export default function Advertisements() {
               />
 
               <ScrollView style={{ marginTop: hp(2) }}>
-                <Text style={styles.modalTitle}>{selectedAd.title}</Text>
+                <Text style={styles.modalTitle}>
+                  {selectedAd[`title_${currentLan}`]}
+                </Text>
 
                 <Image
                   style={styles.modalImage}
                   source={{ uri: selectedAd.image }}
                 />
 
-                <Text style={styles.modalText}>Description:</Text>
+                <Text style={styles.modalText}>{t("description")}:</Text>
                 <Text style={styles.modalDescription}>
-                  {selectedAd.description}
+                  {selectedAd[`description_${currentLan}`]}
                 </Text>
 
-                <Text style={styles.modalText}>Contact:</Text>
-                <Text style={styles.modalDescription}>
-                  {selectedAd.contact}
-                </Text>
-
-                <Text style={styles.modalText}>Website:</Text>
+                <Text style={styles.modalText}>{t("contact")}:</Text>
                 <TouchableOpacity
-                  onPress={() => Linking.openURL(selectedAd.web)}
+                  onPress={() => Linking.openURL(`tel:${selectedAd.contact}`)}
+                >
+                  <Text
+                    style={[
+                      styles.modalDescription,
+                      { color: "blue", textDecorationLine: "underline" },
+                    ]}
+                  >
+                    {selectedAd.contact}
+                  </Text>
+                </TouchableOpacity>
+
+                <Text style={styles.modalText}>{t("website")}:</Text>
+                <TouchableOpacity
+                  onPress={() => Linking.openURL(`https://${selectedAd.web}`)}
                 >
                   <Text style={styles.modalLink}>{selectedAd.web}</Text>
                 </TouchableOpacity>
@@ -550,7 +584,7 @@ export default function Advertisements() {
                           alignItems: "center",
                         }}
                       >
-                        Edit
+                        {t("edit")}
                       </Text>
                     </TouchableOpacity>
                     <TouchableOpacity
@@ -572,7 +606,7 @@ export default function Advertisements() {
                           alignItems: "center",
                         }}
                       >
-                        Delete
+                        {t("delete")}
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -642,13 +676,42 @@ export default function Advertisements() {
                   borderRadius: 8, // Optional: rounded corners
                   marginBottom: hp(2), // Gap between inputs
                 }}
-                placeholder="Title"
-                value={newAdData?.title} // Correct value assignment
-                onChangeText={(text) =>
-                  setNewAdData({ ...newAdData, title: text })
-                } // Correct method to update the title
+                placeholder="Title (English)"
+                value={newAdData?.title_en} // Correct value assignment
+                onChangeText={(text) => handleInputChange("title_en", text)} // Use handleInputChange
               />
-
+              <TextInput
+                style={{
+                  fontSize: hp(2),
+                  paddingHorizontal: wp(3),
+                  paddingVertical: hp(1),
+                  flex: 1,
+                  width: "100%",
+                  borderWidth: 1, // Gray border
+                  borderColor: "#ccc", // Gray color for the border
+                  borderRadius: 8, // Optional: rounded corners
+                  marginBottom: hp(2), // Gap between inputs
+                }}
+                placeholder="Title (Sinhala)"
+                value={newAdData?.title_sin} // Correct value assignment
+                onChangeText={(text) => handleInputChange("title_sin", text)} // Use handleInputChange
+              />
+              <TextInput
+                style={{
+                  fontSize: hp(2),
+                  paddingHorizontal: wp(3),
+                  paddingVertical: hp(1),
+                  flex: 1,
+                  width: "100%",
+                  borderWidth: 1, // Gray border
+                  borderColor: "#ccc", // Gray color for the border
+                  borderRadius: 8, // Optional: rounded corners
+                  marginBottom: hp(2), // Gap between inputs
+                }}
+                placeholder="Title (Tamil)"
+                value={newAdData?.title_tam} // Correct value assignment
+                onChangeText={(text) => handleInputChange("title_tam", text)} // Use handleInputChange
+              />
               <TextInput
                 style={{
                   fontSize: hp(2),
@@ -660,14 +723,49 @@ export default function Advertisements() {
                   borderRadius: 8, // Optional: rounded corners
                   marginBottom: hp(2), // Gap between inputs
                 }}
-                placeholder="Description"
-                value={newAdData?.description}
+                placeholder="Description (English)"
+                value={newAdData?.description_en}
                 multiline={true}
                 onChangeText={(text) =>
-                  setNewAdData({ ...newAdData, description: text })
-                }
+                  handleInputChange("description_en", text)
+                } // Use handleInputChange
               />
-
+              <TextInput
+                style={{
+                  fontSize: hp(2),
+                  paddingHorizontal: wp(3),
+                  paddingVertical: hp(1),
+                  flex: 1,
+                  borderWidth: 1, // Gray border
+                  borderColor: "#ccc", // Gray color for the border
+                  borderRadius: 8, // Optional: rounded corners
+                  marginBottom: hp(2), // Gap between inputs
+                }}
+                placeholder="Description (Sinhala)"
+                value={newAdData?.description_sin}
+                multiline={true}
+                onChangeText={(text) =>
+                  handleInputChange("description_sin", text)
+                } // Use handleInputChange
+              />
+              <TextInput
+                style={{
+                  fontSize: hp(2),
+                  paddingHorizontal: wp(3),
+                  paddingVertical: hp(1),
+                  flex: 1,
+                  borderWidth: 1, // Gray border
+                  borderColor: "#ccc", // Gray color for the border
+                  borderRadius: 8, // Optional: rounded corners
+                  marginBottom: hp(2), // Gap between inputs
+                }}
+                placeholder="Description (Tamil)"
+                value={newAdData?.description_tam}
+                multiline={true}
+                onChangeText={(text) =>
+                  handleInputChange("description_tam", text)
+                } // Use handleInputChange
+              />
               <TextInput
                 style={{
                   fontSize: hp(2),
@@ -681,9 +779,7 @@ export default function Advertisements() {
                 }}
                 placeholder="Contact"
                 value={newAdData?.contact}
-                onChangeText={(text) =>
-                  setNewAdData({ ...newAdData, contact: text })
-                }
+                onChangeText={(text) => handleInputChange("contact", text)} // Use handleInputChange
               />
 
               <TextInput
@@ -699,11 +795,10 @@ export default function Advertisements() {
                 }}
                 placeholder="Website"
                 value={newAdData?.web}
-                autoCapitalize="false"
-                onChangeText={(text) =>
-                  setNewAdData({ ...newAdData, web: text })
-                }
+                autoCapitalize="none" // Corrected autoCapitalize to "none"
+                onChangeText={(text) => handleInputChange("web", text)} // Use handleInputChange
               />
+
               {loading ? (
                 <View
                   style={{ flexDirection: "row", justifyContent: "center" }}
@@ -729,7 +824,7 @@ export default function Advertisements() {
                       alignItems: "center",
                     }}
                   >
-                    Create
+                    {t("create")}
                   </Text>
                 </TouchableOpacity>
               )}
@@ -795,13 +890,48 @@ export default function Advertisements() {
                   borderRadius: 8,
                   marginBottom: hp(2),
                 }}
-                placeholder="Title"
-                value={editAdData?.title}
+                placeholder="Title (English)"
+                value={editAdData?.title_en}
                 onChangeText={(text) =>
-                  seteditAdData({ ...editAdData, title: text })
+                  seteditAdData({ ...editAdData, title_en: text })
                 }
               />
-
+              <TextInput
+                style={{
+                  fontSize: hp(2),
+                  paddingHorizontal: wp(3),
+                  paddingVertical: hp(1),
+                  flex: 1,
+                  width: "100%",
+                  borderWidth: 1,
+                  borderColor: "#ccc",
+                  borderRadius: 8,
+                  marginBottom: hp(2),
+                }}
+                placeholder="Title (Sinhala)"
+                value={editAdData?.title_sin}
+                onChangeText={(text) =>
+                  seteditAdData({ ...editAdData, title_sin: text })
+                }
+              />
+              <TextInput
+                style={{
+                  fontSize: hp(2),
+                  paddingHorizontal: wp(3),
+                  paddingVertical: hp(1),
+                  flex: 1,
+                  width: "100%",
+                  borderWidth: 1,
+                  borderColor: "#ccc",
+                  borderRadius: 8,
+                  marginBottom: hp(2),
+                }}
+                placeholder="Title (Tamil)"
+                value={editAdData?.title_tam}
+                onChangeText={(text) =>
+                  seteditAdData({ ...editAdData, title_tam: text })
+                }
+              />
               <TextInput
                 style={{
                   fontSize: hp(2),
@@ -813,11 +943,47 @@ export default function Advertisements() {
                   borderRadius: 8,
                   marginBottom: hp(2),
                 }}
-                placeholder="Description"
-                value={editAdData?.description}
+                placeholder="Description (English)"
+                value={editAdData?.description_en}
                 multiline={true}
                 onChangeText={(text) =>
-                  seteditAdData({ ...editAdData, description: text })
+                  seteditAdData({ ...editAdData, description_en: text })
+                }
+              />
+              <TextInput
+                style={{
+                  fontSize: hp(2),
+                  paddingHorizontal: wp(3),
+                  paddingVertical: hp(1),
+                  flex: 1,
+                  borderWidth: 1,
+                  borderColor: "#ccc",
+                  borderRadius: 8,
+                  marginBottom: hp(2),
+                }}
+                placeholder="Description (Sinhala)"
+                value={editAdData?.description_sin}
+                multiline={true}
+                onChangeText={(text) =>
+                  seteditAdData({ ...editAdData, description_sin: text })
+                }
+              />
+              <TextInput
+                style={{
+                  fontSize: hp(2),
+                  paddingHorizontal: wp(3),
+                  paddingVertical: hp(1),
+                  flex: 1,
+                  borderWidth: 1,
+                  borderColor: "#ccc",
+                  borderRadius: 8,
+                  marginBottom: hp(2),
+                }}
+                placeholder="Description (Tamil)"
+                value={editAdData?.description_tam}
+                multiline={true}
+                onChangeText={(text) =>
+                  seteditAdData({ ...editAdData, description_tam: text })
                 }
               />
 
@@ -882,7 +1048,7 @@ export default function Advertisements() {
                       alignItems: "center",
                     }}
                   >
-                    Save Changes
+                    {t("save_changes")}
                   </Text>
                 </TouchableOpacity>
               )}

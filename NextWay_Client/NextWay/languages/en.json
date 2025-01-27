@@ -40,6 +40,7 @@
   "save": "Save",
   "back": "Back",
 
+
   "username": "Username",
   "phone": "Phone",
   "edit-profile": "Edit Profile",
@@ -59,6 +60,15 @@
   "description":"Description",
   "contact_no":"Contact Number",
   "business_type":"Business Type",
+  "create_ad":"Create New Ad",
+  "no_ads":"No advertisements found!",
+  "contact":"Contact",
+  "website":"Website",
+  "edit":"Edit",
+  "delete":"Delete",
+  "create":"Create",
+  "advertiser-request":"Advertiser Request",
+  
   
   "streams": [
     {
