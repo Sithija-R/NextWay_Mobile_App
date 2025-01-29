@@ -1,17 +1,18 @@
 from flask import Flask, request, jsonify
 import pickle
 import numpy as np
+from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
-
+CORS(app, resources={r"/*": {"origins": "*"}})
 # Load your trained model
 model_path = "model.pkl"  # Ensure your model is saved as a .pkl file
 with open('model.pkl', "rb") as file:
     dct = pickle.load(file)
 
 # Define route to handle predictions
-@app.route("/predict", methods=["POST"])
+@app.route("/predict", methods=['POST'])
 def predict():
     try:
         # Get data from the request
@@ -36,8 +37,10 @@ def predict():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
+@app.route("/hello", methods=['GET'])
+def hello():
+    return jsonify({"message": "Hello, World!"})
 
 # Start the app
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+      app.run(host='127.0.0.1', port=5001, debug=True)
