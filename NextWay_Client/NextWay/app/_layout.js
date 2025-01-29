@@ -25,7 +25,7 @@ const MainLayout = () => {
           if (userRole === "admin") {
             router.replace("dashboard");
           } else {
-            router.replace("thirdscreen");
+            router.replace("home");
           }
         } else {
           router.replace("IsVerified");
