@@ -15,7 +15,7 @@ const MainLayout = () => {
     if (typeof isAuthenticated === "undefined") {
       return;
     }
-  console.log("hiy")
+
     const inApp = segments[0] === "appScreens";
   
     // Function to handle user redirection
@@ -25,7 +25,7 @@ const MainLayout = () => {
           if (userRole === "admin") {
             router.replace("dashboard");
           } else {
-            router.replace("home");
+            router.replace("thirdscreen");
           }
         } else {
           router.replace("IsVerified");
@@ -39,15 +39,7 @@ const MainLayout = () => {
     // Run redirection logic immediately
     handleRedirection();
   
-    // Set up an interval to run redirection logic every minute
-    const interval = setInterval(() => {
-      console.log("Running redirection check...");
-      handleRedirection();
-    }, 60000); 
-
-    
-    return () => clearInterval(interval);
-  }, [isAuthenticated, userRole, isVerified, segments, router]);
+  }, [isAuthenticated, userRole, isVerified]);
   
 
   return <Slot />;

@@ -68,6 +68,8 @@
   "delete":"Delete",
   "create":"Create",
   "advertiser-request":"Advertiser Request",
+  "answer_questions":"Answer the Questions",
+  "submit":"Submit",
   
   
   "streams": [
@@ -276,6 +278,108 @@
     {
       "label": "Vavuniya",
       "value": "Vavuniya"
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "label": "Do you enjoy solving logical puzzles and coding challenges?",
+      "options": [
+        { "key": 1, "label": "I love it.", "value": "I love it." },
+        { "key": 2, "label": "I'm somewhat interested.", "value": "I'm somewhat interested." },
+        { "key": 3, "label": "I prefer planning structures.", "value": "I prefer planning structures." },
+        { "key": 4, "label": "I like working hands-on with tools.", "value": "I like working hands-on with tools." }
+      ]
+    },
+    {
+      "key": "q2",
+      "label": "How do you feel about designing or building physical objects?",
+      "options": [
+        { "key": 1, "label": "It's okay but not my main interest.", "value": "It's okay but not my main interest." },
+        { "key": 2, "label": "I occasionally enjoy it.", "value": "I occasionally enjoy it." },
+        { "key": 3, "label": "I find it fascinating to plan and design structures.", "value": "I find it fascinating to plan and design structures." },
+        { "key": 4, "label": "I enjoy working in construction projects.", "value": "I enjoy working in construction projects." }
+      ]
+    },
+    {
+      "key": "q3",
+      "label": "Which type of environment do you prefer for work?",
+      "options": [
+        { "key": 1, "label": "Working on a computer.", "value": "Working on a computer." },
+        { "key": 2, "label": "A mix of indoor and outdoor work.", "value": "A mix of indoor and outdoor work." },
+        { "key": 3, "label": "Mostly outdoor work overseeing designs.", "value": "Mostly outdoor work overseeing designs." },
+        { "key": 4, "label": "Construction sites or hands-on physical work.", "value": "Construction sites or hands-on physical work." }
+      ]
+    },
+    {
+      "key": "q4",
+      "label": "How much do you enjoy working on collaborative digital projects?",
+      "options": [
+        { "key": 1, "label": "It's what I enjoy most.", "value": "It's what I enjoy most." },
+        { "key": 2, "label": "I like it but not always.", "value": "I like it but not always." },
+        { "key": 3, "label": "I prefer working on physical structures with a team.", "value": "I prefer working on physical structures with a team." },
+        { "key": 4, "label": "I prefer collaborative fieldwork at construction sites.", "value": "I prefer collaborative fieldwork at construction sites." }
+      ]
+    },
+    {
+      "key": "q5",
+      "label": "When tackling a problem, do you think about:",
+      "options": [
+        { "key": 1, "label": "Writing algorithms or software solutions.", "value": "Writing algorithms or software solutions." },
+        { "key": 2, "label": "Exploring different ways to balance design and implementation.", "value": "Exploring different ways to balance design and implementation." },
+        { "key": 3, "label": "How to design a functional structure.", "value": "How to design a functional structure." },
+        { "key": 4, "label": "How to efficiently manage resources at a construction site.", "value": "How to efficiently manage resources at a construction site." }
+      ]
+    },
+    {
+      "key": "q6",
+      "label": "What excites you the most about technology?",
+      "options": [
+        { "key": 1, "label": "Developing applications and systems.", "value": "Developing applications and systems." },
+        { "key": 2, "label": "Using tools for designing complex ideas.", "value": "Using tools for designing complex ideas." },
+        { "key": 3, "label": "Leveraging technology for innovative architecture.", "value": "Leveraging technology for innovative architecture." },
+        { "key": 4, "label": "Applying technology in construction equipment.", "value": "Applying technology in construction equipment." }
+      ]
+    },
+    {
+      "key": "q7",
+      "label": "How do you approach challenges?",
+      "options": [
+        { "key": 1, "label": "Analyzing and coding a solution.", "value": "Analyzing and coding a solution." },
+        { "key": 2, "label": "Balancing design and creative strategies.", "value": "Balancing design and creative strategies." },
+        { "key": 3, "label": "Planning and designing detailed projects.", "value": "Planning and designing detailed projects." },
+        { "key": 4, "label": "Practical troubleshooting in fieldwork.", "value": "Practical troubleshooting in fieldwork." }
+      ]
+    },
+    {
+      "key": "q8",
+      "label": "What interests you more?",
+      "options": [
+        { "key": 1, "label": "Understanding programming languages and software development.", "value": "Understanding programming languages and software development." },
+        { "key": 2, "label": "The intricacies of integrating designs.", "value": "The intricacies of integrating designs." },
+        { "key": 3, "label": "Creating durable infrastructure.", "value": "Creating durable infrastructure." },
+        { "key": 4, "label": "The hands-on process of building.", "value": "The hands-on process of building." }
+      ]
+    },
+    {
+      "key": "q9",
+      "label": "How much do you enjoy keeping up with trends in your area of interest?",
+      "options": [
+        { "key": 1, "label": "Following the latest in software.", "value": "Following the latest in software." },
+        { "key": 2, "label": "Learning new structural design techniques.", "value": "Learning new structural design techniques." },
+        { "key": 3, "label": "Studying architectural advancements.", "value": "Studying architectural advancements." },
+        { "key": 4, "label": "Exploring innovative construction practices.", "value": "Exploring innovative construction practices." }
+      ]
+    },
+    {
+      "key": "q10",
+      "label": "Where do you see yourself excelling the most?",
+      "options": [
+        { "key": 1, "label": "In software development or creating applications.", "value": "In software development or creating applications." },
+        { "key": 2, "label": "In bringing creative concepts to structural designs.", "value": "In bringing creative concepts to structural designs." },
+        { "key": 3, "label": "In planning infrastructure.", "value": "In planning infrastructure." },
+        { "key": 4, "label": "In supervising and contributing to construction work.", "value": "In supervising and contributing to construction work." }
+      ]
     }
   ]
 }
