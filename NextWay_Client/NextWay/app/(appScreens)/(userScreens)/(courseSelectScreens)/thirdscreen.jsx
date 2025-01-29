@@ -39,7 +39,7 @@ export default function firstScreen() {
   const currentLanguage = i18next.language;
 
   const zscoreRef = useRef("");
-  const interestRef = useRef("");
+  const [interest, setInterest] = useState("");
 
   const [selectedOptions, setSelectedOptions] = useState({
     zscore: false,
@@ -66,23 +66,34 @@ console.log("respones ",responses)
 
 
   const handleSubmit = async () => {
+    //for android emulator use "http://10.0.2.2:5001/predict"
+    //others "http://localhost:5001/predict"
     const apiUrl = "http://127.0.0.1:5001/predict";
     const data = { responses: responses };
-
+    console.log("Sending data: ", data);
+  
     try {
       const response = await axios.post(apiUrl, data);
-      interestRef.current = response.data.prediction;
-      Alert.alert("Prediction", `Your interest field is: ${interestRef.current}`);
+      
+      if (response.status === 200 && response.data?.prediction) {
+        setInterest(response.data.prediction);
+        Alert.alert("Prediction", `Interest : ${response.data.prediction}`);
+        setVisible(false)
+      } else {
+        throw new Error("Invalid response from backend");
+        setVisible(false)
+      }
     } catch (error) {
-      console.error(error);
+      console.error("API Error: ", error);
       Alert.alert("Error", "Failed to get prediction from backend.");
     }
   };
+  
 
 
   const handleNext = async () => {
     const zScore = selectedOptions.zscore ? zscoreRef.current : null;
-    const interest = selectedOptions.interest ? interestRef.current : null;
+    const interests = selectedOptions.interest ? interest : null;
 
     if (district === null) {
       Alert.alert(t("warning"), t("district-warning"));
@@ -102,11 +113,11 @@ console.log("respones ",responses)
       return;
     }
 
-    if (selectedOptions.interest && !interest) {
+    if (selectedOptions.interest && !interests) {
       Alert.alert(t("warning"), t("interest-warning"));
       return;
     }
-    if (selectedOptions.interest && typeof interest !== "string") {
+    if (selectedOptions.interest && typeof interests !== "string") {
       Alert.alert(t("warning"), "Interest must be a valid string.");
       return;
     }
@@ -297,6 +308,7 @@ console.log("respones ",responses)
               }}
               placeholder={t("enter-z")}
               editable={selectedOptions.zscore}
+             
             />
           </View>
 
@@ -343,7 +355,7 @@ console.log("respones ",responses)
 
             <View>
               <TextInput
-                onChangeText={(value) => (interestRef.current = value)}
+                onChangeText={(value) => setInterest(value)}
                 style={{
                   fontSize: hp(2),
                   backgroundColor: "#D9D9D9",
@@ -356,6 +368,7 @@ console.log("respones ",responses)
                 }}
                 placeholder={t("enter-interest")}
                 editable={selectedOptions.interest}
+                value={interest}
               />
               <Pressable onPress={()=>setVisible(true)}>
                 <Text
