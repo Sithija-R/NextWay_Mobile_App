@@ -1,59 +1,60 @@
-import { View, Text, Button, StyleSheet } from "react-native";
-import React from "react";
-import { useNavigation } from "@react-navigation/native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  Pressable,
+  Modal,
+  FlatList,
+  StyleSheet,
+} from "react-native";
+import React, { useState, useEffect } from "react";
+import { StatusBar } from "expo-status-bar";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
+import { useRouter } from "expo-router";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function About() {
-  const navigation = useNavigation(); // Access the navigation object
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
+export default function Settings() {
+  const router = useRouter();
+  const { t } = useTranslation();
+  
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>About</Text>
-      <Text style={styles.description}>
-        This is the About page of the app. It provides information about the app
-        and its features.
-      </Text>
-      <Text style={styles.subtitle}>Key Features:</Text>
-      <View style={styles.bulletContainer}>
-        <Text style={styles.bullet}>• Easy to use and navigate</Text>
-        <Text style={styles.bullet}>• Built with React Native and Expo</Text>
-        <Text style={styles.bullet}>• Supports multiple platforms</Text>
+    <View style={{ flex: 1 }}>
+      <StatusBar style="dark" />
+      <View style={{ flex: 1, alignItems: "flex-start" }}>
+        <Pressable
+          onPress={() => router.back()}
+          style={{
+            position: "absolute",
+            top: hp(5),
+            left: wp(2),
+            zIndex: 5,
+            flexDirection: "row",
+            marginTop: hp(3),
+            alignItems: "center",
+            width: "85%",
+          }}
+        >
+          <Ionicons name="arrow-back" size={hp(3.5)} color="black" />
+          <Text style={{ fontSize: wp(5), paddingLeft: wp(5) }}>
+            {t("back")}
+          </Text>
+        </Pressable>
+
+        <Image
+          style={{ width: hp(27), height: hp(20) }}
+          resizeMode="stretch"
+          source={require("../../../../assets/images/elipses.png")}
+        />
       </View>
-      <Button title="Go Back" onPress={() => navigation.goBack()} />
-      <View style={styles.spacer} />
-      <Button title="Learn More" onPress={() => {}} />
+      
     </View>
   );
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    justifyContent: "center",
-    alignItems: "flex-start",
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: "bold",
-    marginBottom: 10,
-  },
-  description: {
-    fontSize: 16,
-    marginBottom: 20,
-    lineHeight: 22,
-  },
-  subtitle: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginBottom: 10,
-  },
-  bulletContainer: {
-    marginBottom: 20,
-  },
-  bullet: {
-    fontSize: 16,
-    marginVertical: 5,
-  },
-  spacer: {
-    height: 20,
-  },
-});
