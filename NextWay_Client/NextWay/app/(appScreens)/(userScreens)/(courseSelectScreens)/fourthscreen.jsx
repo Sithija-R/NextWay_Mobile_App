@@ -19,9 +19,13 @@ import i18next from "i18next";
 import Ionicons from "@expo/vector-icons/Ionicons";
   
   export default function FirstScreen() {
+    // Initialize router for navigation
     const router = useRouter();
+
+    // Retrieve response and district parameters from route
     const { response, district} = useLocalSearchParams();
   
+    // Translation hook for multi-language support
     const {t}= useTranslation();
     const currentLanguage = i18next.language;
    

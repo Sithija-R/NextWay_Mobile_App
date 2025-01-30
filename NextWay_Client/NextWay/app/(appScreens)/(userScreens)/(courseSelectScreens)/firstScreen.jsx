@@ -16,17 +16,18 @@ import { useTranslation } from "react-i18next";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 
-
 export default function firstScreen() {
 
     const router = useRouter();
     const {t} = useTranslation();
-
+    
+   // State variables to manage year and stream selection
   const [year,setYear] = useState(null);
   const [stream,setStream] = useState(null);
   const [isYearFocus, setIsYearFocus] = useState(false);
   const [isStreamFocus, setIsStreamFocus] = useState(false);
 
+  // Data for dropdown selection
   const years = [
     { label: "2024", value: "2024" },
     { label: "2023", value: "2023" },
@@ -37,6 +38,7 @@ export default function firstScreen() {
 
   const streams = t('streams', { returnObjects: true });
 
+ // Function to handle navigation to the next screen  
 const handleNext=()=>{
 
    

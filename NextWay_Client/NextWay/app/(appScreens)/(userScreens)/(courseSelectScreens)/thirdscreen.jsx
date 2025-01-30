@@ -25,7 +25,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
-
+// Main functional component for the first screen
 export default function firstScreen() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -42,12 +42,13 @@ export default function firstScreen() {
     zscore: false,
     interest: false
   });
-
+   // State for selected options (z-score and interest)
   const [district, setDistrict] = useState(null);
   const [isDistrictFocus, setDistrictFocus] = useState(false);
 
   const districts =  t('districts', { returnObjects: true });
 
+  // Handles navigation to the next screen after validation
   const handleNext = async () => {
     const zScore = selectedOptions.zscore ? zscoreRef.current : null;
     const interest = selectedOptions.interest ? interestRef.current : null;
@@ -99,7 +100,7 @@ export default function firstScreen() {
   };
   
 
-
+  // Handles checkbox selection
   const handleCheckboxPress = (option) => {
     setSelectedOptions(prevOptions => ({
       ...prevOptions,
@@ -358,7 +359,7 @@ export default function firstScreen() {
   );
 }
 
-
+// Styles for UI elements
 const styles = StyleSheet.create({
   container: {
     width:'80%',
