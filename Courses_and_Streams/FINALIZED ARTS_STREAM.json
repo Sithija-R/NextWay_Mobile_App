@@ -1,0 +1,1381 @@
+[
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO",
+        "UNIVERSITY_tam": "கொழும்பு பல்கலைக்கழகம்",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at the University of Colombo provides a comprehensive education in the arts, preparing students for various careers in the cultural and social sectors.",
+        "DESCRIPTION_tam": "கொழும்பு பல்கலைக்கழகத்தில் கலைப் பட்டம் (வெற்றிப் பட்டம்) பணி நிகழ்ச்சி கலைப்பாடங்களில் விரிவான கல்வியளித்து, மாணவர்களை கலாச்சார மற்றும் சமூக துறைகளில் பல்வேறு வேலைவாய்ப்புகளுக்கு தயார் செய்கிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.7180",
+            "Gampaha": "1.7180",
+            "Kalutara": "1.7180",
+            "Matale": "1.7180",
+            "Kandy": "1.7180",
+            "Nuwara Eliya": "1.7180",
+            "Galle": "1.7180",
+            "Matara": "1.7180",
+            "Hambanthota": "1.7180",
+            "Jaffna": "1.7180",
+            "Kilinochchi": "1.7180",
+            "Mannar": "1.7180",
+            "Mullaitivu": "1.7180",
+            "Vavuniya": "1.7180",
+            "Trincomalee": "1.7180",
+            "Batticaloa": "1.7180",
+            "Ampara": "1.7180",
+            "Puttalam": "1.7180",
+            "Kurunagala": "1.7180",
+            "Anuradhapura": "1.7180",
+            "Polonnaruwa": "1.7180",
+            "Badulla": "1.7180",
+            "Monaragala": "1.7180",
+            "Kegalle": "1.7180",
+            "Ratnapura": "1.7180"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF PERADENIYA",
+        "UNIVERSITY_tam": "பேராதனைப் பல்கலைக்கழகம்",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at the University of Peradeniya offers a diverse curriculum in the arts, preparing students for careers in various fields.",
+        "DESCRIPTION_tam": "பேராதனைப் பல்கலைக்கழகத்தில் கலைப் பட்டம் (வெற்றிப் பட்டம்) பணி நிகழ்ச்சி கலைப்பாடங்களில் பலவகையான பாடத்திட்டத்தை வழங்கி, மாணவர்களை பல துறைகளில் வேலைவாய்ப்புகளுக்கு தயார் செய்கிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.5825",
+            "Gampaha": "1.5825",
+            "Kalutara": "1.5825",
+            "Matale": "1.5825",
+            "Kandy": "1.5825",
+            "Nuwara Eliya": "1.5825",
+            "Galle": "1.5825",
+            "Matara": "1.5825",
+            "Hambanthota": "1.5825",
+            "Jaffna": "1.5825",
+            "Kilinochchi": "1.5825",
+            "Mannar": "1.5825",
+            "Mullaitivu": "1.5825",
+            "Vavuniya": "1.5825",
+            "Trincomalee": "1.5825",
+            "Batticaloa": "1.5825",
+            "Ampara": "1.5825",
+            "Puttalam": "1.5825",
+            "Kurunagala": "1.5825",
+            "Anuradhapura": "1.5825",
+            "Polonnaruwa": "1.5825",
+            "Badulla": "1.5825",
+            "Monaragala": "1.5825",
+            "Kegalle": "1.5825",
+            "Ratnapura": "1.5825"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENAPURA",
+        "UNIVERSITY_tam": "ஸ்ரீ ஜெயவர்தனபுர பல்கலைக்கழகம்",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at the University of Sri Jayewardenapura focuses on developing critical thinking and analytical skills in the arts.",
+        "DESCRIPTION_tam": "ஸ்ரீ ஜெயவர்தனபுர பல்கலைக்கழகத்தில் கலைப் பட்டம் (வெற்றிப் பட்டம்) பணி நிகழ்ச்சி கலைப்பாடங்களில் முக்கியமான சிந்தனை மற்றும் பகுப்பாய்வு திறன்களை வளர்க்கிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.5310",
+            "Gampaha": "1.5310",
+            "Kalutara": "1.5310",
+            "Matale": "1.5310",
+            "Kandy": "1.5310",
+            "Nuwara Eliya": "1.5310",
+            "Galle": "1.5310",
+            "Matara": "1.5310",
+            "Hambanthota": "1.5310",
+            "Jaffna": "1.5310",
+            "Kilinochchi": "1.5310",
+            "Mannar": "1.5310",
+            "Mullaitivu": "1.5310",
+            "Vavuniya": "1.5310",
+            "Trincomalee": "1.5310",
+            "Batticaloa": "1.5310",
+            "Ampara": "1.5310",
+            "Puttalam": "1.5310",
+            "Kurunagala": "1.5310",
+            "Anuradhapura": "1.5310",
+            "Polonnaruwa": "1.5310",
+            "Badulla": "1.5310",
+            "Monaragala": "1.5310",
+            "Kegalle": "1.5310",
+            "Ratnapura": "1.5310"
+        },
+        "STREAM": "Arts"
+    },
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF KELANIYA",
+        "UNIVERSITY_tam": "களனி பல்கலைக்கழகம்",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at the University of Kelaniya provides students with a strong foundation in the humanities and social sciences.",
+        "DESCRIPTION_tam": "களனி பல்கலைக்கழகத்தில் கலைப் பட்டம் (வெற்றிப் பட்டம்) பணி நிகழ்ச்சி மாணவர்களுக்கு மனிதவியல் மற்றும் சமூக அறிவியல்களில் திடமான அடித்தளத்தை வழங்குகிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.4394",
+            "Gampaha": "1.4394",
+            "Kalutara": "1.4394",
+            "Matale": "1.4394",
+            "Kandy": "1.4394",
+            "Nuwara Eliya": "1.4394",
+            "Galle": "1.4394",
+            "Matara": "1.4394",
+            "Hambanthota": "1.4394",
+            "Jaffna": "1.4394",
+            "Kilinochchi": "1.4394",
+            "Mannar": "1.4394",
+            "Mullaitivu": "1.4394",
+            "Vavuniya": "1.4394",
+            "Trincomalee": "1.4394",
+            "Batticaloa": "1.4394",
+            "Ampara": "1.4394",
+            "Puttalam": "1.4394",
+            "Kurunagala": "1.4394",
+            "Anuradhapura": "1.4394",
+            "Polonnaruwa": "1.4394",
+            "Badulla": "1.4394",
+            "Monaragala": "1.4394",
+            "Kegalle": "1.4394",
+            "Ratnapura": "1.4394"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF JAFFNA",
+        "UNIVERSITY_tam": "யாழ்ப்பாணப் பல்கலைக்கழகம்",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at the University of Jaffna emphasizes cultural studies and community engagement.",
+        "DESCRIPTION_tam": "யாழ்ப்பாணப் பல்கலைக்கழகத்தில் கலைப் பட்டம் (வெற்றிப் பட்டம்) பணி நிகழ்ச்சி கலாச்சாரப் பாடங்கள் மற்றும் சமூக பங்காற்றலை முக்கியமாக கவனித்துள்ளது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.2062",
+            "Gampaha": "1.2062",
+            "Kalutara": "1.2062",
+            "Matale": "1.2062",
+            "Kandy": "1.2062",
+            "Nuwara Eliya": "1.2062",
+            "Galle": "1.2062",
+            "Matara": "1.2062",
+            "Hambanthota": "1.2062",
+            "Jaffna": "1.2062",
+            "Kilinochchi": "1.2062",
+            "Mannar": "1.2062",
+            "Mullaitivu": "1.2062",
+            "Vavuniya": "1.2062",
+            "Trincomalee": "1.2062",
+            "Batticaloa": "1.2062",
+            "Ampara": "1.2062",
+            "Puttalam": "1.2062",
+            "Kurunagala": "1.2062",
+            "Anuradhapura": "1.2062",
+            "Polonnaruwa": "1.2062",
+            "Badulla": "1.2062",
+            "Monaragala": "1.2062",
+            "Kegalle": "1.2062",
+            "Ratnapura": "1.2062"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF RUHUNA",
+        "UNIVERSITY_tam": "உருகுணை பல்கலைக்கழகம்",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at the University of Ruhuna provides a comprehensive education in the arts and social sciences.",
+        "DESCRIPTION_tam": "உருகுணை பல்கலைக்கழகத்தில் கலைப் பட்டம் (வெற்றிப் பட்டம்) பணி நிகழ்ச்சி கலை மற்றும் சமூக அறிவியலில் விரிவான கல்வி வழங்குகிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.3492",
+            "Gampaha": "1.3492",
+            "Kalutara": "1.3492",
+            "Matale": "1.3492",
+            "Kandy": "1.3492",
+            "Nuwara Eliya": "1.3492",
+            "Galle": "1.3492",
+            "Matara": "1.3492",
+            "Hambanthota": "1.3492",
+            "Jaffna": "1.3492",
+            "Kilinochchi": "1.3492",
+            "Mannar": "1.3492",
+            "Mullaitivu": "1.3492",
+            "Vavuniya": "1.3492",
+            "Trincomalee": "1.3492",
+            "Batticaloa": "1.3492",
+            "Ampara": "1.3492",
+            "Puttalam": "1.3492",
+            "Kurunagala": "1.3492",
+            "Anuradhapura": "1.3492",
+            "Polonnaruwa": "1.3492",
+            "Badulla": "1.3492",
+            "Monaragala": "1.3492",
+            "Kegalle": "1.3492",
+            "Ratnapura": "1.3492"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "EASTERN UNIVERSITY, SRI LANKA",
+        "UNIVERSITY_tam": "கிழக்கு பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at Eastern University, Sri Lanka focuses on developing critical thinking and analytical skills in the arts.",
+        "DESCRIPTION_tam": "கிழக்கு பல்கலைக்கழகத்தில் கலைப் பட்டம் (வெற்றிப் பட்டம்) பணி நிகழ்ச்சி கலைப் பரிசோதனை மற்றும் பகுப்பாய்வு திறன்களை வளர்க்கும்.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.1729",
+            "Gampaha": "1.1729",
+            "Kalutara": "1.1729",
+            "Matale": "1.1729",
+            "Kandy": "1.1729",
+            "Nuwara Eliya": "1.1729",
+            "Galle": "1.1729",
+            "Matara": "1.1729",
+            "Hambanthota": "1.1729",
+            "Jaffna": "1.1729",
+            "Kilinochchi": "1.1729",
+            "Mannar": "1.1729",
+            "Mullaitivu": "1.1729",
+            "Vavuniya": "1.1729",
+            "Trincomalee": "1.1729",
+            "Batticaloa": "1.1729",
+            "Ampara": "1.1729",
+            "Puttalam": "1.1729",
+            "Kurunagala": "1.1729",
+            "Anuradhapura": "1.1729",
+            "Polonnaruwa": "1.1729",
+            "Badulla": "1.1729",
+            "Monaragala": "1.1729",
+            "Kegalle": "1.1729",
+            "Ratnapura": "1.1729"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "தெற்கு கிழக்கு பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at South Eastern University of Sri Lanka emphasizes community engagement and cultural studies.",
+        "DESCRIPTION_tam": "தெற்கு கிழக்கு பல்கலைக்கழகத்தில் கலைப் பட்டம் (வெற்றிப் பட்டம்) சமூக ஈடுபாடு மற்றும் கலாச்சார ஆய்வுகளுக்கு முக்கியத்துவம் அளிக்கின்றது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.3144",
+            "Gampaha": "1.3144",
+            "Kalutara": "1.3144",
+            "Matale": "1.3144",
+            "Kandy": "1.3144",
+            "Nuwara Eliya": "1.3144",
+            "Galle": "1.3144",
+            "Matara": "1.3144",
+            "Hambanthota": "1.3144",
+            "Jaffna": "1.3144",
+            "Kilinochchi": "1.3144",
+            "Mannar": "1.3144",
+            "Mullaitivu": "1.3144",
+            "Vavuniya": "1.3144",
+            "Trincomalee": "1.3144",
+            "Batticaloa": "1.3144",
+            "Ampara": "1.3144",
+            "Puttalam": "1.3144",
+            "Kurunagala": "1.3144",
+            "Anuradhapura": "1.3144",
+            "Polonnaruwa": "1.3144",
+            "Badulla": "1.3144",
+            "Monaragala": "1.3144",
+            "Kegalle": "1.3144",
+            "Ratnapura": "1.3144"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS",
+        "COURSE_tam": "கலை",
+        "UNIVERSITY_eng": "RAJARATA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "ராஜரட்ட பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "O19A",
+        "SUBJECTS_eng": "Any 3 arts subjects",
+        "SUBJECTS_tam": "எந்த 3 கலை பாடங்களும்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Teacher",
+            "Social Worker",
+            "Researcher",
+            "Cultural Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆசிரியர்",
+            "சமூக பணியாளர்",
+            "ஆய்வாளர்",
+            "கலை ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours program at Rajarata University of Sri Lanka provides a strong foundation in the humanities and social sciences.",
+        "DESCRIPTION_tam": "ராஜரட்ட பல்கலைக்கழகத்தின் கலை பட்டம் (வெற்றிப் பட்டம்) சமூக அறிவியல் மற்றும் மனிதநேயம் தொடர்பான துறைமுகத்தை வலுப்படுத்துகிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.3190",
+            "Gampaha": "1.3190",
+            "Kalutara": "1.3190",
+            "Matale": "1.3190",
+            "Kandy": "1.3190",
+            "Nuwara Eliya": "1.3190",
+            "Galle": "1.3190",
+            "Matara": "1.3190",
+            "Hambanthota": "1.3190",
+            "Jaffna": "1.3190",
+            "Kilinochchi": "1.3190",
+            "Mannar": "1.3190",
+            "Mullaitivu": "1.3190",
+            "Vavuniya": "1.3190",
+            "Trincomalee": "1.3190",
+            "Batticaloa": "1.3190",
+            "Ampara": "1.3190",
+            "Puttalam": "1.3190",
+            "Kurunagala": "1.3190",
+            "Anuradhapura": "1.3190",
+            "Polonnaruwa": "1.3190",
+            "Badulla": "1.3190",
+            "Monaragala": "1.3190",
+            "Kegalle": "1.3190",
+            "Ratnapura": "1.3190"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS (SP) - MASS MEDIA",
+        "COURSE_tam": "கலை (SP) - massa மீடியா",
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO (SRIPALEE CAMPUS)",
+        "UNIVERSITY_tam": "கொழும்பு பல்கலைக்கழகம் (ஸ்ரீபாலி கம்பஸ்)",
+        "UNICODE": "020S",
+        "SUBJECTS_eng": "Drama, Music, Dance, Journalism, Television Production, Public Relations, Statistics",
+        "SUBJECTS_tam": "நடனம், இசை, நடனம், பத்திரிகை, தொலைக்காட்சி தயாரிப்பு, பொது தொடர்புகள், புள்ளியியல்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "English": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
+        ],
+        "JOB_ROLES_eng": [
+            "Journalist",
+            "Media Producer",
+            "Public Relations Officer",
+            "Media Researcher"
+        ],
+        "JOB_ROLES_tam": [
+            "பத்திரிகையாளர்",
+            "மீடியா தயாரிப்பாளர்",
+            "பொது தொடர்பு அதிகாரி",
+            "மீடியா ஆய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours in Mass Media program at the Sripalee Campus of the University of Colombo prepares students for careers in media, communication, and journalism.",
+        "DESCRIPTION_tam": "கொழும்பு பல்கலைக்கழகத்தின் ஸ்ரீபாலி கம்பஸ் மாணவர்களுக்கு மீடியா, தொடர்பாடல் மற்றும் பத்திரிகைத் துறைகளில் தொழில் வாய்ப்புகளுக்கு தயாராக செய்கிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.2114",
+            "Gampaha": "1.2114",
+            "Kalutara": "1.2114",
+            "Matale": "1.2114",
+            "Kandy": "1.2114",
+            "Nuwara Eliya": "1.2114",
+            "Galle": "1.2114",
+            "Matara": "1.2114",
+            "Hambanthota": "1.2114",
+            "Jaffna": "1.2114",
+            "Kilinochchi": "1.2114",
+            "Mannar": "1.2114",
+            "Mullaitivu": "1.2114",
+            "Vavuniya": "1.2114",
+            "Trincomalee": "1.2114",
+            "Batticaloa": "1.2114",
+            "Ampara": "1.2114",
+            "Puttalam": "1.2114",
+            "Kurunagala": "1.2114",
+            "Anuradhapura": "1.2114",
+            "Polonnaruwa": "1.2114",
+            "Badulla": "1.2114",
+            "Monaragala": "1.2114",
+            "Kegalle": "1.2114",
+            "Ratnapura": "1.2114"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS (SP) - PERFORMING ARTS",
+        "COURSE_tam": "கலை (SP) - நிகழும் கலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO (SRIPALEE CAMPUS)",
+        "UNIVERSITY_tam": "கொழும்பு பல்கலைக்கழகம் (ஸ்ரீபாலி கம்பஸ்)",
+        "UNICODE": "041S",
+        "SUBJECTS_eng": "Drama, Music, Dance, Journalism, Television Production, Public Relations, Statistics",
+        "SUBJECTS_tam": "நடனம், இசை, நடனம், பத்திரிகை, தொலைக்காட்சி தயாரிப்பு, பொது தொடர்புகள், புள்ளியியல்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "English": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Performing Arts",
+            "நிகழும் கலை",
+            "Dance",
+            "நடனம்",
+            "Theatre",
+            "திரையரங்கம்"
+        ],
+        
+        "JOB_ROLES_eng": [
+            "Actor",
+            "Dancer",
+            "Theatre Director",
+            "Choreographer"
+        ],
+        "JOB_ROLES_tam": [
+            "நடிகர்",
+            "நடனக்கலைஞர்",
+            "திரையரங்க இயக்குனர்",
+            "நடன இயக்குனர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours in Performing Arts program at the Sripalee Campus of the University of Colombo focuses on developing skills in drama, dance, and other performing arts.",
+        "DESCRIPTION_tam": "கொழும்பு பல்கலைக்கழகத்தின் ஸ்ரீபாலி கம்பஸ் நிகழும் கலை, நடனம் மற்றும் பிற நிகழும் கலைகளில் திறன்களை மேம்படுத்தும் முனைவர் பட்ட கலை பட்டப்படிப்பை வழங்குகிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.0876",
+            "Gampaha": "1.0876",
+            "Kalutara": "1.0876",
+            "Matale": "1.0876",
+            "Kandy": "1.0876",
+            "Nuwara Eliya": "1.0876",
+            "Galle": "1.0876",
+            "Matara": "1.0876",
+            "Hambanthota": "1.0876",
+            "Jaffna": "1.0876",
+            "Kilinochchi": "1.0876",
+            "Mannar": "1.0876",
+            "Mullaitivu": "1.0876",
+            "Vavuniya": "1.0876",
+            "Trincomalee": "1.0876",
+            "Batticaloa": "1.0876",
+            "Ampara": "1.0876",
+            "Puttalam": "1.0876",
+            "Kurunagala": "1.0876",
+            "Anuradhapura": "1.0876",
+            "Polonnaruwa": "1.0876",
+            "Badulla": "1.0876",
+            "Monaragala": "1.0876",
+            "Kegalle": "1.0876",
+            "Ratnapura": "1.0876"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "COMMUNICATION STUDIES",
+        "COURSE_tam": "தொடர்பு படிப்புகள்",
+        "UNIVERSITY_eng": "EASTERN UNIVERSITY (TRINCOMALEE CAMPUS)",
+        "UNIVERSITY_tam": "கிழக்கு பல்கலைக்கழகம் (திருகோணமலை கம்பஸ்)",
+        "UNICODE": "029W",
+        "SUBJECTS_eng": "Public Relations, Communication, Media Strategy, Advertising",
+        "SUBJECTS_tam": "பொது தொடர்புகள், தொடர்பு, ஊடகத் திட்டம், விளம்பரம்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Common General Paper": "30%"
+            },
+            "OtherQualifications": {
+                "Sinhala, Tamil or English": "C"
+            }
+        },
+        "INTEREST": [
+            "Public Relations",
+            "பொது தொடர்புகள்",
+            "Media Communication",
+            "ஊடக தொடர்பு",
+            "Advertising",
+            "விளம்பரம்",
+            "Media Strategy",
+            "ஊடகத் திட்டம்"
+        ],
+        
+        "JOB_ROLES_eng": [
+            "Communication Specialist",
+            "Public Relations Officer",
+            "Media Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "தொடர்பு நிபுணர்",
+            "பொது தொடர்பு அதிகாரி",
+            "ஊடக விசாரணையாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts in Communication Studies program at Eastern University focuses on effective communication strategies and media studies.",
+        "DESCRIPTION_tam": "கிழக்கு பல்கலைக்கழகத்தில் உள்ள தொடர்பு படிப்புகளின் பணி உத்தரவாதமான தொடர்பு உத்தி மற்றும் ஊடகப் படிப்புகளை ஊக்குவிக்கிறது.",
+        "DEGREE_TYPE": "B.A",
+        "DURATION": "3 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8282",
+            "Gampaha": "1.8282",
+            "Kalutara": "1.8282",
+            "Matale": "1.8282",
+            "Kandy": "1.8282",
+            "Nuwara Eliya": "1.8282",
+            "Galle": "1.8282",
+            "Matara": "1.8282",
+            "Hambanthota": "1.8282",
+            "Jaffna": "1.8282",
+            "Kilinochchi": "1.8282",
+            "Mannar": "1.8282",
+            "Mullaitivu": "1.8282",
+            "Vavuniya": "1.8282",
+            "Trincomalee": "1.8282",
+            "Batticaloa": "1.8282",
+            "Ampara": "1.8282",
+            "Puttalam": "1.8282",
+            "Kurunagala": "1.8282",
+            "Anuradhapura": "1.8282",
+            "Polonnaruwa": "1.8282",
+            "Badulla": "1.8282",
+            "Monaragala": "1.8282",
+            "Kegalle": "1.8282",
+            "Ratnapura": "1.8282"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "PEACE AND CONFLICT RESOLUTION",
+        "COURSE_tam": "சமாதானம் மற்றும் மோதல் தீர்வு",
+        "UNIVERSITY_eng": "UNIVERSITY OF KELANIYA",
+        "UNIVERSITY_tam": "களனிப் பல்கலைக்கழகம்",
+        "UNICODE": "031D",
+        "SUBJECTS_eng": "Communication, Law",
+        "SUBJECTS_tam": "தொடர்பு, சட்டம்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Common General Paper": "30%"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Conflict Resolution",
+            "மோதல் தீர்வு",
+            "Peace Advocacy",
+            "சமாதான ஆதரவு",
+            "Community Organizing",
+            "சமூக ஒழுங்கமைப்பு"
+        ],
+        
+        "JOB_ROLES_eng": [
+            "Conflict Resolution Specialist",
+            "Peace Advocate",
+            "Community Organizer"
+        ],
+        "JOB_ROLES_tam": [
+            "மோதல் தீர்வு நிபுணர்",
+            "சமாதான ஆதரவாளர்",
+            "சமூக ஒழுங்கமைப்பாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours in Peace and Conflict Resolution program at the University of Kelaniya prepares students to address issues of conflict and promote peace.",
+        "DESCRIPTION_tam": "களனிப் பல்கலைக்கழகத்தில் உள்ள சமாதானம் மற்றும் மோதல் தீர்வு பட்டப்படிப்பு, மாணவர்களை மோதல் பிரச்சனைகளை கையாள மற்றும் சமாதானத்தை ஊக்குவிப்பதற்கான திறன்கள் வழங்குகிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "0.9721",
+            "Gampaha": "0.9721",
+            "Kalutara": "0.9721",
+            "Matale": "0.9721",
+            "Kandy": "0.9721",
+            "Nuwara Eliya": "0.9721",
+            "Galle": "0.9721",
+            "Matara": "0.9721",
+            "Hambanthota": "0.9721",
+            "Jaffna": "0.9721",
+            "Kilinochchi": "0.9721",
+            "Mannar": "0.9721",
+            "Mullaitivu": "0.9721",
+            "Vavuniya": "0.9721",
+            "Trincomalee": "0.9721",
+            "Batticaloa": "0.9721",
+            "Ampara": "0.9721",
+            "Puttalam": "0.9721",
+            "Kurunagala": "0.9721",
+            "Anuradhapura": "0.9721",
+            "Polonnaruwa": "0.9721",
+            "Badulla": "0.9721",
+            "Monaragala": "0.9721",
+            "Kegalle": "0.9721",
+            "Ratnapura": "0.9721"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ISLAMIC STUDIES",
+        "COURSE_tam": "இஸ்லாமிய ஆய்வுகள்",
+        "UNIVERSITY_eng": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "தென் கிழக்கு பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "063J",
+        "SUBJECTS_eng": "Islam, Law",
+        "SUBJECTS_tam": "இஸ்லாம், சட்டம்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Islamic Studies",
+            "இஸ்லாமிய ஆய்வுகள்",
+            "Religious Teaching",
+            "சமயப் படிப்பு",
+            "Cultural Studies",
+             "கலாச்சார ஆய்வுகள்"
+        ],
+        
+        "JOB_ROLES_eng": [
+            "Islamic Scholar",
+            "Religious Teacher",
+            "Cultural Advisor"
+        ],
+        "JOB_ROLES_tam": [
+            "இஸ்லாமிய அறிஞர்",
+            "சமயக் கற்பித்தல்",
+            "கலாச்சார ஆலோசகர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts in Islamic Studies program at South Eastern University focuses on the study of Islam and its cultural contexts.",
+        "DESCRIPTION_tam": "தென் கிழக்கு பல்கலைக்கழகத்தில் உள்ள இஸ்லாமிய ஆய்வுகள் பட்டப்படிப்பு, இஸ்லாமிய சமயம் மற்றும் அதன் கலாச்சார சூழலைப் பற்றி ஆய்வு செய்யும்.",
+        "DEGREE_TYPE": "B.A",
+        "DURATION": "3 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.0912",
+            "Gampaha": "1.0912",
+            "Kalutara": "1.0912",
+            "Matale": "1.0912",
+            "Kandy": "1.0912",
+            "Nuwara Eliya": "1.0912",
+            "Galle": "1.0912",
+            "Matara": "1.0912",
+            "Hambanthota": "1.0912",
+            "Jaffna": "1.0912",
+            "Kilinochchi": "1.0912",
+            "Mannar": "1.0912",
+            "Mullaitivu": "1.0912",
+            "Vavuniya": "1.0912",
+            "Trincomalee": "1.0912",
+            "Batticaloa": "1.0912",
+            "Ampara": "1.0912",
+            "Puttalam": "1.0912",
+            "Kurunagala": "1.0912",
+            "Anuradhapura": "1.0912",
+            "Polonnaruwa": "1.0912",
+            "Badulla": "1.0912",
+            "Monaragala": "1.0912",
+            "Kegalle": "1.0912",
+            "Ratnapura": "1.0912"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARABIC LANGUAGE",
+        "COURSE_tam": "அரபிக் மொழி",
+        "UNIVERSITY_eng": "SOUTH EASTERN UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "தென் கிழக்கு பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "084J",
+        "SUBJECTS_eng": "Translation, Teaching Language",
+        "SUBJECTS_tam": "திருச்செய்தி, மொழி கற்பித்தல்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST_eng": [
+            "Arabic Language Studies",
+            "அரபிக் மொழி ஆய்வுகள்",
+            "Translation",
+            "மொழிபெயர்ப்பு",
+            "Language Teaching",
+            "மொழி கற்பித்தல்"
+
+        ],
+        
+        "JOB_ROLES_eng": [
+            "Arabic Language Teacher",
+            "Translator",
+            "Cultural Liaison"
+        ],
+        "JOB_ROLES_tam": [
+            "அரபிக் மொழி ஆசிரியர்",
+            "திருச்செய்தி செய்தியாளர்",
+            "கலாச்சார பேச்சாளர்த"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts in Arabic Language program at South Eastern University focuses on the Arabic language and its literature, preparing students for careers in translation and education.",
+        "DESCRIPTION_tam": "தென் கிழக்கு பல்கலைக்கழகத்தில் உள்ள அரபிக் மொழி பட்டப்படிப்பு, அரபிக் மொழி மற்றும் அதன் இலக்கியங்களை கவனமாக கற்பித்து, மாணவர்களுக்கு திருச்செய்தி மற்றும் கல்வியில் வேலை வாய்ப்புகளுக்கு தயாராக்குகிறது.",
+        "DEGREE_TYPE": "B.A",
+        "DURATION": "3 YEARS",
+        "Z_SCORE": {
+            "Colombo": "0.6697",
+            "Gampaha": "0.6697",
+            "Kalutara": "0.6697",
+            "Matale": "0.6697",
+            "Kandy": "0.6697",
+            "Nuwara Eliya": "0.6697",
+            "Galle": "0.6697",
+            "Matara": "0.6697",
+            "Hambanthota": "0.6697",
+            "Jaffna": "0.6697",
+            "Kilinochchi": "0.6697",
+            "Mannar": "0.6697",
+            "Mullaitivu": "0.6697",
+            "Vavuniya": "0.6697",
+            "Trincomalee": "0.6697",
+            "Batticaloa": "0.6697",
+            "Ampara": "0.6697",
+            "Puttalam": "0.6697",
+            "Kurunagala": "0.6697",
+            "Anuradhapura": "0.6697",
+            "Polonnaruwa": "0.6697",
+            "Badulla": "0.6697",
+            "Monaragala": "0.6697",
+            "Kegalle": "0.6697",
+            "Ratnapura": "0.6697"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "TEACHING ENGLISH AS A SECOND LANGUAGE (TESL)",
+        "COURSE_tam": "ஆங்கிலத்தை இரண்டாவது மொழியாக கற்பித்தல் (TESL)",
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENEPURA",
+        "UNIVERSITY_tam": "ஸ்ரீ ஜெயவர்தனேபுர பல்கலைக்கழகம்",
+        "UNICODE": "105C",
+        "SUBJECTS_eng": "Teaching",
+        "SUBJECTS_tam": "கற்பித்தல்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "English Language Education",
+            "ஆங்கில மொழி கல்வி",
+            "Curriculum Development",
+            "பாடத்திட்ட மேம்பாடு",
+            "ESL Teaching",
+            "ஆங்கிலத்தை இரண்டாவது மொழியாக கற்பித்தல்"
+        ],
+       
+        "JOB_ROLES_eng": [
+            "English Teacher",
+            "ESL Instructor",
+            "Curriculum Developer"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆங்கில ஆசிரியர்",
+            "ESL பயிற்சியாளர்",
+            "பாடத்திட்ட மேம்பாட்டாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours in Teaching English as a Second Language program at the University of Sri Jayewardenepura prepares students for careers in English language education.",
+        "DESCRIPTION_tam": "ஸ்ரீ ஜெயவர்தனேபுர பல்கலைக்கழகத்தில் ஆங்கிலம் இரண்டாவது மொழியாக கற்பித்தல் பட்டப்படிப்பு, மாணவர்களை இங்கிலீசு மொழி கல்வியில் தொழில் வாய்ப்புகளுக்காக தயாராக்குகிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.0633",
+            "Gampaha": "1.0633",
+            "Kalutara": "1.0633",
+            "Matale": "1.0633",
+            "Kandy": "1.0633",
+            "Nuwara Eliya": "1.0633",
+            "Galle": "1.0633",
+            "Matara": "1.0633",
+            "Hambanthota": "1.0633",
+            "Jaffna": "1.0633",
+            "Kilinochchi": "1.0633",
+            "Mannar": "1.0633",
+            "Mullaitivu": "1.0633",
+            "Vavuniya": "1.0633",
+            "Trincomalee": "1.0633",
+            "Batticaloa": "1.0633",
+            "Ampara": "1.0633",
+            "Puttalam": "1.0633",
+            "Kurunagala": "1.0633",
+            "Anuradhapura": "1.0633",
+            "Polonnaruwa": "1.0633",
+            "Badulla": "1.0633",
+            "Monaragala": "1.0633",
+            "Kegalle": "1.0633",
+            "Ratnapura": "1.0633"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "TEACHING ENGLISH AS A SECOND LANGUAGE (TESL)",
+        "COURSE_tam": "ஆங்கிலம் இரண்டாவது மொழியாக கற்பித்தல் (TESL)",
+        "UNIVERSITY_eng": "UNIVERSITY OF KELANIYA",
+        "UNIVERSITY_tam": "களனிப் பல்கலைக்கழகம்",
+        "UNICODE": "105D",
+        "SUBJECTS_eng": "Teaching",
+        "SUBJECTS_tam": "கற்பித்தல்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "English Language Education",
+            "ஆங்கில மொழி கல்வி",
+            "Curriculum Development",
+            "பாடத்திட்ட மேம்பாடு",
+            "ESL Teaching",
+            "ஆங்கிலத்தை இரண்டாவது மொழியாக கற்பித்தல்"
+        ],
+        
+        "JOB_ROLES_eng": [
+            "English Teacher",
+            "ESL Instructor",
+            "Curriculum Developer"
+        ],
+        "JOB_ROLES_tam": [
+            "ஆங்கில ஆசிரியர்",
+            "ESL பயிற்சியாளர்",
+            "பாடத்திட்ட மேம்பாட்டாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours in Teaching English as a Second Language program at the University of Kelaniya emphasizes practical teaching methods and language acquisition.",
+        "DESCRIPTION_tam": "களனிப் பல்கலைக்கழகத்தில் ஆங்கிலம் இரண்டாவது மொழியாக கற்பித்தல் பட்டப்படிப்பு, பயிற்சி கற்பித்தல் முறைகள் மற்றும் மொழி கற்றல் மீது முக்கியத்துவம் அளிக்கிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.0999",
+            "Gampaha": "1.0999",
+            "Kalutara": "1.0999",
+            "Matale": "1.0999",
+            "Kandy": "1.0999",
+            "Nuwara Eliya": "1.0999",
+            "Galle": "1.0999",
+            "Matara": "1.0999",
+            "Hambanthota": "1.0999",
+            "Jaffna": "1.0999",
+            "Kilinochchi": "1.0999",
+            "Mannar": "1.0999",
+            "Mullaitivu": "1.0999",
+            "Vavuniya": "1.0999",
+            "Trincomalee": "1.0999",
+            "Batticaloa": "1.0999",
+            "Ampara": "1.0999",
+            "Puttalam": "1.0999",
+            "Kurunagala": "1.0999",
+            "Anuradhapura": "1.0999",
+            "Polonnaruwa": "1.0999",
+            "Badulla": "1.0999",
+            "Monaragala": "1.0999",
+            "Kegalle": "1.0999",
+            "Ratnapura": "1.0999"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "SOCIAL WORK",
+        "COURSE_tam": "சமூக வேலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF PERADENIYA",
+        "UNIVERSITY_tam": "பேராதனைப் பல்கலைக்கழகம்",
+        "UNICODE": "112B",
+        "SUBJECTS_eng": "Mental Health, Community Development",
+        "SUBJECTS_tam": "மனநல, சமூக மேம்பாடு",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Mental Health",
+            "மனநல ஆரோக்கியம்",
+            "Community Services",
+            "சமூக சேவைகள்",
+            "Social Development",
+            "சமூக மேம்பாடு"
+        ],
+    
+        "JOB_ROLES_eng": [
+            "Social Worker",
+            "Community Development Officer",
+            "Counselor"
+        ],
+        "JOB_ROLES_tam": [
+            "சமூக பணியாளர்",
+            "சமூக மேம்பாட்டு அதிகாரி",
+            "ஆதரவாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours in Social Work program at the University of Peradeniya prepares students for careers in social services and community development.",
+        "DESCRIPTION_tam": "பேராதனைப் பல்கலைக்கழகத்தில் சமூக வேலைவியல் பட்டப்படிப்பு, சமூக சேவைகள் மற்றும் சமூக மேம்பாட்டில் வாழ்க்கைத் திறன்களை மேம்படுத்துகிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8014",
+            "Gampaha": "1.8014",
+            "Kalutara": "1.8014",
+            "Matale": "1.8014",
+            "Kandy": "1.8014",
+            "Nuwara Eliya": "1.8014",
+            "Galle": "1.8014",
+            "Matara": "1.8014",
+            "Hambanthota": "1.8014",
+            "Jaffna": "1.8014",
+            "Kilinochchi": "1.8014",
+            "Mannar": "1.8014",
+            "Mullaitivu": "1.8014",
+            "Vavuniya": "1.8014",
+            "Trincomalee": "1.8014",
+            "Batticaloa": "1.8014",
+            "Ampara": "1.8014",
+            "Puttalam": "1.8014",
+            "Kurunagala": "1.8014",
+            "Anuradhapura": "1.8014",
+            "Polonnaruwa": "1.8014",
+            "Badulla": "1.8014",
+            "Monaragala": "1.8014",
+            "Kegalle": "1.8014",
+            "Ratnapura": "1.8014"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "SOCIAL WORK",
+        "COURSE_tam": "சமூக வேலை",
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENEPURA",
+        "UNIVERSITY_tam": "ஜயவர்தனபுர பல்கலைக்கழகம்",
+        "UNICODE": "112C",
+        "SUBJECTS_eng": "Mental Health ,Community Development",
+        "SUBJECTS_tam": "மனநல ,சமூக மேம்பாடு",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Mental Health",
+            "மனநல ஆரோக்கியம்",
+            "Community Services",
+            "சமூக சேவைகள்",
+            "Social Development",
+            "சமூக மேம்பாடு"
+        ],
+        "JOB_ROLES_eng": [
+            "Social Worker",
+            "Community Development Officer",
+            "Counselor"
+        ],
+        "JOB_ROLES_tam": [
+            "சமூக பணியாளர்",
+            "சமூக மேம்பாட்டு அதிகாரி",
+            "ஆதரவாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts Honours in Social Work program at the University of Sri Jayewardenepura focuses on developing skills for effective social work practice.",
+        "DESCRIPTION_tam": "ஜயவர்தனபுர பல்கலைக்கழகத்தில் சமூக வேலைவியல் பட்டப்படிப்பு, திறமையான சமூக வேலை செயல்பாட்டுக்கான திறன்களை மேம்படுத்துகின்றது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.7223",
+            "Gampaha": "1.7223",
+            "Kalutara": "1.7223",
+            "Matale": "1.7223",
+            "Kandy": "1.7223",
+            "Nuwara Eliya": "1.7223",
+            "Galle": "1.7223",
+            "Matara": "1.7223",
+            "Hambanthota": "1.7223",
+            "Jaffna": "1.7223",
+            "Kilinochchi": "1.7223",
+            "Mannar": "1.7223",
+            "Mullaitivu": "1.7223",
+            "Vavuniya": "1.7223",
+            "Trincomalee": "1.7223",
+            "Batticaloa": "1.7223",
+            "Ampara": "1.7223",
+            "Puttalam": "1.7223",
+            "Kurunagala": "1.7223",
+            "Anuradhapura": "1.7223",
+            "Polonnaruwa": "1.7223",
+            "Badulla": "1.7223",
+            "Monaragala": "1.7223",
+            "Kegalle": "1.7223",
+            "Ratnapura": "1.7223"
+        },
+        "STREAM": "Arts"
+    },
+    
+    {
+        "COURSE_eng": "ARTS - INFORMATION TECHNOLOGY",
+        "COURSE_tam": "கலை - தகவல் தொழில்நுட்பம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENEPURA",
+        "UNIVERSITY_tam": "ஜயவர்தனபுர பல்கலைக்கழகம்",
+        "UNICODE": "128C",
+        "SUBJECTS_eng": "Information_technology",
+        "SUBJECTS_tam": "தகவல் தொழில்நுட்பம்",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Any_three_subjects": "S"
+            },
+            "OtherQualifications": {
+                "O/L_Mathematics": "C"
+            }
+        },
+        "INTEREST": [
+    "Software Development",
+    "மென்பொருள் மேம்பாடு",
+    "Data Analytics",
+    "தரவு பகுப்பாய்வு"
+    
+],
+
+
+    
+        "JOB_ROLES_eng": [
+            "IT Consultant",
+            "Software Developer",
+            "Data Analyst"
+        ],
+        "JOB_ROLES_tam": [
+            "தகவல் தொழில்நுட்ப ஆலோசகர்",
+            "மென்பொருள் உருவாக்குனர்",
+            "தரவு பகுப்பாய்வாளர்"
+        ],
+        "DESCRIPTION_eng": "The Bachelor of Arts in Information Technology program at the University of Sri Jayewardenepura provides a comprehensive education in IT principles and applications.",
+        "DESCRIPTION_tam": "ஜயவர்தனபுர பல்கலைக்கழகத்தில் தகவல் தொழில்நுட்ப பட்டப்படிப்பு, தகவல் தொழில்நுட்பக் கொள்கைகள் மற்றும் பயன்பாடுகளில் முழுமையான கல்வியை வழங்குகிறது.",
+        "DEGREE_TYPE": "B.A (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8484",
+            "Gampaha": "1.8484",
+            "Kalutara": "1.8484",
+            "Matale": "1.8484",
+            "Kandy": "1.8484",
+            "Nuwara Eliya": "1.8484",
+            "Galle": "1.8484",
+            "Matara": "1.8484",
+            "Hambanthota": "1.8484",
+            "Jaffna": "1.8484",
+            "Kilinochchi": "1.8484",
+            "Mannar": "1.8484",
+            "Mullaitivu": "1.8484",
+            "Vavuniya": "1.8484",
+            "Trincomalee": "1.8484",
+            "Batticaloa": "1.8484",
+            "Ampara": "1.8484",
+            "Puttalam": "1.8484",
+            "Kurunagala": "1.8484",
+            "Anuradhapura": "1.8484",
+            "Polonnaruwa": "1.8484",
+            "Badulla": "1.8484",
+            "Monaragala": "1.8484",
+            "Kegalle": "1.8484",
+            "Ratnapura": "1.8484"
+        },
+        "STREAM": "Arts"
+    }
+    
+]
