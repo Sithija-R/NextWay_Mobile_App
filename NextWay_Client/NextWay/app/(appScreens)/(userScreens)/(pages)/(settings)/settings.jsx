@@ -18,7 +18,7 @@ import { useRouter } from "expo-router";
 import CustomHeader from "../../../../../components/CustomHeader/customheader";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import { languageResources } from "../../../../../services/i18next";
+import { languageResources } from "../../../../../i18n";
 import languagesList from "../../../../../services/languagesList.json";
 
 export default function Settings() {

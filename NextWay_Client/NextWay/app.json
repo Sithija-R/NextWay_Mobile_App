@@ -1,6 +1,9 @@
 {
   "expo": {
     "name": "NextWay",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "slug": "NextWay",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,10 +19,14 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.nextway.client",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -33,10 +40,19 @@
         {
           "photosPermission": "The app accesses your photos to let you share them with your friends."
         }
-      ]
+      ],
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9e01594a-a6c5-4a57-8921-e4f17e7b543d"
+      }
     }
   }
 }
