@@ -210,7 +210,8 @@ export default function Home() {
 
         <View style={{ alignItems: "center", marginTop: hp(1) }}>
           <TouchableOpacity
-            onPress={() => router.push("firstScreen")}
+           onPress={() => router.push("(courseSelectScreens)")}
+
             style={{
               backgroundColor: "#149BC6",
               padding: hp(2),

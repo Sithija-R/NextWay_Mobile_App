@@ -52,7 +52,7 @@ export default function firstScreen() {
   const districts = t("districts", { returnObjects: true });
   const [responses, setResponses] = useState(Array(10).fill(""));
 
-console.log("respones ",responses)
+
 
   const questionarrie = t("questions", { returnObjects: true });
 
@@ -129,7 +129,7 @@ console.log("respones ",responses)
       subjects,
       results,
       zScore,
-      interest,
+      interests,
       district
     );
 
