@@ -78,6 +78,10 @@
   "language":"Language",
   "about":"About",
   "logout":"Logout",
+  "settings":"Settings",
+  "duration":"Duration",
+"qualifications":"Qualifications",
+"job_roles":"Job Roles",
   
   
   "streams": [

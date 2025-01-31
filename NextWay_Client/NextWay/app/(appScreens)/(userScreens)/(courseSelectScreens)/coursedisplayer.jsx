@@ -8,12 +8,14 @@ import {
   } from "react-native-responsive-screen";
   import Ionicons from '@expo/vector-icons/Ionicons';
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function CourseDetailsScreen() {
   const { course,district } = useLocalSearchParams();
 
   const router = useRouter();
 const{t}= useTranslation();
+const currentLanguage = i18next.language;
 
   const parsedCourse = course ? JSON.parse(course) : null;
 
@@ -67,16 +69,19 @@ const{t}= useTranslation();
           <View style={styles.container}>
       {parsedCourse ? (
         <>
-          <Text style={styles.title}>{parsedCourse.COURSE}    <Text style={{color:'#149BC6'}}>{parsedCourse.UNICODE}</Text></Text>
+          <Text style={styles.title}>{currentLanguage == 'en'?parsedCourse.COURSE_eng:parsedCourse[`COURSE_${currentLanguage}`]}    <Text style={{color:'#149BC6'}}>{parsedCourse.UNICODE}</Text></Text>
 
           <View style={{ width: wp(90),maxHeight:hp(67), backgroundColor: 'rgba(128, 128, 128, 0.2)', padding:hp(2.2), borderRadius:15 }}>
         <ScrollView contentContainerStyle={{ flexGrow: 1, paddingHorizontal: wp(2) }}>
 
 
-          <Text  style={styles.text}><Text style={styles.detailHeader}>Z-Score: </Text><Text style={styles.details}> {parsedCourse.Z_SCORE[district]}</Text> </Text>
-          <Text  style={styles.text}><Text style={styles.detailHeader}>University: </Text><Text style={styles.details} > {parsedCourse.UNIVERSITY}</Text> </Text>
-          <Text  style={styles.text}><Text style={styles.detailHeader}>Description: </Text><Text style={[styles.details,{fontWeight:'light'}]} > {parsedCourse.DESCRIPTION}</Text> </Text>
-          <Text style={styles.text}><Text style={styles.detailHeader}>Qualifications:{"\n"}</Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>{t('z-score')}: </Text><Text style={styles.details}> {parsedCourse.Z_SCORE[district]}</Text> </Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>{t('university')}: </Text><Text style={styles.details} > {currentLanguage == 'en'?parsedCourse.UNIVERSITY_eng:parsedCourse[`UNIVERSITY_${currentLanguage}`]}</Text> </Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>{t('duration')}: </Text><Text style={styles.details}> {parsedCourse.DURATION}</Text> </Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>{t('description')}: </Text><Text style={[styles.details,{fontWeight:'light'}]} > {currentLanguage == 'en'?parsedCourse.DESCRIPTION_eng:parsedCourse[`DESCRIPTION_${currentLanguage}`]}</Text> </Text>
+          
+          
+          <Text style={styles.text}><Text style={styles.detailHeader}>{t('qualifications')}:{"\n"}</Text>
  
   {Object.entries(parsedCourse.MINIMUM_QUALIFICATIONS.RequiredGrades).map(
     ([subject, grade], index) => (
@@ -85,6 +90,19 @@ const{t}= useTranslation();
       </Text>
     )
   )}
+</Text>
+<Text style={styles.text}>
+  <Text style={styles.detailHeader}>{t('job_roles')}:{"\n"}</Text>
+
+  {(
+    currentLanguage === 'en'
+      ? parsedCourse.JOB_ROLES_eng
+      : parsedCourse[`JOB_ROLES_${currentLanguage}`]
+  )?.map((role, index) => (
+    <Text style={styles.details} key={index}>{"\t"}
+      {role}{"\n"}
+    </Text>
+  ))}
 </Text>
 
 

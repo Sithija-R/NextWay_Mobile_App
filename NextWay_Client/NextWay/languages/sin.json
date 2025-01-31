@@ -78,6 +78,11 @@
   "language": "භාෂාව",
   "about": "අපි පිළිබඳව",
   "logout": "ඉවත් වන්න",
+  "settings":"සැකසුම්",
+  "duration":"කාලසීමාව",
+"qualifications":"සුදුසුකම්",
+"job_roles":"රැකියා",
+
 
   "streams": [
     {

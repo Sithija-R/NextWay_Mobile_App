@@ -193,7 +193,7 @@ export default function DeleteCourses() {
           {course ? (
             <>
               <Text style={styles.title}>
-                {course.COURSE}{" "}
+                {course.COURSE_eng}{" "}
                 <Text style={{ color: "#149BC6", marginLeft: wp(20) }}>
                   {course.UNICODE}
                 </Text>
@@ -224,14 +224,14 @@ export default function DeleteCourses() {
                     <Text style={styles.detailHeader}>University: </Text>
                     <Text style={styles.details}>
                       {" "}
-                      {course.UNIVERSITY}
+                      {course.UNIVERSITY_eng}
                     </Text>{" "}
                   </Text>
                   <Text style={styles.text}>
                     <Text style={styles.detailHeader}>Description: </Text>
                     <Text style={[styles.details, { fontWeight: "light" }]}>
                       {" "}
-                      {course.DESCRIPTION}
+                      {course.DESCRIPTION_eng}
                     </Text>{" "}
                   </Text>
                 </ScrollView>

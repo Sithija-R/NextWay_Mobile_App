@@ -157,21 +157,7 @@ export default function _layout() {
         }}
       />
     
-      {/* <Drawer.Screen
-      
-        name="(settings)"
-        options={{
-          drawerLabel: "Settings",
-          title: "Settings",
-          headerShown: false,
-          drawerIcon: ({ size, color }) => (
-            <SimpleLineIcons name="settings" size={size} color={color} />
-          ),
-          drawerLabelStyle: {
-            fontSize: 18,
-          },
-        }}
-      /> */}
+  
    
   <Drawer.Screen
         name="about"
@@ -187,6 +173,22 @@ export default function _layout() {
           },
         }}
       />
+
+<Drawer.Screen
+      
+      name="(settings)"
+      options={{
+        drawerLabel: t('settings'),
+        title: "Settings",
+        headerShown: false,
+        drawerIcon: ({ size, color }) => (
+          <SimpleLineIcons name="settings" size={size} color={color} />
+        ),
+        drawerLabelStyle: {
+          fontSize: 18,
+        },
+      }}
+    />
 
     </Drawer>
   );
