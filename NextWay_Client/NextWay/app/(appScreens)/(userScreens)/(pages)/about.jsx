@@ -36,7 +36,7 @@ export default function Settings() {
             position: "absolute",
             top: hp(5),
             left: wp(2),
-            zIndex: 5,
+            zIndex: 100,
             flexDirection: "row",
             marginTop: hp(3),
             alignItems: "center",
@@ -84,6 +84,30 @@ export default function Settings() {
         <Text style={styles.bullet}>• Promote equity in education</Text>
         <Text style={styles.bullet}>• Celebrate lifelong learning</Text>
       </ScrollView>
+      <View style={{ alignItems: "center", marginTop: hp(1) }}>
+        <TouchableOpacity
+          onPress={() => router.back()}
+          style={{
+            backgroundColor: "#149BC6",
+            padding: hp(2),
+            borderRadius: 40,
+            width: wp(50),
+          }}
+        >
+          <Text
+            style={{
+              fontSize: hp(3),
+              fontWeight: "600",
+              textAlign: "center",
+              color: "white",
+            }}
+          >
+            {t("Go back")}
+          </Text>
+        </TouchableOpacity>
+      </View>
+
+      <View></View>
     </View>
   );
 }

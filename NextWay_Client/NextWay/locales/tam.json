@@ -43,11 +43,11 @@
     
    "streams": [
         { 
-            "label": "உயிரியல்", 
+            "label": "பௌதீகவியல்", 
             "value": "Physical" 
         },
         { 
-            "label": "பௌதீகவியல்", 
+            "label": "உயிரியல்", 
             "value": "Biology" 
         },
         { 
