@@ -14,7 +14,7 @@ import { db } from "../firebaseConfig/firebaseConfiguration";
 // Fetch all courses
 const fetchCourses = async () => {
   try {
-    const coursesCollection = collection(db, "coursetest");
+    const coursesCollection = collection(db, "courses");
     const coursesSnapshot = await getDocs(coursesCollection);
 
     // Map over the documents and include the document id
@@ -95,7 +95,7 @@ const fetchCoursesByName = async (name) => {
 
     // Filter courses to find matches (check if COURSE field exists)
     const filteredCourses = coursesList.filter(
-      (course) => course.COURSE && course.COURSE.includes(processedName)
+      (course) => course.COURSE_eng && course.COURSE_eng.includes(processedName)
     );
 
     // Return results
@@ -298,7 +298,7 @@ const fetchCoursesByCriteria = async (
         );
 
       console.log(
-        `Course: ${course.COURSE} - Interest Matches: ${interestMatches}`
+        `Course: ${course.COURSE_eng} - Interest Matches: ${interestMatches}`
       );
 
       return matchGrades && isZScoreValid && interestMatches;

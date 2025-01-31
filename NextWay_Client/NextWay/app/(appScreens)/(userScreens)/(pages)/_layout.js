@@ -9,11 +9,12 @@ import { fetchNotification } from "../../../../services/fetchingService";
 import { auth } from "../../../../firebaseConfig/firebaseConfiguration";
 import { Text, View } from "react-native";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 export default function _layout() {
   const [notifications, setNotifications] = useState(0);
-
+  const { t } = useTranslation();
 
 
   useEffect(() => {
@@ -54,7 +55,7 @@ export default function _layout() {
       <Drawer.Screen
         name="home"
         options={{
-          drawerLabel: "Home",
+          drawerLabel: t('home'),
           title: "home",
           headerShown: false,
           drawerIcon: ({ size, color }) => (
@@ -71,7 +72,7 @@ export default function _layout() {
         options={{
           drawerLabel: ({ focused, color }) => (
             <View style={{ flexDirection: "row", alignItems: "right" }}>
-              <Text style={{ fontSize: 18, color }}>Notifications</Text>
+              <Text style={{ fontSize: 18, color }}>{t('notifications')}</Text>
 
               {notifications > 0 && (
                 <View
@@ -106,7 +107,7 @@ export default function _layout() {
           drawerLabel: ({ focused, color }) => (
             <View style={{ flexDirection: "row", alignItems: "right" }}>
               <Text style={{ fontSize: 18, marginLeft: 6, color }}>
-                Profile
+                {t('profile')}
               </Text>
             </View>
           ),
@@ -125,7 +126,7 @@ export default function _layout() {
       <Drawer.Screen
         name="(advertisements)"
         options={{
-          drawerLabel: "Advertisements",
+          drawerLabel: t('ads'),
           title: "advertisements",
           headerShown: false,
           drawerIcon: ({ size, color }) => (
@@ -144,7 +145,7 @@ export default function _layout() {
 <Drawer.Screen
         name="languageChange"
         options={{
-          drawerLabel: "Language",
+          drawerLabel: t('language'),
           title: "Language",
           headerShown: false,
           drawerIcon: ({ size, color }) => (
@@ -156,25 +157,12 @@ export default function _layout() {
         }}
       />
     
-      <Drawer.Screen
-        name="(settings)"
-        options={{
-          drawerLabel: "Settings",
-          title: "Settings",
-          headerShown: false,
-          drawerIcon: ({ size, color }) => (
-            <SimpleLineIcons name="settings" size={size} color={color} />
-          ),
-          drawerLabelStyle: {
-            fontSize: 18,
-          },
-        }}
-      />
+  
    
   <Drawer.Screen
         name="about"
         options={{
-          drawerLabel: "About",
+          drawerLabel: t('about'),
           title: "About",
           headerShown: false,
           drawerIcon: ({ size, color }) => (
@@ -185,6 +173,22 @@ export default function _layout() {
           },
         }}
       />
+
+<Drawer.Screen
+      
+      name="(settings)"
+      options={{
+        drawerLabel: t('settings'),
+        title: "Settings",
+        headerShown: false,
+        drawerIcon: ({ size, color }) => (
+          <SimpleLineIcons name="settings" size={size} color={color} />
+        ),
+        drawerLabelStyle: {
+          fontSize: 18,
+        },
+      }}
+    />
 
     </Drawer>
   );

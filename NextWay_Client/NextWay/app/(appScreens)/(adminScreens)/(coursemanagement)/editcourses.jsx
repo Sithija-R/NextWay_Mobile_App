@@ -217,6 +217,7 @@ const removeSubjectGrade = (index) => {
 
       if (uploadResult.success) {
         alert(uploadResult.msg); 
+        router.push('viewcourses')
       } else {
         alert(uploadResult.msg); 
       }
@@ -247,7 +248,7 @@ const removeSubjectGrade = (index) => {
           <Text
             style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: 600 }}
           >
-            {t("New course")}
+            {t("Edit course")}
           </Text>
         </Pressable>
 

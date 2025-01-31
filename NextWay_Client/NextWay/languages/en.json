@@ -70,6 +70,18 @@
   "advertiser-request":"Advertiser Request",
   "answer_questions":"Answer the Questions",
   "submit":"Submit",
+
+  "home":"Home",
+  "notifications":"Notifications",
+  "profile":"Profile",
+  "ads":"Advertisement",
+  "language":"Language",
+  "about":"About",
+  "logout":"Logout",
+  "settings":"Settings",
+  "duration":"Duration",
+"qualifications":"Qualifications",
+"job_roles":"Job Roles",
   
   
   "streams": [

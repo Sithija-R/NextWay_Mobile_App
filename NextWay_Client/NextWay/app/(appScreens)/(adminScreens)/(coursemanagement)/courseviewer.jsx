@@ -83,8 +83,8 @@ const{t}= useTranslation();
 
 
         <Text  style={styles.text}><Text style={styles.detailHeader}>Stream: </Text><Text style={styles.details} > {parsedCourse.STREAM}</Text> </Text>
-          <Text  style={styles.text}><Text style={styles.detailHeader}>University: </Text><Text style={styles.details} > {parsedCourse.UNIVERSITY}</Text> </Text>
-          <Text  style={styles.text}><Text style={styles.detailHeader}>Description: </Text><Text style={[styles.details,{fontWeight:'light'}]} > {parsedCourse.DESCRIPTION}</Text> </Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>University: </Text><Text style={styles.details} > {parsedCourse.UNIVERSITY_eng}</Text> </Text>
+          <Text  style={styles.text}><Text style={styles.detailHeader}>Description: </Text><Text style={[styles.details,{fontWeight:'light'}]} > {parsedCourse.DESCRIPTION_eng}</Text> </Text>
           <Text style={[styles.text,{marginBottom:2}]}><Text style={[styles.detailHeader]}>Qualifications:{"\n"}</Text>
   {Object.entries(parsedCourse.MINIMUM_QUALIFICATIONS.RequiredGrades).map(
     ([subject, grade], index) => (

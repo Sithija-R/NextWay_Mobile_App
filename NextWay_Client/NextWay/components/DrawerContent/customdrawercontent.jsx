@@ -12,10 +12,12 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
+import { useTranslation } from "react-i18next";
 
 export default function customdrawercontent(props) {
   const { bottom } = useSafeAreaInsets();
   const navigation = useNavigation();
+  const { t } = useTranslation();
 
   const handleLogout = () => {
     navigation.dispatch(DrawerActions.closeDrawer());
@@ -53,7 +55,7 @@ export default function customdrawercontent(props) {
           <Text
             style={{ fontSize: hp(2.3), textAlign: "center", color: "white" }}
           >
-            Logout
+            {t('logout')}
           </Text>
         </Pressable>
       </View>

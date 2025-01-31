@@ -39,12 +39,6 @@
   "select-warning": "කරුණාකර අවම වශයෙන් එක් විකල්පයක් තෝරන්න.",
   "save": "සුරකින්න",
   "back": "ආපසු",
-
-
-
-
-
-  
   "username": "පරිශීලක නාමය",
   "phone": "දුරකථන අංකය",
   "edit-profile": " පැතිකඩ සකසන්න",
@@ -56,8 +50,38 @@
   "save_changes": "සුරකින්න",
 
 
+  "search": "සොයන්න",
+  "search_course": "පාඨමාලාව සොයන්න",
+  "delete_course": "පාඨමාලාව මකන්න",
+  "view_courses": "පාඨමාලා බලන්න",
+  "send_req": "ඉල්ලීම යවන්න",
+  "ad_acc_req": "දැන්වීම්කරු ගිණුම් ඉල්ලීම",
+  "business_name": "ව්‍යාපාරයේ නම",
+  "description": "විස්තරය",
+  "contact_no": "දුරකථන අංකය",
+  "business_type": "ව්‍යාපාර වර්ගය",
+  "create_ad": "නව දැන්වීමක් සාදන්න",
+  "no_ads": "වෙළඳ දැන්වීම් නොමැත!",
+  "contact": "සම්බන්ධ කරගන්න",
+  "website": "වෙබ් අඩවිය",
+  "edit": "සංස්කරණය කරන්න",
+  "delete": "මකා දැමීම",
+  "create": "නිර්මාණය කරන්න",
+  "advertiser-request": "දැන්වීම්කරු ඉල්ලීම",
+  "answer_questions": "ප්‍රශ්න වලට පිළිතුරු දෙන්න",
+  "submit": "ඉදිරිපත් කරන්න",
 
-
+  "home": "මුල් පිටුව",
+  "notifications": "දැනුම්දීම්",
+  "profile": "පරිශීලක ගිණුම",
+  "ads": "වෙළඳ දැන්වීම",
+  "language": "භාෂාව",
+  "about": "අපි පිළිබඳව",
+  "logout": "ඉවත් වන්න",
+  "settings":"සැකසුම්",
+  "duration":"කාලසීමාව",
+"qualifications":"සුදුසුකම්",
+"job_roles":"රැකියා",
 
 
   "streams": [
@@ -82,7 +106,7 @@
       "value": "Technology"
     },
     {
-      "label": "සාමාන්‍ය",
+      "label": "පොදු",
       "value": "Common"
     }
   ],
@@ -266,6 +290,108 @@
     {
       "label": "වවුනියාව",
       "value": "Vavuniya"
+    }
+  ],
+  "questions": [
+    {
+      "key": "q1",
+      "label": "තාර්කික ප්‍රහේලිකා විසඳීමට සහ අභියෝග කේත කිරීමට ඔබ කැමතිද?",
+      "options": [
+        { "key": 1, "label": "මම එයට කැමතියි.", "value": "I love it." },
+        { "key": 2, "label": "මම තරමක් උනන්දු වෙමි.", "value": "I'm somewhat interested." },
+        { "key": 3, "label": "මම ව්‍යුහ සැලසුම් කිරීමට කැමතියි.", "value": "I prefer planning structures." },
+        { "key": 4, "label": "මම මෙවලම් සමඟ වැඩ කිරීමට කැමතියි.", "value": "I like working hands-on with tools." }
+      ]
+    },
+    {
+      "key": "q2",
+      "label": "භෞතික වස්තූන් සැලසුම් කිරීම හෝ ගොඩනැගීම ගැන ඔබට හැඟෙන්නේ කෙසේද?",
+      "options": [
+        { "key": 1, "label": "එය හොඳයි, නමුත් මගේ ප්‍රධාන උනන්දුව නොවේ.", "value": "It's okay but not my main interest." },
+        { "key": 2, "label": "මම එය අවස්ථානුකූලව රස විඳිමි.", "value": "I occasionally enjoy it." },
+        { "key": 3, "label": "ව්‍යුහ සැලසුම් කිරීම සහ නිර්මාණය කිරීමට මම කැමතියි.", "value": "I find it fascinating to plan and design structures." },
+        { "key": 4, "label": "මට ඉදිකිරීමේ ව්‍යාපෘති වලට සම්බන්ධ වීම විනෝදජනකයි.", "value": "I enjoy working in construction projects." }
+      ]
+    },
+    {
+      "key": "q3",
+      "label": "ඔබ වැඩ කිරීම සඳහා කැමති කුමන ආකාරයේ පරිසරයක්ද?",
+      "options": [
+        { "key": 1, "label": "පරිගණකයක වැඩ කිරීම.", "value": "Working on a computer." },
+        { "key": 2, "label": "ගෘහස්ථ හා එළිමහන් වැඩ වල සම්මිශ්‍රණයක්.", "value": "A mix of indoor and outdoor work." },
+        { "key": 3, "label": "ප්‍බොහෝ දුරට එළිමහන් වැඩ නිර්මාණ අධීක්ෂණය.", "value": "Mostly outdoor work overseeing designs." },
+        { "key": 4, "label": "ඉදිකිරීම් ස්ථාන හෝ ශාරීරික වැඩ කිරීම.", "value": "Construction sites or hands-on physical work." }
+      ]
+    },
+    {
+      "key": "q4",
+      "label": "සහයෝගී ඩිජිටල් ව්‍යාපෘතිවල වැඩ කිරීමෙන් ඔබ කොපමණ සතුටක් ලබනවාද?",
+      "options": [
+        { "key": 1, "label": "මම එයට ඉතාමත් කැමතියි", "value": "It's what I enjoy most." },
+        { "key": 2, "label": "මම එයට කැමතියි, නමුත් සැමවිටම නොවේ.", "value": "I like it but not always." },
+        { "key": 3, "label": "මම කණ්ඩායමක් සමඟ භෞතික ව්‍යුහ වල වැඩ කිරීමට කැමතියි.", "value": "I prefer working on physical structures with a team." },
+        { "key": 4, "label": "මම ඉදිකිරීම් ස්ථාන වල සහයෝගීතා ක්‍රියාකාරකම් කිරීමට කැමතියි.", "value": "I prefer collaborative fieldwork at construction sites." }
+      ]
+    },
+    {
+      "key": "q5",
+      "label": "ප්‍රශ්නයක් විසඳීමේදී, ඔබ සිතන්නේ:",
+      "options": [
+        { "key": 1, "label": "ඇල්ගොරිතම හෝ මෘදුකාංග විසඳුම් ලිවීම.", "value": "Writing algorithms or software solutions." },
+        { "key": 2, "label": "නිර්මාණය සහ ක්‍රියාත්මක කිරීම සමබන්ධ කිරීමේ ක්‍රම ගවේෂණය කිරීම.", "value": "Exploring different ways to balance design and implementation." },
+        { "key": 3, "label": "ක්‍රියාකාරී ව්‍යුහයක් නිර්මාණය කරන්නේ කෙසේද යන්න.", "value": "How to design a functional structure." },
+        { "key": 4, "label": "ඉදිකිරීම් ස්ථානයක සම්පත් කළමනාකරණය කරන්නේ කෙසේද යන්න.", "value": "How to efficiently manage resources at a construction site." }
+      ]
+    },
+    {
+      "key": "q6",
+      "label": "තාක්‍ෂණය ගැන ඔබව වඩාත් උනන්දු කරවන්නේ කුමක්ද?",
+      "options": [
+        { "key": 1, "label": "යෙදුම්(Apps) හා පද්ධති සංවර්ධනය කිරීම.", "value": "Developing applications and systems." },
+        { "key": 2, "label": "සංකීර්ණ අදහස් නිර්මාණය කිරීම සඳහා මෙවලම් භාවිතා කිරීම.", "value": "Using tools for designing complex ideas." },
+        { "key": 3, "label": "නව නිර්මාණශීලී ගෘහ නිර්මාණ ශිල්පය සඳහා තාක්‍ෂණය භාවිතා කිරීම.", "value": "Leveraging technology for innovative architecture." },
+        { "key": 4, "label": "ඉදිකිරීම් උපකරණ වලට තාක්‍ෂණය යෙදීම.", "value": "Applying technology in construction equipment." }
+      ]
+    },
+    {
+      "key": "q7",
+      "label": "ඔබ අභියෝග වලට ප්‍රවේශ වන්නේ කෙසේද?",
+      "options": [
+        { "key": 1, "label": "විසඳුමක් විශ්ලේෂණය කිරීම සහ කේතනය කිරීම.", "value": "Analyzing and coding a solution." },
+        { "key": 2, "label": "නිර්මාණය සහ නිර්මාණශීලී උපාය මාර්ග සමබන්ධ කිරීම.", "value": "Balancing design and creative strategies." },
+        { "key": 3, "label": "විස්තරාත්මක ව්‍යාපෘති සැලසුම් කිරීම සහ නිර්මාණය කිරීම.", "value": "Planning and designing detailed projects." },
+        { "key": 4, "label": "ක්‍ෂේත්‍ර වැඩ වල ප්‍රායෝගික දෝශ නිරාකරණය.", "value": "Practical troubleshooting in fieldwork." }
+      ]
+    },
+    {
+      "key": "q8",
+      "label": "ඔබව වඩාත් උනන්දු කරවන්නේ කුමක්ද?",
+      "options": [
+        { "key": 1, "label": "ක්‍රමලේඛන භාෂා සහ මෘදුකාංග සංවර්ධනය පිළිබඳ අවබෝධය.", "value": "Understanding programming languages and software development." },
+        { "key": 2, "label": "සැලසුම් ඒකාබද්ධ කිරීමේ සංකීර්ණතා.", "value": "The intricacies of integrating designs." },
+        { "key": 3, "label": "ස්ථාවර යටිතල පහසුකම් නිර්මාණය කිරීම.", "value": "Creating durable infrastructure." },
+        { "key": 4, "label": "ගොඩනැගීමේ ක්‍රියාවලියේ අත්දැකීම්.", "value": "The hands-on process of building." }
+      ]
+    },
+    {
+      "key": "q9",
+      "label": "ඔබ උනන්දුවක් දක්වන ක්ෂේත්‍රයේ ප්‍රවණතා සමඟින් සිටීමට ඔබ කොපමණ සතුටක් ලබනවාද?",
+      "options": [
+        { "key": 1, "label": "මෘදුකාංග වල නවතම තොරතුරු අනුගමනය කිරීම.", "value": "Following the latest in software." },
+        { "key": 2, "label": "නව ව්‍යුහ නිර්මාණ තාක්‍ෂණ ඉගෙන ගැනීම.", "value": "Learning new structural design techniques." },
+        { "key": 3, "label": "ගෘහ නිර්මාණ ශිල්පයේ දියුණුව අධ්‍යයනය කිරීම.", "value": "Studying architectural advancements." },
+        { "key": 4, "label": "නව නිර්මාණශීලී ඉදිකිරීම් ක්‍රම ගවේෂණය කිරීම.", "value": "Exploring innovative construction practices." }
+      ]
+    },
+    {
+      "key": "q10",
+      "label": "ඔබ වැඩිපුරම දස්කම් දක්වන්නේ කොහේද?",
+      "options": [
+        { "key": 1, "label": "මෘදුකාංග සංවර්ධනය හෝ යෙදුම් නිර්මාණය කිරීම.", "value": "In software development or creating applications." },
+        { "key": 2, "label": "නිර්මාණශීලී සංකල්ප ව්‍යුහ නිර්මාණ වලට ගෙන ඒම.", "value": "In bringing creative concepts to structural designs." },
+        { "key": 3, "label": "යටිතල පහසුකම් සැලසුම් කිරීම.", "value": "In planning infrastructure." },
+        { "key": 4, "label": "ඉදිකිරීම් වැඩ පරීක්ෂණය කිරීම සහ දායක වීම.", "value": "In supervising and contributing to construction work." }
+      ]
     }
   ]
 }

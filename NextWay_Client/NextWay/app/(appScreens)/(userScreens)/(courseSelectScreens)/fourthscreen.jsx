@@ -85,6 +85,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
           <ScrollView contentContainerStyle={{ flexGrow: 1, paddingHorizontal: wp(2) }}>
   
           <View style={styles.tableHeader}>
+            
             <Text style={[styles.tableHeaderCell, { fontSize: currentLanguage == 'en' ? hp(2.5) : hp(2) }]}>{t('course')}</Text>
             <Text style={[styles.tableHeaderCell, { fontSize: currentLanguage == 'en' ? hp(2.5) : hp(2) }]}>{t('university')}</Text>
             <Text style={[styles.tableHeaderCell, { fontSize: currentLanguage == 'en' ? hp(2.5) : hp(2) }]}>{t('z-score')}</Text>
@@ -105,9 +106,10 @@ import Ionicons from "@expo/vector-icons/Ionicons";
             }}
           >
             <View style={styles.tableRow}>
-              <Text style={styles.tableCell}>{course.COURSE}</Text>
-              <Text style={styles.tableCell}>{course.UNIVERSITY}</Text>
+              <Text style={styles.tableCell}>{currentLanguage == "en"?course.COURSE_eng:course[`COURSE_${currentLanguage}`]}</Text>
+              <Text style={styles.tableCell}>{currentLanguage == "en"?course.UNIVERSITY_eng:course[`UNIVERSITY_${currentLanguage}`]}</Text>
               <Text style={styles.tableCell}>{course.Z_SCORE[district]}</Text>
+           
             </View>
           </Pressable>
             ))
