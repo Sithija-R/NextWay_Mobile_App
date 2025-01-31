@@ -1,59 +1,126 @@
-import { View, Text, Button, StyleSheet } from "react-native";
-import React from "react";
-import { useNavigation } from "@react-navigation/native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  Pressable,
+  Modal,
+  FlatList,
+  StyleSheet,
+  ScrollView,
+} from "react-native";
+import React, { useState, useEffect } from "react";
+import { StatusBar } from "expo-status-bar";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
+import { useRouter } from "expo-router";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-export default function About() {
-  const navigation = useNavigation(); // Access the navigation object
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import Ionicons from "@expo/vector-icons/Ionicons";
+
+export default function Settings() {
+  const router = useRouter();
+  const { t } = useTranslation();
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>About</Text>
-      <Text style={styles.description}>
-        This is the About page of the app. It provides information about the app
-        and its features.
-      </Text>
-      <Text style={styles.subtitle}>Key Features:</Text>
-      <View style={styles.bulletContainer}>
-        <Text style={styles.bullet}>• Easy to use and navigate</Text>
-        <Text style={styles.bullet}>• Built with React Native and Expo</Text>
-        <Text style={styles.bullet}>• Supports multiple platforms</Text>
+    <View style={{ flex: 1 }}>
+      <StatusBar style="dark" />
+      <View style={{ flex: 1, alignItems: "flex-start" }}>
+        <Pressable
+          onPress={() => router.back()}
+          style={{
+            position: "absolute",
+            top: hp(5),
+            left: wp(2),
+            zIndex: 5,
+            flexDirection: "row",
+            marginTop: hp(3),
+            alignItems: "center",
+            width: "85%",
+          }}
+        >
+          <Ionicons name="arrow-back" size={hp(3.5)} color="black" />
+          <Text style={{ fontSize: wp(5), paddingLeft: wp(5) }}>
+            {t("back")}
+          </Text>
+        </Pressable>
+
+        <Image
+          style={{ width: hp(27), height: hp(20) }}
+          resizeMode="stretch"
+          source={require("../../../../assets/images/elipses.png")}
+        />
       </View>
-      <Button title="Go Back" onPress={() => navigation.goBack()} />
-      <View style={styles.spacer} />
-      <Button title="Learn More" onPress={() => {}} />
+      {/* add things here */}
+
+      <ScrollView contentContainerStyle={styles.contentContainer}>
+        <View style={{ alignItems: "center" }}>
+          <Image
+            style={{ height: hp(20) }}
+            resizeMode="contain"
+            source={require("../../../../assets/images/Logo.png")}
+          />
+        </View>
+        <Text style={styles.title}>About NextWay</Text>
+        <Text style={styles.description}>
+          NextWay is a comprehensive mobile application designed to empower Sri
+          Lankan students by streamlining their journey from academic
+          exploration to career success.
+        </Text>
+        <Text style={styles.subtitle}>Key Features:</Text>
+        <Text style={styles.bullet}>• AI-Powered Career Guidance</Text>
+        <Text style={styles.bullet}>• University and Course Exploration</Text>
+        <Text style={styles.bullet}>• Community and Peer Support</Text>
+
+        <Text style={styles.subtitle}>Major Goals and Objectives:</Text>
+        <Text style={styles.bullet}>• Empower informed decision-making</Text>
+        <Text style={styles.bullet}>• Enhance educational accessibility</Text>
+        <Text style={styles.bullet}>• Foster skill development</Text>
+        <Text style={styles.bullet}>• Build community connections</Text>
+        <Text style={styles.bullet}>• Promote equity in education</Text>
+        <Text style={styles.bullet}>• Celebrate lifelong learning</Text>
+      </ScrollView>
     </View>
   );
 }
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    justifyContent: "center",
-    alignItems: "flex-start",
+  headerImage: {
+    width: hp(27),
+    height: hp(20),
+  },
+  contentContainer: {
+    padding: wp(5),
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 10,
+    overflow: "hidden",
   },
   title: {
-    fontSize: 28,
+    fontSize: wp(6),
     fontWeight: "bold",
-    marginBottom: 10,
+    marginBottom: hp(2),
+    alignSelf: "center",
   },
   description: {
-    fontSize: 16,
-    marginBottom: 20,
-    lineHeight: 22,
+    fontSize: wp(4),
+    marginBottom: hp(2),
+    lineHeight: wp(5),
   },
   subtitle: {
-    fontSize: 20,
+    fontSize: wp(5),
     fontWeight: "bold",
-    marginBottom: 10,
-  },
-  bulletContainer: {
-    marginBottom: 20,
+    marginTop: hp(2),
+    marginBottom: hp(1),
   },
   bullet: {
-    fontSize: 16,
-    marginVertical: 5,
-  },
-  spacer: {
-    height: 20,
+    fontSize: wp(4),
+    marginVertical: hp(0.5),
   },
 });

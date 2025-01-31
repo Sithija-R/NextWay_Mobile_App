@@ -13,18 +13,17 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
+        
         "JOB_ROLES_eng": [
             "Teacher",
             "Social Worker",
@@ -85,17 +84,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Teacher",
@@ -157,17 +154,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Teacher",
@@ -228,17 +223,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Teacher",
@@ -300,17 +293,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Teacher",
@@ -372,17 +363,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Teacher",
@@ -444,17 +433,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Teacher",
@@ -516,17 +503,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Teacher",
@@ -588,17 +573,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Teaching",
-            "Social Work",
-            "Research",
-            "Cultural Analysis"
-        ],
-        "INTEREST_tam": [
             "கற்பித்தல்",
+            "Social Work",
             "சமூக பணி",
+            "Research",
             "ஆய்வு",
-            "கலை பரிசோதனை"
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Teacher",
@@ -660,17 +643,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
-            "Media Production",
-            "Journalism",
-            "Public Relations",
-            "Media Research"
-        ],
-        "INTEREST_tam": [
-            "மீடியா தயாரிப்பு",
-            "பத்திரிகை",
-            "பொது தொடர்புகள்",
-            "மீடியா ஆய்வு"
+        "INTEREST": [
+            "Teaching",
+            "கற்பித்தல்",
+            "Social Work",
+            "சமூக பணி",
+            "Research",
+            "ஆய்வு",
+            "Cultural Analysis",
+             "கலை பரிசோதனை"
         ],
         "JOB_ROLES_eng": [
             "Journalist",
@@ -732,18 +713,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Performing Arts",
-            "Dance",
-            "Theatre",
-            "Choreography"
-        ],
-        "INTEREST_tam": [
             "நிகழும் கலை",
+            "Dance",
             "நடனம்",
+            "Theatre",
             "திரையரங்கம்"
-            
         ],
+        
         "JOB_ROLES_eng": [
             "Actor",
             "Dancer",
@@ -806,18 +784,17 @@
                 "Sinhala, Tamil or English": "C"
             }
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Public Relations",
-            "Media Communication",
-            "Advertising",
-            "Media Strategy"
-        ],
-        "INTEREST_tam": [
             "பொது தொடர்புகள்",
+            "Media Communication",
             "ஊடக தொடர்பு",
+            "Advertising",
             "விளம்பரம்",
+            "Media Strategy",
             "ஊடகத் திட்டம்"
         ],
+        
         "JOB_ROLES_eng": [
             "Communication Specialist",
             "Public Relations Officer",
@@ -876,16 +853,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Conflict Resolution",
-            "Peace Advocacy",
-            "Community Organizing"
-        ],
-        "INTEREST_tam": [
             "மோதல் தீர்வு",
+            "Peace Advocacy",
             "சமாதான ஆதரவு",
+            "Community Organizing",
             "சமூக ஒழுங்கமைப்பு"
         ],
+        
         "JOB_ROLES_eng": [
             "Conflict Resolution Specialist",
             "Peace Advocate",
@@ -944,16 +920,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Islamic Studies",
-            "Religious Teaching",
-            "Cultural Studies"
-        ],
-        "INTEREST_tam": [
             "இஸ்லாமிய ஆய்வுகள்",
+            "Religious Teaching",
             "சமயப் படிப்பு",
-            "கலாச்சார ஆய்வுகள்"
+            "Cultural Studies",
+             "கலாச்சார ஆய்வுகள்"
         ],
+        
         "JOB_ROLES_eng": [
             "Islamic Scholar",
             "Religious Teacher",
@@ -1014,14 +989,14 @@
         },
         "INTEREST_eng": [
             "Arabic Language Studies",
-            "Translation",
-            "Language Teaching"
-        ],
-        "INTEREST_tam": [
             "அரபிக் மொழி ஆய்வுகள்",
-            "திருச்செய்தி",
+            "Translation",
+            "மொழிபெயர்ப்பு",
+            "Language Teaching",
             "மொழி கற்பித்தல்"
+
         ],
+        
         "JOB_ROLES_eng": [
             "Arabic Language Teacher",
             "Translator",
@@ -1068,7 +1043,7 @@
     
     {
         "COURSE_eng": "TEACHING ENGLISH AS A SECOND LANGUAGE (TESL)",
-        "COURSE_tam": "ஆங்கிலம் இரண்டாவது மொழியாக கற்பித்தல் (TESL)",
+        "COURSE_tam": "ஆங்கிலத்தை இரண்டாவது மொழியாக கற்பித்தல் (TESL)",
         "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENEPURA",
         "UNIVERSITY_tam": "ஸ்ரீ ஜெயவர்தனேபுர பல்கலைக்கழகம்",
         "UNICODE": "105C",
@@ -1080,23 +1055,22 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "English Language Education",
+            "ஆங்கில மொழி கல்வி",
             "Curriculum Development",
-            "ESL Teaching"
-        ],
-        "INTEREST_tam": [
-            "இங்கிலீசு மொழி கல்வி",
             "பாடத்திட்ட மேம்பாடு",
-            "ESL கற்பித்தல்"
+            "ESL Teaching",
+            "ஆங்கிலத்தை இரண்டாவது மொழியாக கற்பித்தல்"
         ],
+       
         "JOB_ROLES_eng": [
             "English Teacher",
             "ESL Instructor",
             "Curriculum Developer"
         ],
         "JOB_ROLES_tam": [
-            "இங்கிலீசு ஆசிரியர்",
+            "ஆங்கில ஆசிரியர்",
             "ESL பயிற்சியாளர்",
             "பாடத்திட்ட மேம்பாட்டாளர்"
         ],
@@ -1148,16 +1122,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "English Language Education",
-            "Curriculum Development",
-            "ESL Teaching"
-        ],
-        "INTEREST_tam": [
             "ஆங்கில மொழி கல்வி",
+            "Curriculum Development",
             "பாடத்திட்ட மேம்பாடு",
-            "ESL கற்பித்தல்"
+            "ESL Teaching",
+            "ஆங்கிலத்தை இரண்டாவது மொழியாக கற்பித்தல்"
         ],
+        
         "JOB_ROLES_eng": [
             "English Teacher",
             "ESL Instructor",
@@ -1216,16 +1189,15 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Mental Health",
+            "மனநல ஆரோக்கியம்",
             "Community Services",
-            "Social Development"
-        ],
-        "INTEREST_tam": [
-            "மனநல",
             "சமூக சேவைகள்",
+            "Social Development",
             "சமூக மேம்பாடு"
         ],
+    
         "JOB_ROLES_eng": [
             "Social Worker",
             "Community Development Officer",
@@ -1284,14 +1256,12 @@
             },
             "OtherQualifications": {}
         },
-        "INTEREST_eng": [
+        "INTEREST": [
             "Mental Health",
+            "மனநல ஆரோக்கியம்",
             "Community Services",
-            "Social Development"
-        ],
-        "INTEREST_tam": [
-            "மனநல",
             "சமூக சேவைகள்",
+            "Social Development",
             "சமூக மேம்பாடு"
         ],
         "JOB_ROLES_eng": [
@@ -1354,8 +1324,16 @@
                 "O/L_Mathematics": "C"
             }
         },
-        "INTEREST_eng": [],
-        "INTEREST_tam": [],
+        "INTEREST": [
+    "Software Development",
+    "மென்பொருள் மேம்பாடு",
+    "Data Analytics",
+    "தரவு பகுப்பாய்வு"
+    
+],
+
+
+    
         "JOB_ROLES_eng": [
             "IT Consultant",
             "Software Developer",
