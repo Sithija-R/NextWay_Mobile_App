@@ -2,6 +2,7 @@
   "name": "nextway",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -52,6 +53,7 @@
     "react-native-element-dropdown": "^2.12.1",
     "react-native-elements": "^3.4.3",
     "react-native-gesture-handler": "~2.16.1",
+    "react-native-pager-view": "^6.7.0",
     "react-native-paper": "^5.13.1",
     "react-native-reanimated": "~3.10.1",
     "react-native-responsive-screen": "^1.4.2",
@@ -61,6 +63,7 @@
     "react-native-tab-view": "^4.0.5",
     "react-native-web": "~0.19.10",
     "tailwind-rn": "^4.2.0",
+    "watchman": "^1.0.0",
     "yup": "^1.4.0"
   },
   "devDependencies": {
