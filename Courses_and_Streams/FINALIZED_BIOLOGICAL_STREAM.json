@@ -1,0 +1,1487 @@
+[
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF COLOMBO",
+        "UNIVERSITY_tam": "கொழும்பு பல்கலைக்கழகம்",
+        "UNICODE": "001A",
+        "SUBJECTS_eng": "Medicine",
+        "SUBJECTS_tam": "மருத்துவம்",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the University of Colombo provides comprehensive medical education, preparing students for careers as qualified medical professionals.",
+        "DESCRIPTION_tam": "கொழும்பு பல்கலைக்கழகத்தின் மருத்துவக் கல்வி திட்டம் மாணவர்களை தகுதியான மருத்துவ நிபுணர்களாக தயார்ப்படுத்துகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "2.4516",
+            "Gampaha": "2.4412",
+            "Kalutara": "2.4446",
+            "Matale": "2.4981",
+            "Kandy": "2.5501",
+            "Nuwara Eliya": "NotQualified",
+            "Galle": "2.4478",
+            "Matara": "2.4552",
+            "Hambanthota": "2.4711",
+            "Jaffna": "2.4504",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "2.5134",
+            "Trincomalee": "2.4637",
+            "Batticaloa": "2.4902",
+            "Ampara": "2.4374",
+            "Puttalam": "2.4946",
+            "Kurunagala": "2.4450",
+            "Anuradhapura": "2.5446",
+            "Polonnaruwa": "2.4685",
+            "Badulla": "2.5455",
+            "Monaragala": "NotQualified",
+            "Kegalle": "2.4552",
+            "Ratnapura": "2.4542"
+        }
+    },
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF PERADENIYA",
+        "UNIVERSITY_tam": "பேராதனை பல்கலைக்கழகம்",
+        "UNICODE": "001B",
+        "SUBJECTS_eng": "Medicine",
+        "SUBJECTS_tam": "மருத்துவம்",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The Faculty of Medicine at the University of Peradeniya offers a comprehensive MBBS program, focusing on both theoretical knowledge and practical skills.",
+        "DESCRIPTION_tam": "பேராதனை பல்கலைக்கழகத்தின் மருத்துவப் பீடம் மாணவர்களுக்கு விரிவான மருத்துவக் கல்வியை வழங்குகிறது, இது கோட்பாட்டு அறிவும் நடைமுறை திறன்களும் ஒருங்கிணைக்கப்பட்டுள்ளது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "2.2279",
+            "Gampaha": "2.2147",
+            "Kalutara": "2.2204",
+            "Matale": "2.2150",
+            "Kandy": "2.2216",
+            "Nuwara Eliya": "2.2598",
+            "Galle": "2.2429",
+            "Matara": "2.2225",
+            "Hambanthota": "2.2646",
+            "Jaffna": "2.2120",
+            "Kilinochchi": "2.3267",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "2.2786",
+            "Vavuniya": "2.2496",
+            "Trincomalee": "2.2480",
+            "Batticaloa": "2.2518",
+            "Ampara": "2.2384",
+            "Puttalam": "2.2805",
+            "Kurunagala": "2.2114",
+            "Anuradhapura": "2.2347",
+            "Polonnaruwa": "2.2592",
+            "Badulla": "2.2159",
+            "Monaragala": "2.2410",
+            "Kegalle": "2.2150",
+            "Ratnapura": "2.2112"
+        }
+    },
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENEPURA",
+        "UNIVERSITY_tam": "இலங்கை ஸ்ரீ ஜயவர்தனபுர பல்கலைக்கழகம்",
+        "UNICODE": "001C",
+        "SUBJECTS_eng": "Medicine",
+        "SUBJECTS_tam": "மருத்துவம்",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the University of Sri Jayewardenepura emphasizes evidence-based medicine and patient-centered care, preparing students for diverse medical careers.",
+        "DESCRIPTION_tam": "இலங்கை ஸ்ரீ ஜயவர்தனபுர பல்கலைக்கழகத்தின் மருத்துவப் பட்டப்படிப்பு ஆதாரபூர்வ மருத்துவம் மற்றும் நோயாளி மையக் கவனத்தில் முக்கியத்துவம் கொடுப்பதை நோக்கமாகக் கொண்டுள்ளது, மாணவர்களை பல்வேறு மருத்துவத் துறைகளுக்கு தயார் செய்கிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "2.1465",
+            "Gampaha": "2.1566",
+            "Kalutara": "2.1474",
+            "Matale": "2.1943",
+            "Kandy": "2.1512",
+            "Nuwara Eliya": "NotQualified",
+            "Galle": "2.1503",
+            "Matara": "2.1557",
+            "Hambanthota": "2.1643",
+            "Jaffna": "2.1968",
+            "Kilinochchi": "2.1972",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "2.1503",
+            "Trincomalee": "2.1783",
+            "Batticaloa": "2.1621",
+            "Ampara": "2.1690",
+            "Puttalam": "2.1698",
+            "Kurunagala": "2.1529",
+            "Anuradhapura": "2.1850",
+            "Polonnaruwa": "2.1774",
+            "Badulla": "2.1671",
+            "Monaragala": "NotQualified",
+            "Kegalle": "2.1465",
+            "Ratnapura": "2.2112"
+        }
+    },
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF KELANIYA",
+        "UNIVERSITY_tam": "களனி பல்கலைக்கழகம்",
+        "UNICODE": "001D",
+        "SUBJECTS_eng": "Physics, Chemistry, Biology",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல்",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The Faculty of Medicine at the University of Kelaniya offers an MBBS program that emphasizes clinical skills, research, and community engagement.",
+        "DESCRIPTION_tam": "களனி பல்கலைக்கழக மருத்துவ பீடம் மருத்துவக் கலைகள், ஆராய்ச்சி, சமூக ஈடுபாட்டில் முக்கியத்துவம் கொடுக்கும் MBBS பட்டப் படிப்பை வழங்குகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "2.0526",
+            "Gampaha": "2.0517",
+            "Kalutara": "2.0514",
+            "Matale": "2.0612",
+            "Kandy": "2.0545",
+            "Nuwara Eliya": "2.0969",
+            "Galle": "2.0791",
+            "Matara": "2.0508",
+            "Hambanthota": "NotQualified",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "2.1087",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "2.0533",
+            "Trincomalee": "2.0571",
+            "Batticaloa": "2.0536",
+            "Ampara": "2.0552",
+            "Puttalam": "2.0517",
+            "Kurunagala": "2.0651",
+            "Anuradhapura": "2.1071",
+            "Polonnaruwa": "2.0619",
+            "Badulla": "2.1015",
+            "Monaragala": "2.0600",
+            "Kegalle": "2.0600",
+            "Ratnapura": "2.0526"
+        }
+    },
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF JAFFNA",
+        "UNIVERSITY_tam": "யாழ்ப்பாணப் பல்கலைக்கழகம்",
+        "UNICODE": "001E",
+        "SUBJECTS_eng": "Physics, Chemistry, Biology",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல்",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the University of Jaffna focuses on providing quality medical education to students, preparing them for careers in diverse medical fields.",
+        "DESCRIPTION_tam": "யாழ்ப்பாணப் பல்கலைக்கழகத்தில் MBBS படிப்பு மாணவர்களுக்கு உயர்தர மருத்துவக் கல்வியை வழங்கி, பல்வேறு மருத்துவத் துறைகளில் தொழில்முறைப் பணிகளுக்கான தயாரிப்பை செய்திடுகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8790",
+            "Gampaha": "1.7278",
+            "Kalutara": "1.7000",
+            "Matale": "1.8000",
+            "Kandy": "1.7500",
+            "Nuwara Eliya": "1.8500",
+            "Galle": "NotQualified",
+            "Matara": "NotQualified",
+            "Hambanthota": "1.6000",
+            "Jaffna": "1.9000",
+            "Kilinochchi": "1.7500",
+            "Mannar": "1.8000",
+            "Mullaitivu": "1.7000",
+            "Vavuniya": "1.8000",
+            "Trincomalee": "1.7500",
+            "Batticaloa": "1.9000",
+            "Ampara": "1.8000",
+            "Puttalam": "1.7000",
+            "Kurunagala": "1.8500",
+            "Anuradhapura": "1.7500",
+            "Polonnaruwa": "1.7000",
+            "Badulla": "1.8000",
+            "Monaragala": "1.7000",
+            "Kegalle": "1.7000",
+            "Ratnapura": "1.7500"
+        }
+    },
+    
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF RUHUNA",
+        "UNIVERSITY_tam": "உருகுணை பல்கலைக்கழகம்",
+        "UNICODE": "001F",
+        "SUBJECTS_eng": "Medicine",
+        "SUBJECTS_tam": "மருத்துவம்",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The Faculty of Medicine at the University of Ruhuna offers an MBBS program that emphasizes evidence-based practice, ethical conduct, and community service.",
+        "DESCRIPTION_tam": " உருகுணை பல்கலைக்கழகத்தின் மருத்துவ பீடம் ஆதாரபூர்வ நடைமுறைகள், ஒழுங்கமைக்கப்பட்ட நடத்தை மற்றும் சமூக சேவையை முன்னிலைப்படுத்தும் MBBS பட்டப் படிப்பை வழங்குகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.9559",
+            "Gampaha": "1.9550",
+            "Kalutara": "1.9559",
+            "Matale": "1.9778",
+            "Kandy": "1.9598",
+            "Nuwara Eliya": "1.9775",
+            "Galle": "1.9552",
+            "Matara": "1.9550",
+            "Hambanthota": "1.9606",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "1.9671",
+            "Trincomalee": "2.0044",
+            "Batticaloa": "1.9614",
+            "Ampara": "1.9566",
+            "Puttalam": "1.9578",
+            "Kurunagala": "1.9594",
+            "Anuradhapura": "1.9552",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "1.9626",
+            "Monaragala": "1.9757",
+            "Kegalle": "1.9616",
+            "Ratnapura": "1.9571"
+        }
+    },
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF MORATUWA",
+        "UNIVERSITY_tam": "மொறட்டுவை பல்கலைக்கழகம்",
+        "UNICODE": "001G",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the University of Moratuwa emphasizes the integration of medical knowledge with engineering principles, preparing students for innovative medical careers.",
+        "DESCRIPTION_tam": "மொறட்டுவை பல்கலைக்கழகத்தின் மருத்துவக் கல்வி திட்டம் மருத்துவ அறிவை பொறியியல் கொள்கைகளுடன் ஒருங்கிணைக்கிறது, மாணவர்களை புதுமையான மருத்துவ தொழில்களுக்கு தயார்ப்படுத்துகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8732",
+            "Gampaha": "1.8707",
+            "Kalutara": "1.8500",
+            "Matale": "1.8321",
+            "Kandy": "1.8456",
+            "Nuwara Eliya": "1.8123",
+            "Galle": "1.8654",
+            "Matara": "1.8721",
+            "Hambanthota": "1.8412",
+            "Jaffna": "1.8523",
+            "Kilinochchi": "1.8012",
+            "Mannar": "1.8125",
+            "Mullaitivu": "1.8023",
+            "Vavuniya": "1.8314",
+            "Trincomalee": "1.8421",
+            "Batticaloa": "1.8512",
+            "Ampara": "1.8324",
+            "Puttalam": "1.8415",
+            "Kurunagala": "1.8521",
+            "Anuradhapura": "1.8623",
+            "Polonnaruwa": "1.8412",
+            "Badulla": "1.8514",
+            "Monaragala": "1.8123",
+            "Kegalle": "1.8621",
+            "Ratnapura": "1.8712"
+        }
+    },
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "EASTERN UNIVERSITY, SRI LANKA",
+        "UNIVERSITY_tam": "கிழக்கு பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "001H",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the Eastern University, Sri Lanka focuses on providing quality medical education to students from diverse backgrounds, preparing them for careers in the medical field.",
+        "DESCRIPTION_tam": "கிழக்கு பல்கலைக்கழகத்தின் MBBS திட்டம், வித்தியாசமான பின்னணியில் இருந்து வரும் மாணவர்களுக்கு உயர்தர மருத்துவக் கல்வியை வழங்குவதை முன்னோக்கி கொண்டு, அவர்கள் மருத்துவத் துறையில் பணியாற்ற தயாராகக் கொண்டு வருகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.7823",
+            "Gampaha": "1.7721",
+            "Kalutara": "1.7612",
+            "Matale": "1.7523",
+            "Kandy": "1.7812",
+            "Nuwara Eliya": "1.7123",
+            "Galle": "1.7621",
+            "Matara": "1.7712",
+            "Hambanthota": "1.7521",
+            "Jaffna": "1.7814",
+            "Kilinochchi": "1.7012",
+            "Mannar": "1.7123",
+            "Mullaitivu": "1.7021",
+            "Vavuniya": "1.7312",
+            "Trincomalee": "1.7421",
+            "Batticaloa": "1.7512",
+            "Ampara": "1.7321",
+            "Puttalam": "1.7412",
+            "Kurunagala": "1.7521",
+            "Anuradhapura": "1.7623",
+            "Polonnaruwa": "1.7412",
+            "Badulla": "1.7514",
+            "Monaragala": "1.7123",
+            "Kegalle": "1.7621",
+            "Ratnapura": "1.7712"
+        }
+    },
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "RAJARATA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "ராஜரட்ட பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "001K",
+       "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the Rajarata University of Sri Lanka emphasizes community-based education and research, preparing students for careers in rural and underserved areas.",
+        "DESCRIPTION_tam": "ராஜரட்ட பல்கலைக்கழகத்தின் MBBS திட்டம் சமூக அடிப்படையிலான கல்வி மற்றும் ஆய்வை முன்னிலைப்படுத்துகிறது, கிராமப்புறம் மற்றும் சேவையளிக்காத பகுதிகளில் பணியாற்ற மாணவர்களைத் தயாராக்குகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8787",
+            "Gampaha": "1.9568",
+            "Kalutara": "1.8362",
+            "Matale": "1.8824",
+            "Kandy": "1.9273",
+            "Nuwara Eliya": "1.7779",
+            "Galle": "1.8456",
+            "Matara": "1.9012",
+            "Hambanthota": "1.8460",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "1.8775",
+            "Trincomalee": "1.9043",
+            "Batticaloa": "1.9320",
+            "Ampara": "1.8621",
+            "Puttalam": "1.9239",
+            "Kurunagala": "1.8847",
+            "Anuradhapura": "1.9146",
+            "Polonnaruwa": "1.8654",
+            "Badulla": "1.8128",
+            "Monaragala": "1.7984",
+            "Kegalle": "1.8394",
+            "Ratnapura": "1.7651"
+        }
+    },
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "சபரகமுவ பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "001L",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the Sabaragamuwa University of Sri Lanka emphasizes problem-based learning and community engagement, preparing students for careers in diverse medical fields.",
+        "DESCRIPTION_tam": "சபரகமுவ பல்கலைக்கழகத்தின் MBBS திட்டம் சிக்கல் அடிப்படையிலான கற்றல் மற்றும் சமூக ஒத்துழைப்பு மூலம் மாணவர்களை பலவகையான மருத்துவ துறைகளில் பணியாற்ற தயாராக்குகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8793",
+            "Gampaha": "1.9221",
+            "Kalutara": "1.8500",
+            "Matale": "1.8005",
+            "Kandy": "1.8672",
+            "Nuwara Eliya": "1.7501",
+            "Galle": "1.7463",
+            "Matara": "1.8800",
+            "Hambanthota": "1.7575",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "1.6204",
+            "Trincomalee": "1.7856",
+            "Batticaloa": "1.8008",
+            "Ampara": "1.6721",
+            "Puttalam": "1.7345",
+            "Kurunagala": "1.8120",
+            "Anuradhapura": "1.8432",
+            "Polonnaruwa": "1.6009",
+            "Badulla": "1.7420",
+            "Monaragala": "1.6884",
+            "Kegalle": "1.6503",
+            "Ratnapura": "1.7707"
+        }
+    },
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "WAYAMBA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "வயம்ப பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "001M",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Surgery",
+            "அறுவை சிகிச்சை",
+            "Pediatrics",
+            "குழந்தைகள் மருத்துவம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the Wayamba University of Sri Lanka emphasizes the integration of medical knowledge with technology, preparing students for careers in cutting-edge medical fields.",
+        "DESCRIPTION_tam": "வயம்ப பல்கலைக்கழகத்தின் MBBS திட்டம் மருத்துவ அறிவை தொழில்நுட்பத்துடன் ஒருங்கிணைக்கிறது, மாணவர்களை முன்னணி மருத்துவ துறைகளில் பணியாற்ற தயாராக்குகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.9152",
+            "Gampaha": "1.6890",
+            "Kalutara": "1.7711",
+            "Matale": "1.6921",
+            "Kandy": "1.8229",
+            "Nuwara Eliya": "1.7319",
+            "Galle": "1.8661",
+            "Matara": "NotQualified",
+            "Hambanthota": "NotQualified",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "1.8481",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.7552",
+            "Batticaloa": "NotQualified",
+            "Ampara": "1.8216",
+            "Puttalam": "1.6873",
+            "Kurunagala": "1.8038",
+            "Anuradhapura": "1.6969",
+            "Polonnaruwa": "1.6921",
+            "Badulla": "1.6892",
+            "Monaragala": "1.6948",
+            "Kegalle": "1.7702",
+            "Ratnapura": "1.7803"
+        }
+    },
+    
+    {
+        "COURSE_eng": "MEDICINE",
+        "COURSE_tam": "மருத்துவம்",
+        "UNIVERSITY_eng": "UVA WELLASSA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "ஊவா வெல்லஸ்ஸ பல்கலைக்கழகம், இலங்கை",
+        "UNICODE": "001U",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல்",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Medical Research",
+            "மருத்துவ ஆய்வு",
+            "Entrepreneurship in Medicine",
+            "மருத்துவ தொழில்முனைவு"
+        ],
+        "JOB_ROLES_eng": [
+            "General Practitioner",
+            "Surgeon",
+            "Pediatrician",
+            "Psychiatrist"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது மருத்துவர்",
+            "அறுவை சிகிச்சையாளர்",
+            "குழந்தைகள் மருத்துவர்",
+            "மனநல மருத்துவர்"
+        ],
+        "DESCRIPTION_eng": "The MBBS program at the Uva Wellassa University of Sri Lanka emphasizes the integration of medical knowledge with entrepreneurship, preparing students for careers in innovative medical fields.",
+        "DESCRIPTION_tam": "ஊவா வெல்லஸ்ஸ பல்கலைக்கழகத்தின் MBBS திட்டம் மருத்துவ அறிவை தொழில்முனைவு முறைகளுடன் ஒருங்கிணைக்கிறது, மாணவர்களை புதுமையான மருத்துவ துறைகளில் பணியாற்ற தயாராக்குகிறது.",
+        "DEGREE_TYPE": "MBBS",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "NotQualified",
+            "Gampaha": "1.6473",
+            "Kalutara": "NotQualified",
+            "Matale": "1.6520",
+            "Kandy": "NotQualified",
+            "Galle": "1.3830",
+            "Matara": "NotQualified",
+            "Hambanthota": "NotQualified",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "NotQualified",
+            "Batticaloa": "NotQualified",
+            "Ampara": "NotQualified",
+            "Puttalam": "NotQualified",
+            "Kurunagala": "NotQualified",
+            "Anuradhapura": "1.5985",
+            "Polonnaruwa": "1.3959",
+            "Badulla": "NotQualified",
+            "Monaragala": "NotQualified",
+            "Kegalle": "NotQualified",
+            "Ratnapura": "1.8407"
+        }
+    },
+    
+    {
+        "COURSE_eng": "DENTAL SURGERY",
+        "COURSE_tam": "பல் அறுவை சிகிச்சை",
+        "UNIVERSITY_eng": "UNIVERSITY OF PERADENIYA",
+        "UNIVERSITY_tam":"பேராதனை பல்கலைக்கழகம்",
+        "UNICODE": "002B",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Dentistry",
+            "பல் மருத்துவம்",
+            "Oral Health",
+            "முதுகுத்தன்மை"
+        ],
+        "JOB_ROLES_eng": [
+            "General Dentist",
+            "Orthodontist",
+            "Periodontist",
+            "Oral Surgeon"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது பல் மருத்துவர்",
+            "அடர்த்தி சிகிச்சையாளர்",
+            "பற்களின் அறுவை சிகிச்சையாளர்",
+            "வாயின் அறுவை சிகிச்சையாளர்"
+        ],
+        "DESCRIPTION_eng": "The DMD program at the University of Peradeniya provides comprehensive dental education, preparing students for careers as qualified dental professionals.",
+        "DESCRIPTION_tam": " பேராதனை பல்கலைக்கழகத்தின் DMD திட்டம் பல் மருத்துவப் படிப்புகளை வழங்குகிறது, மாணவர்களை தகுதி பெற்ற பல் மருத்துவர்களாகத் தயார்க்கிறது.",
+        "DEGREE_TYPE": "DMD",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8311",
+            "Gampaha": "1.6275",
+            "Kalutara": "1.7698",
+            "Matale": "1.6329",
+            "Kandy": "1.7869",
+            "Nuwara Eliya": "1.3891",
+            "Galle": "1.8319",
+            "Matara": "1.8405",
+            "Hambanthota": "1.7587",
+            "Jaffna": "1.8087",
+            "Kilinochchi": "1.6660",
+            "Mannar": "1.6619",
+            "Mullaitivu": "1.7586",
+            "Vavuniya": "NotQualified",
+            "Trincomalee": "1.6686",
+            "Batticaloa": "1.7962",
+            "Ampara": "1.7816",
+            "Puttalam": "1.6623",
+            "Kurunagala": "1.7860",
+            "Anuradhapura": "1.5063",
+            "Polonnaruwa": "1.3714",
+            "Badulla": "1.6678",
+            "Monaragala": "1.5849",
+            "Kegalle": "1.7513",
+            "Ratnapura": "1.7434"
+        }
+    },
+    
+    {
+        "COURSE_eng": "DENTAL SURGERY",
+        "COURSE_tam": "பல் அறுவை சிகிச்சை",
+        "UNIVERSITY_eng": "UNIVERSITY OF SRI JAYEWARDENAPURA",
+        "UNIVERSITY_tam": "இலங்கை ஸ்ரீ ஜயவர்தனபுர பல்கலைக்கழகம்",
+        "UNICODE": "002C",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Healthcare",
+            "மருத்துவ சேவை",
+            "Dentistry",
+            "பல் மருத்துவம்",
+            "Oral Health",
+            "வாய் ஆரோக்கியம்"
+        ],
+        "JOB_ROLES_eng": [
+            "General Dentist",
+            "Orthodontist",
+            "Periodontist",
+            "Oral Surgeon"
+        ],
+        "JOB_ROLES_tam": [
+            "பொது பல் மருத்துவர்",
+            "அடர்த்தி சிகிச்சையாளர்",
+            "பற்களின் அறுவை சிகிச்சையாளர்",
+            "வாயின் அறுவை சிகிச்சையாளர்"
+        ],
+        "DESCRIPTION_eng": "The DMD program at the University of Sri Jayewardenapura emphasizes evidence-based dentistry and patient-centered care, preparing students for diverse dental careers.",
+        "DESCRIPTION_tam": "ஸ்ரீ ஜயவர்தனபுர பல்கலைக்கழகத்தின் DMD திட்டம் ஆதாரப் பரிசோதனை பரிசோதனை மற்றும் நோயாளி மையமாக்கப்பட்ட சிகிச்சையை முக்கியமாகக் கொண்டு பல் மருத்துவத் துறைகளில் பல்வேறு வேலையில் மாணவர்களை தயார்க்கின்றது.",
+        "DEGREE_TYPE": "DMD",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.8337",
+            "Gampaha": "1.6219",
+            "Kalutara": "1.7682",
+            "Matale": "NotQualified",
+            "Kandy": "NotQualified",
+            "Nuwara Eliya": "1.3789",
+            "Galle": "1.8340",
+            "Matara": "1.8535",
+            "Hambanthota": "1.8254",
+            "Jaffna": "NotQualified",
+            "Kilinochchi": "NotQualified",
+            "Mannar": "NotQualified",
+            "Mullaitivu": "NotQualified",
+            "Vavuniya": "1.8206",
+            "Trincomalee": "NotQualified",
+            "Batticaloa": "NotQualified",
+            "Ampara": "NotQualified",
+            "Puttalam": "NotQualified",
+            "Kurunagala": "NotQualified",
+            "Anuradhapura": "NotQualified",
+            "Polonnaruwa": "NotQualified",
+            "Badulla": "NotQualified",
+            "Monaragala": "NotQualified",
+            "Kegalle": "NotQualified",
+            "Ratnapura": "1.7317"
+        }
+    },
+    
+    {
+        "COURSE_eng": "VETERINARY SCIENCE",
+        "COURSE_tam": "கால்நடை மருத்துவம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF PERADENIYA",
+        "UNIVERSITY_tam":"பேராதனை பல்கலைக்கழகம்",
+        "UNICODE": "003B",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Physics": "S",
+                "Biology": "S",
+                "Chemistry": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Animal Health",
+            "விலங்கு ஆரோக்கியம்",
+            "Veterinary Medicine",
+            "கால்நடை மருத்துவம்",
+            "Animal Welfare",
+            "விலங்கு நலன்"
+        ],
+        "JOB_ROLES_eng": [
+            "Veterinarian",
+            "Animal Scientist",
+            "Wildlife Biologist",
+            "Livestock Specialist"
+        ],
+        "JOB_ROLES_tam": [
+            "கால்நடை மருத்துவர்",
+            "விலங்கு அறிவியலாளர்",
+            "வனவிலங்கு ஆய்வாளர்",
+            "மாடி நிபுணர்"
+        ],
+        "DESCRIPTION_eng": "The BVSc program at the University of Peradeniya provides comprehensive veterinary education, preparing students for careers in animal health and welfare.",
+        "DESCRIPTION_tam": "பேராதனை பல்கலைக்கழகத்தின் BVSc திட்டம் முழுமையான கால்நடை கல்வியை வழங்குகிறது, இது விலங்கு ஆரோக்கியம் மற்றும் நலனுக்கான வேலைகளுக்கான மாணவர்களை தயார்க்கின்றது.",
+        "DEGREE_TYPE": "BVSc",
+        "DURATION": "5 YEARS",
+        "Z_SCORE": {
+            "Colombo": "1.6523",
+            "Gampaha": "1.6421",
+            "Kalutara": "1.6312",
+            "Matale": "1.6223",
+            "Kandy": "1.6512",
+            "Nuwara Eliya": "1.6123",
+            "Galle": "1.6321",
+            "Matara": "1.6412",
+            "Hambanthota": "1.6221",
+            "Jaffna": "1.6514",
+            "Kilinochchi": "1.6012",
+            "Mannar": "1.6123",
+            "Mullaitivu": "1.6021",
+            "Vavuniya": "1.6212",
+            "Trincomalee": "1.6321",
+            "Batticaloa": "1.6412",
+            "Ampara": "1.6221",
+            "Puttalam": "1.6312",
+            "Kurunagala": "1.6421",
+            "Anuradhapura": "1.6523",
+            "Polonnaruwa": "1.6312",
+            "Badulla": "1.6414",
+            "Monaragala": "1.6123",
+            "Kegalle": "1.6421",
+            "Ratnapura": "1.6512"
+        }
+    },
+    
+    {
+        "COURSE_eng": "AGRICULTURAL TECHNOLOGY AND MANAGEMENT",
+        "COURSE_tam": "விவசாய தொழில்நுட்பம் மற்றும் மேலாண்மை",
+        "UNIVERSITY_eng": "UNIVERSITY OF PERADENIYA",
+        "UNIVERSITY_tam": "பேராதனை பல்கலைக்கழகம்",
+        "UNICODE": "039B",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல்",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Chemistry": "S",
+                "Physics": "S",
+                "Biology": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Agriculture",
+            "விவசாயம்",
+            "Agribusiness",
+            "விவசாய வணிகம்"
+        ],
+        "JOB_ROLES_eng": [
+            "Agricultural Manager",
+            "Farm Manager",
+            "Agricultural Consultant",
+            "Agribusiness Specialist"
+        ],
+        "JOB_ROLES_tam": [
+            "விவசாய மேலாளர்",
+            "விவசாயக் காலனி மேலாளர்",
+            "விவசாய ஆலோசகர்",
+            "விவசாய வணிக நிபுணர்"
+        ],
+        "DESCRIPTION_eng": "The BSc (Hons) program in Agricultural Technology and Management at the University of Peradeniya focuses on the application of scientific principles to agricultural production and management.",
+        "DESCRIPTION_tam": "பேராதனை பல்கலைக்கழகத்தின் விவசாய தொழில்நுட்பம் மற்றும் மேலாண்மை BSc (Hons) திட்டம், விவசாய உற்பத்தி மற்றும் மேலாண்மையில் அறிவியல் கோட்பாடுகளை பயன்படுத்துவதில் கவனம் செலுத்துகிறது.",
+        "DEGREE_TYPE": "BSc (Hons)",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "0.5367",
+            "Gampaha": "0.5473",
+            "Kalutara": "0.5114",
+            "Matale": "0.5632",
+            "Kandy": "0.4983",
+            "Nuwara Eliya": "0.5516",
+            "Galle": "0.5252",
+            "Matara": "0.5641",
+            "Hambanthota": "0.5612",
+            "Jaffna": "0.5290",
+            "Kilinochchi": "0.5458",
+            "Mannar": "0.5639",
+            "Mullaitivu": "0.5987",
+            "Vavuniya": "0.5084",
+            "Trincomalee": "0.5246",
+            "Batticaloa": "0.4903",
+            "Ampara": "0.5314",
+            "Puttalam": "0.5769",
+            "Kurunagala": "0.4940",
+            "Anuradhapura": "0.5302",
+            "Polonnaruwa": "0.5079",
+            "Badulla": "0.4987",
+            "Monaragala": "0.5410",
+            "Kegalle": "0.5550",
+            "Ratnapura": "0.5607"
+        }
+    },
+    
+    {
+        "COURSE_eng": "AGRICULTURE",
+        "COURSE_tam": "விவசாயம்",
+        "UNIVERSITY_eng": "SABARAGAMUWA UNIVERSITY OF SRI LANKA",
+        "UNIVERSITY_tam": "சபரகமுவ பல்கலைக்கழகம்",
+        "UNICODE": "004E",
+        "SUBJECTS_eng": "Physics, Chemistry, Biology",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Chemistry": "S",
+                "Physics": "S",
+                "Biology": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Agriculture",
+            "விவசாயம்",
+            "Agribusiness",
+            "விவசாய வணிகம்"
+        ],
+        "JOB_ROLES_eng": [
+            "Agricultural Scientist",
+            "Crop Specialist",
+            "Soil Scientist",
+            "Agricultural Extension Officer"
+        ],
+        "JOB_ROLES_tam": [
+            "விவசாய அறிவியலாளர்",
+            "பயிர் நிபுணர்",
+            "மண்ணியல் அறிவியலாளர்",
+            "விவசாய விரிவாக்க அதிகாரி"
+        ],
+        "DESCRIPTION_eng": "The BSc program in Agriculture at the Sabaragamuwa University of Sri Lanka provides a broad-based education in agricultural sciences, preparing students for careers in research, development, and management.",
+        "DESCRIPTION_tam": "சபரகமுவ பல்கலைக்கழகத்தின் விவசாய BSc திட்டம், விவசாய அறிவியலில் பரந்த அடிப்படையில் கல்வி வழங்கி, மாணவர்களை ஆய்வு, மேம்பாடு மற்றும் மேலாண்மையில் தொழில்முனைவோராக தயார prepares.",
+        "DEGREE_TYPE": "B.Sc",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "0.6512",
+            "Gampaha": "0.6704",
+            "Kalutara": "0.6519",
+            "Matale": "0.6721",
+            "Kandy": "0.6503",
+            "Nuwara Eliya": "0.6632",
+            "Galle": "0.6625",
+            "Matara": "0.6690",
+            "Hambanthota": "0.6598",
+            "Jaffna": "0.6583",
+            "Kilinochchi": "0.6710",
+            "Mannar": "0.6702",
+            "Mullaitivu": "0.6547",
+            "Vavuniya": "0.6741",
+            "Trincomalee": "0.6572",
+            "Batticaloa": "0.6543",
+            "Ampara": "0.6695",
+            "Puttalam": "0.6582",
+            "Kurunagala": "0.6607",
+            "Anuradhapura": "0.6641",
+            "Polonnaruwa": "0.6738",
+            "Badulla": "0.6553",
+            "Monaragala": "0.6684",
+            "Kegalle": "0.6605",
+            "Ratnapura": "0.6618"
+        }
+    },
+    
+    {
+        "COURSE_eng": "AGRICULTURE",
+        "COURSE_tam": "விவசாயம்",
+        "UNIVERSITY_eng": "UNIVERSITY OF JAFFNA",
+        "UNIVERSITY_tam": "யாழ்ப்பாணப் பல்கலைக்கழகம்",
+        "UNICODE": "004J",
+        "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+        "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+        "STREAM": "Biological Science",
+        "MINIMUM_QUALIFICATIONS": {
+            "RequiredGrades": {
+                "Chemistry": "S",
+                "Physics": "S",
+                "Biology": "S"
+            },
+            "OtherQualifications": {}
+        },
+        "INTEREST": [
+            "Agriculture",
+            "விவசாயம்",
+            "Agribusiness",
+            "விவசாய வணிகம்"
+        ],
+        "JOB_ROLES_eng": [
+            "Agricultural Scientist",
+            "Crop Specialist",
+            "Soil Scientist",
+            "Agricultural Extension Officer"
+        ],
+        "JOB_ROLES_tam": [
+            "விவசாய அறிவியலாளர்",
+            "பயிர் நிபுணர்",
+            "மண்ணியல் அறிவியலாளர்",
+            "விவசாய விரிவாக்க அதிகாரி"
+        ],
+        "DESCRIPTION_eng": "The BSc program in Agriculture at the University of Jaffna provides a broad-based education in agricultural sciences, preparing students for careers in research, development, and management.",
+        "DESCRIPTION_tam": "யாழ்ப்பாணப் பல்கலைக்கழகத்தின் விவசாய BSc திட்டம், விவசாய அறிவியலில் பரந்த அடிப்படையில் கல்வி வழங்கி, மாணவர்களை ஆய்வு, மேம்பாடு மற்றும் மேலாண்மையில் தொழில்முனைவோராக தயார prepares.",
+        "DEGREE_TYPE": "B.Sc",
+        "DURATION": "4 YEARS",
+        "Z_SCORE": {
+            "Colombo": "0.6312",
+            "Gampaha": "0.6453",
+            "Kalutara": "0.6348",
+            "Matale": "0.6432",
+            "Kandy": "0.6253",
+            "Nuwara Eliya": "0.6321",
+            "Galle": "0.6401",
+            "Matara": "0.6433",
+            "Hambanthota": "0.6354",
+            "Jaffna": "0.6472",
+            "Kilinochchi": "0.6445",
+            "Mannar": "0.6303",
+            "Mullaitivu": "0.6424",
+            "Vavuniya": "0.6485",
+            "Trincomalee": "0.6367",
+            "Batticaloa": "0.6341",
+            "Ampara": "0.6457",
+            "Puttalam": "0.6343",
+            "Kurunagala": "0.6365",
+            "Anuradhapura": "0.6289",
+            "Polonnaruwa": "0.6441",
+            "Badulla": "0.6332",
+            "Monaragala": "0.6298",
+            "Kegalle": "0.6306",
+            "Ratnapura": "0.6373"
+        }
+    },
+    
+   
+    [
+        {
+            "COURSE_eng": "AGRICULTURE",
+            "COURSE_tam": "விவசாயம்",
+            "UNIVERSITY_eng": "RAJARATA UNIVERSITY OF SRI LANKA",
+            "UNIVERSITY_tam": "ராஜரட்ட பல்கலைக்கழகம், இலங்கை",
+            "UNICODE": "004L",
+            "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+            "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல் ",
+            "STREAM": "Biological Science",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Biology": "S",
+                    "Agricultural Science": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": [
+                "Agriculture",
+                "விவசாயம்",
+                "Agribusiness",
+                "விவசாய வணிகம்"
+            ],
+            "JOB_ROLES_eng": [
+                "Agricultural Scientist",
+                "Crop Specialist",
+                "Soil Scientist",
+                "Agricultural Extension Officer"
+            ],
+            "JOB_ROLES_tam": [
+                "விவசாய அறிவியலாளர்",
+                "பயிர் நிபுணர்",
+                "மண்ணியல் அறிவியலாளர்",
+                "விவசாய விரிவாக்க அதிகாரி"
+            ],
+            "DESCRIPTION_eng": "The BSc (Hons) program in Agriculture at Rajarata University focuses on agricultural research and sustainable practices.",
+            "DESCRIPTION_tam": " பல்கலைக்கழகத்தின் BSc (Hons) விவசாயப் பாடநெறி, விவசாய ஆராய்ச்சி மற்றும் திடமான செயல்முறைகளை கவனிக்கும்.",
+            "DEGREE_TYPE": "B.Sc (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": {
+                "Colombo": "0.7154",
+                "Gampaha": "0.7231",
+                "Kalutara": "0.7102",
+                "Matale": "0.6984",
+                "Kandy": "0.7456",
+                "Nuwara Eliya": "0.6893",
+                "Galle": "0.6715",
+                "Matara": "0.6572",
+                "Hambanthota": "0.6331",
+                "Jaffna": "0.6897",
+                "Kilinochchi": "0.7123",
+                "Mannar": "NotQualified",
+                "Mullaitivu": "NotQualified",
+                "Vavuniya": "NotQualified",
+                "Trincomalee": "NotQualified",
+                "Batticaloa": "NotQualified",
+                "Ampara": "NotQualified",
+                "Puttalam": "0.6891",
+                "Kurunagala": "0.7012",
+                "Anuradhapura": "0.7356",
+                "Polonnaruwa": "0.6521",
+                "Badulla": "0.6987",
+                "Monaragala": "0.7194",
+                "Kegalle": "0.6632",
+                "Ratnapura": "0.7405"
+            }
+        },
+        
+        {
+            "COURSE_eng": "AGRICULTURE",
+            "COURSE_tam": "விவசாயம்",
+            "UNIVERSITY_eng": "WAYAMBA UNIVERSITY OF SRI LANKA",
+            "UNIVERSITY_tam": "வயம்ப பல்கலைக்கழகம்",
+            "UNICODE": "004M",
+            "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+            "SUBJECTS_tam": "இயற்பியல், வேதியியல், உயிரியல்",
+            "MINIMUM_QUALIFICATIONS": {
+                "RequiredGrades": {
+                    "Chemistry": "S",
+                    "Biology": "S",
+                    "Agricultural Science": "S"
+                },
+                "OtherQualifications": {}
+            },
+            "INTEREST": [
+                "Agriculture",
+                "விவசாயம்",
+                "Agribusiness",
+                "விவசாய வணிகம்"
+            ],
+            "JOB_ROLES_eng": [
+                "Agricultural Scientist",
+                "Crop Specialist",
+                "Soil Scientist",
+                "Agricultural Extension Officer"
+            ],
+            "JOB_ROLES_tam": [
+                "விவசாய அறிவியலாளர்",
+                "பயிர் நிபுணர்",
+                "மண்ணியல் அறிவியலாளர்",
+                "விவசாய விரிவாக்க அதிகாரி"
+            ],
+            "DESCRIPTION_eng": "The BSc (Hons) program in Agriculture at Wayamba University emphasizes modern agricultural practices and technology.",
+            "DESCRIPTION_tam": "வயம்ப பல்கலைக்கழகத்தில் BSc (Hons) விவசாயப் பாடநெறி நவீன விவசாய நடைமுறைகள் மற்றும் தொழில்நுட்பத்தை முக்கியமாகக் கொண்டுள்ளது.",
+            "DEGREE_TYPE": "B.Sc (Hons)",
+            "DURATION": "4 YEARS",
+            "Z_SCORE": {
+                "Colombo": "0.6521",
+                "Gampaha": "0.6893",
+                "Kalutara": "0.6734",
+                "Matale": "0.7215",
+                "Kandy": "0.7012",
+                "Nuwara Eliya": "0.6784",
+                "Galle": "0.6432",
+                "Matara": "0.7156",
+                "Hambanthota": "0.6025",
+                "Jaffna": "0.7593",
+                "Kilinochchi": "0.7412",
+                "Mannar": "0.6823",
+                "Mullaitivu": "0.5998",
+                "Vavuniya": "0.7384",
+                "Trincomalee": "0.6541",
+                "Batticaloa": "0.7230",
+                "Ampara": "0.6902",
+                "Puttalam": "0.6751",
+                "Kurunagala": "0.7482",
+                "Anuradhapura": "0.7134",
+                "Polonnaruwa": "0.7021",
+                "Badulla": "0.5917",
+                "Monaragala": "0.6438",
+                "Kegalle": "0.6594",
+                "Ratnapura": "0.7235"
+            }
+        },
+
+        [
+            {
+                "COURSE_eng": "FOOD SCIENCE AND NUTRITION",
+                "COURSE_tam": "உணவு அறிவியல் மற்றும் ஊட்டச்சத்து",
+                "UNIVERSITY_eng": "WAYAMBA UNIVERSITY OF SRI LANKA",
+                "UNIVERSITY_tam": "வயம்ப பல்கலைக்கழகம்",
+                "UNICODE": "005M",
+                "SUBJECTS_eng": "Physics, Chemistry, Biological Science",
+                "SUBJECTS_tam":"இயற்பியல், வேதியியல், உயிரியல் ",
+                "STREAM": "Biological Science",
+                "MINIMUM_QUALIFICATIONS": {
+                    "RequiredGrades": {
+                        "Chemistry": "S",
+                        "Physics": "S",
+                        "Biology": "S"
+                    },
+                    "OtherQualifications": {}
+                },
+                "INTEREST": [
+                    "Food Science",
+                    "உணவு அறிவியல்",
+                    "Nutrition",
+                    "ஊட்டச்சத்து",
+                    "Food Technology",
+                    "உணவு தொழில்நுட்பம்"
+                ],
+                "JOB_ROLES_eng": [
+                    "Food Scientist",
+                    "Nutritionist",
+                    "Quality Assurance Manager",
+                    "Food Product Developer"
+                ],
+                "JOB_ROLES_tam": [
+                    "உணவு அறிவியலாளர்",
+                    "ஊட்டச்சத்து நிபுணர்",
+                    "தர உத்தரவாத மேலாளர்",
+                    "உணவு தயாரிப்பு உருவாக்குபவர்"
+                ],
+                "DESCRIPTION_eng": "The BSc (Hons) program in Food Science and Nutrition at Wayamba University covers both food science and applied nutrition, preparing students for diverse careers in the food industry and health sectors.",
+                "DESCRIPTION_tam": "வயம்ப பல்கலைக்கழகத்தில் உள்ள BSc (Hons) உணவு அறிவியல் மற்றும் ஊட்டச்சத்து நிரல், உணவு அறிவியலும் பயன்பாட்டு ஊட்டச்சத்தும் உள்ளடக்கியது, இது மாணவர்களை உணவு தொழில் மற்றும் ஆரோக்கிய துறைகளில் பல்வேறு தொழில்களுக்கு தயார்படுத்துகிறது.",
+                "DEGREE_TYPE": "B.Sc (Hons)",
+                "DURATION": "4 YEARS",
+                "Z_SCORE": {
+                    "Colombo": "0.8214",
+                    "Gampaha": "0.7932",
+                    "Kalutara": "0.7856",
+                    "Matale": "0.8123",
+                    "Kandy": "0.7984",
+                    "Nuwara Eliya": "0.8112",
+                    "Galle": "0.7893",
+                    "Matara": "0.8074",
+                    "Hambanthota": "0.8152",
+                    "Jaffna": "0.8331",
+                    "Kilinochchi": "0.8205",
+                    "Mannar": "0.8026",
+                    "Mullaitivu": "0.8109",
+                    "Vavuniya": "0.8310",
+                    "Trincomalee": "0.7928",
+                    "Batticaloa": "0.8057",
+                    "Ampara": "0.8186",
+                    "Puttalam": "0.8234",
+                    "Kurunagala": "0.8195",
+                    "Anuradhapura": "0.7957",
+                    "Polonnaruwa": "0.8271",
+                    "Badulla": "0.8088",
+                    "Monaragala": "0.7914",
+                    "Kegalle": "0.8065",
+                    "Ratnapura": "0.8220"
+                }
+            }
+        ]
+
+    ]
+]
+        
