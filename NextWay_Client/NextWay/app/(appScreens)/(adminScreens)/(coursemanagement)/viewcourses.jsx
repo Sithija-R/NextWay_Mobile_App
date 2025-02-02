@@ -18,7 +18,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
-import { useRouter } from "expo-router";
+
 import {
   fetchCoursesByName,
   fetchCourseByUNICODE,
@@ -27,6 +27,7 @@ import {
 import { TabView, SceneMap, TabBar } from "react-native-tab-view";
 import Loading from "../../../../components/Loading/Loading";
 import { useFocusEffect } from "@react-navigation/native";
+import { useRouter } from "expo-router";
 
 export default function ViewCourses() {
   const router = useRouter();
@@ -101,7 +102,7 @@ export default function ViewCourses() {
     <View style={[styles.scene]}>
       <ScrollView>
         {allcourses
-          .filter((course) => course.STREAM === "Biology")
+          .filter((course) => course.STREAM === "Biological Science")
           .map((course, index) => (
             <Pressable
               key={index}
@@ -137,7 +138,7 @@ export default function ViewCourses() {
               key={index}
               onPress={() => {
                 router.push({
-                  pathname: "coursedisplayer",
+                  pathname: "courseviewer",
                   params: { course: JSON.stringify(course) },
                 });
               }}
@@ -161,13 +162,13 @@ export default function ViewCourses() {
     <View style={[styles.scene]}>
       <ScrollView>
         {allcourses
-          .filter((course) => course.STREAM === "Technology")
+          .filter((course) => course.STREAM === "ENGINEERING TECHNOLOGY (ET)")
           .map((course, index) => (
             <Pressable
               key={index}
               onPress={() => {
                 router.push({
-                  pathname: "coursedisplayer",
+                  pathname: "courseviewer",
                   params: { course: JSON.stringify(course) },
                 });
               }}
@@ -191,13 +192,13 @@ export default function ViewCourses() {
     <View style={[styles.scene]}>
       <ScrollView>
         {allcourses
-          .filter((course) => course.STREAM === "Art")
+          .filter((course) => course.STREAM === "Arts")
           .map((course, index) => (
             <Pressable
               key={index}
               onPress={() => {
                 router.push({
-                  pathname: "coursedisplayer",
+                  pathname: "courseviewer",
                   params: { course: JSON.stringify(course) },
                 });
               }}
@@ -221,13 +222,13 @@ export default function ViewCourses() {
     <View style={[styles.scene]}>
       <ScrollView>
         {allcourses
-          .filter((course) => course.STREAM === "Common")
+          .filter((course) => course.STREAM === "Other")
           .map((course, index) => (
             <Pressable
               key={index}
               onPress={() => {
                 router.push({
-                  pathname: "coursedisplayer",
+                  pathname: "courseviewer",
                   params: { course: JSON.stringify(course) },
                 });
               }}
@@ -247,6 +248,35 @@ export default function ViewCourses() {
     </View>
   );
 
+  const SeventhRoute = () => (
+    <View style={[styles.scene]}>
+      <ScrollView>
+        {allcourses
+          .filter((course) => course.STREAM === "Biosystems Technology")
+          .map((course, index) => (
+            <Pressable
+              key={index}
+              onPress={() => {
+                router.push({
+                  pathname: "courseviewer",
+                  params: { course: JSON.stringify(course) },
+                });
+              }}
+            >
+              <View style={styles.tableRow}>
+                <Text
+                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+                >
+                  {course.UNICODE}
+                </Text>
+                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
+              </View>
+            </Pressable>
+          ))}
+      </ScrollView>
+    </View>
+  );
   const renderScene = SceneMap({
     1: FirstRoute,
     2: SecondRoute,
@@ -254,15 +284,17 @@ export default function ViewCourses() {
     4: FourthRoute,
     5: FifththRoute,
     6: SixthRoute,
+    7: SeventhRoute
   });
 
   const routes = [
     { key: "1", title: "Physical" },
     { key: "2", title: "Biology" },
     { key: "3", title: "Commerce" },
-    { key: "4", title: "Technology" },
-    { key: "5", title: "Art" },
+    { key: "4", title: "ET" },
+    { key: "5", title: "Arts" },
     { key: "6", title: "Common" },
+    { key: "7", title: "Biosystems Technology" },
   ];
 
   const layout = useWindowDimensions();
