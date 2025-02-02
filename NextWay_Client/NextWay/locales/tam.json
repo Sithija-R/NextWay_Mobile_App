@@ -1,420 +1,642 @@
 {
-    "change-language": "மொழியை மாற்றவும்",
-    "welcome": "வரவேற்கிறேன்",
-    "signin": "உள்நுழையவும்",
-    "signup": "பதிவு செய்யவும்",
-    "change-password": "கடவுச்சொல்லை மாற்றவும்",
-    "dont-have-account": "கணக்கு இல்லை என்றால்?",
-    "email": "மின்னஞ்சல்",
-    "password": "கடவுச்சொல்",
-    "login-to-account": "உங்கள் கணக்கில் உள்நுழைக",
-    "all-fields-required": "எல்லா துறைகளும் தேவை!",
-    "email-required": "மின்னஞ்சல் தேவை!",
-    "password-reset-success": "கடவுச்சொல் மீட்டமைப்பு மின்னஞ்சல் வெற்றிகரமாக அனுப்பப்பட்டது!",
-    "choose-year": "ஆண்டு",
-    "choose-stream": "பிரிவு",
-    "find-course": "பாடத்தினை கண்டுபிடிக்கவும்",
-    "advertisement": "விளம்பரம்",
-    "year": "ஆண்டு",
-    "stream": "பிரிவு",
-    "subject": "பாடங்கள்",
-    "grade": "தரங்கள்",
-    "next": "அடுத்தது",
-    "warning": "எச்சரிக்கை!",
-    "subject-warning": "3 மாறுபட்ட பாடங்களை தேர்ந்தெடுக்கவும்.",
-    "pass-warning": "நீங்கள் 3 பாடங்களிலும் சித்தி அடைய வேண்டும்.",
-    "district": "மாவட்டம்",
-    "z-score": "Z புள்ளி",
-    "interest": "விருப்பம்",
-    "find-interest": "உங்கள் விருப்பத்தெரிவை கண்டுபிடிக்கவும்",
-    "select": "தேர்ந்தெடுக்கவும்",
-    "enter-z": "Z புள்ளி உள்ளிடவும்",
-    "enter-interest": "விருப்பத்தெரிவை உள்ளிடவும்",
-    "course": "பாடம்",
-    "university": "பல்கலைக்கழகம்",
-    "district-warning": "ஒரு மாவட்டத்தை தேர்ந்தெடுக்கவும்.",
-    "z-score-enter-warning":  "உங்கள் Z புள்ளி உள்ளிடவும்.",
-    "z-score-number-warning":  "Z மதிப்பு எண்குறியீடு ஆக இருக்க வேண்டும்.",
-    "interest-warning":  "உங்கள் விருப்பத்தெரிவை உள்ளிடவும்.",
-    "select-warning":  "குறைந்தது ஒரு விருப்பத்தெரிவை தேர்ந்தெடுக்கவும்.",
-    "save":  "சேமிக்கவும்.",
-    "back":  "மீண்டும்.",
-    
-
-    "username": "பயனர் பெயர்",
-    "phone": "தொலைபேசி",
-    "edit-profile": "சுயவிவரத்தைத் திருத்து",
-    "enter_username": "பயனர் பெயரை உள்ளிடவும்",
-    "enter_age": "வயதை உள்ளிடவும்",
-    "enter_mobile": "மொபைலை உள்ளிடவும்",
-    "age": "வயது",
-    "edit_profile": "சுயவிவரத்தைத் திருத்து",
-    "save_changes": "மாற்றங்களைச் சேமிக்கவும்",
-    "search": "தேடு",
-    "search_course": "பாடத்தைத் தேடு",
-    "delete_course": "பாடத்தை நீக்கு",
-    "view_courses": "பாடங்களைப் பார்",
-    "send_req": "கோரிக்கை அனுப்பு",
-    "ad_acc_req": "விளம்பர கணக்கு கோரிக்கை",
-    "business_name": "வணிகப் பெயர்",
-    "description": "விளக்கம்",
-    "contact_no": "தொடர்பு எண்",
-    "business_type": "வணிக வகை",
-    "create_ad": "புதிய விளம்பரத்தை உருவாக்கு",
-    "no_ads": "விளம்பரங்கள் எதுவும் கிடைக்கவில்லை!",
-    "contact": "தொடர்பு",
-    "website": "இணையதளம்",
-    "edit": "திருத்து",
-    "delete": "நீக்கு",
-    "create": "உருவாக்கு",
-    "advertiser-request": "விளம்பரதாரர் கோரிக்கை",
-    "answer_questions": "கேள்விகளுக்கு பதிலளி",
-    "submit": "சமர்ப்பிக்கவும்",
-    "home": "முகப்பு",
-    "notifications": "அறிவிப்புகள்",
-    "profile": "சுயவிவரம்",
-    "ads": "விளம்பரம்",
-    "language": "மொழி",
-    "about": "பற்றி",
-    "logout": "வெளியேறு",
-    "settings": "அமைப்புகள்",
-    "duration": "காலம்",
-    "qualifications": "தகுதிகள்",
-    "job_roles": "பணி பங்குகள்",
-
-    
-   
-"streams": [
-  {
-    "label": "பௌதீக விஞ்ஞானம்",
-    "value": "Physical"
-  },
-  {
-    "label": "உயிரியல் விஞ்ஞானம்",
-    "value": "Biological Science"
-  },
-  {
-    "label": "வணிகம் ",
-    "value": "Commerce"
-  },
-  {
-    "label": "கலை",
-    "value": "Arts"
-  },
-  {
-    "label": "பொறியியல் தொழில்நுட்பம்",
-    "value": "ENGINEERING TECHNOLOGY (ET)"
-  },
-  {
-    "label": "உயிரியல் தொழில்நுட்பம்",
-    "value": "Biosystems Technology"
-  },
-  {
-    "label": "பொது",
-    "value": "Other"
-  }
-],
-"subjectData": {
-  "physical": [
+  "change-language": "மொழியை மாற்றவும்",
+  "welcome": "வரவேற்கிறேன்",
+  "signin": "உள்நுழையவும்",
+  "signup": "பதிவு செய்யவும்",
+  "change-password": "கடவுச்சொல்லை மாற்றவும்",
+  "dont-have-account": "கணக்கு இல்லை என்றால்?",
+  "email": "மின்னஞ்சல்",
+  "password": "கடவுச்சொல்",
+  "login-to-account": "உங்கள் கணக்கில் உள்நுழைக",
+  "all-fields-required": "எல்லா துறைகளும் தேவை!",
+  "email-required": "மின்னஞ்சல் தேவை!",
+  "password-reset-success": "கடவுச்சொல் மீட்டமைப்பு மின்னஞ்சல் வெற்றிகரமாக அனுப்பப்பட்டது!",
+  "choose-year": "ஆண்டு",
+  "choose-stream": "பிரிவு",
+  "find-course": "பாடத்தினை கண்டுபிடிக்கவும்",
+  "advertisement": "விளம்பரம்",
+  "year": "ஆண்டு",
+  "stream": "பிரிவு",
+  "subject": "பாடங்கள்",
+  "grade": "தரங்கள்",
+  "next": "அடுத்தது",
+  "warning": "எச்சரிக்கை!",
+  "subject-warning": "3 மாறுபட்ட பாடங்களை தேர்ந்தெடுக்கவும்.",
+  "pass-warning": "நீங்கள் 3 பாடங்களிலும் சித்தி அடைய வேண்டும்.",
+  "district": "மாவட்டம்",
+  "z-score": "Z புள்ளி",
+  "interest": "விருப்பம்",
+  "find-interest": "உங்கள் விருப்பத்தெரிவை கண்டுபிடிக்கவும்",
+  "select": "தேர்ந்தெடுக்கவும்",
+  "enter-z": "Z புள்ளி உள்ளிடவும்",
+  "enter-interest": "விருப்பத்தெரிவை உள்ளிடவும்",
+  "course": "பாடம்",
+  "university": "பல்கலைக்கழகம்",
+  "district-warning": "ஒரு மாவட்டத்தை தேர்ந்தெடுக்கவும்.",
+  "z-score-enter-warning": "உங்கள் Z புள்ளி உள்ளிடவும்.",
+  "z-score-number-warning": "Z மதிப்பு எண்குறியீடு ஆக இருக்க வேண்டும்.",
+  "interest-warning": "உங்கள் விருப்பத்தெரிவை உள்ளிடவும்.",
+  "select-warning": "குறைந்தது ஒரு விருப்பத்தெரிவை தேர்ந்தெடுக்கவும்.",
+  "save": "சேமிக்கவும்.",
+  "back": "மீண்டும்.",
+  "username": "பயனர் பெயர்",
+  "phone": "தொலைபேசி",
+  "edit-profile": "சுயவிவரத்தைத் திருத்து",
+  "enter_username": "பயனர் பெயரை உள்ளிடவும்",
+  "enter_age": "வயதை உள்ளிடவும்",
+  "enter_mobile": "மொபைலை உள்ளிடவும்",
+  "age": "வயது",
+  "edit_profile": "சுயவிவரத்தைத் திருத்து",
+  "save_changes": "மாற்றங்களைச் சேமிக்கவும்",
+  "search": "தேடு",
+  "search_course": "பாடத்தைத் தேடு",
+  "delete_course": "பாடத்தை நீக்கு",
+  "view_courses": "பாடங்களைப் பார்",
+  "send_req": "கோரிக்கை அனுப்பு",
+  "ad_acc_req": "விளம்பர கணக்கு கோரிக்கை",
+  "business_name": "வணிகப் பெயர்",
+  "description": "விளக்கம்",
+  "contact_no": "தொடர்பு எண்",
+  "business_type": "வணிக வகை",
+  "create_ad": "புதிய விளம்பரத்தை உருவாக்கு",
+  "no_ads": "விளம்பரங்கள் எதுவும் கிடைக்கவில்லை!",
+  "contact": "தொடர்பு",
+  "website": "இணையதளம்",
+  "edit": "திருத்து",
+  "delete": "நீக்கு",
+  "create": "உருவாக்கு",
+  "advertiser-request": "விளம்பரதாரர் கோரிக்கை",
+  "answer_questions": "கேள்விகளுக்கு பதிலளி",
+  "submit": "சமர்ப்பிக்கவும்",
+  "home": "முகப்பு",
+  "notifications": "அறிவிப்புகள்",
+  "profile": "சுயவிவரம்",
+  "ads": "விளம்பரம்",
+  "language": "மொழி",
+  "about": "பற்றி",
+  "logout": "வெளியேறு",
+  "settings": "அமைப்புகள்",
+  "duration": "காலம்",
+  "qualifications": "தகுதிகள்",
+  "job_roles": "பணி பங்குகள்",
+  "streams": [
     {
-      "label": "பௌதீகவியல்",
-      "value": "Physics"
+      "label": "பௌதீக விஞ்ஞானம்",
+      "value": "Physical"
     },
     {
-      "label": "இரசாயனவியல் ",
-      "value": "Chemistry"
+      "label": "உயிரியல் விஞ்ஞானம்",
+      "value": "Biological Science"
     },
     {
-      "label": "இணைந்த கணிதம்",
-      "value": "Combined Mathematics"
-    },
-    {
-      "label": "உயர் கணிதம் ",
-      "value": "Higher Mathematics"
-    },
-    {
-      "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
-      "value": "Information & Communication Technology"
-    }
-  ],
-  "biology": [
-    {
-      "label": "உயிரியல்",
-      "value": "Biology"
-    },
-    {
-      "label": "இரசாயனவியல்",
-      "value": "Chemistry"
-    },
-    {
-      "label": "பௌதீகவியல்",
-      "value": "Physics"
-    }
-  ],
-  "commerce": [
-    {
-      "label": "கணக்கீடு",
-      "value": "Accounting"
-    },
-    {
-      "label": "வணிகக் கல்வி ",
-      "value": "Business Studies"
-    },
-    {
-      "label": "பொருளியல்",
-      "value": "Economics"
-    }
-  ],
-  "arts": [
-    {
-      "label": "வரலாறு",
-      "value": "History"
-    },
-    {
-      "label": "இலக்கிய நயம்",
-      "value": "Literature"
-    },
-    {
-      "label": "அரசியல் விஞ்ஞானம்",
-      "value": "Political Science"
-    }
-  ],
-  "engineering technology": [
-    {
-      "label": "பொருளியல்",
-      "value": "Economics"
-    },
-    {
-      "label": "புவியியல்",
-      "value": "Geography"
-    },
-    {
-      "label": "மனை பொருளியல்",
-      "value": "Home Economics"
-    },
-    {
-      "label": "ஆங்கிலம்",
-      "value": "English"
-    },
-    {
-      "label": "தொடர்பாடல் & ஊடக கல்வி",
-      "value": "Communication and Media Studies"
-    },
-    {
-      "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
-      "value": "Information & Communication Technology"
+      "label": "வணிகம் ",
+      "value": "Commerce"
     },
     {
       "label": "கலை",
-      "value": "Art"
+      "value": "Arts"
     },
     {
-      "label": "வணிகக் கல்வி",
-      "value": "Business Studies"
+      "label": "பொறியியல் தொழில்நுட்பம்",
+      "value": "ENGINEERING TECHNOLOGY (ET)"
     },
-    {
-      "label": "விவசாய விஞ்ஞானம்",
-      "value": "Agricultural Science"
-    },
-    {
-      "label": "கணக்கீடு ",
-      "value": "Accountancy"
-    },
-    {
-      "label": "கணிதம் ",
-      "value": "Mathematics"
-    }
-  ],
-  "biosystems technology": [
     {
       "label": "உயிரியல் தொழில்நுட்பம்",
       "value": "Biosystems Technology"
     },
     {
-      "label": "தொழில்நுட்பவியலுக்கான விஞ்ஞானம்",
-      "value": "Science for Technology"
-    },
-    {
-      "label": "பொருளியல் ",
-      "value": "Economics"
-    },
-    {
-      "label": "புவியியல் ",
-      "value": "Geography"
-    },
-    {
-      "label": "மனை பொருளியல்",
-      "value": "Home Economics"
-    },
-    {
-      "label": "ஆங்கிலம் ",
-      "value": "English"
-    },
-    {
-      "label": "தொடர்பாடல் & ஊடக கல்வி ",
-      "value": "Communication and Media Studies"
-    },
-    {
-      "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
-      "value": "Information & Communication Technology"
-    },
-    {
-      "label": "கலை",
-      "value": "Art"
-    },
-    {
-      "label": "வணிகக் கல்வி",
-      "value": "Business Studies"
-    },
-    {
-      "label": "விவசாய விஞ்ஞானம்",
-      "value": "Agricultural Science"
-    },
-    {
-      "label": "விவசாய விஞ்ஞானம்",
-      "value": "Accountancy"
-    },
-    {
-      "label": "கணிதம் ",
-      "value": "Mathematics"
+      "label": "பொது",
+      "value": "Other"
     }
-  ]
-  
-},
-
-
-  "districts": [
-    { "label": "அம்பாறை", "value": "Ampara" },
-    { "label": "அனுராதபுரம்", "value": "Anuradhapura" },
-    { "label": "பதுளை", "value": "Badulla" },
-    { "label": "மட்டக்களப்பு", "value": "Batticaloa" },
-    { "label": "கொழும்பு", "value": "Colombo" },
-    { "label": "காலி ", "value": "Galle" },
-    { "label": "கம்பஹா", "value": "Gampaha" },
-    { "label": "அம்பாந்தோட்டை", "value": "Hambantota" },
-    { "label": "யாழ்ப்பாணம்", "value": "Jaffna" },
-    { "label": "கழுத்துறை", "value": "Kalutara" },
-    { "label": "கண்டி", "value": "Kandy" },
-    { "label": "கேகாலை", "value": "Kegalle" },
-    { "label": "கிளிநொச்சி", "value": "Kilinochchi" },
-    { "label": "குருநாகல்", "value": "Kurunegala" },
-    { "label": "மன்னார்", "value": "Mannar" },
-    { "label": "மாத்தளை", "value": "Matale" },
-    { "label": "மாத்தறை", "value": "Matara" },
-    { "label": "மொனராகலை", "value": "Monaragala" },
-    { "label": "முல்லைத்தீவு", "value": "Mullaitivu" },
-    { "label": "நுவரெலியா", "value": "Nuwara Eliya" },
-    { "label": "பொலன்னறுவை", "value": "Polonnaruwa" },
-    { "label": "புத்தளம்", "value": "Puttalam" },
-    { "label": "இரத்தினபுரி", "value": "Ratnapura" },
-    { "label": "திருகோணமலை", "value": "Trincomalee" },
-    { "label": "வவுனியா", "value": "Vavuniya" }
   ],
-
-
-  
+  "subjectData": {
+    "physical": [
+      {
+        "label": "பௌதீகவியல்",
+        "value": "Physics"
+      },
+      {
+        "label": "இரசாயனவியல் ",
+        "value": "Chemistry"
+      },
+      {
+        "label": "இணைந்த கணிதம்",
+        "value": "Combined Mathematics"
+      },
+      {
+        "label": "உயர் கணிதம் ",
+        "value": "Higher Mathematics"
+      },
+      {
+        "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+        "value": "Information & Communication Technology"
+      }
+    ],
+    "biology": [
+      {
+        "label": "உயிரியல்",
+        "value": "Biology"
+      },
+      {
+        "label": "இரசாயனவியல்",
+        "value": "Chemistry"
+      },
+      {
+        "label": "பௌதீகவியல்",
+        "value": "Physics"
+      }
+    ],
+    "commerce": [
+      {
+        "label": "கணக்கீடு",
+        "value": "Accounting"
+      },
+      {
+        "label": "வணிகக் கல்வி ",
+        "value": "Business Studies"
+      },
+      {
+        "label": "பொருளியல்",
+        "value": "Economics"
+      }
+    ],
+    "arts": [
+      {
+        "label": "வரலாறு",
+        "value": "History"
+      },
+      {
+        "label": "இலக்கிய நயம்",
+        "value": "Literature"
+      },
+      {
+        "label": "அரசியல் விஞ்ஞானம்",
+        "value": "Political Science"
+      }
+    ],
+    "engineering technology": [
+      {
+        "label": "பொருளியல்",
+        "value": "Economics"
+      },
+      {
+        "label": "புவியியல்",
+        "value": "Geography"
+      },
+      {
+        "label": "மனை பொருளியல்",
+        "value": "Home Economics"
+      },
+      {
+        "label": "ஆங்கிலம்",
+        "value": "English"
+      },
+      {
+        "label": "தொடர்பாடல் & ஊடக கல்வி",
+        "value": "Communication and Media Studies"
+      },
+      {
+        "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+        "value": "Information & Communication Technology"
+      },
+      {
+        "label": "கலை",
+        "value": "Art"
+      },
+      {
+        "label": "வணிகக் கல்வி",
+        "value": "Business Studies"
+      },
+      {
+        "label": "விவசாய விஞ்ஞானம்",
+        "value": "Agricultural Science"
+      },
+      {
+        "label": "கணக்கீடு ",
+        "value": "Accountancy"
+      },
+      {
+        "label": "கணிதம் ",
+        "value": "Mathematics"
+      }
+    ],
+    "biosystems technology": [
+      {
+        "label": "உயிரியல் தொழில்நுட்பம்",
+        "value": "Biosystems Technology"
+      },
+      {
+        "label": "தொழில்நுட்பவியலுக்கான விஞ்ஞானம்",
+        "value": "Science for Technology"
+      },
+      {
+        "label": "பொருளியல் ",
+        "value": "Economics"
+      },
+      {
+        "label": "புவியியல் ",
+        "value": "Geography"
+      },
+      {
+        "label": "மனை பொருளியல்",
+        "value": "Home Economics"
+      },
+      {
+        "label": "ஆங்கிலம் ",
+        "value": "English"
+      },
+      {
+        "label": "தொடர்பாடல் & ஊடக கல்வி ",
+        "value": "Communication and Media Studies"
+      },
+      {
+        "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+        "value": "Information & Communication Technology"
+      },
+      {
+        "label": "கலை",
+        "value": "Art"
+      },
+      {
+        "label": "வணிகக் கல்வி",
+        "value": "Business Studies"
+      },
+      {
+        "label": "விவசாய விஞ்ஞானம்",
+        "value": "Agricultural Science"
+      },
+      {
+        "label": "விவசாய விஞ்ஞானம்",
+        "value": "Accountancy"
+      },
+      {
+        "label": "கணிதம் ",
+        "value": "Mathematics"
+      }
+    ]
+  },
+  "districts": [
+    {
+      "label": "அம்பாறை",
+      "value": "Ampara"
+    },
+    {
+      "label": "அனுராதபுரம்",
+      "value": "Anuradhapura"
+    },
+    {
+      "label": "பதுளை",
+      "value": "Badulla"
+    },
+    {
+      "label": "மட்டக்களப்பு",
+      "value": "Batticaloa"
+    },
+    {
+      "label": "கொழும்பு",
+      "value": "Colombo"
+    },
+    {
+      "label": "காலி ",
+      "value": "Galle"
+    },
+    {
+      "label": "கம்பஹா",
+      "value": "Gampaha"
+    },
+    {
+      "label": "அம்பாந்தோட்டை",
+      "value": "Hambantota"
+    },
+    {
+      "label": "யாழ்ப்பாணம்",
+      "value": "Jaffna"
+    },
+    {
+      "label": "கழுத்துறை",
+      "value": "Kalutara"
+    },
+    {
+      "label": "கண்டி",
+      "value": "Kandy"
+    },
+    {
+      "label": "கேகாலை",
+      "value": "Kegalle"
+    },
+    {
+      "label": "கிளிநொச்சி",
+      "value": "Kilinochchi"
+    },
+    {
+      "label": "குருநாகல்",
+      "value": "Kurunegala"
+    },
+    {
+      "label": "மன்னார்",
+      "value": "Mannar"
+    },
+    {
+      "label": "மாத்தளை",
+      "value": "Matale"
+    },
+    {
+      "label": "மாத்தறை",
+      "value": "Matara"
+    },
+    {
+      "label": "மொனராகலை",
+      "value": "Monaragala"
+    },
+    {
+      "label": "முல்லைத்தீவு",
+      "value": "Mullaitivu"
+    },
+    {
+      "label": "நுவரெலியா",
+      "value": "Nuwara Eliya"
+    },
+    {
+      "label": "பொலன்னறுவை",
+      "value": "Polonnaruwa"
+    },
+    {
+      "label": "புத்தளம்",
+      "value": "Puttalam"
+    },
+    {
+      "label": "இரத்தினபுரி",
+      "value": "Ratnapura"
+    },
+    {
+      "label": "திருகோணமலை",
+      "value": "Trincomalee"
+    },
+    {
+      "label": "வவுனியா",
+      "value": "Vavuniya"
+    }
+  ],
   "questions": [
     {
       "key": "q1",
       "label": "உங்களுக்கு தர்க்க ரீதியான புதிர்களையும் கணினி மொழி சவால்களையும் தீர்ப்பதற்கு விருப்பமா?",
       "options": [
-        { "key": 1, "label": "ஆம், எனக்கு விருப்பம்.", "value": "I love it." },
-        { "key": 2, "label": "எனக்கு கொஞ்சம் ஆர்வமாக இருக்கிறது.", "value": "I'm somewhat interested." },
-        { "key": 3, "label": "நான் கட்டமைப்புகளை திட்டமிட விரும்புகிறேன்.", "value": "I prefer planning structures." },
-        { "key": 4, "label": "நான் கருவிகள் மற்றும் சாதனங்களுடன் நேரடியாக பணியாற்றுவதற்கு விரும்புகிறேன்.", "value": "I like working hands-on with tools." }
+        {
+          "key": 1,
+          "label": "ஆம், எனக்கு விருப்பம்.",
+          "value": "I love it."
+        },
+        {
+          "key": 2,
+          "label": "எனக்கு கொஞ்சம் ஆர்வமாக இருக்கிறது.",
+          "value": "I'm somewhat interested."
+        },
+        {
+          "key": 3,
+          "label": "நான் கட்டமைப்புகளை திட்டமிட விரும்புகிறேன்.",
+          "value": "I prefer planning structures."
+        },
+        {
+          "key": 4,
+          "label": "நான் கருவிகள் மற்றும் சாதனங்களுடன் நேரடியாக பணியாற்றுவதற்கு விரும்புகிறேன்.",
+          "value": "I like working hands-on with tools."
+        }
       ]
     },
     {
       "key": "q2",
       "label": "நீங்கள் வடிவமைப்பு மற்றும் கட்டுமானத்தை  பௌதீக ரீதியாக செய்வது பற்றி என்ன நினைக்கிறீர்கள்..?",
       "options": [
-        { "key": 1, "label": "பரவாயில்லை, ஆனால் என் முக்கிய ஆர்வம் அல்ல.", "value": "It's okay but not my main interest." },
-        { "key": 2, "label": "நான் எப்போதாவது அதை விரும்புகிறேன்.", "value": "I occasionally enjoy it." },
-        { "key": 3, "label": "கட்டமைப்புகளைத் திட்டமிடுவதற்கும் வடிவமைப்பதற்கும் நான் கவர்ச்சிகரமானதாகக் கருதுகிறேன்.", "value": "I find it fascinating to plan and design structures." },
-        { "key": 4, "label": "கட்டுமானத் திட்டங்களில் பணியாற்றுவதை நான் ரசிக்கிறேன்.", "value": "I enjoy working in construction projects." }
+        {
+          "key": 1,
+          "label": "பரவாயில்லை, ஆனால் என் முக்கிய ஆர்வம் அல்ல.",
+          "value": "It's okay but not my main interest."
+        },
+        {
+          "key": 2,
+          "label": "நான் எப்போதாவது அதை விரும்புகிறேன்.",
+          "value": "I occasionally enjoy it."
+        },
+        {
+          "key": 3,
+          "label": "கட்டமைப்புகளைத் திட்டமிடுவதற்கும் வடிவமைப்பதற்கும் நான் கவர்ச்சிகரமானதாகக் கருதுகிறேன்.",
+          "value": "I find it fascinating to plan and design structures."
+        },
+        {
+          "key": 4,
+          "label": "கட்டுமானத் திட்டங்களில் பணியாற்றுவதை நான் ரசிக்கிறேன்.",
+          "value": "I enjoy working in construction projects."
+        }
       ]
     },
     {
       "key": "q3",
       "label": "எந்த விதமான சூழலில் நீங்கள் வேலை செய்ய விரும்புகிறீர்கள்?",
       "options": [
-        { "key": 1, "label": "ஒரு கணினியில் வேலை.", "value": "Working on a computer." },
-        { "key": 2, "label": "உட்புற மற்றும் வெளிப்புற வேலைகளின் சேர்வை.", "value": "A mix of indoor and outdoor work." },
-        { "key": 3, "label": "பெரும்பாலும் வடிவமைப்புகளை மேற்பார்வையிடும் வெளிப்புற வேலை.", "value": "Mostly outdoor work overseeing designs." },
-        { "key": 4, "label": "கட்டுமான தளங்கள் அல்லது பௌதீக வேலை.", "value": "Construction sites or hands-on physical work." }
+        {
+          "key": 1,
+          "label": "ஒரு கணினியில் வேலை.",
+          "value": "Working on a computer."
+        },
+        {
+          "key": 2,
+          "label": "உட்புற மற்றும் வெளிப்புற வேலைகளின் சேர்வை.",
+          "value": "A mix of indoor and outdoor work."
+        },
+        {
+          "key": 3,
+          "label": "பெரும்பாலும் வடிவமைப்புகளை மேற்பார்வையிடும் வெளிப்புற வேலை.",
+          "value": "Mostly outdoor work overseeing designs."
+        },
+        {
+          "key": 4,
+          "label": "கட்டுமான தளங்கள் அல்லது பௌதீக வேலை.",
+          "value": "Construction sites or hands-on physical work."
+        }
       ]
     },
     {
       "key": "q4",
       "label": "நீங்கள்  எண் ரீதியான திட்டங்களில் ஒன்றாக வேலை செய்ய  எவ்வளவு விரும்புகிறீர்கள்?",
       "options": [
-        { "key": 1, "label": "இதனால், நான் மிகவும் ரசிக்கிறேன்.", "value": "It's what I enjoy most." },
-        { "key": 2, "label": "நான் அதை விரும்புகிறேன், ஆனால் எப்போதும் இல்லை", "value": "I like it but not always." },
-        { "key": 3, "label": "ஒரு குழுவுடன் இயற்பியல் கட்டமைப்புகளில் பணியாற்ற விரும்புகிறேன்.", "value": "I prefer working on physical structures with a team." },
-        { "key": 4, "label": "கட்டுமான தளங்களில் கூட்டு களப்பணியை நான் விரும்புகிறேன்.", "value": "I prefer collaborative fieldwork at construction sites." }
+        {
+          "key": 1,
+          "label": "இதனால், நான் மிகவும் ரசிக்கிறேன்.",
+          "value": "It's what I enjoy most."
+        },
+        {
+          "key": 2,
+          "label": "நான் அதை விரும்புகிறேன், ஆனால் எப்போதும் இல்லை",
+          "value": "I like it but not always."
+        },
+        {
+          "key": 3,
+          "label": "ஒரு குழுவுடன் இயற்பியல் கட்டமைப்புகளில் பணியாற்ற விரும்புகிறேன்.",
+          "value": "I prefer working on physical structures with a team."
+        },
+        {
+          "key": 4,
+          "label": "கட்டுமான தளங்களில் கூட்டு களப்பணியை நான் விரும்புகிறேன்.",
+          "value": "I prefer collaborative fieldwork at construction sites."
+        }
       ]
     },
     {
       "key": "q5",
       "label": "ஒரு சிக்கலைச் சமாளிக்கும் போது, நீங்கள் என்ன நினைக்கிறீர்கள்?",
       "options": [
-        { "key": 1, "label": "வழிமுறைகள் அல்லது மென்பொருள் தீர்வுகளை எழுதுதல்.", "value": "Writing algorithms or software solutions." },
-        { "key": 2, "label": "வடிவமைப்பு மற்றும் செயல்படுத்தலை சமப்படுத்த வெவ்வேறு வழிகளை ஆராய்தல்.", "value": "Exploring different ways to balance design and implementation." },
-        { "key": 3, "label": "ஒரு செயல்பாட்டு கட்டமைப்பை எவ்வாறு வடிவமைப்பது.", "value": "How to design a functional structure." },
-        { "key": 4, "label": "ஒரு கட்டுமான தளத்தில் வளங்களை எவ்வாறு திறம்பட நிர்வகிப்பது.", "value": "How to efficiently manage resources at a construction site." }
+        {
+          "key": 1,
+          "label": "வழிமுறைகள் அல்லது மென்பொருள் தீர்வுகளை எழுதுதல்.",
+          "value": "Writing algorithms or software solutions."
+        },
+        {
+          "key": 2,
+          "label": "வடிவமைப்பு மற்றும் செயல்படுத்தலை சமப்படுத்த வெவ்வேறு வழிகளை ஆராய்தல்.",
+          "value": "Exploring different ways to balance design and implementation."
+        },
+        {
+          "key": 3,
+          "label": "ஒரு செயல்பாட்டு கட்டமைப்பை எவ்வாறு வடிவமைப்பது.",
+          "value": "How to design a functional structure."
+        },
+        {
+          "key": 4,
+          "label": "ஒரு கட்டுமான தளத்தில் வளங்களை எவ்வாறு திறம்பட நிர்வகிப்பது.",
+          "value": "How to efficiently manage resources at a construction site."
+        }
       ]
     },
     {
       "key": "q6",
       "label": "தொழில்நுட்பத்தைப் பற்றி உங்களை மிகவும் உற்சாகப்படுத்துவது எது?",
       "options": [
-        { "key": 1, "label": "Developing applications and systems.", "value": "Developing applications and systems." },
-        { "key": 2, "label": "Using tools for designing complex ideas.", "value": "Using tools for designing complex ideas." },
-        { "key": 3, "label": "Leveraging technology for innovative architecture.", "value": "Leveraging technology for innovative architecture." },
-        { "key": 4, "label": "Applying technology in construction equipment.", "value": "Applying technology in construction equipment." }
+        {
+          "key": 1,
+          "label": "Developing applications and systems.",
+          "value": "Developing applications and systems."
+        },
+        {
+          "key": 2,
+          "label": "Using tools for designing complex ideas.",
+          "value": "Using tools for designing complex ideas."
+        },
+        {
+          "key": 3,
+          "label": "Leveraging technology for innovative architecture.",
+          "value": "Leveraging technology for innovative architecture."
+        },
+        {
+          "key": 4,
+          "label": "Applying technology in construction equipment.",
+          "value": "Applying technology in construction equipment."
+        }
       ]
     },
     {
       "key": "q7",
       "label": "நீங்கள் சவால்களை எவ்வாறு அணுகுகிறீர்கள்..?",
       "options": [
-        { "key": 1, "label": "ஒரு தீர்வை பகுப்பாய்வு செய்தல் மற்றும் குறியிடுதல்.", "value": "Analyzing and coding a solution." },
-        { "key": 2, "label": "வடிவமைப்பு மற்றும் படைப்பு உத்திகளை சமநிலைப்படுத்துதல்.", "value": "Balancing design and creative strategies." },
-        { "key": 3, "label": "விரிவான திட்டங்களைத் திட்டமிடுதல் மற்றும் வடிவமைத்தல்.", "value": "Planning and designing detailed projects." },
-        { "key": 4, "label": "களப்பணியில் நடைமுறை சரிசெய்தல்", "value": "Practical troubleshooting in fieldwork." }
+        {
+          "key": 1,
+          "label": "ஒரு தீர்வை பகுப்பாய்வு செய்தல் மற்றும் குறியிடுதல்.",
+          "value": "Analyzing and coding a solution."
+        },
+        {
+          "key": 2,
+          "label": "வடிவமைப்பு மற்றும் படைப்பு உத்திகளை சமநிலைப்படுத்துதல்.",
+          "value": "Balancing design and creative strategies."
+        },
+        {
+          "key": 3,
+          "label": "விரிவான திட்டங்களைத் திட்டமிடுதல் மற்றும் வடிவமைத்தல்.",
+          "value": "Planning and designing detailed projects."
+        },
+        {
+          "key": 4,
+          "label": "களப்பணியில் நடைமுறை சரிசெய்தல்",
+          "value": "Practical troubleshooting in fieldwork."
+        }
       ]
     },
     {
       "key": "q8",
       "label": "உங்களுக்கு எதில் மிகவும் ஆர்வம்?",
       "options": [
-        { "key": 1, "label": "நிரலாக்க மொழிகள் மற்றும் மென்பொருள் மேம்பாட்டைப் புரிந்துகொள்தல்.", "value": "Understanding programming languages and software development." },
-        { "key": 2, "label": "வடிவமைப்புகளை ஒருங்கிணைப்பதில் சிக்கல்கள்.", "value": "The intricacies of integrating designs." },
-        { "key": 3, "label": "நீடித்த உள்கட்டமைப்பை உருவாக்குதல்", "value": "Creating durable infrastructure." },
-        { "key": 4, "label": "நிகழ்நேர கட்டிட செயல்முறை.", "value": "The hands-on process of building." }
+        {
+          "key": 1,
+          "label": "நிரலாக்க மொழிகள் மற்றும் மென்பொருள் மேம்பாட்டைப் புரிந்துகொள்தல்.",
+          "value": "Understanding programming languages and software development."
+        },
+        {
+          "key": 2,
+          "label": "வடிவமைப்புகளை ஒருங்கிணைப்பதில் சிக்கல்கள்.",
+          "value": "The intricacies of integrating designs."
+        },
+        {
+          "key": 3,
+          "label": "நீடித்த உள்கட்டமைப்பை உருவாக்குதல்",
+          "value": "Creating durable infrastructure."
+        },
+        {
+          "key": 4,
+          "label": "நிகழ்நேர கட்டிட செயல்முறை.",
+          "value": "The hands-on process of building."
+        }
       ]
     },
     {
       "key": "q9",
       "label": "உங்களுக்கு ஆர்வமுள்ள பகுதியில் உள்ள போக்குகளைக் கடைப்பிடிப்பதை நீங்கள் எவ்வளவு விரும்புகிறீர்கள்?",
       "options": [
-        { "key": 1, "label": "அண்மைக்கால மென்பொருளை தொடர்தல்", "value": "Following the latest in software." },
-        { "key": 2, "label": "புதிய கட்டமைப்பு வடிவமைப்பு நுட்பங்களைக் கற்றல்.", "value": "Learning new structural design techniques." },
-        { "key": 3, "label": "கட்டடக்கலை முன்னேற்றங்களைக் கற்றல் .", "value": "Studying architectural advancements." },
-        { "key": 4, "label": "புதுமையான கட்டுமான நடைமுறைகளை ஆராய்தல்.", "value": "Exploring innovative construction practices." }
+        {
+          "key": 1,
+          "label": "அண்மைக்கால மென்பொருளை தொடர்தல்",
+          "value": "Following the latest in software."
+        },
+        {
+          "key": 2,
+          "label": "புதிய கட்டமைப்பு வடிவமைப்பு நுட்பங்களைக் கற்றல்.",
+          "value": "Learning new structural design techniques."
+        },
+        {
+          "key": 3,
+          "label": "கட்டடக்கலை முன்னேற்றங்களைக் கற்றல் .",
+          "value": "Studying architectural advancements."
+        },
+        {
+          "key": 4,
+          "label": "புதுமையான கட்டுமான நடைமுறைகளை ஆராய்தல்.",
+          "value": "Exploring innovative construction practices."
+        }
       ]
     },
     {
       "key": "q10",
       "label": "நீங்கள் எங்கே,உங்களை  சிறந்து விளங்குகிறீர்கள் என்று பார்க்கிறீர்கள்?",
       "options": [
-        { "key": 1, "label": "மென்பொருள் மேம்பாட்டில் அல்லது செயலிகளை உருவாக்குதல்.", "value": "In software development or creating applications." },
-        { "key": 2, "label": "ஆக்கபூர்வமான கருத்துக்களை கட்டமைப்பு வடிவமைப்புகளுக்கு கொண்டு வருவதில்.", "value": "In bringing creative concepts to structural designs." },
-        { "key": 3, "label": "உள்கட்டமைப்பைத் திட்டமிடுவதில்.", "value": "In planning infrastructure." },
-        { "key": 4, "label": "கட்டுமானப் பணிகளுக்கு மேற்பார்வை செய்வதிலும் பங்களிப்பதிலும்.", "value": "In supervising and contributing to construction work." }
+        {
+          "key": 1,
+          "label": "மென்பொருள் மேம்பாட்டில் அல்லது செயலிகளை உருவாக்குதல்.",
+          "value": "In software development or creating applications."
+        },
+        {
+          "key": 2,
+          "label": "ஆக்கபூர்வமான கருத்துக்களை கட்டமைப்பு வடிவமைப்புகளுக்கு கொண்டு வருவதில்.",
+          "value": "In bringing creative concepts to structural designs."
+        },
+        {
+          "key": 3,
+          "label": "உள்கட்டமைப்பைத் திட்டமிடுவதில்.",
+          "value": "In planning infrastructure."
+        },
+        {
+          "key": 4,
+          "label": "கட்டுமானப் பணிகளுக்கு மேற்பார்வை செய்வதிலும் பங்களிப்பதிலும்.",
+          "value": "In supervising and contributing to construction work."
+        }
       ]
     }
   ]
-
-
 }
