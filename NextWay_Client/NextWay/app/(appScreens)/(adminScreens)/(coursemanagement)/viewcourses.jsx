@@ -26,6 +26,7 @@ import {
 } from "../../../../services/fetchingService";
 import { TabView, SceneMap, TabBar } from "react-native-tab-view";
 import Loading from "../../../../components/Loading/Loading";
+import { useFocusEffect } from "@react-navigation/native";
 
 export default function ViewCourses() {
   const router = useRouter();
@@ -36,22 +37,29 @@ export default function ViewCourses() {
   const [searchType, setSearchType] = useState("UNICODE");
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const fetchAllCourses = async () => {
-      try {
-        const res = await fetchCourses(); 
-        if (res.success && res.data.length > 0) {
-          setAllCourses(res.data);
-        } else {
-          console.log("No courses found");
-        }
-      } catch (error) {
-        console.error("Error fetching courses:", error);
-      }
-    };
 
-    fetchAllCourses();
-  }, [router]);
+
+
+  useFocusEffect(
+    React.useCallback(() => {
+      const fetchAllCourses = async () => {
+        try {
+          const res = await fetchCourses(); // Assuming fetchCourses() is your API function
+          if (res.success && res.data.length > 0) {
+            setAllCourses(res.data);
+          } else {
+            console.log("No courses found");
+          }
+        } catch (error) {
+          console.error("Error fetching courses:", error);
+        }
+      };
+
+      fetchAllCourses(); // Call the function when the screen is focused
+
+    }, []) // Empty dependency array means this will only run when screen is focused
+  );
+
 
   useEffect(() => {
     if (keyword === "") {

@@ -24,7 +24,8 @@ i18next
   })
   .then(async () => {  // Use .then and async/await
     const storedLang = await AsyncStorage.getItem("language");
-    const lng = storedLang || Localization.getLocales()?.split("-")[0] || "en"; 
+    const lng = storedLang || (Localization.getLocales()?.[0]?.languageCode) || "en";
+
     i18next.changeLanguage(lng);
   });
 

@@ -84,32 +84,38 @@
 "job_roles":"රැකියා",
 
 
-  "streams": [
-    {
-      "label": "භෞතික",
-      "value": "Physical"
-    },
-    {
-      "label": "ජීව විද්‍යාව",
-      "value": "Biology"
-    },
-    {
-      "label": "වාණිජ",
-      "value": "Commerce"
-    },
-    {
-      "label": "කලා",
-      "value": "Art"
-    },
-    {
-      "label": "තාක්ෂණය",
-      "value": "Technology"
-    },
-    {
-      "label": "පොදු",
-      "value": "Common"
-    }
-  ],
+"streams": [
+  {
+    "label": "භෞතික",
+    "value": "Physical"
+  },
+  {
+    "label": "ජීව විද්‍යාව",
+    "value": "Biology"
+  },
+  {
+    "label": "වාණිජ්‍යය",
+    "value": "Commerce"
+  },
+  {
+    "label": "කලා",
+    "value": "Arts"
+  },
+  {
+    "label": "ඉංජිනේරු තාක්ෂණය (ET)",
+    "value": "ENGINEERING TECHNOLOGY (ET)"
+  },
+  {
+    "label": "ජෛව පද්ධති තාක්ෂණය",
+    "value": "Biosystems Technology"
+  },
+  {
+    "label": "පොදු",
+    "value": "Other"
+  }
+],
+
+
   "subjectData": {
     "physical": [
       {
@@ -161,13 +167,13 @@
         "value": "Economics"
       }
     ],
-    "art": [
+    "arts": [
       {
         "label": "ඉතිහාසය",
         "value": "History"
       },
       {
-        "label": "සාහිත්‍ය",
+        "label": "සාහිත්‍යය",
         "value": "Literature"
       },
       {
@@ -175,18 +181,104 @@
         "value": "Political Science"
       }
     ],
-    "technology": [
+    "engineering technology": [
       {
-        "label": "තොරතුරු තාක්ෂණය",
-        "value": "Information Technology"
+        "label": "ආර්ථික විද්‍යාව",
+        "value": "Economics"
       },
       {
-        "label": " ඉංජිනේරු රූපණය",
-        "value": "Engineering Graphics"
+        "label": "භූගෝල විද්‍යාව",
+        "value": "Geography"
       },
       {
-        "label": "යාන්ත්‍ර විද්‍යාව",
-        "value": "Mechanics"
+        "label": "ගෘහ ආර්ථික විද්‍යාව",
+        "value": "Home Economics"
+      },
+      {
+        "label": "ඉංග්‍රීසි",
+        "value": "English"
+      },
+      {
+        "label": "සන්නිවේදන සහ මාධ්‍ය අධ්‍යයනය",
+        "value": "Communication and Media Studies"
+      },
+      {
+        "label": "තොරතුරු හා සන්නිවේදන තාක්ෂණය",
+        "value": "Information & Communication Technology"
+      },
+      {
+        "label": "කලා",
+        "value": "Art"
+      },
+      {
+        "label": "ව්‍යාපාර අධ්‍යයනය",
+        "value": "Business Studies"
+      },
+      {
+        "label": "කෘෂිකාර්මික විද්‍යාව",
+        "value": "Agricultural Science"
+      },
+      {
+        "label": "ගිණුම්කරණය",
+        "value": "Accountancy"
+      },
+      {
+        "label": "ගණිතය",
+        "value": "Mathematics"
+      }
+    ],
+    "biosystems technology": [
+      {
+        "label": "ජෛව පද්ධති තාක්ෂණය",
+        "value": "Biosystems Technology"
+      },
+      {
+        "label": "තාක්ෂණය සඳහා විද්‍යාව",
+        "value": "Science for Technology"
+      },
+      {
+        "label": "ආර්ථික විද්‍යාව",
+        "value": "Economics"
+      },
+      {
+        "label": "භූගෝල විද්‍යාව",
+        "value": "Geography"
+      },
+      {
+        "label": "ගෘහ ආර්ථික විද්‍යාව",
+        "value": "Home Economics"
+      },
+      {
+        "label": "ඉංග්‍රීසි",
+        "value": "English"
+      },
+      {
+        "label": "සන්නිවේදන සහ මාධ්‍ය අධ්‍යයනය",
+        "value": "Communication and Media Studies"
+      },
+      {
+        "label": "තොරතුරු හා සන්නිවේදන තාක්ෂණය",
+        "value": "Information & Communication Technology"
+      },
+      {
+        "label": "කලා",
+        "value": "Art"
+      },
+      {
+        "label": "ව්‍යාපාර අධ්‍යයනය",
+        "value": "Business Studies"
+      },
+      {
+        "label": "කෘෂිකාර්මික විද්‍යාව",
+        "value": "Agricultural Science"
+      },
+      {
+        "label": "ගිණුම්කරණය",
+        "value": "Accountancy"
+      },
+      {
+        "label": "ගණිතය",
+        "value": "Mathematics"
       }
     ]
   },

@@ -81,16 +81,7 @@ const currentLanguage = i18next.language;
           <Text  style={styles.text}><Text style={styles.detailHeader}>{t('description')}: </Text><Text style={[styles.details,{fontWeight:'light'}]} > {currentLanguage == 'en'?parsedCourse.DESCRIPTION_eng:parsedCourse[`DESCRIPTION_${currentLanguage}`]}</Text> </Text>
           
           
-          <Text style={styles.text}><Text style={styles.detailHeader}>{t('qualifications')}:{"\n"}</Text>
- 
-  {Object.entries(parsedCourse.MINIMUM_QUALIFICATIONS.RequiredGrades).map(
-    ([subject, grade], index) => (
-      <Text  style={styles.details} key={index}>  {"\t"}
-           {subject}: {grade}{"\n"}
-      </Text>
-    )
-  )}
-</Text>
+
 <Text style={styles.text}>
   <Text style={styles.detailHeader}>{t('job_roles')}:{"\n"}</Text>
 
