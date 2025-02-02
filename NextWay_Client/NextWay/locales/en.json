@@ -70,7 +70,6 @@
   "advertiser-request":"Advertiser Request",
   "answer_questions":"Answer the Questions",
   "submit":"Submit",
-
   "home":"Home",
   "notifications":"Notifications",
   "profile":"Profile",
@@ -80,10 +79,11 @@
   "logout":"Logout",
   "settings":"Settings",
   "duration":"Duration",
-"qualifications":"Qualifications",
-"job_roles":"Job Roles",
+  "qualifications":"Qualifications",
+  "job_roles":"Job Roles",
   
-  
+
+
   "streams": [
     {
       "label": "Physical",
@@ -91,25 +91,30 @@
     },
     {
       "label": "Biology",
-      "value": "Biology"
+      "value": "Biological Science"
     },
     {
       "label": "Commerce",
       "value": "Commerce"
     },
     {
-      "label": "Art",
-      "value": "Art"
+      "label": "Arts",
+      "value": "Arts"
     },
     {
-      "label": "Technology",
-      "value": "Technology"
+      "label": "Engineering Technology (ET)",
+      "value": "ENGINEERING TECHNOLOGY (ET)"
+    },
+    {
+      "label": "Biosystems Technology",
+      "value": "Biosystems Technology"
     },
     {
       "label": "Common",
-      "value": "Common"
+      "value": "Other"
     }
   ],
+  
   "subjectData": {
     "physical": [
       {
@@ -161,7 +166,7 @@
         "value": "Economics"
       }
     ],
-    "art": [
+    "arts": [
       {
         "label": "History",
         "value": "History"
@@ -175,20 +180,107 @@
         "value": "Political Science"
       }
     ],
-    "technology": [
+    "engineering technology": [
       {
-        "label": "Information Technology",
-        "value": "Information Technology"
+        "label": "Economics",
+        "value": "Economics"
       },
       {
-        "label": "Engineering Graphics",
-        "value": "Engineering Graphics"
+        "label": "Geography",
+        "value": "Geography"
       },
       {
-        "label": "Mechanics",
-        "value": "Mechanics"
+        "label": "Home Economics",
+        "value": "Home Economics"
+      },
+      {
+        "label": "English",
+        "value": "English"
+      },
+      {
+        "label": "Communication and Media Studies",
+        "value": "Communication and Media Studies"
+      },
+      {
+        "label": "Information & Communication Technology",
+        "value": "Information & Communication Technology"
+      },
+      {
+        "label": "Art",
+        "value": "Art"
+      },
+      {
+        "label": "Business Studies",
+        "value": "Business Studies"
+      },
+      {
+        "label": "Agricultural Science",
+        "value": "Agricultural Science"
+      },
+      {
+        "label": "Accountancy",
+        "value": "Accountancy"
+      },
+      {
+        "label": "Mathematics",
+        "value": "Mathematics"
+      }
+    ],
+    "biosystems technology": [
+      {
+        "label": "Biosystems Technology",
+        "value": "Biosystems Technology"
+      },
+      {
+        "label": "Science for Technology",
+        "value": "Science for Technology"
+      },
+      {
+        "label": "Economics",
+        "value": "Economics"
+      },
+      {
+        "label": "Geography",
+        "value": "Geography"
+      },
+      {
+        "label": "Home Economics",
+        "value": "Home Economics"
+      },
+      {
+        "label": "English",
+        "value": "English"
+      },
+      {
+        "label": "Communication and Media Studies",
+        "value": "Communication and Media Studies"
+      },
+      {
+        "label": "Information & Communication Technology",
+        "value": "Information & Communication Technology"
+      },
+      {
+        "label": "Art",
+        "value": "Art"
+      },
+      {
+        "label": "Business Studies",
+        "value": "Business Studies"
+      },
+      {
+        "label": "Agricultural Science",
+        "value": "Agricultural Science"
+      },
+      {
+        "label": "Accountancy",
+        "value": "Accountancy"
+      },
+      {
+        "label": "Mathematics",
+        "value": "Mathematics"
       }
     ]
+    
   },
   "districts": [
     {

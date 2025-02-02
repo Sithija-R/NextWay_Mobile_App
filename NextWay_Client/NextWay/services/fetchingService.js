@@ -227,7 +227,7 @@ const fetchCoursesByCriteria = async (
   district
 ) => {
   try {
-    console.log(`Interest: ${interest}`);
+   
 
     // Normalize and parse the interest parameter
     const normalizedInterestArray = (interest || "")
@@ -255,23 +255,31 @@ const fetchCoursesByCriteria = async (
     const gradeOrder = { A: 1, B: 2, C: 3, S: 4 };
 
     const doesMatchGrades = (requiredGrades, subjectGrades) => {
+      // If "Any_three_subjects" exists in requiredGrades, return true immediately
+      if (requiredGrades.hasOwnProperty("Any_three_subjects")) {
+        return true;
+      }
+    
+      // Check if all required subjects are present in subjectGrades
       const allSubjectsPresent = Object.keys(subjectGrades).every((subject) =>
         requiredGrades.hasOwnProperty(subject)
       );
-
+    
       if (!allSubjectsPresent) {
         console.log("Not all required subjects are present.");
         return false;
       }
-
+    
+      // Check if entered grades meet or exceed required grades
       return Object.entries(subjectGrades).every(([subject, enteredGrade]) => {
         const requiredGrade = requiredGrades[subject];
         const enteredGradeValue = gradeOrder[enteredGrade];
         const requiredGradeValue = gradeOrder[requiredGrade];
-
+    
         return enteredGradeValue <= requiredGradeValue;
       });
     };
+    
 
     const filteredCourses = courses.filter((course) => {
       const requiredGrades = course.MINIMUM_QUALIFICATIONS.RequiredGrades || {};
@@ -297,9 +305,7 @@ const fetchCoursesByCriteria = async (
           )
         );
 
-      console.log(
-        `Course: ${course.COURSE_eng} - Interest Matches: ${interestMatches}`
-      );
+     
 
       return matchGrades && isZScoreValid && interestMatches;
     });

@@ -14,8 +14,9 @@ import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import { getAdRequest } from "../../../services/adminService";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { getAdevertisements } from "../../../services/advertiseService";
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { useTranslation } from "react-i18next";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import i18next from "i18next";
 
 export default function dashboard() {
   const router = useRouter();
@@ -23,6 +24,19 @@ export default function dashboard() {
 
   const [pendingCount, setPendingCount] = useState(0);
   const [pendingAds, setPendingAds] = useState(0);
+
+  useEffect(()=>{
+    const saveLanguage = async () => {
+      try {
+        await AsyncStorage.setItem("language", "en");
+        i18next.changeLanguage("en");
+      } catch (e) {
+        console.error("Failed to save language", e);
+      }
+    };
+  saveLanguage();
+  },[])
+
 
   useEffect(() => {
     const fetchAds = async () => {
@@ -44,6 +58,8 @@ export default function dashboard() {
     const interval = setInterval(fetchAds, 30000);
     return () => clearInterval(interval);
   }, []);
+
+
 
   useEffect(() => {
     const fetchAd = async () => {

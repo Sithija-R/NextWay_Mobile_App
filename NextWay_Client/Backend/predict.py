@@ -3,9 +3,13 @@ import pickle
 import numpy as np
 from flask_cors import CORS
 
+
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
+
+
+
 # Load your trained model
 model_path = "model.pkl"  # Ensure your model is saved as a .pkl file
 with open('model.pkl', "rb") as file:
