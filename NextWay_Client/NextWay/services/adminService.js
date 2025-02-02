@@ -12,7 +12,7 @@ import { db } from "../firebaseConfig/firebaseConfiguration";
 
 export const uploadCourseData = async (dataToUpload) => {
   try {
-    const docRef = await addDoc(collection(db, "coursetest"), dataToUpload);
+    const docRef = await addDoc(collection(db, "courses"), dataToUpload);
     console.log("Document written with ID: ", docRef.id);
     return { success: true, msg: "Course data uploaded successfully" };
   } catch (error) {
@@ -26,7 +26,7 @@ export const uploadOrUpdateCourseData = async (id, dataToUpload) => {
     if (!id) {
       throw new Error("Document ID is required for updating the course.");
     }
-    const courseDocRef = doc(db, "coursetest", id);
+    const courseDocRef = doc(db, "courses", id);
     await setDoc(courseDocRef, dataToUpload, { merge: true });
 
     return { success: true, msg: "Course data updated successfully" };

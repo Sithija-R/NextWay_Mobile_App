@@ -133,7 +133,7 @@ export default function AdvertisementHistory() {
           <Text
             style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: "600" }}
           >
-            {t("New Advertisements Requests")}
+            {t("Advertisements History")}
           </Text>
         </Pressable>
 
