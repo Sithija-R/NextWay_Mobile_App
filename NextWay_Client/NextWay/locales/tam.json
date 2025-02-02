@@ -40,7 +40,203 @@
     "save":  "சேமிக்கவும்.",
     "back":  "மீண்டும்.",
     
-    
+    "streams": [
+  {
+    "label": "பௌதீக விஞ்ஞானம்",
+    "value": "Physical"
+  },
+  {
+    "label": "உயிரியல் விஞ்ஞானம்",
+    "value": "Biological Science"
+  },
+  {
+    "label": "வணிகம் ",
+    "value": "Commerce"
+  },
+  {
+    "label": "கலை",
+    "value": "Arts"
+  },
+  {
+    "label": "பொறியியல் தொழில்நுட்பம்",
+    "value": "ENGINEERING TECHNOLOGY (ET)"
+  },
+  {
+    "label": "உயிரியல் தொழில்நுட்பம்",
+    "value": "Biosystems Technology"
+  },
+  {
+    "label": "பொது",
+    "value": "Other"
+  }
+],
+"subjectData": {
+  "physical": [
+    {
+      "label": "பௌதீகவியல்",
+      "value": "Physics"
+    },
+    {
+      "label": "இரசாயனவியல் ",
+      "value": "Chemistry"
+    },
+    {
+      "label": "இணைந்த கணிதம்",
+      "value": "Combined Mathematics"
+    },
+    {
+      "label": "உயர் கணிதம் ",
+      "value": "Higher Mathematics"
+    },
+    {
+      "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+      "value": "Information & Communication Technology"
+    }
+  ],
+  "biology": [
+    {
+      "label": "உயிரியல்",
+      "value": "Biology"
+    },
+    {
+      "label": "இரசாயனவியல்",
+      "value": "Chemistry"
+    },
+    {
+      "label": "பௌதீகவியல்",
+      "value": "Physics"
+    }
+  ],
+  "commerce": [
+    {
+      "label": "கணக்கீடு",
+      "value": "Accounting"
+    },
+    {
+      "label": "வணிகக் கல்வி ",
+      "value": "Business Studies"
+    },
+    {
+      "label": "பொருளியல்",
+      "value": "Economics"
+    }
+  ],
+  "arts": [
+    {
+      "label": "வரலாறு",
+      "value": "History"
+    },
+    {
+      "label": "இலக்கிய நயம்",
+      "value": "Literature"
+    },
+    {
+      "label": "அரசியல் விஞ்ஞானம்",
+      "value": "Political Science"
+    }
+  ],
+  "engineering technology": [
+    {
+      "label": "பொருளியல்",
+      "value": "Economics"
+    },
+    {
+      "label": "புவியியல்",
+      "value": "Geography"
+    },
+    {
+      "label": "மனை பொருளியல்",
+      "value": "Home Economics"
+    },
+    {
+      "label": "ஆங்கிலம்",
+      "value": "English"
+    },
+    {
+      "label": "தொடர்பாடல் & ஊடக கல்வி",
+      "value": "Communication and Media Studies"
+    },
+    {
+      "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+      "value": "Information & Communication Technology"
+    },
+    {
+      "label": "கலை",
+      "value": "Art"
+    },
+    {
+      "label": "வணிகக் கல்வி",
+      "value": "Business Studies"
+    },
+    {
+      "label": "விவசாய விஞ்ஞானம்",
+      "value": "Agricultural Science"
+    },
+    {
+      "label": "கணக்கீடு ",
+      "value": "Accountancy"
+    },
+    {
+      "label": "கணிதம் ",
+      "value": "Mathematics"
+    }
+  ],
+  "biosystems technology": [
+    {
+      "label": "உயிரியல் தொழில்நுட்பம்",
+      "value": "Biosystems Technology"
+    },
+    {
+      "label": "தொழில்நுட்பவியலுக்கான விஞ்ஞானம்",
+      "value": "Science for Technology"
+    },
+    {
+      "label": "பொருளியல் ",
+      "value": "Economics"
+    },
+    {
+      "label": "புவியியல் ",
+      "value": "Geography"
+    },
+    {
+      "label": "மனை பொருளியல்",
+      "value": "Home Economics"
+    },
+    {
+      "label": "ஆங்கிலம் ",
+      "value": "English"
+    },
+    {
+      "label": "தொடர்பாடல் & ஊடக கல்வி ",
+      "value": "Communication and Media Studies"
+    },
+    {
+      "label": "தகவல் தொடர்பாடல் தொழில்நுட்பம்",
+      "value": "Information & Communication Technology"
+    },
+    {
+      "label": "கலை",
+      "value": "Art"
+    },
+    {
+      "label": "வணிகக் கல்வி",
+      "value": "Business Studies"
+    },
+    {
+      "label": "விவசாய விஞ்ஞானம்",
+      "value": "Agricultural Science"
+    },
+    {
+      "label": "விவசாய விஞ்ஞானம்",
+      "value": "Accountancy"
+    },
+    {
+      "label": "கணிதம் ",
+      "value": "Mathematics"
+    }
+  ]
+  
+},
  
   "districts": [
     { "label": "அம்பாறை", "value": "Ampara" },
