@@ -6,8 +6,6 @@ import {
   TouchableOpacity,
   Pressable,
   TextInput,
-  Button,
-  Platform,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -26,7 +24,7 @@ import { useAuth } from "../../../../../context/authContext";
 import Loading from "../../../../../components/Loading/Loading";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import * as ImagePicker from "expo-image-picker";
-import DateTimePickerModal from "react-native-modal-datetime-picker"; // Import the date picker
+import DateTimePickerModal from "react-native-modal-datetime-picker"; 
 
 export default function ProfileEdit() {
   const router = useRouter();
@@ -34,13 +32,13 @@ export default function ProfileEdit() {
   const { user, setUser } = useAuth();
   const { t } = useTranslation();
   const [profileImage, setProfileImage] = useState(null);
-  const [dob, setDob] = useState(user?.dob || ""); // State for Date of Birth
-  const [datePickerVisible, setDatePickerVisible] = useState(false); // For showing date picker
+  const [datePickerVisible, setDatePickerVisible] = useState(false); 
 
   const [profileData, setProfileData] = useState({
     username: user?.username || "",
     email: user?.email || "",
     phoneNumber: user?.phoneNumber || "",
+    dob: user?.dob || "",
   });
 
   const handleInputChange = (key, value) => {
@@ -82,7 +80,7 @@ export default function ProfileEdit() {
 
   const handleSave = async () => {
     try {
-      const uid = auth.currentUser?.uid; 
+      const uid = auth.currentUser?.uid;
 
       if (!uid) {
         console.log("User not logged in");
@@ -90,13 +88,15 @@ export default function ProfileEdit() {
       }
 
       setLoading(true);
-      let profileImageUrl = '';
+      let profileImageUrl = "";
 
       if (profileImage) {
         const response = await fetch(profileImage);
         const blob = await response.blob();
 
-        const filename = profileImage.substring(profileImage.lastIndexOf('/') + 1);
+        const filename = profileImage.substring(
+          profileImage.lastIndexOf("/") + 1
+        );
         const storage = getStorage();
         const imageRef = ref(storage, `profileImages/${uid}/${filename}`);
 
@@ -104,23 +104,24 @@ export default function ProfileEdit() {
         profileImageUrl = await getDownloadURL(imageRef);
       }
 
-      const response = await updateUserProfile(uid, { ...profileData, dob: dob, profileImage: profileImageUrl });
+      const response = await updateUserProfile(uid, {
+        ...profileData,
+        profileImage: profileImageUrl,
+      });
       setLoading(false);
 
       if (response.success) {
-        alert('Profile updated successfully');
+        alert("Profile updated successfully");
         setUser((prevUser) => ({
           ...prevUser,
-          username: profileData.username,
-          phoneNumber: profileData.phoneNumber,
-          dob: dob,
+          ...profileData,
           profileImage: profileImageUrl,
         }));
       } else {
         alert(`Error: ${response.msg}`);
       }
     } catch (error) {
-      console.error('Error updating profile:', error);
+      console.error("Error updating profile:", error);
       alert(`Error updating profile: ${error.message}`);
       setLoading(false);
     }
@@ -138,7 +139,7 @@ export default function ProfileEdit() {
 
   // Handle date selection
   const handleDateConfirm = (date) => {
-    setDob(date.toLocaleDateString()); // Set the date to the dob state
+    handleInputChange("dob", date.toLocaleDateString()); // Update dob in profileData state
     hideDatePicker();
   };
 
@@ -189,14 +190,13 @@ export default function ProfileEdit() {
               rounded
               source={{
                 uri:
-                profileImage || (
-                    user.profileImage || 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541'
-                  )
+                  profileImage ||
+                  user.profileImage ||
+                  "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541",
               }}
               containerStyle={{
-                borderWidth: 5, 
-                borderColor: 'rgba(0, 0, 0, 0.2)',
-            
+                borderWidth: 5,
+                borderColor: "rgba(0, 0, 0, 0.2)",
               }}
             />
             <Feather
@@ -223,51 +223,36 @@ export default function ProfileEdit() {
                 keyboardType={field.keyboardType || "default"}
               />
             ))}
-            {/* Date of Birth Field */}
-            <View
-              style={{
 
-                borderWidth: 2,
-                borderColor: "rgba(0, 0, 0, 0.1)",
-                borderRadius: 10,
-                flexDirection: "row",
-                alignItems: "center",
-                width: "100%",
-                padding: hp(1),
-                marginBottom: hp(3),
-              }}
-            >
-              <Text
+      
+            <TouchableOpacity onPress={handleDatePicker}>
+              <View
                 style={{
-                  fontSize: hp(2),
-                  fontWeight: "600",
-                  opacity: 0.5,
+                  borderWidth: 2,
+                  borderColor: "rgba(0, 0, 0, 0.1)",
+                  borderRadius: 10,
+                  padding: hp(1),
+                  marginBottom: hp(3),
                 }}
               >
-                {t("date_of_birth")}
-              </Text>
-
-              <TouchableOpacity onPress={handleDatePicker} style={{  flex: 1 }}>
+                <Text
+                  style={{ fontSize: hp(2), fontWeight: "600", opacity: 0.5 }}
+                >
+                  {t("date_of_birth")}
+                </Text>
                 <TextInput
-              style={{
-               
-                color: dob ? "black" : "#999", // Change text color based on if a date is set
-                textAlign: "center",
-                marginLeft: wp(5),
-                fontSize: hp(2),
-                paddingHorizontal: wp(3),
-                paddingVertical: hp(1),
-                flex: 1, // Center the text
-              }}
-              editable={false}
-              value={dob}
-              placeholder={dob ? "" : t("enter_dob")} // Show placeholder if no date is selected
-            />
-              </TouchableOpacity>
-            </View>
+                  style={{
+                    fontSize: hp(2),
+                    color: "black", 
+                  }}
+                  placeholder={t("enter_dob")}
+                  value={profileData.dob}
+                  editable={false}
+                />
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
-
         <View style={{ marginVertical: hp(3), alignItems: "center" }}>
           {loading ? (
             <View style={{ flexDirection: "row", justifyContent: "center" }}>
@@ -297,25 +282,13 @@ export default function ProfileEdit() {
           )}
         </View>
 
-        <View style={{ alignItems: "flex-end", zIndex: -1 }}>
-          <Image
-            style={{
-              width: hp(15),
-              height: hp(14),
-            }}
-            resizeMode="stretch"
-            source={require("../../../../../assets/images/bottomEllipse.png")}
-          />
-        </View>
+        <DateTimePickerModal
+          isVisible={datePickerVisible}
+          mode="date"
+          onConfirm={handleDateConfirm}
+          onCancel={hideDatePicker}
+        />
       </CustomKeyboardView>
-
-      {/* Date Picker Modal */}
-      <DateTimePickerModal
-        isVisible={datePickerVisible}
-        mode="date"
-        onConfirm={handleDateConfirm}
-        onCancel={hideDatePicker}
-      />
     </View>
   );
 }
@@ -326,42 +299,27 @@ const InputField = ({
   value,
   onChangeText,
   keyboardType = "default",
+  editable = true,
 }) => (
   <View
     style={{
       borderWidth: 2,
       borderColor: "rgba(0, 0, 0, 0.1)",
       borderRadius: 10,
-      flexDirection: "row",
-      alignItems: "center",
-      width: "100%",
       padding: hp(1),
       marginBottom: hp(3),
     }}
   >
-    <Text
-      style={{
-        fontSize: hp(2),
-        fontWeight: "600",
-        opacity: 0.5,
-      }}
-    >
+    <Text style={{ fontSize: hp(2), fontWeight: "600", opacity: 0.5 }}>
       {label}
     </Text>
-
     <TextInput
-      style={{
-        marginLeft: wp(5),
-        fontSize: hp(2),
-        paddingHorizontal: wp(3),
-        paddingVertical: hp(1),
-        flex: 1,
-      }}
+      style={{ fontSize: hp(2) }}
       placeholder={placeholder}
       value={value}
       onChangeText={onChangeText}
       keyboardType={keyboardType}
-      autoCapitalize="none"
+      editable={editable}
     />
   </View>
 );

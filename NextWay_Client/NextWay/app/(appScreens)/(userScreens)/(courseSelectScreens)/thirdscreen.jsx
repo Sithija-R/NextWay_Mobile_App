@@ -68,7 +68,7 @@ export default function firstScreen() {
   const handleSubmit = async () => {
     //for android emulator use "http://10.0.2.2:5001/predict"
     //others "http://localhost:5001/predict"
-    const apiUrl = "http://127.0.0.1:5001/predict";
+    const apiUrl = "https://nextway.pythonanywhere.com/predict";
     const data = { responses: responses };
     console.log("Sending data: ", data);
   

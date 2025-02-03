@@ -29,6 +29,7 @@ import { useFocusEffect } from "@react-navigation/native";
 import { useRouter } from "expo-router";
 
 export default function ViewCourses() {
+
   const router = useRouter();
   const [allcourses, setAllCourses] = useState([]);
   const [keyword, setKeyword] = useState("");
@@ -36,30 +37,31 @@ export default function ViewCourses() {
   const [searchType, setSearchType] = useState("UNICODE");
   const [loading, setLoading] = useState(false);
 
-  useFocusEffect(
-    React.useCallback(() => {
-      const fetchAllCourses = async () => {
-        try {
-          const res = await fetchCourses(); // Assuming fetchCourses() is your API function
-          if (res.success && res.data.length > 0) {
-            setAllCourses(res.data);
-          } else {
-            console.log("No courses found");
-          }
-        } catch (error) {
-          console.error("Error fetching courses:", error);
-        }
-      };
-
-      fetchAllCourses(); // Call the function when the screen is focused
-    }, []) // Empty dependency array means this will only run when screen is focused
-  );
 
   useEffect(() => {
     if (keyword === "") {
       setCourses([]);
     }
   }, [keyword]);
+
+  useFocusEffect(
+    React.useCallback(() => {
+      const fetchAllCourses = async () => {
+        try {
+          const res = await fetchCourses(); 
+          if (res.success && res.data.length > 0) {
+            setAllCourses(res.data);
+          } 
+        } catch (error) {
+          console.error("Error fetching courses:", error);
+        }
+      };
+
+      fetchAllCourses();
+    }, []) 
+  );
+
+
 
   const CourseRoute = ({ stream }) => (
     <View style={[styles.scene]}>
@@ -393,11 +395,11 @@ export default function ViewCourses() {
               renderTabBar={(props) => (
                 <TabBar
                   {...props}
-                  scrollEnabled={true} // Enables horizontal scrolling
-                  indicatorStyle={{ backgroundColor: "white" }} // Tab indicator styling
-                  style={{ backgroundColor: "#149BC6", width: "98%" }} // Tab bar background styling
-                  tabStyle={{ width: 110 }} // Adjust tab width
-                  labelStyle={{ fontSize: 14, color: "white" }} // Tab label styling
+                  scrollEnabled={true} 
+                  indicatorStyle={{ backgroundColor: "white" }} 
+                  style={{ backgroundColor: "#149BC6", width: "98%" }} 
+                  tabStyle={{ width: 110 }} 
+                  labelStyle={{ fontSize: 14, color: "white" }} 
                 />
               )}
             />
