@@ -20,6 +20,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { useNavigation } from '@react-navigation/native';
 
 export default function Settings() {
   const router = useRouter();
@@ -54,7 +55,7 @@ export default function Settings() {
     try {
       await AsyncStorage.setItem("language", selectedLanguage);
       i18next.changeLanguage(selectedLanguage);
-      router.back(); 
+      router.back();
     } catch (e) {
       console.error("Failed to save language", e);
     }

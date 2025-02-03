@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
         username: data.username,
         userId: data.userId,
         role: data.role,
-        age: data.age,
+        dob: data.dob,
         profileImage: data.profileImage,
         isAdvertiser: data.isAdvertiser,
       });

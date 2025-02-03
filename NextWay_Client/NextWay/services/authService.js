@@ -82,10 +82,10 @@ const updateUserProfile = async (uid, updatedData) => {
 
       const newFields = {
         username: updatedData.username || currentData.username || "",
-        age:
-          updatedData.age !== undefined
-            ? updatedData.age
-            : currentData.age || null,
+        dob:
+          updatedData.dob !== undefined
+            ? updatedData.dob
+            : currentData.dob || null,
         phoneNumber: updatedData.phoneNumber || currentData.phoneNumber || "",
         profileImage:
           updatedData.profileImage || currentData.profileImage || "",
