@@ -30,24 +30,30 @@ export default function Settings() {
     <View style={{ flex: 1 }}>
       <StatusBar style="dark" />
       <View style={{ flex: 1, alignItems: "flex-start" }}>
-        <Pressable
-          onPress={() => router.back()}
-          style={{
-            position: "absolute",
-            top: hp(5),
-            left: wp(2),
-            zIndex: 100,
-            flexDirection: "row",
-            marginTop: hp(3),
-            alignItems: "center",
-            width: "85%",
-          }}
-        >
-          <Ionicons name="arrow-back" size={hp(3.5)} color="black" />
-          <Text style={{ fontSize: wp(5), paddingLeft: wp(5) }}>
-            {t("back")}
-          </Text>
-        </Pressable>
+        <View>
+          <Pressable
+            onPress={() => {
+              alert("Back button pressed"); // Check if this logs
+              router.back();
+            }}
+            style={{
+              position: "absolute",
+              top: hp(5),
+              left: wp(2),
+              zIndex: 100,
+              flexDirection: "row",
+              marginTop: hp(3),
+              alignItems: "center",
+              width: "85%",
+              padding: wp(2), // Increase padding to ensure touchable area
+            }}
+          >
+            <Ionicons name="arrow-back" size={hp(3.5)} color="black" />
+            <Text style={{ fontSize: wp(5), paddingLeft: wp(5) }}>
+              {t("back")}
+            </Text>
+          </Pressable>
+        </View>
 
         <Image
           style={{ width: hp(27), height: hp(20) }}
@@ -83,6 +89,7 @@ export default function Settings() {
         <Text style={styles.bullet}>• Build community connections</Text>
         <Text style={styles.bullet}>• Promote equity in education</Text>
         <Text style={styles.bullet}>• Celebrate lifelong learning</Text>
+        <Text style={styles.subtitle}> For Advertisement Contact: 0743422345</Text>
       </ScrollView>
       <View style={{ alignItems: "center", marginTop: hp(1) }}>
         <TouchableOpacity
