@@ -39,7 +39,7 @@ const fetchCourseByUNICODE = async (unicode) => {
       id: doc.id,
       ...doc.data(),
     }));
-    console.log(coursesList);
+   
 
     if (coursesList.length > 0) {
       return { success: true, data: coursesList };

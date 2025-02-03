@@ -7,6 +7,7 @@ import {
   Pressable,
   TextInput,
   Button,
+  Platform,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -25,7 +26,7 @@ import { useAuth } from "../../../../../context/authContext";
 import Loading from "../../../../../components/Loading/Loading";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import * as ImagePicker from "expo-image-picker";
-
+import DateTimePickerModal from "react-native-modal-datetime-picker"; // Import the date picker
 
 export default function ProfileEdit() {
   const router = useRouter();
@@ -33,16 +34,14 @@ export default function ProfileEdit() {
   const { user, setUser } = useAuth();
   const { t } = useTranslation();
   const [profileImage, setProfileImage] = useState(null);
+  const [dob, setDob] = useState(user?.dob || ""); // State for Date of Birth
+  const [datePickerVisible, setDatePickerVisible] = useState(false); // For showing date picker
 
   const [profileData, setProfileData] = useState({
     username: user?.username || "",
     email: user?.email || "",
-    age: user?.age || "",
     phoneNumber: user?.phoneNumber || "",
-    
   });
-
- 
 
   const handleInputChange = (key, value) => {
     setProfileData((prevData) => ({
@@ -54,12 +53,6 @@ export default function ProfileEdit() {
   const fields = [
     { label: t("username"), placeholder: t("enter_username"), key: "username" },
     {
-      label: t("age"),
-      placeholder: t("enter_age"),
-      key: "age",
-      keyboardType: "numeric",
-    },
-    {
       label: t("phone"),
       placeholder: t("enter_mobile"),
       key: "phoneNumber",
@@ -67,7 +60,6 @@ export default function ProfileEdit() {
     },
   ];
 
-  //pick image
   const handleImagePick = async () => {
     const permissionResult =
       await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -88,45 +80,40 @@ export default function ProfileEdit() {
     }
   };
 
-
-
-
   const handleSave = async () => {
     try {
       const uid = auth.currentUser?.uid; 
-  
+
       if (!uid) {
         console.log("User not logged in");
         return;
       }
-  
+
       setLoading(true);
       let profileImageUrl = '';
-  
+
       if (profileImage) {
-    
         const response = await fetch(profileImage);
-        const blob = await response.blob(); 
-    
+        const blob = await response.blob();
+
         const filename = profileImage.substring(profileImage.lastIndexOf('/') + 1);
         const storage = getStorage();
-        const imageRef = ref(storage, `profileImages/${uid}/${filename}`); 
-  
+        const imageRef = ref(storage, `profileImages/${uid}/${filename}`);
+
         await uploadBytes(imageRef, blob);
         profileImageUrl = await getDownloadURL(imageRef);
       }
-      
-      const response = await updateUserProfile(uid, { ...profileData, profileImage: profileImageUrl });
+
+      const response = await updateUserProfile(uid, { ...profileData, dob: dob, profileImage: profileImageUrl });
       setLoading(false);
-  
+
       if (response.success) {
         alert('Profile updated successfully');
-        
         setUser((prevUser) => ({
           ...prevUser,
           username: profileData.username,
-          age: profileData.age,
           phoneNumber: profileData.phoneNumber,
+          dob: dob,
           profileImage: profileImageUrl,
         }));
       } else {
@@ -138,7 +125,23 @@ export default function ProfileEdit() {
       setLoading(false);
     }
   };
-  
+
+  // Show the date picker modal
+  const handleDatePicker = () => {
+    setDatePickerVisible(true);
+  };
+
+  // Hide the date picker modal
+  const hideDatePicker = () => {
+    setDatePickerVisible(false);
+  };
+
+  // Handle date selection
+  const handleDateConfirm = (date) => {
+    setDob(date.toLocaleDateString()); // Set the date to the dob state
+    hideDatePicker();
+  };
+
   return (
     <View style={{ flex: 1 }}>
       <StatusBar style="dark" />
@@ -220,9 +223,51 @@ export default function ProfileEdit() {
                 keyboardType={field.keyboardType || "default"}
               />
             ))}
+            {/* Date of Birth Field */}
+            <View
+              style={{
+
+                borderWidth: 2,
+                borderColor: "rgba(0, 0, 0, 0.1)",
+                borderRadius: 10,
+                flexDirection: "row",
+                alignItems: "center",
+                width: "100%",
+                padding: hp(1),
+                marginBottom: hp(3),
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: hp(2),
+                  fontWeight: "600",
+                  opacity: 0.5,
+                }}
+              >
+                {t("date_of_birth")}
+              </Text>
+
+              <TouchableOpacity onPress={handleDatePicker} style={{  flex: 1 }}>
+                <TextInput
+              style={{
+               
+                color: dob ? "black" : "#999", // Change text color based on if a date is set
+                textAlign: "center",
+                marginLeft: wp(5),
+                fontSize: hp(2),
+                paddingHorizontal: wp(3),
+                paddingVertical: hp(1),
+                flex: 1, // Center the text
+              }}
+              editable={false}
+              value={dob}
+              placeholder={dob ? "" : t("enter_dob")} // Show placeholder if no date is selected
+            />
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
-            
+
         <View style={{ marginVertical: hp(3), alignItems: "center" }}>
           {loading ? (
             <View style={{ flexDirection: "row", justifyContent: "center" }}>
@@ -263,6 +308,14 @@ export default function ProfileEdit() {
           />
         </View>
       </CustomKeyboardView>
+
+      {/* Date Picker Modal */}
+      <DateTimePickerModal
+        isVisible={datePickerVisible}
+        mode="date"
+        onConfirm={handleDateConfirm}
+        onCancel={hideDatePicker}
+      />
     </View>
   );
 }

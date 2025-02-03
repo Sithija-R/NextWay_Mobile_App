@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
   Image,
   Pressable,
-  Button,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -13,14 +13,32 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import { useTranslation } from "react-i18next";
+import { getAuth } from "firebase/auth"; // Import Firebase Auth
+import { useRouter } from "expo-router";
 
-import { logoutUser } from "../../../services/authService";
-
-export default function Isverified() {
+export default function IsVerified() {
   const { t } = useTranslation();
+  const router = useRouter();
+  const [checking, setChecking] = useState(false);
 
-  const handleLogout = async () => {
-    await logoutUser();
+  const handleCheckVerification = async () => {
+    setChecking(true);
+    try {
+      const auth = getAuth();
+      if (auth.currentUser) {
+        await auth.currentUser.reload(); // 🔄 Refresh user data
+        if (auth.currentUser.emailVerified) {
+          Alert.alert("Success", "Email verified! ");
+          router.replace("home"); // 🚀 Redirect user
+        } else {
+          Alert.alert("Not Verified", "Please verify your email first.");
+        }
+      }
+    } catch (error) {
+      Alert.alert("Error", error.message);
+    } finally {
+      setChecking(false);
+    }
   };
 
   return (
@@ -40,9 +58,7 @@ export default function Isverified() {
             width: "85%",
           }}
         >
-          <Text
-            style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: "600" }}
-          >
+          <Text style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: "600" }}>
             {t("warning")}
           </Text>
         </Pressable>
@@ -66,16 +82,18 @@ export default function Isverified() {
           padding: 20,
         }}
       >
-        <Text style={{ fontSize: 20 }}>Please Verify Your Email to Continue!</Text>
+        <Text style={{ fontSize: 20 }}>An email verification link has been sent to your email. Please verify your email to continue!</Text>
+
         <TouchableOpacity
-          onPress={handleLogout}
+          onPress={handleCheckVerification}
           style={{
-            backgroundColor: "#149BC6",
+            backgroundColor: checking ? "#888" : "#149BC6",
             padding: hp(1.5),
             borderRadius: 20,
-            marginTop:hp(3),
-            paddingHorizontal:hp(3)
+            marginTop: hp(3),
+            paddingHorizontal: hp(3),
           }}
+          disabled={checking}
         >
           <Text
             style={{
@@ -85,7 +103,7 @@ export default function Isverified() {
               color: "white",
             }}
           >
-            Logout
+            {checking ? "Refreshing..." : "Refresh"}
           </Text>
         </TouchableOpacity>
       </View>

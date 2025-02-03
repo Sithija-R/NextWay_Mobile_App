@@ -79,6 +79,10 @@
   "duration": "காலம்",
   "qualifications": "தகுதிகள்",
   "job_roles": "பணி பங்குகள்",
+  "date_of_birth": "பிறந்த தேதி",
+  "enter_dob": "தேர்வு செய்யவும்",
+
+
   "streams": [
     {
       "label": "பௌதீக விஞ்ஞானம்",

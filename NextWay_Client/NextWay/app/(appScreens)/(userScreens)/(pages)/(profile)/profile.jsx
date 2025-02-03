@@ -63,8 +63,8 @@ export default function Profile() {
           style={{ opacity: 0.5 }}
         />
       ),
-      label: t("age"),
-      value: user?.age,
+      label: t("date_of_birth"),
+      value: user?.dob,
     },
     {
       icon: (

@@ -13,7 +13,6 @@ import {
 import React, { useEffect, useState } from "react";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { StatusBar } from "expo-status-bar";
-import { useTranslation } from "react-i18next";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -31,15 +30,11 @@ import { useRouter } from "expo-router";
 
 export default function ViewCourses() {
   const router = useRouter();
-  const { t } = useTranslation();
   const [allcourses, setAllCourses] = useState([]);
   const [keyword, setKeyword] = useState("");
   const [courses, setCourses] = useState([]);
   const [searchType, setSearchType] = useState("UNICODE");
   const [loading, setLoading] = useState(false);
-
-
-
 
   useFocusEffect(
     React.useCallback(() => {
@@ -57,10 +52,8 @@ export default function ViewCourses() {
       };
 
       fetchAllCourses(); // Call the function when the screen is focused
-
     }, []) // Empty dependency array means this will only run when screen is focused
   );
-
 
   useEffect(() => {
     if (keyword === "") {
@@ -68,11 +61,11 @@ export default function ViewCourses() {
     }
   }, [keyword]);
 
-  const FirstRoute = () => (
+  const CourseRoute = ({ stream }) => (
     <View style={[styles.scene]}>
       <ScrollView>
         {allcourses
-          .filter((course) => course.STREAM === "Physical")
+          .filter((course) => course.STREAM === stream)
           .map((course, index) => (
             <Pressable
               key={index}
@@ -98,193 +91,14 @@ export default function ViewCourses() {
     </View>
   );
 
-  const SecondRoute = () => (
-    <View style={[styles.scene]}>
-      <ScrollView>
-        {allcourses
-          .filter((course) => course.STREAM === "Biological Science")
-          .map((course, index) => (
-            <Pressable
-              key={index}
-              onPress={() => {
-                router.push({
-                  pathname: "courseviewer",
-                  params: { course: JSON.stringify(course) },
-                });
-              }}
-            >
-              <View style={styles.tableRow}>
-                <Text
-                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-                >
-                  {course.UNICODE}
-                </Text>
-                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-              </View>
-            </Pressable>
-          ))}
-      </ScrollView>
-    </View>
-  );
-
-  const ThirddRoute = () => (
-    <View style={[styles.scene]}>
-      <ScrollView>
-        {allcourses
-          .filter((course) => course.STREAM === "Commerce")
-          .map((course, index) => (
-            <Pressable
-              key={index}
-              onPress={() => {
-                router.push({
-                  pathname: "courseviewer",
-                  params: { course: JSON.stringify(course) },
-                });
-              }}
-            >
-              <View style={styles.tableRow}>
-                <Text
-                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-                >
-                  {course.UNICODE}
-                </Text>
-                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-              </View>
-            </Pressable>
-          ))}
-      </ScrollView>
-    </View>
-  );
-
-  const FourthRoute = () => (
-    <View style={[styles.scene]}>
-      <ScrollView>
-        {allcourses
-          .filter((course) => course.STREAM === "ENGINEERING TECHNOLOGY (ET)")
-          .map((course, index) => (
-            <Pressable
-              key={index}
-              onPress={() => {
-                router.push({
-                  pathname: "courseviewer",
-                  params: { course: JSON.stringify(course) },
-                });
-              }}
-            >
-              <View style={styles.tableRow}>
-                <Text
-                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-                >
-                  {course.UNICODE}
-                </Text>
-                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-              </View>
-            </Pressable>
-          ))}
-      </ScrollView>
-    </View>
-  );
-
-  const FifththRoute = () => (
-    <View style={[styles.scene]}>
-      <ScrollView>
-        {allcourses
-          .filter((course) => course.STREAM === "Arts")
-          .map((course, index) => (
-            <Pressable
-              key={index}
-              onPress={() => {
-                router.push({
-                  pathname: "courseviewer",
-                  params: { course: JSON.stringify(course) },
-                });
-              }}
-            >
-              <View style={styles.tableRow}>
-                <Text
-                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-                >
-                  {course.UNICODE}
-                </Text>
-                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-              </View>
-            </Pressable>
-          ))}
-      </ScrollView>
-    </View>
-  );
-
-  const SixthRoute = () => (
-    <View style={[styles.scene]}>
-      <ScrollView>
-        {allcourses
-          .filter((course) => course.STREAM === "Other")
-          .map((course, index) => (
-            <Pressable
-              key={index}
-              onPress={() => {
-                router.push({
-                  pathname: "courseviewer",
-                  params: { course: JSON.stringify(course) },
-                });
-              }}
-            >
-              <View style={styles.tableRow}>
-                <Text
-                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-                >
-                  {course.UNICODE}
-                </Text>
-                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-              </View>
-            </Pressable>
-          ))}
-      </ScrollView>
-    </View>
-  );
-
-  const SeventhRoute = () => (
-    <View style={[styles.scene]}>
-      <ScrollView>
-        {allcourses
-          .filter((course) => course.STREAM === "Biosystems Technology")
-          .map((course, index) => (
-            <Pressable
-              key={index}
-              onPress={() => {
-                router.push({
-                  pathname: "courseviewer",
-                  params: { course: JSON.stringify(course) },
-                });
-              }}
-            >
-              <View style={styles.tableRow}>
-                <Text
-                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-                >
-                  {course.UNICODE}
-                </Text>
-                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-              </View>
-            </Pressable>
-          ))}
-      </ScrollView>
-    </View>
-  );
   const renderScene = SceneMap({
-    1: FirstRoute,
-    2: SecondRoute,
-    3: ThirddRoute,
-    4: FourthRoute,
-    5: FifththRoute,
-    6: SixthRoute,
-    7: SeventhRoute
+    1: () => <CourseRoute stream="Physical" />,
+    2: () => <CourseRoute stream="Biological Science" />,
+    3: () => <CourseRoute stream="Commerce" />,
+    4: () => <CourseRoute stream="ENGINEERING TECHNOLOGY (ET)" />,
+    5: () => <CourseRoute stream="Arts" />,
+    6: () => <CourseRoute stream="Other" />,
+    7: () => <CourseRoute stream="Biosystems Technology" />,
   });
 
   const routes = [
@@ -354,7 +168,7 @@ export default function ViewCourses() {
           <Text
             style={{ fontSize: wp(5), paddingLeft: wp(5), fontWeight: 600 }}
           >
-            {t("view_courses")}
+            View Courses
           </Text>
         </Pressable>
 
@@ -388,7 +202,7 @@ export default function ViewCourses() {
               textAlign: "left",
             }}
           >
-            {t("search_course")}
+           Search Courses
           </Text>
 
           {/* Radio Button Section */}
@@ -436,7 +250,7 @@ export default function ViewCourses() {
                   />
                 )}
               </View>
-              <Text style={{ fontSize: hp(2.5) }}>{t("By UNICODE")}</Text>
+              <Text style={{ fontSize: hp(2.5) }}>By UNICODE</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
@@ -444,7 +258,6 @@ export default function ViewCourses() {
                 setSearchType("NAME");
                 setKeyword(null);
               }}
-              
               style={{
                 flexDirection: "row",
                 alignItems: "center",
@@ -473,7 +286,7 @@ export default function ViewCourses() {
                   />
                 )}
               </View>
-              <Text style={{ fontSize: hp(2.5) }}>{t("By Name")}</Text>
+              <Text style={{ fontSize: hp(2.5) }}>By Name</Text>
             </TouchableOpacity>
           </View>
 
@@ -501,7 +314,7 @@ export default function ViewCourses() {
                 marginRight: wp(2),
               }}
               placeholder={
-                searchType === "UNICODE" ? t("Enter UNICODE") : t("Enter Name")
+                searchType === "UNICODE" ? "Enter UNICODE" : "Enter Name"
               }
               onChangeText={setKeyword}
               autoCapitalize="characters"
@@ -529,7 +342,7 @@ export default function ViewCourses() {
                     color: "white",
                   }}
                 >
-                  {t("Search")}
+                  Search
                 </Text>
               </TouchableOpacity>
             )}
@@ -540,9 +353,9 @@ export default function ViewCourses() {
           {courses.length > 0 && keyword ? (
             <ScrollView style={styles.courseTable}>
               <View style={styles.tableHeader}>
-                <Text style={styles.tableHeaderCell}>{t("UNICODE")}</Text>
-                <Text style={styles.tableHeaderCell}>{t("course")}</Text>
-                <Text style={styles.tableHeaderCell}>{t("university")}</Text>
+                <Text style={styles.tableHeaderCell}>UNICODE</Text>
+                <Text style={styles.tableHeaderCell}>course</Text>
+                <Text style={styles.tableHeaderCell}>university</Text>
               </View>
               {courses.map((course, index) => (
                 <Pressable
@@ -555,9 +368,18 @@ export default function ViewCourses() {
                   }}
                 >
                   <View style={styles.tableRow}>
-                    <Text style={[styles.tableCell,{ flex: 0.5, textAlign: "center" }]}>{course.UNICODE}</Text>
+                    <Text
+                      style={[
+                        styles.tableCell,
+                        { flex: 0.5, textAlign: "center" },
+                      ]}
+                    >
+                      {course.UNICODE}
+                    </Text>
                     <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                    <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
+                    <Text style={styles.tableCell}>
+                      {course.UNIVERSITY_eng}
+                    </Text>
                   </View>
                 </Pressable>
               ))}
@@ -601,7 +423,7 @@ export default function ViewCourses() {
 const styles = StyleSheet.create({
   tableHeader: {
     flexDirection: "row",
-    width:"100%",
+    width: "100%",
     paddingVertical: 10,
     marginBottom: 5,
     zIndex: 10,
@@ -610,7 +432,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontWeight: "bold",
     textAlign: "center",
-    width:"100%",
+    width: "100%",
   },
   tableRow: {
     flexDirection: "row",
