@@ -8,7 +8,7 @@ import {
   Alert,
   ScrollView,
   StyleSheet,
-  useWindowDimensions,
+  // useWindowDimensions,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import AntDesign from "@expo/vector-icons/AntDesign";
@@ -23,7 +23,7 @@ import {
   fetchCourseByUNICODE,
   fetchCourses,
 } from "../../../../services/fetchingService";
-import { TabView, SceneMap, TabBar } from "react-native-tab-view";
+// import { TabView, SceneMap, TabBar } from "react-native-tab-view";
 import Loading from "../../../../components/Loading/Loading";
 import { useFocusEffect } from "@react-navigation/native";
 import { useRouter } from "expo-router";
@@ -63,67 +63,67 @@ export default function ViewCourses() {
   );
 
 
-  const CourseRoute = ({ stream }) => {
-    const filteredCourses = allcourses.filter((course) => course.STREAM === stream);
+  // const CourseRoute = ({ stream }) => {
+  //   const filteredCourses = allcourses.filter((course) => course.STREAM === stream);
   
-    return (
-      <View style={[styles.scene]}>
-        <ScrollView>
-          {filteredCourses.length > 0 ? (
-            filteredCourses.map((course, index) => (
-              <Pressable
-                key={index}
-                onPress={() => {
-                  router.push({
-                    pathname: "courseviewer",
-                    params: { course: JSON.stringify(course) },
-                  });
-                }}
-              >
-                <View style={styles.tableRow}>
-                  <Text
-                    style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-                  >
-                    {course.UNICODE}
-                  </Text>
-                  <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                  <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-                </View>
-              </Pressable>
-            ))
-          ) : (
-            <Text style={{ textAlign: "center", padding: 20 }}>
-              No courses found for {stream}!
-            </Text>
-          )}
-        </ScrollView>
-      </View>
-    );
-  };
+  //   return (
+  //     <View style={[styles.scene]}>
+  //       <ScrollView>
+  //         {filteredCourses.length > 0 ? (
+  //           filteredCourses.map((course, index) => (
+  //             <Pressable
+  //               key={index}
+  //               onPress={() => {
+  //                 router.push({
+  //                   pathname: "courseviewer",
+  //                   params: { course: JSON.stringify(course) },
+  //                 });
+  //               }}
+  //             >
+  //               <View style={styles.tableRow}>
+  //                 <Text
+  //                   style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+  //                 >
+  //                   {course.UNICODE}
+  //                 </Text>
+  //                 <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+  //                 <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
+  //               </View>
+  //             </Pressable>
+  //           ))
+  //         ) : (
+  //           <Text style={{ textAlign: "center", padding: 20 }}>
+  //             No courses found for {stream}!
+  //           </Text>
+  //         )}
+  //       </ScrollView>
+  //     </View>
+  //   );
+  // };
   
 
-  const renderScene = SceneMap({
-    1: () => <CourseRoute stream="Physical" />,
-    2: () => <CourseRoute stream="Biological Science" />,
-    3: () => <CourseRoute stream="Commerce" />,
-    4: () => <CourseRoute stream="ENGINEERING TECHNOLOGY (ET)" />,
-    5: () => <CourseRoute stream="Arts" />,
-    6: () => <CourseRoute stream="Other" />,
-    7: () => <CourseRoute stream="Biosystems Technology" />,
-  });
+  // const renderScene = SceneMap({
+  //   1: () => <CourseRoute stream="Physical" />,
+  //   2: () => <CourseRoute stream="Biological Science" />,
+  //   3: () => <CourseRoute stream="Commerce" />,
+  //   4: () => <CourseRoute stream="ENGINEERING TECHNOLOGY (ET)" />,
+  //   5: () => <CourseRoute stream="Arts" />,
+  //   6: () => <CourseRoute stream="Other" />,
+  //   7: () => <CourseRoute stream="Biosystems Technology" />,
+  // });
 
-  const routes = [
-    { key: "1", title: "Physical" },
-    { key: "2", title: "Biology" },
-    { key: "3", title: "Commerce" },
-    { key: "4", title: "ET" },
-    { key: "5", title: "Arts" },
-    { key: "6", title: "Common" },
-    { key: "7", title: "Biosystems Technology" },
-  ];
+  // const routes = [
+  //   { key: "1", title: "Physical" },
+  //   { key: "2", title: "Biology" },
+  //   { key: "3", title: "Commerce" },
+  //   { key: "4", title: "ET" },
+  //   { key: "5", title: "Arts" },
+  //   { key: "6", title: "Common" },
+  //   { key: "7", title: "Biosystems Technology" },
+  // ];
 
-  const layout = useWindowDimensions();
-  const [index, setIndex] = React.useState(0);
+  // const layout = useWindowDimensions();
+  // const [index, setIndex] = React.useState(0);
 
   const handleSearch = async () => {
     if (!keyword) {
@@ -396,22 +396,57 @@ export default function ViewCourses() {
               ))}
             </ScrollView>
           ) : (
-            <TabView
-              navigationState={{ index, routes }}
-              renderScene={renderScene}
-              onIndexChange={setIndex}
-              initialLayout={{ width: layout.width }}
-              renderTabBar={(props) => (
-                <TabBar
-                  {...props}
-                  scrollEnabled={true} 
-                  indicatorStyle={{ backgroundColor: "white" }} 
-                  style={{ backgroundColor: "#149BC6", width: "98%" }} 
-                  tabStyle={{ width: 110 }} 
-                  labelStyle={{ fontSize: 14, color: "white" }} 
-                />
-              )}
-            />
+            <ScrollView style={styles.courseTable}>
+              <View style={styles.tableHeader}>
+                <Text style={styles.tableHeaderCell}>UNICODE</Text>
+                <Text style={styles.tableHeaderCell}>course</Text>
+                <Text style={styles.tableHeaderCell}>university</Text>
+              </View>
+              {allcourses.map((course, index) => (
+                <Pressable
+                  key={index}
+                  onPress={() => {
+                    router.push({
+                      pathname: "courseviewer",
+                      params: { course: JSON.stringify(course) },
+                    });
+                  }}
+                >
+                  <View style={styles.tableRow}>
+                    <Text
+                      style={[
+                        styles.tableCell,
+                        { flex: 0.5, textAlign: "center" },
+                      ]}
+                    >
+                      {course.UNICODE}
+                    </Text>
+                    <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                    <Text style={styles.tableCell}>
+                      {course.UNIVERSITY_eng}
+                    </Text>
+                  </View>
+                </Pressable>
+              ))}
+            </ScrollView>
+            
+
+            // <TabView
+            //   navigationState={{ index, routes }}
+            //   renderScene={renderScene}
+            //   onIndexChange={setIndex}
+            //   initialLayout={{ width: layout.width }}
+            //   renderTabBar={(props) => (
+            //     <TabBar
+            //       {...props}
+            //       scrollEnabled={true} 
+            //       indicatorStyle={{ backgroundColor: "white" }} 
+            //       style={{ backgroundColor: "#149BC6", width: "98%" }} 
+            //       tabStyle={{ width: 110 }} 
+            //       labelStyle={{ fontSize: 14, color: "white" }} 
+            //     />
+            //   )}
+            // />
           )}
         </View>
       </View>
