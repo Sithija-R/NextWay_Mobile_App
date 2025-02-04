@@ -49,49 +49,58 @@ export default function ViewCourses() {
       const fetchAllCourses = async () => {
         try {
           const res = await fetchCourses(); 
-          if (res.success && res.data.length > 0) {
+          if (res?.success && Array.isArray(res.data)) {
             setAllCourses(res.data);
-          } 
+          } else {
+            console.error("Invalid response format:", res);
+          }
         } catch (error) {
           console.error("Error fetching courses:", error);
         }
       };
-
       fetchAllCourses();
     }, []) 
   );
 
 
-
-  const CourseRoute = ({ stream }) => (
-    <View style={[styles.scene]}>
-      <ScrollView>
-        {allcourses
-          .filter((course) => course.STREAM === stream)
-          .map((course, index) => (
-            <Pressable
-              key={index}
-              onPress={() => {
-                router.push({
-                  pathname: "courseviewer",
-                  params: { course: JSON.stringify(course) },
-                });
-              }}
-            >
-              <View style={styles.tableRow}>
-                <Text
-                  style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-                >
-                  {course.UNICODE}
-                </Text>
-                <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-              </View>
-            </Pressable>
-          ))}
-      </ScrollView>
-    </View>
-  );
+  const CourseRoute = ({ stream }) => {
+    const filteredCourses = allcourses.filter((course) => course.STREAM === stream);
+  
+    return (
+      <View style={[styles.scene]}>
+        <ScrollView>
+          {filteredCourses.length > 0 ? (
+            filteredCourses.map((course, index) => (
+              <Pressable
+                key={index}
+                onPress={() => {
+                  router.push({
+                    pathname: "courseviewer",
+                    params: { course: JSON.stringify(course) },
+                  });
+                }}
+              >
+                <View style={styles.tableRow}>
+                  <Text
+                    style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
+                  >
+                    {course.UNICODE}
+                  </Text>
+                  <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
+                  <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
+                </View>
+              </Pressable>
+            ))
+          ) : (
+            <Text style={{ textAlign: "center", padding: 20 }}>
+              No courses found for {stream}!
+            </Text>
+          )}
+        </ScrollView>
+      </View>
+    );
+  };
+  
 
   const renderScene = SceneMap({
     1: () => <CourseRoute stream="Physical" />,

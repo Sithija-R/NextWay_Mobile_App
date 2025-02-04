@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   Pressable,
   TextInput,
-  Button,
+  Platform,
   StyleSheet,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
@@ -26,14 +26,15 @@ import CustomKeyboardView from "../../../../components/keyboardView/CustomKeyboa
 import { decode } from "base-64";
 import { updateUserProfile } from "../../../../services/authService";
 import { Dropdown } from "react-native-element-dropdown";
-
+import DateTimePicker from "@react-native-community/datetimepicker";
+import { format } from "date-fns";
 
 export default function EditUser() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const { t } = useTranslation();
   const { user } = useLocalSearchParams();
-
+  const [datePickerVisible, setDatePickerVisible] = useState(false);
   const [profileImage, setProfileImage] = useState(null);
 
   const parsedUser = user ? JSON.parse(user) : {};
@@ -44,7 +45,7 @@ export default function EditUser() {
   const [profileData, setProfileData] = useState({
     username: parsedUser?.username || "",
     email: parsedUser?.email || "",
-    age: parsedUser?.age || "",
+    dob: parsedUser?.dob || "",
     phoneNumber: parsedUser?.phoneNumber || "",
     role: parsedUser?.role || "",
     profilepic: decodedProfilePic || "",
@@ -55,7 +56,7 @@ export default function EditUser() {
   const roles = [
     { label: "Admin", value: "admin" },
     { label: "Student", value: "student" },
-    { label: "Advertiser", value: "advertiser" },
+  
   ];
 
   const handleInputChange = (key, value) => {
@@ -73,12 +74,6 @@ export default function EditUser() {
     },
     { label: t("username"), placeholder: t("enter_username"), key: "username" },
 
-    {
-      label: t("age"),
-      placeholder: t("enter_age"),
-      key: "age",
-      keyboardType: "numeric",
-    },
     {
       label: t("phone"),
       placeholder: t("enter_mobile"),
@@ -116,7 +111,7 @@ export default function EditUser() {
         return;
       }
       setLoading(true);
-      let profileImageUrl = "";
+      let profileImageUrl = profileData.profilepic;
 
       if (profileImage) {
         const response = await fetch(profileImage);
@@ -231,6 +226,49 @@ export default function EditUser() {
                   keyboardType={field.keyboardType || "default"}
                 />
               ))}
+              
+
+
+              <View
+                style={{
+                  borderWidth: 2,
+                  borderColor: "rgba(0, 0, 0, 0.1)",
+                  borderRadius: 10,
+                  flexDirection: "row",
+                  alignItems: "center",
+                  width: "100%",
+                  padding: hp(0.9),
+                  marginBottom: hp(1),
+                  justifyContent: "space-between",
+                }}
+              >
+                <Text
+                  style={{
+                    fontSize: hp(2),
+                    fontWeight: "600",
+                    opacity: 0.6,
+                  }}
+                >
+                  Date of Birth
+                </Text>
+                <TouchableOpacity onPress={() => setDatePickerVisible(true)} style={{ flex: 1 }}>
+                <TextInput
+                   style={{
+                    color: profileData.dob ? "black" : "#999",
+                    marginLeft: wp(5),
+                    fontSize: hp(2),
+                    paddingHorizontal: wp(3),
+                    paddingVertical: hp(1),
+                    flex: 1,
+                  }}
+                  editable={false}
+                  value={profileData.dob}
+                  placeholder={profileData.dob ? "" : t("enter_dob")}
+                />
+              </TouchableOpacity>
+
+              </View>
+
               <View
                 style={{
                   borderWidth: 2,
@@ -308,6 +346,19 @@ export default function EditUser() {
             )}
           </View>
         </CustomKeyboardView>
+        {datePickerVisible && (
+              <DateTimePicker
+                value={new Date()}
+                mode="date"
+                display={Platform.OS === "ios" ? "spinner" : "default"}
+                onChange={(event, selectedDate) => {
+                  setDatePickerVisible(false);
+                  if (selectedDate) {
+                    handleInputChange("dob", format(selectedDate, "dd/MM/yyyy"));
+                  }
+                }}
+              />
+            )}
       </View>
       <Image
         style={{

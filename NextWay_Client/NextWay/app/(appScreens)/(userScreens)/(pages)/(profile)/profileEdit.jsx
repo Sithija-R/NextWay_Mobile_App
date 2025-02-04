@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Pressable,
   TextInput,
+  Platform,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -24,22 +25,24 @@ import { useAuth } from "../../../../../context/authContext";
 import Loading from "../../../../../components/Loading/Loading";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import * as ImagePicker from "expo-image-picker";
-import DateTimePickerModal from "react-native-modal-datetime-picker"; 
+import DateTimePicker from "@react-native-community/datetimepicker";
+import { format } from "date-fns";
 
 export default function ProfileEdit() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const { user, setUser } = useAuth();
   const { t } = useTranslation();
-  const [profileImage, setProfileImage] = useState(null);
-  const [datePickerVisible, setDatePickerVisible] = useState(false); 
+  const [datePickerVisible, setDatePickerVisible] = useState(false);
 
   const [profileData, setProfileData] = useState({
     username: user?.username || "",
     email: user?.email || "",
     phoneNumber: user?.phoneNumber || "",
-    dob: user?.dob || "",
+    dob: user?.dob || "", 
+    profileImage: user?.profileImage || "",
   });
+
 
   const handleInputChange = (key, value) => {
     setProfileData((prevData) => ({
@@ -47,16 +50,6 @@ export default function ProfileEdit() {
       [key]: value,
     }));
   };
-
-  const fields = [
-    { label: t("username"), placeholder: t("enter_username"), key: "username" },
-    {
-      label: t("phone"),
-      placeholder: t("enter_mobile"),
-      key: "phoneNumber",
-      keyboardType: "phone-pad",
-    },
-  ];
 
   const handleImagePick = async () => {
     const permissionResult =
@@ -74,13 +67,13 @@ export default function ProfileEdit() {
       quality: 1,
     });
     if (!result.canceled) {
-      setProfileImage(result.assets[0].uri);
+      handleInputChange("profileImage", result.assets[0].uri);
     }
   };
 
   const handleSave = async () => {
     try {
-      const uid = auth.currentUser?.uid;
+      const uid = auth.currentUser?.uid; 
 
       if (!uid) {
         console.log("User not logged in");
@@ -88,15 +81,13 @@ export default function ProfileEdit() {
       }
 
       setLoading(true);
-      let profileImageUrl = "";
+      let profileImageUrl = profileData.profileImage ;
 
-      if (profileImage) {
-        const response = await fetch(profileImage);
+      if (profileData.profileImage && profileData.profileImage !== user?.profileImage) {
+        const response = await fetch(profileData.profileImage);
         const blob = await response.blob();
 
-        const filename = profileImage.substring(
-          profileImage.lastIndexOf("/") + 1
-        );
+        const filename = profileData.profileImage.substring(profileData.profileImage.lastIndexOf('/') + 1);
         const storage = getStorage();
         const imageRef = ref(storage, `profileImages/${uid}/${filename}`);
 
@@ -104,10 +95,7 @@ export default function ProfileEdit() {
         profileImageUrl = await getDownloadURL(imageRef);
       }
 
-      const response = await updateUserProfile(uid, {
-        ...profileData,
-        profileImage: profileImageUrl,
-      });
+      const response = await updateUserProfile(uid, { ...profileData, profileImage: profileImageUrl });
       setLoading(false);
 
       if (response.success) {
@@ -125,22 +113,6 @@ export default function ProfileEdit() {
       alert(`Error updating profile: ${error.message}`);
       setLoading(false);
     }
-  };
-
-  // Show the date picker modal
-  const handleDatePicker = () => {
-    setDatePickerVisible(true);
-  };
-
-  // Hide the date picker modal
-  const hideDatePicker = () => {
-    setDatePickerVisible(false);
-  };
-
-  // Handle date selection
-  const handleDateConfirm = (date) => {
-    handleInputChange("dob", date.toLocaleDateString()); // Update dob in profileData state
-    hideDatePicker();
   };
 
   return (
@@ -189,13 +161,11 @@ export default function ProfileEdit() {
               size={hp(20)}
               rounded
               source={{
-                uri:
-                  profileImage ||
-                  user.profileImage ||
-                  "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541",
+                uri: profileData.profileImage || 
+                     "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
               }}
               containerStyle={{
-                borderWidth: 5,
+                borderWidth: 5, 
                 borderColor: "rgba(0, 0, 0, 0.2)",
               }}
             />
@@ -213,85 +183,85 @@ export default function ProfileEdit() {
           </View>
 
           <View style={{ width: "80%" }}>
-            {fields.map((field) => (
-              <InputField
-                key={field.key}
-                label={field.label}
-                placeholder={field.placeholder}
-                value={profileData[field.key]}
-                onChangeText={(value) => handleInputChange(field.key, value)}
-                keyboardType={field.keyboardType || "default"}
-              />
-            ))}
+            <InputField
+              label={t("username")}
+              placeholder={t("enter_username")}
+              value={profileData.username}
+              onChangeText={(value) => handleInputChange("username", value)}
+            />
+            <InputField
+              label={t("phone")}
+              placeholder={t("enter_mobile")}
+              value={profileData.phoneNumber}
+              onChangeText={(value) => handleInputChange("phoneNumber", value)}
+              keyboardType="phone-pad"
+            />
 
-      
-            <TouchableOpacity onPress={handleDatePicker}>
-              <View
-                style={{
-                  borderWidth: 2,
-                  borderColor: "rgba(0, 0, 0, 0.1)",
-                  borderRadius: 10,
-                  padding: hp(1),
-                  marginBottom: hp(3),
-                }}
-              >
-                <Text
-                  style={{ fontSize: hp(2), fontWeight: "600", opacity: 0.5 }}
-                >
-                  {t("date_of_birth")}
-                </Text>
-                <TextInput
-                  style={{
-                    fontSize: hp(2),
-                    color: "black", 
-                  }}
-                  placeholder={t("enter_dob")}
-                  value={profileData.dob}
-                  editable={false}
-                />
-              </View>
-            </TouchableOpacity>
-          </View>
-        </View>
-        <View style={{ marginVertical: hp(3), alignItems: "center" }}>
-          {loading ? (
-            <View style={{ flexDirection: "row", justifyContent: "center" }}>
-              <Loading size={hp(10)} />
-            </View>
-          ) : (
-            <TouchableOpacity
-              onPress={handleSave}
+            {/* Date of Birth Field */}
+            <View
               style={{
-                backgroundColor: "#149BC6",
-                paddingVertical: hp(1.5),
-                paddingHorizontal: wp(10),
+                borderWidth: 2,
+                borderColor: "rgba(0, 0, 0, 0.1)",
                 borderRadius: 10,
+                flexDirection: "row",
+                alignItems: "center",
+                width: "100%",
+                padding: hp(1),
+                marginBottom: hp(3),
               }}
             >
-              <Text
-                style={{
-                  fontSize: hp(3),
-                  fontWeight: "600",
-                  textAlign: "center",
-                  color: "white",
+              <Text style={{ fontSize: hp(2), fontWeight: "600", opacity: 0.5 }}>
+                {t("date_of_birth")}
+              </Text>
+
+              <TouchableOpacity onPress={() => setDatePickerVisible(true)} style={{ flex: 1 }}>
+                <TextInput
+                  style={{
+                    color: profileData.dob ? "black" : "#999",
+                    textAlign: "center",
+                    marginLeft: wp(5),
+                    fontSize: hp(2),
+                    paddingHorizontal: wp(3),
+                    paddingVertical: hp(1),
+                    flex: 1,
+                  }}
+                  editable={false}
+                  value={profileData.dob}
+                  placeholder={profileData.dob ? "" : t("enter_dob")}
+                />
+              </TouchableOpacity>
+            </View>
+
+            {datePickerVisible && (
+              <DateTimePicker
+                value={new Date()}
+                mode="date"
+                display={Platform.OS === "ios" ? "spinner" : "default"}
+                onChange={(event, selectedDate) => {
+                  setDatePickerVisible(false);
+                  if (selectedDate) {
+                    handleInputChange("dob", format(selectedDate, "dd/MM/yyyy"));
+                  }
                 }}
-              >
+              />
+            )}
+          </View>
+        </View>
+
+        <View style={{ marginVertical: hp(3), alignItems: "center" }}>
+          {loading ? <Loading size={hp(10)} /> : (
+            <TouchableOpacity onPress={handleSave} style={{ backgroundColor: "#149BC6", paddingVertical: hp(1.5), paddingHorizontal: wp(10), borderRadius: 10 }}>
+              <Text style={{ fontSize: hp(3), fontWeight: "600", textAlign: "center", color: "white" }}>
                 {t("save_changes")}
               </Text>
             </TouchableOpacity>
           )}
         </View>
-
-        <DateTimePickerModal
-          isVisible={datePickerVisible}
-          mode="date"
-          onConfirm={handleDateConfirm}
-          onCancel={hideDatePicker}
-        />
       </CustomKeyboardView>
     </View>
   );
 }
+
 
 const InputField = ({
   label,
@@ -299,27 +269,42 @@ const InputField = ({
   value,
   onChangeText,
   keyboardType = "default",
-  editable = true,
 }) => (
   <View
     style={{
       borderWidth: 2,
       borderColor: "rgba(0, 0, 0, 0.1)",
       borderRadius: 10,
+      flexDirection: "row",
+      alignItems: "center",
+      width: "100%",
       padding: hp(1),
       marginBottom: hp(3),
     }}
   >
-    <Text style={{ fontSize: hp(2), fontWeight: "600", opacity: 0.5 }}>
+    <Text
+      style={{
+        fontSize: hp(2),
+        fontWeight: "600",
+        opacity: 0.5,
+      }}
+    >
       {label}
     </Text>
+
     <TextInput
-      style={{ fontSize: hp(2) }}
+      style={{
+        marginLeft: wp(5),
+        fontSize: hp(2),
+        paddingHorizontal: wp(3),
+        paddingVertical: hp(1),
+        flex: 1,
+      }}
       placeholder={placeholder}
       value={value}
       onChangeText={onChangeText}
       keyboardType={keyboardType}
-      editable={editable}
+      autoCapitalize="none"
     />
   </View>
 );
