@@ -8,7 +8,7 @@ import {
   Alert,
   ScrollView,
   StyleSheet,
-  // useWindowDimensions,
+
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import AntDesign from "@expo/vector-icons/AntDesign";
@@ -23,20 +23,19 @@ import {
   fetchCourseByUNICODE,
   fetchCourses,
 } from "../../../../services/fetchingService";
-// import { TabView, SceneMap, TabBar } from "react-native-tab-view";
 import Loading from "../../../../components/Loading/Loading";
 import { useFocusEffect } from "@react-navigation/native";
 import { useRouter } from "expo-router";
+import { Tab, TabView } from "@rneui/themed";
 
 export default function ViewCourses() {
-
   const router = useRouter();
   const [allcourses, setAllCourses] = useState([]);
   const [keyword, setKeyword] = useState("");
   const [courses, setCourses] = useState([]);
   const [searchType, setSearchType] = useState("UNICODE");
   const [loading, setLoading] = useState(false);
-
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     if (keyword === "") {
@@ -48,7 +47,7 @@ export default function ViewCourses() {
     React.useCallback(() => {
       const fetchAllCourses = async () => {
         try {
-          const res = await fetchCourses(); 
+          const res = await fetchCourses();
           if (res?.success && Array.isArray(res.data)) {
             setAllCourses(res.data);
           } else {
@@ -59,71 +58,22 @@ export default function ViewCourses() {
         }
       };
       fetchAllCourses();
-    }, []) 
+    }, [])
   );
 
-
-  // const CourseRoute = ({ stream }) => {
-  //   const filteredCourses = allcourses.filter((course) => course.STREAM === stream);
-  
-  //   return (
-  //     <View style={[styles.scene]}>
-  //       <ScrollView>
-  //         {filteredCourses.length > 0 ? (
-  //           filteredCourses.map((course, index) => (
-  //             <Pressable
-  //               key={index}
-  //               onPress={() => {
-  //                 router.push({
-  //                   pathname: "courseviewer",
-  //                   params: { course: JSON.stringify(course) },
-  //                 });
-  //               }}
-  //             >
-  //               <View style={styles.tableRow}>
-  //                 <Text
-  //                   style={[styles.tableCell, { flex: 0.5, textAlign: "center" }]}
-  //                 >
-  //                   {course.UNICODE}
-  //                 </Text>
-  //                 <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-  //                 <Text style={styles.tableCell}>{course.UNIVERSITY_eng}</Text>
-  //               </View>
-  //             </Pressable>
-  //           ))
-  //         ) : (
-  //           <Text style={{ textAlign: "center", padding: 20 }}>
-  //             No courses found for {stream}!
-  //           </Text>
-  //         )}
-  //       </ScrollView>
-  //     </View>
-  //   );
-  // };
-  
-
-  // const renderScene = SceneMap({
-  //   1: () => <CourseRoute stream="Physical" />,
-  //   2: () => <CourseRoute stream="Biological Science" />,
-  //   3: () => <CourseRoute stream="Commerce" />,
-  //   4: () => <CourseRoute stream="ENGINEERING TECHNOLOGY (ET)" />,
-  //   5: () => <CourseRoute stream="Arts" />,
-  //   6: () => <CourseRoute stream="Other" />,
-  //   7: () => <CourseRoute stream="Biosystems Technology" />,
-  // });
-
-  // const routes = [
-  //   { key: "1", title: "Physical" },
-  //   { key: "2", title: "Biology" },
-  //   { key: "3", title: "Commerce" },
-  //   { key: "4", title: "ET" },
-  //   { key: "5", title: "Arts" },
-  //   { key: "6", title: "Common" },
-  //   { key: "7", title: "Biosystems Technology" },
-  // ];
-
-  // const layout = useWindowDimensions();
-  // const [index, setIndex] = React.useState(0);
+  const streams = [
+    { key: "1", title: "Physical", value: "Physical" },
+    { key: "2", title: "Biology", value: "Biological Science" },
+    { key: "3", title: "Commerce", value: "Commerce" },
+    { key: "4", title: "Engineering Technology", value: "ENGINEERING TECHNOLOGY (ET)" },
+    { key: "5", title: "Arts", value: "Arts" },
+    { key: "6", title: "Common", value: "Other" },
+    {
+      key: "7",
+      title: "Biosystems Technology",
+      value: "Biosystems Technology",
+    },
+  ];
 
   const handleSearch = async () => {
     if (!keyword) {
@@ -213,7 +163,7 @@ export default function ViewCourses() {
               textAlign: "left",
             }}
           >
-           Search Courses
+            Search Courses
           </Text>
 
           {/* Radio Button Section */}
@@ -396,57 +346,92 @@ export default function ViewCourses() {
               ))}
             </ScrollView>
           ) : (
-            <ScrollView style={styles.courseTable}>
-              <View style={styles.tableHeader}>
-                <Text style={styles.tableHeaderCell}>UNICODE</Text>
-                <Text style={styles.tableHeaderCell}>course</Text>
-                <Text style={styles.tableHeaderCell}>university</Text>
-              </View>
-              {allcourses.map((course, index) => (
-                <Pressable
-                  key={index}
-                  onPress={() => {
-                    router.push({
-                      pathname: "courseviewer",
-                      params: { course: JSON.stringify(course) },
-                    });
-                  }}
+            <>
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                style={{ backgroundColor: "#149BC6", maxHeight: hp(10) }}
+              >
+                <Tab
+                  value={index}
+                  onChange={setIndex}
+                  indicatorStyle={{ backgroundColor: "white", height: 4 }}
+                  variant="default"
                 >
-                  <View style={styles.tableRow}>
-                    <Text
-                      style={[
-                        styles.tableCell,
-                        { flex: 0.5, textAlign: "center" },
-                      ]}
-                    >
-                      {course.UNICODE}
-                    </Text>
-                    <Text style={styles.tableCell}>{course.COURSE_eng}</Text>
-                    <Text style={styles.tableCell}>
-                      {course.UNIVERSITY_eng}
-                    </Text>
-                  </View>
-                </Pressable>
-              ))}
-            </ScrollView>
-            
+                  {streams.map((stream) => (
+                    <Tab.Item
+                      key={stream.key}
+                      title={stream.title}
+                      titleStyle={{
+                        fontSize: hp(2),
+                        fontWeight: "bold",
+                        color: "white",
+                        minWidth: hp(20),
+                      }}
+                      containerStyle={{ width: 120 }}
+                    />
+                  ))}
+                </Tab>
+              </ScrollView>
 
-            // <TabView
-            //   navigationState={{ index, routes }}
-            //   renderScene={renderScene}
-            //   onIndexChange={setIndex}
-            //   initialLayout={{ width: layout.width }}
-            //   renderTabBar={(props) => (
-            //     <TabBar
-            //       {...props}
-            //       scrollEnabled={true} 
-            //       indicatorStyle={{ backgroundColor: "white" }} 
-            //       style={{ backgroundColor: "#149BC6", width: "98%" }} 
-            //       tabStyle={{ width: 110 }} 
-            //       labelStyle={{ fontSize: 14, color: "white" }} 
-            //     />
-            //   )}
-            // />
+              <TabView value={index} onChange={setIndex} animationType="spring">
+                {streams.map((stream) => {
+                  const filteredCourses = allcourses.filter(
+                    (course) => course.STREAM === stream.value
+                  );
+
+                  return (
+                    <TabView.Item key={stream.key} style={{ width: "100%", marginTop:hp(1) }}>
+                      <ScrollView>
+                        {filteredCourses.length > 0 ? (
+                          filteredCourses.map((course, index) => (
+                            <Pressable
+                              key={index}
+                              onPress={() => {
+                                router.push({
+                                  pathname: "courseviewer",
+                                  params: { course: JSON.stringify(course) },
+                                });
+                              }}
+                            >
+                              <View
+                                style={{
+                                  flexDirection: "row",
+                                  padding: 10,
+                                  borderBottomWidth: 1,
+                                  borderColor: "#ddd",
+                                }}
+                              >
+                                <Text
+                                  style={{
+                                    flex: 0.5,
+                                    textAlign: "center",
+                                    fontWeight: "bold",
+                                  }}
+                                >
+                                  {course.UNICODE}
+                                </Text>
+                                <Text style={{ flex: 1 }}>
+                                  {course.COURSE_eng}
+                                </Text>
+                                <Text style={{ flex: 1 }}>
+                                  {course.UNIVERSITY_eng}
+                                </Text>
+                              </View>
+                            </Pressable>
+                          ))
+                        ) : (
+                          <Text style={{ textAlign: "center", padding: 20 }}>
+                            No courses found for {stream.title}!
+                          </Text>
+                        )}
+                      </ScrollView>
+                    </TabView.Item>
+                  );
+                })}
+              </TabView>
+            </>
+
           )}
         </View>
       </View>

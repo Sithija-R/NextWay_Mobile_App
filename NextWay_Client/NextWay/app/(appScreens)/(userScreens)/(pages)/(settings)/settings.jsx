@@ -39,26 +39,6 @@ export default function Settings() {
 
 
 
-  const [date, setDate] = useState(new Date());
-  const [mode, setMode] = useState('date');
-  const [show, setShow] = useState(false);
-
-  const onChange = (event, selectedDate) => {
-    const currentDate = selectedDate;
-    setShow(false);
-    setDate(currentDate);
-  };
-
-  const showMode = (currentMode) => {
-    setShow(true);
-   
-  };
-
-  const showDatepicker = () => {
-    showMode('date');
-  };
-
-
 
 
   return (
@@ -83,18 +63,6 @@ export default function Settings() {
       <View>
          
          
-      <Button onPress={showDatepicker} title="Show date picker!" />
-      <Text>Selected Date: {format(date, "dd/MM/yyyy")}</Text>
-
-      {show && (
-        <DateTimePicker
-          testID="dateTimePicker"
-          value={date}
-          mode={mode}
-          is24Hour={true}
-          onChange={onChange}
-        />
-      )}
 
 
       </View>
