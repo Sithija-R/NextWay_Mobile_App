@@ -39,4 +39,4 @@ NextWay leverages cutting-edge technologies to provide a seamless experience:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/nextway.git
+   git clone https://github.com/Sithija-R/NextWay_Mobile_App.git
