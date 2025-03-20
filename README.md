@@ -2,7 +2,7 @@
 
 NextWay is a mobile application designed to empower Sri Lankan students by providing smart, data-driven solutions for their academic and career decisions. It bridges the gap of limited personalized guidance and resources, helping students make informed decisions about their future education and career paths.
 
-![NextWay Logo](./assets/nextway-logo.png)
+![NextWay Logo](/NextWay_Client/NextWay/assets/images/preview.jpeg)
 
 ## Features
 
