@@ -30,13 +30,8 @@ NextWay is available in Sinhala, Tamil, and English, ensuring accessibility for 
 ## Technology Stack
 NextWay leverages cutting-edge technologies to provide a seamless experience:
 - **Frontend:** Mobile app (React Native)
-- **Backend:** Node.js, Express
-- **Database:** Firebase / MongoDB
-- **AI:** Machine Learning for career guidance (using Python)
+- **Backend:** Firebase
+- **Database:** FireStore
+- **AI:** Machine Learning for career guidance using Python(Flask)
 
 
-## How to Get Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Sithija-R/NextWay_Mobile_App.git
